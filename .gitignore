@@ -1,6 +1,7 @@
 # Ren'Py
 *.rpyc
 .android.json
+*.bak
 
 errors.txt
 log.txt
