@@ -3,6 +3,10 @@
 .android.json
 *.bak
 
+*.rar
+*.zip
+*.7z
+
 errors.txt
 log.txt
 traceback.txt
