@@ -293,8 +293,8 @@ screen quick_menu():
                 auto "quick_system_%s"
                 action Show("r_menu", dissolve)
 
-        # if not renpy.get_screen("save") or not renpy.get_screen("load"):
-        #     key "right_click_menu" action Show("r_menu")
+    if not renpy.get_screen("save") or not renpy.get_screen("load"):
+        key "right_click_menu" action Show("r_menu")
 
 
 ## This code ensures that the quick_menu screen is displayed in-game, whenever
@@ -709,122 +709,149 @@ screen save():
 
     tag menu
 
-    use file_slots(_("Save"))
+    use file_slots(_("保存"))
 
 
 screen load():
 
     tag menu
 
-    use file_slots(_("Load"))
+    use file_slots(_("读取游戏"))
 
 
 screen file_slots(title):
 
-    default page_name_value = FilePageNameInputValue(pattern=_("Page {}"), auto=_("Automatic saves"), quick=_("Quick saves"))
+    fixed:
 
-    use game_menu(title):
+        if main_menu:
+            add "main_bg"
 
-        fixed:
+        add "bg_cover"
 
-            ## This ensures the input will get the enter event before any of the
-            ## buttons do.
-            order_reverse True
-
-            ## The page name, which can be edited by clicking on a button.
+        if renpy.get_screen("load"):
+            if not main_menu:
+                button:
+                    xysize(206, 68)
+                    idle_background "sl_sl_btn_idle"
+                    hover_background "sl_sl_btn_hover"
+                    text "存档":
+                        align(.3, .5)
+                        style "sl_page"
+                        size 36 color "#ffffff"
+                    xalign 0.03 yalign 0.13
+                    action ShowMenu("save")
+            # else:
+            #     add "sl_save_btn_idle" xalign 0.25 yalign 0.09
+            add "sl_bg" align(0.5, 0.5)
+            # add "sl_sl_btn_hover" xalign 0.03 yalign 0.22
             button:
-                style "page_label"
+                xysize(206, 68)
+                idle_background "sl_sl_btn_hover"
+                hover_background "sl_sl_btn_hover"
+                text "读档":
+                    align(.3, .5)
+                    style "sl_page"
+                    size 36 color "#50350f"
+                xalign 0.03 yalign 0.22
+                action NullAction()
+        elif renpy.get_screen("save"):
+            button:
+                xysize(206, 68)
+                idle_background "sl_sl_btn_idle"
+                hover_background "sl_sl_btn_hover"
+                text "读档":
+                    align(.3, .5)
+                    style "sl_page"
+                    size 36 color "#ffffff"
+                xalign 0.03 yalign 0.22
+                action ShowMenu("load")
+            add "sl_bg" align(0.5, 0.5)
+            # add "sl_sl_btn_hover" xalign 0.03 yalign 0.13
+            button:
+                xysize(206, 68)
+                idle_background "sl_sl_btn_hover"
+                hover_background "sl_sl_btn_hover"
+                text "存档":
+                    align(.3, .5)
+                    style "sl_page"
+                    size 36 color "#50350f"
+                xalign 0.03 yalign 0.13
+                action NullAction()
 
-                key_events True
-                xalign 0.5
-                action page_name_value.Toggle()
+        imagebutton:
+            xalign 0.47 yalign 0.9
+            auto "sl_page_previous_%s"
+            action FilePagePrevious(auto=False, quick=False)
 
-                input:
-                    style "page_label_text"
-                    value page_name_value
+        if FilePageName() == "10":
+            text _(FilePageName()):
+                xalign 0.5 yalign 0.9
+                style "sl_page"
+        else:
+            text _(str(0) + FilePageName()):
+                xalign 0.5 yalign 0.89
+                style "sl_page"
 
-            ## The grid of file slots.
-            grid gui.file_slot_cols gui.file_slot_rows:
-                style_prefix "slot"
+        imagebutton:
+            xalign 0.53 yalign 0.9
+            auto "sl_page_next_%s"
+            action FilePageNext(max=10, auto=False, quick=False)
 
-                xalign 0.5
-                yalign 0.5
+        imagebutton:
+            xalign 0.87 yalign 0.1
+            auto "sl_close_%s"
+            action Return()
 
-                spacing gui.slot_spacing
+        grid 3 3:
+            style_prefix "slot"
+            align(0.5, 0.5)
+            xspacing 40
+            yspacing 30
 
-                for i in range(gui.file_slot_cols * gui.file_slot_rows):
-
-                    $ slot = i + 1
-
-                    button:
-                        action FileAction(slot)
-
-                        has vbox
-
-                        add FileScreenshot(slot) xalign 0.5
-
-                        text FileTime(slot, format=_("{#file_time}%A, %B %d %Y, %H:%M"), empty=_("empty slot")):
-                            style "slot_time_text"
-
-                        text FileSaveName(slot):
-                            style "slot_name_text"
-
-                        key "save_delete" action FileDelete(slot)
-
-            ## Buttons to access other pages.
-            hbox:
-                style_prefix "page"
-
-                xalign 0.5
-                yalign 1.0
-
-                spacing gui.page_spacing
-
-                textbutton _("<") action FilePagePrevious()
-
-                if config.has_autosave:
-                    textbutton _("{#auto_page}A") action FilePage("auto")
-
-                if config.has_quicksave:
-                    textbutton _("{#quick_page}Q") action FilePage("quick")
-
-                ## range(1, 10) gives the numbers from 1 to 9.
-                for page in range(1, 10):
-                    textbutton "[page]" action FilePage(page)
-
-                textbutton _(">") action FilePageNext()
+            for i in range (1, 10):
+                button:
+                    xysize(418, 256)
+                    idle_background "sl_slot_bg"
+                    hover_background "sl_slot_bg_hover"
+                    action FileAction(i)
+                    add "sl_slot_bg" align(0.5,0.5)
+                    # text FileTime(i, format=_("{#file_time}%Y年%B%d日  %H:%M"), empty=_("")):
+                    #     color "#fff" xalign 0.5 ypos 240 size 30
+                    # # Delete Slot
+                    # if FileLoadable(i):
+                    #     imagebutton:
+                    #         xalign 1.0
+                    #         auto "sl_delete_%s"
+                    #         action FileDelete(i)
+                    # else:
+                    if True:
+                        # FileSlotName(i, int(FileCurrentPage()))
+                        $ cur_page = FileCurrentPage()
+                        if cur_page == "1":
+                            $ num = i
+                        else:
+                            $ num = i - 1
+                        $ res = str(int(cur_page) - 1) + "%s"%str(num)
+                        text str(res):
+                            align(0.5, 0.5)
+                            style "sl_page"
+                            size 56 bold True
+                        # text "NO DATA":
+                        #     align(0.5, 0.7)
+                        #     style "sl_page"
+                        #     size 18 bold True
+                    add FileScreenshot(i) align(0.5,0.5) size(389, 230)
+                    key "save_delete" action FileDelete(i)
 
 
-style page_label is gui_label
-style page_label_text is gui_label_text
-style page_button is gui_button
-style page_button_text is gui_button_text
 
-style slot_button is gui_button
-style slot_button_text is gui_button_text
-style slot_time_text is slot_button_text
-style slot_name_text is slot_button_text
+style sl_page is text
 
-style page_label:
-    xpadding 75
-    ypadding 5
-
-style page_label_text:
-    text_align 0.5
-    layout "subtitle"
-    hover_color gui.hover_color
-
-style page_button:
-    properties gui.button_properties("page_button")
-
-style page_button_text:
-    properties gui.button_text_properties("page_button")
-
-style slot_button:
-    properties gui.button_properties("slot_button")
-
-style slot_button_text:
-    properties gui.button_text_properties("slot_button")
+style sl_page_text:
+    xalign 0.5 yalign 0.845
+    size 42
+    # font "站酷高端黑修订版1.13.ttf"
+    color "#50350f"
 
 
 ## Preferences screen ##########################################################
@@ -836,90 +863,232 @@ style slot_button_text:
 
 screen preferences():
 
-    tag menu
 
-    use game_menu(_("Preferences"), scroll="viewport"):
+    if main_menu:
+        add "main_bg"
+
+    add "bg_cover"
+
+    add 'sl_bg' align(0.5, 0.5)
+
+    add 'bg_up' align(0.5, 0.19)
+    add 'bg_down' align(0.5, 0.76)
+    button:
+        xysize(206, 68)
+        idle_background "sl_sl_btn_hover"
+        hover_background "sl_sl_btn_hover"
+        text "设置":
+            align(.3, .5)
+            style "sl_page"
+            size 36 color "#50350f"
+        xalign 0.03 yalign 0.13
+        action NullAction()
+
+    imagebutton:
+        xalign 0.87 yalign 0.1
+        auto "sl_close_%s"
+        action Return()
+
+    # 上方
+    hbox:
+        style_prefix "sound_setting"
+        xalign 0.5 yalign 0.2
+        xoffset -20
+        spacing 40
 
         vbox:
+            yoffset 20
+            xoffset -20
+            spacing 60
+            label _("文字显示速度")
+            label _("自动播放速度")
+            label _("快进设定")
 
+        vbox:
+            xoffset -30
+            yoffset 20
+            spacing 60
+            # bar value Preference("music volume")
+            # bar value Preference("music volume"):
+            #     yoffset 10
+            bar value Preference("text speed")
+            bar value Preference("auto-forward time")
             hbox:
-                box_wrap True
+                xalign 0
+                spacing 150
+                hbox:
+                    spacing 15
+                    imagebutton:
+                        auto "setting_click_%s"
+                        action Preference("skip", "seen")
+                    text _("仅限已读"):
+                        style_prefix "mute_setting"
+                        yoffset -5
+                        if not preferences.skip_unseen:
+                            bold True
+                        else:
+                            bold False
+                hbox:
+                    spacing 15
+                    imagebutton:
+                        auto "setting_click_%s"
+                        action Preference("skip", "all")
+                    text _("全部"):
+                        style_prefix "mute_setting"
+                        yoffset -5
+                        if preferences.skip_unseen:
+                            bold True
+                        else:
+                            bold False
 
-                if renpy.variant("pc") or renpy.variant("web"):
+    # 下方
+    hbox:
+        style_prefix "sound_setting"
+        xalign 0.5 yalign 0.7
+        xoffset -20
+        spacing 60
 
-                    vbox:
-                        style_prefix "radio"
-                        label _("Display")
-                        textbutton _("Window") action Preference("display", "window")
-                        textbutton _("Fullscreen") action Preference("display", "fullscreen")
+        vbox:
+            xoffset 40
+            spacing 70
+            label _("语音音量")
+            label _("音乐音量")
+            label _("效果音量")
 
-                vbox:
-                    style_prefix "radio"
-                    label _("Rollback Side")
-                    textbutton _("Disable") action Preference("rollback side", "disable")
-                    textbutton _("Left") action Preference("rollback side", "left")
-                    textbutton _("Right") action Preference("rollback side", "right")
+        vbox:
+            xoffset 40
+            spacing 72
+            add 'gui/settings/音量-1.png'
+            add 'gui/settings/音量-1.png':
+                yoffset 5
+            add 'gui/settings/音量-1.png':
+                yoffset 10
 
-                vbox:
-                    style_prefix "check"
-                    label _("Skip")
-                    textbutton _("Unseen Text") action Preference("skip", "toggle")
-                    textbutton _("After Choices") action Preference("after choices", "toggle")
-                    textbutton _("Transitions") action InvertSelected(Preference("transitions", "toggle"))
+        vbox:
+            yoffset 3
+            spacing 72
+            # bar value Preference("music volume")
+            # bar value Preference("music volume"):
+            #     yoffset 10
+            bar value Preference("voice volume")
+            bar value Preference("music volume")
+            bar value Preference("sound volume")
 
-                ## Additional vboxes of type "radio_pref" or "check_pref" can be
-                ## added here, to add additional creator-defined preferences.
-
-            null height (4 * gui.pref_spacing)
-
-            hbox:
-                style_prefix "slider"
-                box_wrap True
-
-                vbox:
-
-                    label _("Text Speed")
-
-                    bar value Preference("text speed")
-
-                    label _("Auto-Forward Time")
-
-                    bar value Preference("auto-forward time")
-
-                vbox:
-
-                    if config.has_music:
-                        label _("Music Volume")
-
-                        hbox:
-                            bar value Preference("music volume")
-
-                    if config.has_sound:
-
-                        label _("Sound Volume")
-
-                        hbox:
-                            bar value Preference("sound volume")
-
-                            if config.sample_sound:
-                                textbutton _("Test") action Play("sound", config.sample_sound)
+        vbox:
+            xoffset -40
+            spacing 72
+            add 'gui/settings/音量.png'
+            add 'gui/settings/音量.png':
+                yoffset 5
+            add 'gui/settings/音量.png':
+                yoffset 10
 
 
-                    if config.has_voice:
-                        label _("Voice Volume")
+style mute_setting_label_text:
+    font "经典中圆简.ttf"
+    size 36
+    color "#50350f"
 
-                        hbox:
-                            bar value Preference("voice volume")
+style mute_setting_text is mute_setting_label_text
 
-                            if config.sample_voice:
-                                textbutton _("Test") action Play("voice", config.sample_voice)
+style sound_setting_slider:
+    xsize 670
+    right_bar "setting_slider_2_idle"
+    left_bar "setting_slider_2r_idle"
+    thumb "setting_slider_2_btn_idle"
 
-                    if config.has_music or config.has_sound or config.has_voice:
-                        null height gui.pref_spacing
+style sound_setting_label_text is mute_setting_label_text
 
-                        textbutton _("Mute All"):
-                            action Preference("all mute", "toggle")
-                            style "mute_all_button"
+style sound_setting_bar:
+    xysize(670, 29)
+    right_bar "setting_slider_2_idle"
+    left_bar "setting_slider_2r_idle"
+    thumb "setting_slider_2_btn_idle"
+
+    # tag menu
+
+    # use game_menu(_("Preferences"), scroll="viewport"):
+
+    #     vbox:
+
+    #         hbox:
+    #             box_wrap True
+
+    #             if renpy.variant("pc") or renpy.variant("web"):
+
+    #                 vbox:
+    #                     style_prefix "radio"
+    #                     label _("Display")
+    #                     textbutton _("Window") action Preference("display", "window")
+    #                     textbutton _("Fullscreen") action Preference("display", "fullscreen")
+
+    #             vbox:
+    #                 style_prefix "radio"
+    #                 label _("Rollback Side")
+    #                 textbutton _("Disable") action Preference("rollback side", "disable")
+    #                 textbutton _("Left") action Preference("rollback side", "left")
+    #                 textbutton _("Right") action Preference("rollback side", "right")
+
+    #             vbox:
+    #                 style_prefix "check"
+    #                 label _("Skip")
+    #                 textbutton _("Unseen Text") action Preference("skip", "toggle")
+    #                 textbutton _("After Choices") action Preference("after choices", "toggle")
+    #                 textbutton _("Transitions") action InvertSelected(Preference("transitions", "toggle"))
+
+    #             ## Additional vboxes of type "radio_pref" or "check_pref" can be
+    #             ## added here, to add additional creator-defined preferences.
+
+    #         null height (4 * gui.pref_spacing)
+
+    #         hbox:
+    #             style_prefix "slider"
+    #             box_wrap True
+
+    #             vbox:
+
+    #                 label _("Text Speed")
+
+    #                 bar value Preference("text speed")
+
+    #                 label _("Auto-Forward Time")
+
+    #                 bar value Preference("auto-forward time")
+
+    #             vbox:
+
+    #                 if config.has_music:
+    #                     label _("Music Volume")
+
+    #                     hbox:
+    #                         bar value Preference("music volume")
+
+    #                 if config.has_sound:
+
+    #                     label _("Sound Volume")
+
+    #                     hbox:
+    #                         bar value Preference("sound volume")
+
+    #                         if config.sample_sound:
+    #                             textbutton _("Test") action Play("sound", config.sample_sound)
+
+
+    #                 if config.has_voice:
+    #                     label _("Voice Volume")
+
+    #                     hbox:
+    #                         bar value Preference("voice volume")
+
+    #                         if config.sample_voice:
+    #                             textbutton _("Test") action Play("voice", config.sample_voice)
+
+    #                 if config.has_music or config.has_sound or config.has_voice:
+    #                     null height gui.pref_spacing
+
+    #                     textbutton _("Mute All"):
+    #                         action Preference("all mute", "toggle")
+    #                         style "mute_all_button"
 
 style pref_label is gui_label
 style pref_label_text is gui_label_text
@@ -1004,55 +1173,74 @@ screen history():
 
     tag menu
 
-    ## Avoid predicting this screen, as it can be very large.
+    ## 避免预缓存此屏幕，因为它可能非常大。
     predict False
 
-    use game_menu(_("History"), scroll=("vpgrid" if gui.history_height else "viewport"), yinitial=1.0):
+    add "black_bg" alpha 0.7
+
+    use history_menu(_("历史"), scroll=("vpgrid" if gui.history_height else "viewport"), yinitial=1.0):
 
         style_prefix "history"
 
         for h in _history_list:
 
             window:
+                bottom_margin 50
 
-                ## This lays things out properly if history_height is None.
+                ## 此代码可确保如果“history_height”为“None”的话仍可正常显示条
+                ## 目。
                 has fixed:
                     yfit True
 
                 if h.who:
 
-                    label h.who:
-                        style "history_name"
+                    label h.who + "：":
                         substitute False
+                        style "history_name"
 
-                        ## Take the color of the who text from the Character, if
-                        ## set.
-                        if "color" in h.who_args:
-                            text_color h.who_args["color"]
+                        ## 若角色颜色已设置，则从“Character”对象中读取颜色到叙述
+                        ## 人文本中。
+                        # if "color" in h.who_args:
+                        #     text_color h.who_args["color"]
 
                 $ what = renpy.filter_text_tags(h.what, allow=gui.history_allow_tags)
-                text what:
-                    substitute False
+                if h.who:
+                    text "“" + what + "”":
+                        substitute False
+                        font "经典中圆简.ttf"
+                        color "#ffffff"
+                else:
+                    text what:
+                        xoffset 35
+                        substitute False
+                        font "经典中圆简.ttf"
+                        color "#a9a9a9"
+
+                if h.voice.filename != None:
+
+                    imagebutton:
+                        xalign 0.93
+                        auto "history_voiceReplay_btn_%s"
+                        action Play("voice", h.voice.filename)
 
         if not _history_list:
-            label _("The dialogue history is empty.")
+            label _("对话历史记录为空。")
 
 
-## This determines what tags are allowed to be displayed on the history screen.
-
-define gui.history_allow_tags = { "alt", "noalt" }
+## 此代码决定了允许在历史记录屏幕上显示哪些标签。
+define gui.history_allow_tags = set()
 
 
 style history_window is empty
 
-style history_name is gui_label
-style history_name_text is gui_label_text
-style history_text is gui_text
+style history_name is empty
+style history_name_text is empty
+style history_text is empty
 
-style history_text is gui_text
+style history_text is empty
 
-style history_label is gui_label
-style history_label_text is gui_label_text
+style history_label is empty
+style history_label_text is empty
 
 style history_window:
     xfill True
@@ -1065,10 +1253,15 @@ style history_name:
     xsize gui.history_name_width
 
 style history_name_text:
+    size 40
+    font "经典中圆简.ttf"
+    color "#a9a9a9"
     min_width gui.history_name_width
     text_align gui.history_name_xalign
 
 style history_text:
+    line_spacing 15
+    size 36
     xpos gui.history_text_xpos
     ypos gui.history_text_ypos
     xanchor gui.history_text_xalign
@@ -1082,6 +1275,154 @@ style history_label:
 
 style history_label_text:
     xalign 0.5
+    size 48
+    font "经典中圆简.ttf"
+    color "#989898"
+
+
+## 历史菜单屏幕 ######################################################################
+##
+
+screen history_menu(title, scroll=None, yinitial=0.0):
+
+    frame:
+        align(0.5, 0.5)
+        top_padding 150
+        bottom_padding 150
+        left_padding 200
+        right_padding 200
+        background None
+
+        hbox:
+
+            ## 导航部分的预留空间。
+            # frame:
+            #     style "game_menu_navigation_frame"
+
+            frame:
+
+                background None
+
+                if scroll == "viewport":
+
+                    viewport:
+                        yinitial yinitial
+                        scrollbars "vertical"
+                        mousewheel True
+                        draggable True
+                        pagekeys True
+
+                        side_yfill True
+
+                        vbox:
+                            transclude
+
+                elif scroll == "vpgrid":
+
+                    vpgrid:
+                        cols 1
+                        yinitial yinitial
+
+                        scrollbars "vertical"
+                        mousewheel True
+                        draggable True
+                        pagekeys True
+
+                        side_yfill True
+
+                        transclude
+
+                else:
+
+                    transclude
+
+    imagebutton:
+        yalign 0.05
+        auto "history_return_btn_%s"
+        action Return()
+
+# screen history():
+
+#     tag menu
+
+#     ## Avoid predicting this screen, as it can be very large.
+#     predict False
+
+#     use game_menu(_("History"), scroll=("vpgrid" if gui.history_height else "viewport"), yinitial=1.0):
+
+#         style_prefix "history"
+
+#         for h in _history_list:
+
+#             window:
+
+#                 ## This lays things out properly if history_height is None.
+#                 has fixed:
+#                     yfit True
+
+#                 if h.who:
+
+#                     label h.who:
+#                         style "history_name"
+#                         substitute False
+
+#                         ## Take the color of the who text from the Character, if
+#                         ## set.
+#                         if "color" in h.who_args:
+#                             text_color h.who_args["color"]
+
+#                 $ what = renpy.filter_text_tags(h.what, allow=gui.history_allow_tags)
+#                 text what:
+#                     substitute False
+
+#         if not _history_list:
+#             label _("The dialogue history is empty.")
+
+
+# ## This determines what tags are allowed to be displayed on the history screen.
+
+# define gui.history_allow_tags = { "alt", "noalt" }
+
+
+# style history_window is empty
+
+# style history_name is gui_label
+# style history_name_text is gui_label_text
+# style history_text is gui_text
+
+# style history_text is gui_text
+
+# style history_label is gui_label
+# style history_label_text is gui_label_text
+
+# style history_window:
+#     xfill True
+#     ysize gui.history_height
+
+# style history_name:
+#     xpos gui.history_name_xpos
+#     xanchor gui.history_name_xalign
+#     ypos gui.history_name_ypos
+#     xsize gui.history_name_width
+
+# style history_name_text:
+#     min_width gui.history_name_width
+#     text_align gui.history_name_xalign
+
+# style history_text:
+#     xpos gui.history_text_xpos
+#     ypos gui.history_text_ypos
+#     xanchor gui.history_text_xalign
+#     xsize gui.history_text_width
+#     min_width gui.history_text_width
+#     text_align gui.history_text_xalign
+#     layout ("subtitle" if gui.history_text_xalign else "tex")
+
+# style history_label:
+#     xfill True
+
+# style history_label_text:
+#     xalign 0.5
 
 
 ## Help screen #################################################################
@@ -1264,14 +1605,16 @@ screen confirm(message, yes_action, no_action):
 
     style_prefix "confirm"
 
-    add "gui/overlay/confirm.png"
+    # add "gui/overlay/confirm.png"
+    add "gui/sl/黑色弹窗.png" align(.5 ,.5)
+
 
     frame:
 
         vbox:
             xalign .5
             yalign .5
-            spacing 45
+            spacing 90
 
             label _(message):
                 style "confirm_prompt"
@@ -1281,8 +1624,24 @@ screen confirm(message, yes_action, no_action):
                 xalign 0.5
                 spacing 150
 
-                textbutton _("Yes") action yes_action
-                textbutton _("No") action no_action
+                # textbutton _("Yes") action yes_action
+                # textbutton _("No") action no_action
+                button:
+                    xysize(206, 68)
+                    text "取消":
+                        align(.5, .5)
+                        size 36 color "#545454"
+                    idle_background "confirm_no_idle"
+                    hover_background "confirm_no_hover"
+                    action no_action
+                button:
+                    xysize(206, 68)
+                    idle_background "confirm_yes_idle"
+                    hover_background "confirm_yes_hover"
+                    text "确定":
+                        align(.5, .5)
+                        size 36 color "#50350f"
+                    action yes_action
 
     ## Right-click and escape answer "no".
     key "game_menu" action no_action
@@ -1295,14 +1654,16 @@ style confirm_button is gui_medium_button
 style confirm_button_text is gui_medium_button_text
 
 style confirm_frame:
-    background Frame([ "gui/confirm_frame.png", "gui/frame.png"], gui.confirm_frame_borders, tile=gui.frame_tile)
-    padding gui.confirm_frame_borders.padding
+    # background Frame([ "gui/confirm_frame.png", "gui/frame.png"], gui.confirm_frame_borders, tile=gui.frame_tile)
+    background None
+    # padding gui.confirm_frame_borders.padding
     xalign .5
     yalign .5
 
 style confirm_prompt_text:
     text_align 0.5
     layout "subtitle"
+    color "#ffffff"
 
 style confirm_button:
     properties gui.button_properties("confirm_button")
@@ -1553,6 +1914,8 @@ screen quick_menu():
             textbutton _("Auto") action Preference("auto-forward", "toggle")
             textbutton _("Menu") action ShowMenu()
 
+    if not renpy.get_screen("save") or not renpy.get_screen("load"):
+        key "right_click_menu" action Show("r_menu")
 
 style window:
     variant "small"
