@@ -29,7 +29,7 @@ Please follow the following directory structures to submit or change files
 |  Directories   |  Contents  |
 |  ----  | ----  |
 |  game  |  Codes  |
-|  builds  |  Game Builds(N/A)  |
+|  builds  |  [N/A] Game Builds  |
 |  files/[YYYY.MM.DD]  |  甲 方 文 件  |
 
 ## fonts
