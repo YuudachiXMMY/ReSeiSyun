@@ -10,7 +10,7 @@ Still In-Process :(
 
 Latest Release: [N/A]()
 
-Latest Build: [N/A]():(
+Latest Build: [N/A]()
 
 Pre-Release: [[22/02/12] c1.1.0](https://github.com/YuudachiXMMY/ReSeiSyun/releases/tag/c1.1.0)
 
