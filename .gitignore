@@ -1,25 +1,22 @@
 # Ren'Py
 *.rpyc
-.android.json
 *.bak
-
-*.rar
-*.zip
-*.7z
+.android.json
 
 ~$*
+traceback.txt
 errors.txt
 log.txt
-traceback.txt
 dialogue.csv
 cache/
 saves/
 .vscode/
 
 # Files
+*.psd
+*.rar
 *.zip
 *.7z
-*.psd
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
