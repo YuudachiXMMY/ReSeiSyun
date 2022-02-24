@@ -12,13 +12,13 @@ define config.auto_voice = "audio/voice/{id}.mp3"
 ################################################################################
 
 default persistent.ug = False
-default persistent.favorability_chpt1 = 0
-default persistent.favorability_chpt2 = 0
-default persistent.favorability_chpt3 = 0
-default persistent.favorability_chpt4 = 0
-default persistent.favorability_chpt5 = 0
-default persistent.favorability_chpt6 = 0
-default persistent.favorability_chpt7 = 0
+# default persistent.favorability_chpt1 = 0
+# default persistent.favorability_chpt2 = 0
+# default persistent.favorability_chpt3 = 0
+# default persistent.favorability_chpt4 = 0
+# default persistent.favorability_chpt5 = 0
+# default persistent.favorability_chpt6 = 0
+# default persistent.favorability_chpt7 = 0
 
 
 ################################################################################
@@ -115,8 +115,19 @@ screen say(who, what):
     style_prefix "say"
     if persistent.debug:
         text "debug: "+str(persistent.debug) xalign 0 yalign 0
-        text "favorability_chpt1: "+str(persistent.favorability_chpt1) xalign 0 yalign 0.03
-        text "favorability_chpt2: "+str(persistent.favorability_chpt2) xalign 0 yalign 0.06
+
+        $tmp=""
+        for i in prologue_select:
+            $tmp += str(i)+" "
+        text "prologue_select: "+tmp xalign 0 yalign 0.03
+
+        $tmp=""
+        for i in prologue_answer:
+            $tmp += str(i)+" "
+        text "prologue_answer: "+tmp xalign 0 yalign 0.06
+
+        text "宝盒: "+str(Baohe) xalign 0 yalign 0.09
+        text "基础好感: "+str(HaoGan) xalign 0 yalign 0.12
 
     window:
         id "window"
@@ -406,8 +417,16 @@ style r_menu_textbutton:
 screen navigation():
     if persistent.debug:
         text "debug: "+str(persistent.debug) xalign 0 yalign 0
-        text "favorability_chpt1: "+str(persistent.favorability_chpt1) xalign 0 yalign 0.03
-        text "favorability_chpt2: "+str(persistent.favorability_chpt2) xalign 0 yalign 0.06
+
+        $tmp=""
+        for i in prologue_select:
+            $tmp += str(i)+" "
+        text "prologue_select: "+tmp xalign 0 yalign 0.03
+
+        $tmp=""
+        for i in prologue_answer:
+            $tmp += str(i)+" "
+        text "prologue_answer: "+tmp xalign 0 yalign 0.06
 
     vbox:
         style_prefix "navigation"
@@ -422,7 +441,8 @@ screen navigation():
 
         if main_menu:
 
-            textbutton _("第一幕 序章") action Start("scene_1_prologue_1")
+            textbutton _("序章") action Start("prologue_scene_1_1")
+            textbutton _("第一章") action Start("chpt1_1")
             textbutton _("第一课") action Start("lesson1_1")
 
         else:
