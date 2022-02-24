@@ -12,12 +12,13 @@ Latest Release: [N/A]()
 
 Latest Build: [N/A]()
 
-Pre-Release: [[22/02/12] c1.1.0](https://github.com/YuudachiXMMY/ReSeiSyun/releases/tag/c1.1.0)
+Pre-Release: [[22/02/23] c1.1.1](https://github.com/YuudachiXMMY/ReSeiSyun/releases/tag/c1.1.1)
 
 ## Release History
 
 |  Builds   |  Dates  |  Notes  |
 |  ----  |  ----  |  ----  |
+|  [[22/02/12] c1.1.1](https://github.com/YuudachiXMMY/ReSeiSyun/releases/tag/c1.1.1)  |  2022.02.23  |  Pre-Release  |
 |  [[22/02/12] c1.1.0](https://github.com/YuudachiXMMY/ReSeiSyun/releases/tag/c1.1.0)  |  2022.02.12  |  Pre-Release  |
 
 # Dev Guide
