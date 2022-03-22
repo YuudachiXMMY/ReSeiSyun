@@ -26,9 +26,17 @@ image l1 picture4 = "images/greetings/l1/Picture4.jpg"
 ## Variables
 default HaoGan = 0
 # define persistent.lesson1_attempt = []
+# Prologue
 default prologue_select = [0, 0, 0, 0]
 default prologue_answer = [0, 0, 0, 0, 0, 0]
 default Baohe = 0
+
+# Chpt 1
+default chpt1_select = [0, 0, 0, 0, 0]
+default chpt1_answer_bunka = [0, 0, 0]
+default chpt1_answer_kana = [0, 0, 0, 0, 0]
+default chpt1_answer_tango = [0, 0, 0]
+default chpt1_answer_kaiwa = [0, 0, 0]
 
 
 #################################################################
@@ -76,6 +84,11 @@ transform middle:
     zoom 1.0
     ypos 25 xalign 0.5
 
+transform tjleft:
+    zoom 1.0
+    ypos 25 xalign 0.0
+    xoffset -50
+
 # 2人
 transform left:
     zoom 1.0
@@ -83,7 +96,7 @@ transform left:
 
 transform right:
     zoom 1.0
-    ypos 25 xalign 0.8
+    ypos 25 xalign 1.1
 
 transform MidToLeft:
     zoom 1.0

@@ -129,6 +129,26 @@ screen say(who, what):
         text "宝盒: "+str(Baohe) xalign 0 yalign 0.09
         text "基础好感: "+str(HaoGan) xalign 0 yalign 0.12
 
+        $tmp=""
+        for i in chpt1_select:
+            $tmp += str(i)+" "
+        text "chpt1_select: "+tmp xalign 0 yalign 0.15
+
+        $tmp=""
+        for i in chpt1_answer_bunka:
+            $tmp += str(i)+" "
+        text "chpt1_answer_bunka: "+tmp xalign 0 yalign 0.18
+
+        $tmp=""
+        for i in chpt1_answer_kana:
+            $tmp += str(i)+" "
+        text "chpt1_answer_kana: "+tmp xalign 0 yalign 0.21
+
+        $tmp=""
+        for i in chpt1_answer_tango:
+            $tmp += str(i)+" "
+        text "chpt1_answer_tango: "+tmp xalign 0 yalign 0.24
+
     window:
         id "window"
 
@@ -427,6 +447,29 @@ screen navigation():
         for i in prologue_answer:
             $tmp += str(i)+" "
         text "prologue_answer: "+tmp xalign 0 yalign 0.06
+
+        text "宝盒: "+str(Baohe) xalign 0 yalign 0.09
+        text "基础好感: "+str(HaoGan) xalign 0 yalign 0.12
+
+        $tmp=""
+        for i in chpt1_select:
+            $tmp += str(i)+" "
+        text "chpt1_select: "+tmp xalign 0 yalign 0.15
+
+        $tmp=""
+        for i in chpt1_answer_bunka:
+            $tmp += str(i)+" "
+        text "chpt1_answer_bunka: "+tmp xalign 0 yalign 0.18
+
+        $tmp=""
+        for i in chpt1_answer_kana:
+            $tmp += str(i)+" "
+        text "chpt1_answer_kana: "+tmp xalign 0 yalign 0.21
+
+        $tmp=""
+        for i in chpt1_answer_tango:
+            $tmp += str(i)+" "
+        text "chpt1_answer_tango: "+tmp xalign 0 yalign 0.24
 
     vbox:
         style_prefix "navigation"

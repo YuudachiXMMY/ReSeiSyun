@@ -12,6 +12,8 @@ cache/
 saves/
 .vscode/
 
+builds/
+
 # Files
 *.psd
 *.rar
