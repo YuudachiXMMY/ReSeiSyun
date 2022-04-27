@@ -23,14 +23,14 @@ define gui.show_name = True
 
 ## The version of the game.
 
-define config.version = "c1.1.1"
+define config.version = "c1.1.2"
 
 
 ## Text that is placed on the game's about screen. Place the text between the
 ## triple-quotes, and leave a blank line between paragraphs.
 
 define gui.about = _p("""
-Built on 22/02/23\n version c1.1.1
+Built on 22/02/23\n version c1.1.2
 """)
 
 
@@ -184,6 +184,10 @@ init python:
     build.classify('**/#**', None)
     build.classify('**/thumbs.db', None)
     build.classify('files/*', None)
+    build.classify('*.psd', None)
+    build.classify('*.zip', None)
+    build.classify('*.7z', None)
+
 
     ## To archive files, classify them as 'archive'.
 

@@ -72,6 +72,9 @@ define HiraKataKANA = {
     "ka_ko" : ["ka","ki","ku","ke","ko"]
 }
 
+## Dango
+define Dango_L1 = ["011ai2", "012au2", "013aki2", "014koi2"]
+
 
 #################################################################
 ## Transforms
