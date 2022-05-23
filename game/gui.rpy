@@ -55,13 +55,13 @@ define gui.interface_text_color = u'#54545454'
 ## Fonts and Font Sizes ########################################################
 
 ## The font used for in-game text.
-define gui.text_font = "经典中圆简.ttf"
+define gui.text_font = "SourceHanSans-VF.ttf"
 
 ## The font used for character names.
-define gui.name_text_font = "经典中圆简.ttf"
+define gui.name_text_font = "SourceHanSans-VF.ttf"
 
 ## The font used for out-of-game text.
-define gui.interface_text_font = "经典中圆简.ttf"
+define gui.interface_text_font = "SourceHanSans-VF.ttf"
 
 ## The size of normal dialogue text.
 define gui.text_size = 36

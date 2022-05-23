@@ -179,6 +179,15 @@ style say_thought is say_dialogue
 style namebox is default
 style namebox_label is say_label
 
+image textbox_bg:
+    "gui/textbox.png"
+    xalign 0.5
+    yalign 1.0
+    alpha 0.6
+
+image namebox_bg:
+    "gui/namebox.png"
+    alpha 0.6
 
 style window:
     xalign 0.5
@@ -187,7 +196,8 @@ style window:
     yalign 0.85
     ysize gui.textbox_height
 
-    background Image("gui/textbox.png", xalign=0.5, yalign=1.0)
+    # background Image("gui/textbox.png", xalign=0.5, yalign=1.0, alpha=0.6)
+    background "textbox_bg"
 
 style namebox:
     xpos gui.name_xpos
@@ -196,7 +206,7 @@ style namebox:
     ypos gui.name_ypos
     ysize 86# gui.namebox_height
 
-    background Frame("gui/namebox.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign)
+    background Frame("namebox_bg", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign)
     padding gui.namebox_borders.padding
 
 style say_label:
@@ -913,7 +923,7 @@ style sl_page is text
 style sl_page_text:
     xalign 0.5 yalign 0.845
     size 42
-    # font "站酷高端黑修订版1.13.ttf"
+    # font "SourceHanSans-VF.ttf"
     color "#50350f"
 
 
@@ -1048,7 +1058,7 @@ screen preferences():
 
 
 style mute_setting_label_text:
-    font "经典中圆简.ttf"
+    font "SourceHanSans-VF.ttf"
     size 36
     color "#50350f"
 
@@ -1270,13 +1280,13 @@ screen history():
                 if h.who:
                     text "“" + what + "”":
                         substitute False
-                        font "经典中圆简.ttf"
+                        font "SourceHanSans-VF.ttf"
                         color "#ffffff"
                 else:
                     text what:
                         xoffset 35
                         substitute False
-                        font "经典中圆简.ttf"
+                        font "SourceHanSans-VF.ttf"
                         color "#a9a9a9"
 
                 if h.voice.filename != None:
@@ -1317,7 +1327,7 @@ style history_name:
 
 style history_name_text:
     size 40
-    font "经典中圆简.ttf"
+    font "SourceHanSans-VF.ttf"
     color "#a9a9a9"
     min_width gui.history_name_width
     text_align gui.history_name_xalign
@@ -1339,7 +1349,7 @@ style history_label:
 style history_label_text:
     xalign 0.5
     size 48
-    font "经典中圆简.ttf"
+    font "SourceHanSans-VF.ttf"
     color "#989898"
 
 
@@ -1788,7 +1798,7 @@ style skip_text:
 style skip_triangle:
     ## We have to use a font that has the BLACK RIGHT-POINTING SMALL TRIANGLE
     ## glyph in it.
-    font "DejaVuSans.ttf"
+    font "SourceHanSans-VF.ttf"
 
 
 ## Notify screen ###############################################################
