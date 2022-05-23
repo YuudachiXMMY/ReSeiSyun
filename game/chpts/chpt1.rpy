@@ -123,16 +123,20 @@ label chpt1_1:
     stop music fadeout 1.0
     #{显示立绘 LY11gx}
     show LY 11gx at middle
+    show past_cover with dissolve
     #{播放vioce 2013}
     LiuYang "はじめまして、劉洋です。（初次见面，我是刘洋。）"
     #{播放vioce 2014}
     LiuYang "ここは高一5組ですよ。（这里就是高一五班哦。）"
     #{显示立绘 ZZ12gx}
+    hide past_cover
     show LY at MidToRight
     show ZZ 12gx at left with dissolve
+    show past_cover with dissolve
     #{播放vioce 2015}
     Zhizi "ありがとうございます。（谢谢你。）"
     # TODO: {背景色调变回正常}
+    hide past_cover with dissolve
     scene p04 zoulang with dissolve
     #{播放BGM  b0108  xiaoyuan}
     play music "audio/bgm/b0108 xiaoyuan.mp3"

@@ -183,11 +183,11 @@ image textbox_bg:
     "gui/textbox.png"
     xalign 0.5
     yalign 1.0
-    alpha 0.6
+    alpha 0.8
 
 image namebox_bg:
     "gui/namebox.png"
-    alpha 0.6
+    alpha 0.8
 
 style window:
     xalign 0.5
@@ -481,53 +481,68 @@ screen navigation():
             $tmp += str(i)+" "
         text "chpt1_answer_tango: "+tmp xalign 0 yalign 0.24
 
-    vbox:
-        style_prefix "navigation"
+    if main_menu:
+        # add "main_bg"
+        add "gui/main/logo.png" xalign 1.0 yalign 1.0
 
-        xpos gui.navigation_xpos
-        yalign 0.5
+    if main_menu:
+        imagebutton:
+            xalign 0.05 yalign 0.05
+            idle "gui/main/start.png"
+            action Start("prologue_scene_1_1")
 
-        spacing gui.navigation_spacing
+        imagebutton:
+            xalign 0.04 yalign 0.18
+            idle "gui/main/load.png"
+            action ShowMenu("load")
+
+    # vbox:
+    #     # style_prefix "navigation"
+
+    #     xpos gui.navigation_xpos
+    #     yalign 0.5
+
+    #     spacing gui.navigation_spacing
 
         # Debug
-        textbutton _("Debug Mode: "+str(persistent.debug)) action ToggleVariable("persistent.debug")
+        # textbutton _("Debug Mode: "+str(persistent.debug)) action ToggleVariable("persistent.debug")
 
-        if main_menu:
+        # if main_menu:
 
-            textbutton _("序章") action Start("prologue_scene_1_1")
-            textbutton _("第一章") action Start("chpt1_1")
-            textbutton _("第一课") action Start("lesson1_1")
+        #     textbutton _("序章") action Start("prologue_scene_1_1")
+        #     textbutton _("第一章") action Start("chpt1_1")
+        #     textbutton _("第一课") action Start("lesson1_1")
 
-        else:
+        # else:
 
-            textbutton _("History") action ShowMenu("history")
+        #     textbutton _("History") action ShowMenu("history")
 
-            textbutton _("Save") action ShowMenu("save")
+        #     textbutton _("Save") action ShowMenu("save")
 
-        textbutton _("Load") action ShowMenu("load")
+        # textbutton _("Load") action ShowMenu("load")
 
-        textbutton _("Preferences") action ShowMenu("preferences")
+        # textbutton _("Preferences") action ShowMenu("preferences")
 
-        if _in_replay:
+        # if _in_replay:
 
-            textbutton _("End Replay") action EndReplay(confirm=True)
+        #     textbutton _("End Replay") action EndReplay(confirm=True)
 
-        elif not main_menu:
+        # elif not main_menu:
 
-            textbutton _("Main Menu") action MainMenu()
+        #     textbutton _("Main Menu") action MainMenu()
 
-        textbutton _("About") action ShowMenu("about")
+        # textbutton _("About") action ShowMenu("about")
 
-        if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
+        # if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
 
-            ## Help isn't necessary or relevant to mobile devices.
-            textbutton _("Help") action ShowMenu("help")
+        #     ## Help isn't necessary or relevant to mobile devices.
+        #     textbutton _("Help") action ShowMenu("help")
 
-        if renpy.variant("pc"):
+        # if renpy.variant("pc"):
 
-            ## The quit button is banned on iOS and unnecessary on Android and
-            ## Web.
-            textbutton _("Quit") action Quit(confirm=not main_menu)
+        #     ## The quit button is banned on iOS and unnecessary on Android and
+        #     ## Web.
+        #     textbutton _("Quit") action Quit(confirm=not main_menu)
 
 
 style navigation_button is gui_button
@@ -555,8 +570,8 @@ screen main_menu():
     add gui.main_menu_background
 
     ## This empty frame darkens the main menu.
-    frame:
-        style "main_menu_frame"
+    # frame:
+    #     style "main_menu_frame"
 
     ## The use statement includes another screen inside this one. The actual
     ## contents of the main menu are in the navigation screen.

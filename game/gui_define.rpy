@@ -12,6 +12,12 @@ image bg_cover:
 image black_bg:
     "gui/black.png"
 
+image past_cover:
+    "gui/past.png"
+
+image main_bg:
+    "gui/main/bg.png"
+
 
 ## 确认 ######################################################################
 ##

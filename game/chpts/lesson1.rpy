@@ -86,7 +86,7 @@ label lesson1_1_q1:
     show TJ 1wx at tjleft with dissolve
     TeacherTian "第一题。"
     # TODO: {播放se diyiti}
-    play sound "audio/se/sushiyin/dierti.mp3"
+    #play sound "audio/se/sushiyin/diyiti.mp3"
     pause 1.5
     menu l1_1_q1:
         '日本是先有语言还是先有文字？'
@@ -125,7 +125,7 @@ label lesson1_1_q2:
     show TJ 1wx
     TeacherTian "第二题。"
     # TODO: {播放se dierti}
-    play sound "audio/se/sushiyin/dierti.mp3"
+    #play sound "audio/se/sushiyin/dierti.mp3"
     pause 1.5
     menu l1_1_q2:
         '日语中“汉字的正用”是指什么意思？'
@@ -160,7 +160,7 @@ label lesson1_1_q3:
     show TJ 1wx
     TeacherTian "第三题。"
     #{播放se disanti}
-    play sound "audio/se/sushiyin/disanti.mp3"
+    #play sound "audio/se/sushiyin/disanti.mp3"
     pause 1.5
     menu l1_1_q3:
         '“万叶假名”中的“假”指什么意思？'
@@ -240,7 +240,7 @@ label lesson1_2_q1:
     show TJ 1wx
     TeacherTian "第一题。"
     #{播放se diyiti}
-    play sound "audio/se/sushiyin/diyiti.mp3"
+    #play sound "audio/se/sushiyin/diyiti.mp3"
     pause 1.5
     #{播放SE u}
     play sound "audio/se/sushiyin/u.mp3"
@@ -294,7 +294,7 @@ label lesson1_2_q2:
     show TJ 1wx
     TeacherTian "第二题。"
     #{播放se dierti}
-    play sound "audio/se/sushiyin/dierti.mp3"
+    #play sound "audio/se/sushiyin/dierti.mp3"
     pause 1.5
     #{播放SE ki}
     play sound "audio/se/sushiyin/ki.mp3"
@@ -349,7 +349,7 @@ label lesson1_2_q3:
     show TJ 1wx
     TeacherTian "第三题。"
     #{播放se disanti}
-    play sound "audio/se/sushiyin/disanti.mp3"
+    #play sound "audio/se/sushiyin/disanti.mp3"
     pause 1.5
     #{播放SE ko}
     play sound "audio/se/sushiyin/ko.mp3"
@@ -403,7 +403,7 @@ label lesson1_2_q4:
     show TJ 1wx
     TeacherTian "第四题。"
     #{播放se disiti}
-    play sound "audio/se/sushiyin/disiti.mp3"
+    #play sound "audio/se/sushiyin/disiti.mp3"
     pause 1.5
     #{播放SE e}
     play sound "audio/se/sushiyin/e.mp3"
@@ -457,7 +457,7 @@ label lesson1_2_q5:
     show TJ 1wx
     TeacherTian "第五题。"
     #{播放se diwuti}
-    play sound "audio/se/sushiyin/diwuti.mp3"
+    #play sound "audio/se/sushiyin/diwuti.mp3"
     pause 1.5
     #{播放SE ku}
     play sound "audio/se/sushiyin/ku.mp3"
@@ -570,7 +570,7 @@ label lesson1_3_q1:
     show TJ 1wx
     TeacherTian "第一题。"
     #{播放se diyiti}
-    play sound "audio/se/sushiyin/diyiti.mp3"
+    #play sound "audio/se/sushiyin/diyiti.mp3"
     pause 1.5
     # {播放SE  koi}
     play sound "audio/se/sushiyin/014koi2.mp3"
@@ -623,7 +623,7 @@ label lesson1_3_q2:
     #{显示立绘 TJ1wx}
     show TJ 1wx
     TeacherTian "第二题。"
-    play sound "audio/se/sushiyin/dierti.mp3"
+    #play sound "audio/se/sushiyin/dierti.mp3"
     pause 1.5
     # {播放SE  ai}
     play sound "audio/se/sushiyin/011ai2.mp3"
@@ -676,7 +676,7 @@ label lesson1_3_q3:
     #{显示立绘 TJ1wx}
     show TJ 1wx
     TeacherTian "第三题。"
-    play sound "audio/se/sushiyin/disanti.mp3"
+    #play sound "audio/se/sushiyin/disanti.mp3"
     pause 1.5
     # {播放SE  aki}
     play sound "audio/se/sushiyin/013aki2.mp3"
@@ -922,5 +922,7 @@ label lesson1_6:
     show WH 13rz
     me "复习了一下，果然思路清晰多了。"
     me "好了，时间不早了，先休息吧……"
+
+    hide WH with dissolve
 
     return
