@@ -10,14 +10,16 @@ Still In-Process :(
 
 Latest Release: [N/A]()
 
-Latest Build: [N/A]()
+Latest Build: [[22/05/22] c1.1.5](https://github.com/YuudachiXMMY/ReSeiSyun/releases/tag/c1.1.5)
 
-Pre-Release: [[22/02/23] c1.1.1](https://github.com/YuudachiXMMY/ReSeiSyun/releases/tag/c1.1.1)
+Pre-Release: [[22/05/22] c1.1.5](https://github.com/YuudachiXMMY/ReSeiSyun/releases/tag/c1.1.5)
 
 ## Release History
 
 |  Builds   |  Dates  |  Notes  |
 |  ----  |  ----  |  ----  |
+|  [[22/02/12] c1.1.5](https://github.com/YuudachiXMMY/ReSeiSyun/releases/tag/c1.1.5)  |  2022.05.22  |  Demo-Release  |
+|  [[22/02/12] c1.1.2](https://github.com/YuudachiXMMY/ReSeiSyun/releases/tag/c1.1.2)  |  2022.04.26  |  Pre-Release  |
 |  [[22/02/12] c1.1.1](https://github.com/YuudachiXMMY/ReSeiSyun/releases/tag/c1.1.1)  |  2022.02.23  |  Pre-Release  |
 |  [[22/02/12] c1.1.0](https://github.com/YuudachiXMMY/ReSeiSyun/releases/tag/c1.1.0)  |  2022.02.12  |  Pre-Release  |
 
@@ -30,7 +32,7 @@ Please follow the following directory structures to submit or change files
 |  Directories   |  Contents  |
 |  ----  | ----  |
 |  game  |  Codes  |
-|  builds  |  [N/A] Game Builds  |
+|  builds  |  Game Builds  |
 |  files/[YYYY.MM.DD]  |  甲 方 文 件  |
 
 ## fonts
@@ -39,6 +41,7 @@ Usage of fonts
 
 |  Fonts   |  Notes  |
 |  ----  | ----  |
+|  SourceHanSans-VF.ttf  | N/A  |
 |  经典中圆简.ttf  | N/A  |
 
 ## Branches
