@@ -44,7 +44,7 @@ label prologue_scene_1_1:
     "几次搬家，当年的教科书、教辅书几乎都已经换了奶茶。"
     "唯有几本日语书还一直留着……"
     #{显示一本日语书的图片 w01}
-    show w01 at wleft
+    show w01 at left
     #{播放BGM b0101 }
     play music "audio/bgm/b0101 yume.mp3"
     #{显示立绘 WH 22rz}
@@ -123,7 +123,7 @@ label prologue_scene_1_3:
     show WH 23jy
     me "这是……"
     #{显示钥匙的图片 w02}
-    show w02 at wleft
+    show w02 at left
     "突然，从书里掉落了一把钥匙。"
     "好像在哪里见到过，一时又想不起来。"
     "拿起钥匙，回忆里的一些碎片仿佛被唤醒了……"
@@ -262,7 +262,7 @@ label prologue_scene_2_1:
     me "小雨也真是的，说好的8点，自己却没到。"
     "打个电话给她问一下吧。"
     #{显示华为智能手机正在拨号的图片，2022年的手机  w03}
-    show w03 at wleft
+    show w03 at left
     #{BGM 暂停 }
     stop music fadeout 1.0
     #{播放SE s0106}
@@ -320,7 +320,8 @@ label prologue_scene_2_2:
     "学校还是十年前的模样，时间仿佛又回到了高中。"
     "不知道现在在这里学习的学生，又会是怎样的感受？"
     #{显示立绘 WH 23zm}
-    show WH 23zm at right with dissolve
+    show WH 23zm at right with dissolve:
+        xoffset -400
     me "今天是布置校庆场地吗？没听你说啊。"
     #{显示立绘 XY 21cx}
     show XY 21cx at left with dissolve
@@ -344,7 +345,8 @@ label prologue_scene_2_2:
     scene p04 zoulang
     "跟着周小雨走进熟悉的教学楼，楼道里的环境也没什么变化。"
     #{显示立绘 WH 23rz}
-    show WH 23rz at right with dissolve
+    show WH 23rz at right with dissolve:
+        xoffset -400
     me "这里是……"
     #{显示立绘 XY 23wx}
     show XY 23wx at left with dissolve
@@ -399,44 +401,50 @@ label prologue_scene_2_2:
     me "看着已经很老练了。"
     #{显示立绘 XY 22wx}
     ZhouXiaoyu "哈哈，其实已经实习半年多了。我在日本读的研究生，3月份毕业的。国内9月才能入职，所以前面半年都是实习期……"
+    hide LY
+    hide WH
+    hide XY
     "三个人正在聊天的时候，门口传来了熟悉的声音。"
     #{播放SE  s0108 开门的声音}
     play sound "audio/se/s0108 kaimen.mp3"
     #{ BGM停止}
     stop music
     #{显示立绘 ZH 21wx}
-    show WH at f_rright
-    show XY at f_right
-    show LY at f_left
-    show ZH 21wx at f_lleft with dissolve
+    show ZH 21wx at left with dissolve
     ZhengHui "好久不见啊，终于见面啦。"
     #{显示立绘 WH 23jy}
-    show WH 23jy
+    show WH 23jy at right with dissolve:
+        xoffset -400
     me "郑辉？"
-    #{播放BGM b0106 }
+    # TODO: {播放BGM b0106 }
+    # play music "audio/bgm/b0105 jiaoshi.mp3"
     #{显示立绘 LY 21gx}
-    show LY 21gx
+    show LY 21gx at middle with dissolve
     LiuYang "哈哈，是阿辉啊，别来无恙。旁边的这位是？"
+    hide LY
+    hide WH
+    hide ZH
     "三个人在打趣中把目光转向了郑辉旁边的一位妆容精致、打扮得青春靓丽的女孩。"
     #{显示立绘 ZH 21zj}
-    show ZH 21zj
+    show ZH 21zj at left with dissolve
     ZhengHui "你不认识她啦？"
     #{显示立绘 XY 23dx}
-    show XY 23dx
+    show XY 23dx at right with dissolve:
+        xoffset -200
     ZhouXiaoyu "原来是巧巧大美女啊，越来越漂亮了。"
+    hide ZH
+    hide XY
     "袁巧巧，高中时代的同班同学。当时在班里就是班花级的人物，没想到时隔多年更加时髦了，难怪刘洋没有认出来……"
     #{显示立绘 QQ 22sq}
-    show WH at fi_rright
-    show XY at fi_right
-    show LY at middle
-    show ZH 21wx at fi_left
-    show QQ 22sq at fi_lleft with dissolve
+    show QQ 22sq at left with dissolve
     YuanQiaoqiao "老了老了，你看刘博士都不认得我了。"
     #{显示立绘 XY 21cx}
-    show XY 21cx
+    show XY 21cx at right with dissolve:
+        xoffset -200
     ZhouXiaoyu "哈哈，他就是个钢铁直男，别理他。对了对了，我之前在一个网站看过你的直播，粉丝人数可不少啊。"
     "说罢，周小雨就开启了八卦模式。"
     #{显示立绘 XY 21jy}
+    show XY 21cx
     ZhouXiaoyu "你们两个人今天一起过来的吗？"
     #{显示立绘 QQ 23dy}
     show QQ 23dy
@@ -445,16 +453,22 @@ label prologue_scene_2_2:
     show XY 21dx
     ZhouXiaoyu "一开始我真没认出你来，我还以为阿辉今天带女朋友来撒狗粮呢。"
     #{显示立绘 ZH 21gg}
-    show ZH 21gg
+    show ZH 21gg at middle with dissolve
     ZhengHui "……"
     #{显示立绘 LY 22jy}
-    show LY 22jy
+    hide XY
+    hide QQ with dissolve
+    show ZH 22wn at right with dissolve:
+        xoffset -200
+    show LY 22jy at left with dissolve:
+        xoffset -200
     LiuYang "对了，你当年是学软件工程的吧。现在怎么样了？听说你开了公司？"
     #{显示立绘 ZH 22wn}
-    show ZH 22wn
+    show ZH 22wn at right
     ZhengHui "大学毕业之后在游戏公司待了一年吧，之后就出来单干了。想做点自己喜欢的游戏……"
     #{显示立绘 WH 22jy}
-    show WH 22jy
+    hide LY with dissolve
+    show WH 22jy at left with dissolve
     me "我记得高中的时候你就做过一个学日语的游戏……"
     #{显示立绘 ZH 22wx}
     show ZH 22wx
@@ -475,42 +489,51 @@ label prologue_scene_2_2:
     show ZH 22gx
     ZhengHui "其实这次还请巧巧参与了游戏的配音，她可是日本声优专业的科班出身，有百万粉丝呢。"
     #{显示立绘 QQ 21sq}
-    show QQ 21sq
+    show QQ 21sq at middle with dissolve
     YuanQiaoqiao "切，别光拍马屁，说好了游戏盈利三七开哦，你三我七。"
     #{显示立绘 ZH 21gg}
     show ZH 21gg
     ZhengHui "一定一定。"
+    hide QQ with dissolve
     "郑辉不好意思地笑了笑，转头来和我搭话。"
     ZhengHui "你现在怎么样？说了一圈还没聊你呢。"
     #{显示立绘 WH21}
     show WH 21ng
     me "我没什么好聊的，在公司混混日子而已……"
+    hide WH
+    hide ZH
     "对于郑辉突如其来的问题，我不知该如何作答。看到大家都实现了自己当初的梦想，我越发觉得失去了方向，或者说我从来没有过自己的理想……"
 
     #{显示立绘 QQ 23jy}
-    show QQ 23jy
+    show QQ 23jy at middle with dissolve
     YuanQiaoqiao "智子怎么还没到啊，不是说今天要来的吗？"
     #{显示立绘 XY 23dy}
-    show XY 23dy
+    show XY 23dy at right with dissolve:
+        xoffset -200
     ZhouXiaoyu "是啊，我也联系不上她。说是昨天晚上的飞机，可能是晚点了吧。"
     #{显示立绘 LY 21wx}
-    show LY 21wx
+    show LY 21wx at left with dissolve
     LiuYang "智子现在怎么样？"
     #{播放BGM b0105  }
     play music "audio/bgm/b0105 jiaoshi.mp3"
     #{显示立绘 XY 23dy}
+    hide QQ
+    hide LY
     show XY 23dy
     ZhouXiaoyu "在日本的时候，我跟她一直都有联系。她现在在日本一家电视台工作，天天录节目，这次回来也是推了很多工作。"
     #{显示立绘 LY 22wx}
-    show LY 22wx
+    show LY 22wx at left with dissolve
     LiuYang "智子当年的梦想就是当记者，电视台的工作挺适合她的。"
+    hide LY
+    hide XY
     "看着刘洋满心欢喜地讲着智子，我的脑海中不由地浮现出十年前的画面。当年智子来中国留学的时候，刘洋是她的同桌。"
     "刘洋当年日语很好，所以和智子聊得很投缘。班里的同学也都看得出他们彼此有好感，看来刘洋果然很喜欢她。"
     #{显示立绘 QQ 22xf}
-    show  QQ 22xf
+    show  QQ 22xf at right with dissolve:
+        xoffset -200
     YuanQiaoqiao "对了，我们的十年之约大家都还记得吧？"
     #{显示立绘 XY 22dx}
-    show XY 22dx
+    show XY 22dx at left with dissolve
     ZhouXiaoyu "你说的是那个时光宝盒吧。"
     "十年之约是当时智子回国前与我们的约定，大家将自己的梦想和心愿放在“时光宝盒”中，十年之后再一起打开。"
     #{显示立绘 XY 22jy}
@@ -519,26 +542,31 @@ label prologue_scene_2_2:
     #{播放BGM b0107 }
     play music "audio/bgm/b0107 shiguangbaohe.mp3"
     #{显示立绘 LY 21hz}
-    show LY 21hz
+    hide QQ with dissolve
+    show LY 21hz at right with dissolve:
+        xoffset -200
     LiuYang "应该不会已经被人打开了吧？过了这么久，还在那里吗？"
     #{显示立绘 ZH 21wx}
-    show ZH 21wx
+    hide XY with dissolve
+    show ZH 21wx at left with dissolve
     ZhengHui "不会，不会，当年不是说了嘛，最危险的地方就是最安全的地方。"
+    hide ZH
+    hide LY
     "当年原本周小雨提议埋在校园的樱花树下，后来还是作罢了。一来担心破坏了树根，二来怕被人发现。"
     "不知道是谁提议说书架后面有一块盖板可以打开，可以放在那里面。盖板后面原本是多媒体设备的工具箱，更换了投屏系统以后就空置了。"
     "郑辉是当时班里的信息课代表，有工具箱的钥匙。于是大家便把“时光宝盒”藏在了那里面。"
     #{显示立绘 XY 22cx}
-    show XY 22cx
-    ZhouXiaoyu "嘿嘿，我来实习的第一天就检查过了，这个书架一直没有挪动过，应该没有人发现。"
+    show XY 22cx at right with dissolve
     #{显示书架特写图片 w04}
-    show w04 at wleft with dissolve
+    show w04 at left with dissolve
+    ZhouXiaoyu "嘿嘿，我来实习的第一天就检查过了，这个书架一直没有挪动过，应该没有人发现。"
     #{显示立绘 ZH 21gx}
-    show ZH 21gx
+    show ZH 21gx at middle with dissolve
     ZhengHui "刘洋，来搭把手。我们把书架推开吧。"
     #{图片 w04消失
     hide w04 with dissolve
     #{显示立绘 LY 23gx}
-    show LY 23gx
+    show LY 23gx at left with dissolve
     LiuYang "好嘞。"
     #{播放SE s0109 推开书架声音}
     play sound "audio/se/s0109 shujia.mp3"
@@ -549,7 +577,7 @@ label prologue_scene_2_2:
     scene p05 jiaoshixin2 with dissolve
     "书架上放满了书，加上原本就是钢制的，花了不少力气，终于推开一个人能进出的口子。"
     #{显示箱子背后的特写图片 w05}
-    show w05 at wleft with dissolve
+    show w05 at left with dissolve
     pause
     #{显示立绘 XY 23wx}
     show XY 23wx at t_right with dissolve
@@ -559,36 +587,43 @@ label prologue_scene_2_2:
     YuanQiaoqiao "啊呀！我们没有钥匙啊。"
     #{图片 w05消失}
     hide w05 with dissolve
+    hide WH
+    hide QQ
+    hide XY
     "大家突然想起来，当年为了十年之内不开启这扇回忆之门，大家把钥匙交给了智子保管……"
     "这时，我突然想起了口袋里的那把钥匙。昨天整理房间时，从日语书中掉出来的……"
     #{显示立绘 WH 22rz}
-    show QQ 21tq at t_left
-    show XY 23wx at middle
-    show WH 22rz at t_right with dissolve
+    show WH 22rz at right with dissolve:
+        xoffset -200
     me "是不是这把？"
     #{显示钥匙的图片 w02}
-    show w02 at wleft with dissolve
+    show w02 at left with dissolve
     #{显示立绘 XY 23jy}
-    show XY 23jy
+    show XY 23jy at middle with dissolve
     ZhouXiaoyu "咦，为什么在你那儿？"
     #{显示立绘 QQ 21xf}
-    show QQ 21xf
+    show QQ 21xf at left with dissolve
     YuanQiaoqiao "别管这些了，赶快试试吧。"
     #{图片 w02消失}
     hide w02 with dissolve
+    hide WH
+    hide XY
+    hide QQ
     "大家都感到很诧异。正准备追问的时候，袁巧巧已经一把抢过钥匙，打开了工具箱。"
     #{显示立绘 QQ 22gx}
-    show QQ 22gx
+    show QQ 22gx at middle with dissolve
     YuanQiaoqiao "果然就是这把钥匙！太棒了！"
     YuanQiaoqiao "哇，在里面！没想到真的能保存那么久，太好玩了，像密室逃脱游戏一样。"
     #{显示立绘 XY 21jy}
-    show XY 21jy
+    hide QQ with dissolve
+    show XY 21jy at right with dissolve:
+        xoffset -200
     ZhouXiaoyu "这就是……"
     #{显示时光宝盒的图片 w06}
-    show w06 at wleft with dissolve
+    show w06 at left with dissolve
     "周小雨拿起略带灰尘的盒子，上面有一把密码锁。"
     #{显示立绘 WH 22zm}
-    show WH 22zm
+    show WH 22zm at left with dissolve
     me "好熟悉的盒子……"
     me "唉，当年好像没有密码锁啊……。"
     #{显示立绘 XY 21zm}
@@ -632,15 +667,16 @@ label prologue_scene_2_choice_1B:
 
 label prologue_scene_2_3:
     #{显示立绘 LY 22wx}
-    show WH at f_rright
-    show XY at f_right
-    show QQ at f_left:
-        xoffset 100
-    show LY 22wx at f_lleft with dissolve
+    hide XY
+    hide WH
+    show LY 22wx at left with dissolve
     LiuYang "都是一些文化测试题。看来是有人要考我们。王浩，你来看看。"
     #{显示立绘 WH 22rz}
-    show WH 22rz
+    show WH 22rz at right with dissolve:
+        xoffset -400
     me "这些问题好像在哪里见过……"
+    hide WH
+    hide LY
 
     jump prologue_scene_2_3_Baohe
 
@@ -726,29 +762,37 @@ label prologue_scene_2_3_Baohe:
 label prologue_scene_2_3_Baohe_NotOpened:
     #如打开宝盒参数 不等于4
     #{显示立绘 WH 22rz}
-    show WH 22rz
+    show WH 22rz at right with dissolve:
+        xoffset -200
     me "我来试试是不是这个密码……"
     #{播放SE s01092锁没打开的声音}
     play sound 'audio/se/s01092 dabukaisuo.mp3'
     #{显示立绘 QQ 21tq}
-    show QQ 21tq
+    show QQ 21tq at left with dissolve
     YuanQiaoqiao "好像不对，再检查一下吧。"
+    hide QQ
+    hide WH
     #宝盒参数归零
     $ Baohe = 0
+    $ HaoGan = HaoGan-(prologue_answer[2]+prologue_answer[3]+prologue_answer[4]+prologue_answer[5])
 
     jump prologue_scene_2_3_Baohe
 
 label prologue_scene_2_3_Baohe_Opened:
     #如打开宝盒参数 等于4
     #{显示立绘 WH 22rz}
-    show WH 22rz
+    show WH 22rz at right with dissolve:
+        xoffset -200
     me "嗯……题目的答案应该是1312……"
     #{显示立绘 QQ 23wx}
-    show QQ 23wx
+    show QQ 23wx at left with dissolve
     YuanQiaoqiao "或许这个就是密码，赶快试一下。"
     play sound 'audio/se/s0110 kaisuo.mp3'
+    hide QQ
+    hide WH
     "周小雨转动密码“1312”，密码锁打开了……"
     #{播放SE s0110锁被打开的声音}
+    play sound "audio/se/s0110 kaisuo.mp3"
     #{BGM 停止 }
     stop music
     jump prologue_scene_2_4
@@ -756,12 +800,15 @@ label prologue_scene_2_3_Baohe_Opened:
 
 label prologue_scene_2_4:
     #{显示立绘 QQ 23xf}
-    show QQ 23xf
+    show QQ 23xf at right with dissolve:
+        xoffset -200
     YuanQiaoqiao "果然是这个数字，王浩你太厉害了！"
     #{显示立绘 XY2jy}
-    show XY 22jy
+    show XY 22jy at left with dissolve
     ZhouXiaoyu "啊，是我们当年留下的东西……"
-    show w07 at wleft with dissolve
+    show w07 at left with dissolve
+    hide XY
+    hide QQ
     "开启尘封已久的“时光宝盒”，里面有六张颜色各异的彩纸。上面写着每个人的名字：周小雨、刘洋、郑辉、袁巧巧、王浩、高桥智子。"
     #{显示6张颜色不同的彩纸的图片 w07}
     "大家小心翼翼地拿起写着自己名字的彩纸，并打开阅读了起来。"
@@ -769,37 +816,41 @@ label prologue_scene_2_4:
     #{播放BGM b0102  }
     play music "audio/bgm/b0102 houkagonoyuzora.mp3"
     #{显示立绘 QQ 21gx}
-    show QQ 21gx
+    show QQ 21gx at right with dissolve:
+        xoffset -200
     YuanQiaoqiao "说好了大家要公开的，别自己看啊，分享一下嘛。班长，要不你先来吧。"
     #{显示立绘 XY 23bx}
-    show XY 23bx
+    show XY 23bx at left with dissolve
     ZhouXiaoyu "行啊。我的太普通了。我写的梦想就是“将来成为一名音乐老师”。没想梦想成真，还回到了母校。"
     #{显示立绘 XY 23wx}
     show XY 23wx
     ZhouXiaoyu "大家也来说说吧。"
+    hide XY
+    hide QQ
     "周小雨催促大家分享自己的梦想和心愿。"
     #{显示立绘 ZH 22gg}
-    show WH at fi_rright
-    show XY at fi_right
-    show QQ at middle:
-        xoffset 100
-    show LY at fi_left
-    show ZH 22gg at fi_lleft with dissolve
+    show ZH 22gg at right with dissolve:
+        xoffset -200
     ZhengHui "我的梦想是“做一款自己开发的游戏”，不过现在还在努力中，嘿嘿。"
     #{显示立绘 WH 21my}
-    show WH 21my
+    show WH 21my at left with dissolve
     me "马上就会实现了。大家都能坚持自己的梦想，太厉害了。"
     #{显示立绘 XY 23wx}
-    show XY 23wx
+    hide WH
+    hide ZH
+    show XY 23wx at right with dissolve:
+        xoffset -200
     ZhouXiaoyu "你呢，巧巧？也说说你的梦想呗。"
     #{显示立绘 QQ 22wx}
-    show QQ 22wx
+    show QQ 22wx at left with dissolve
     YuanQiaoqiao "嘻嘻，我当年想做一个“职业coser”，现在想想还挺幼稚的。"
     #{显示立绘 LY 23qx}
-    show LY 23qx
+    hide XY with dissolve
+    show LY 23qx at right with dissolve:
+        xoffset -200
     LiuYang "做配音演员不也是二次元嘛，都一样。"
     #{显示立绘 QQ 21sq}
-    show QQ 21sq
+    show QQ 21sq at left with dissolve
     YuanQiaoqiao "拜托，那叫“声优”，可不光配动画作品。"
     #{显示立绘 QQ 21dy}
     show QQ 21dy
@@ -808,62 +859,77 @@ label prologue_scene_2_4:
     show LY 21hz
     LiuYang "我……"
     LiuYang "我没什么特别的，就是好好学习天天向上呗。"
+    hide LY
+    hide QQ
     "突然被袁巧巧这么一问，刘洋显得有些不好意思。"
     #{显示立绘 XY 21jy}
-    show XY 21jy
+    show XY 21jy at right with dissolve:
+        xoffset -200
     ZhouXiaoyu "「彼女に本当の気持ちを伝える」（想告诉她我的心意）。"
     #{显示立绘 XY 21cx}
     show XY 21cx
     ZhouXiaoyu "哈哈，还写日文呢。“她”是谁啊？"
+    hide XY with dissolve
     "周小雨偷偷瞄到了刘洋手里彩纸上的内容。"
     #{播放SE s1011 团纸头的声音}
     play sound "audio/se/s0111 zhituan.mp3"
     #{显示立绘 LY 21hz}
-    show LY 21hz
+    show LY 21hz at right with dissolve:
+        xoffset -200
     "刘洋显得有些慌乱，急忙把刚刚打开的彩纸塞进了口袋。"
     #{显示立绘 XY 23cx}
-    show XY 23cx
+    show XY 23cx at left with dissolve
     ZhouXiaoyu "哎呀，别不好意思了，又不是高中生了，扭扭捏捏的干什么。没想到当年你有暗恋的对象啊。"
     #{显示立绘 LY 22rz}
     show LY 22rz
     LiuYang "别瞎说，没那回事。"
     #{显示立绘 QQ 21xf}
-    show QQ 21xf
+    hide XY
+    show QQ 21xf at left with dissolve
     YuanQiaoqiao "哎哟，看来当年的传闻是真的咯。"
     #{显示立绘 ZH 21zj}
-    show ZH 21zj
+    hide LY
+    show ZH 21zj at right with dissolve:
+        xoffset -200
     ZhengHui "谁啊谁啊，我怎么不知道？"
     #{显示立绘 QQ 21sq}
     show QQ 21sq
     YuanQiaoqiao "切，你这个木瓜脑袋怎么会知道。"
+    hide QQ
+    hide ZH
     "袁巧巧说的那个传闻应该和智子有关。当年智子和刘洋是同桌，两个人平时就很默契，也一直聊得很开心。"
     "不知是谁说有一天晚上看到刘洋和智子在校园里卿卿我我，你一句我一句便传开了。"
     "但刘洋矢口否认，谣言也就不了了之。"
     "现在看到刘洋在彩纸上写下的心愿，想必当年的传闻……"
     #{显示立绘 LY 23hz}
-    show LY 23hz
+    show LY 23hz at middle with dissolve
     LiuYang "别瞎猜啦，不是你们想的那样。"
+    hide LY with dissolve
     "看到大家都在调侃起哄，刘洋急忙否认。"
     #{停止BGM  }
     stop music
     #{显示立绘 QQ 21xf}
-    show QQ 21xf
+    show QQ 21xf at middle with dissolve
     YuanQiaoqiao "行了行了，别狡辩了。看看智子的心愿不就知道了。"
+    hide QQ with dissolve
     "袁巧巧突然从时光宝盒里拿走了智子的心愿纸。"
     #{显示打开的宝盒里只剩下 1张彩纸的图片 w08}
-    show w08 at wleft with dissolve
+    show w08 at left with dissolve
 
     #{显示立绘 WH 21kx}
-    show WH 21kx
+    show WH 21kx at right with dissolve:
+        xoffset -200
     me "这样不好吧，应该由智子自己来打开才对。"
     #{显示立绘 QQ 21xf}
-    show QQ 21xf
+    show QQ 21xf at left with dissolve
     YuanQiaoqiao "哈哈，该不会你也喜欢智子吧？"
     #{显示立绘 WH 23kx}
     show WH 22kx
     me "哪……哪有……我……"
     #{播放SE s0112跑步的声音}
     play sound 'audio/se/s0112 paobu.mp3'
+    hide WH
+    hide QQ
     "袁巧巧眼看我要去抢她手中的彩纸，一边转身往走廊上跑，一边打开纸片准备读。"
 
     #{显示选项  文本框居中，选项竖排1 2}
@@ -886,8 +952,9 @@ label prologue_scene_2_choice_6A:
 label prologue_scene_2_choice_6B:
     #选择2.
     #{显示立绘 WH 23jy}
-    show WH 23jy
+    show WH 23jy at middle with dissolve
     me "……"
+    hide WH
     "虽然极力想抑制住自己内心的激动，但我还是不由自主地追了上去……"
 
     jump prologue_scene_2_5
@@ -895,11 +962,11 @@ label prologue_scene_2_choice_6B:
 label prologue_scene_2_5:
     me "等等！"
     #{显示立绘 QQ 22jy}
-    show QQ 22jy
+    show QQ 22jy at middle with dissolve
     YuanQiaoqiao "啊！"
     #{播放SE s0113倒在地上的撞击声 }
     play sound 'audio/se/s0113 zhuangdao.mp3'
-    scene black_bg
+    scene black_bg with dissolve
     "伴随着袁巧巧的一声尖叫，不知怎么回事，我突然感觉到身体向前倾斜……
     随后眼前一黑……"
 

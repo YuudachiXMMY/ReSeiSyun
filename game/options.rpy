@@ -183,16 +183,20 @@ init python:
     build.classify('**/.**', None)
     build.classify('**/#**', None)
     build.classify('**/thumbs.db', None)
-    build.classify('files/*', None)
-    build.classify('*.psd', None)
-    build.classify('*.zip', None)
-    build.classify('*.7z', None)
+    build.classify('files/**', None)
+    build.classify('builds/**', None)
+    build.classify('**/*.psd', None)
+    build.classify('**/*.zip', None)
+    build.classify('**/*.7z', None)
+    build.classify('**/*.py', None)
+    build.classify('**/*.txt', None)
+    build.classify('**/*.pptx', None)
 
 
     ## To archive files, classify them as 'archive'.
 
-    # build.classify('game/**.png', 'archive')
-    # build.classify('game/**.jpg', 'archive')
+    build.classify('game/**.png', 'archive')
+    build.classify('game/**.jpg', 'archive')
 
     ## Files matching documentation patterns are duplicated in a mac app build,
     ## so they appear in both the app and the zip file.
