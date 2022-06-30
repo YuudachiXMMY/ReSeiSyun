@@ -131,238 +131,291 @@ screen bunka_review():
 
 screen review_slots(title):
 
-    fixed:
+    tag menu
 
-        if main_menu:
-            add "main_bg"
+    # if main_menu:
+    #     add "main_bg"
 
-        add "bg_cover"
+    add "bg_cover"
 
-        # 假名回顾
+    # 假名回顾
+    if renpy.get_screen("kana_review"):
+        button:
+            xysize(206, 68)
+            idle_background "sl_sl_btn_idle"
+            hover_background "sl_sl_btn_hover"
+            text "单词回顾":
+                align(.3, .5)
+                style "sl_page"
+                size 36 color "#ffffff"
+            xalign 0.03 yalign 0.22
+            action ShowMenu("vocab_review")
+        button:
+            xysize(206, 68)
+            idle_background "sl_sl_btn_idle"
+            hover_background "sl_sl_btn_hover"
+            text "对话回顾":
+                align(.3, .5)
+                style "sl_page"
+                size 36 color "#ffffff"
+            xalign 0.03 yalign 0.31
+            action ShowMenu("conversation_review")
+        button:
+            xysize(206, 68)
+            idle_background "sl_sl_btn_idle"
+            hover_background "sl_sl_btn_hover"
+            text "文化常识":
+                align(.3, .5)
+                style "sl_page"
+                size 36 color "#ffffff"
+            xalign 0.03 yalign 0.4
+            action ShowMenu("bunka_review")
+        add "sl_bg" align(0.5, 0.5)
+        # add "sl_sl_btn_hover" xalign 0.03 yalign 0.22
+        button:
+            xysize(206, 68)
+            idle_background "sl_sl_btn_hover"
+            hover_background "sl_sl_btn_hover"
+            text "假名回顾":
+                align(.3, .5)
+                style "sl_page"
+                size 36 color "#50350f"
+            xalign 0.03 yalign 0.13
+            action NullAction()
+    # 单词回顾
+    elif renpy.get_screen("vocab_review"):
+        button:
+            xysize(206, 68)
+            idle_background "sl_sl_btn_idle"
+            hover_background "sl_sl_btn_hover"
+            text "假名回顾":
+                align(.3, .5)
+                style "sl_page"
+                size 36 color "#ffffff"
+            xalign 0.03 yalign 0.13
+            action ShowMenu("kana_review")
+        button:
+            xysize(206, 68)
+            idle_background "sl_sl_btn_idle"
+            hover_background "sl_sl_btn_hover"
+            text "对话回顾":
+                align(.3, .5)
+                style "sl_page"
+                size 36 color "#ffffff"
+            xalign 0.03 yalign 0.31
+            action ShowMenu("conversation_review")
+        button:
+            xysize(206, 68)
+            idle_background "sl_sl_btn_idle"
+            hover_background "sl_sl_btn_hover"
+            text "文化常识":
+                align(.3, .5)
+                style "sl_page"
+                size 36 color "#ffffff"
+            xalign 0.03 yalign 0.4
+            action ShowMenu("bunka_review")
+        add "sl_bg" align(0.5, 0.5)
+        # add "sl_sl_btn_hover" xalign 0.03 yalign 0.13
+        button:
+            xysize(206, 68)
+            idle_background "sl_sl_btn_hover"
+            hover_background "sl_sl_btn_hover"
+            text "单词回顾":
+                align(.3, .5)
+                style "sl_page"
+                size 36 color "#50350f"
+            xalign 0.03 yalign 0.22
+            action NullAction()
+    # 对话回顾
+    elif renpy.get_screen("conversation_review"):
+        button:
+            xysize(206, 68)
+            idle_background "sl_sl_btn_idle"
+            hover_background "sl_sl_btn_hover"
+            text "假名回顾":
+                align(.3, .5)
+                style "sl_page"
+                size 36 color "#ffffff"
+            xalign 0.03 yalign 0.13
+            action ShowMenu("kana_review")
+        button:
+            xysize(206, 68)
+            idle_background "sl_sl_btn_idle"
+            hover_background "sl_sl_btn_hover"
+            text "单词回顾":
+                align(.3, .5)
+                style "sl_page"
+                size 36 color "#ffffff"
+            xalign 0.03 yalign 0.22
+            action ShowMenu("vocab_review")
+        button:
+            xysize(206, 68)
+            idle_background "sl_sl_btn_idle"
+            hover_background "sl_sl_btn_hover"
+            text "文化常识":
+                align(.3, .5)
+                style "sl_page"
+                size 36 color "#ffffff"
+            xalign 0.03 yalign 0.4
+            action ShowMenu("bunka_review")
+        add "sl_bg" align(0.5, 0.5)
+        # add "sl_sl_btn_hover" xalign 0.03 yalign 0.13
+        button:
+            xysize(206, 68)
+            idle_background "sl_sl_btn_hover"
+            hover_background "sl_sl_btn_hover"
+            text "对话回顾":
+                align(.3, .5)
+                style "sl_page"
+                size 36 color "#50350f"
+            xalign 0.03 yalign 0.31
+            action NullAction()
+    # 文化常识
+    elif renpy.get_screen("bunka_review"):
+        button:
+            xysize(206, 68)
+            idle_background "sl_sl_btn_idle"
+            hover_background "sl_sl_btn_hover"
+            text "假名回顾":
+                align(.3, .5)
+                style "sl_page"
+                size 36 color "#ffffff"
+            xalign 0.03 yalign 0.13
+            action ShowMenu("kana_review")
+        button:
+            xysize(206, 68)
+            idle_background "sl_sl_btn_idle"
+            hover_background "sl_sl_btn_hover"
+            text "单词回顾":
+                align(.3, .5)
+                style "sl_page"
+                size 36 color "#ffffff"
+            xalign 0.03 yalign 0.22
+            action ShowMenu("vocab_review")
+        button:
+            xysize(206, 68)
+            idle_background "sl_sl_btn_idle"
+            hover_background "sl_sl_btn_hover"
+            text "对话回顾":
+                align(.3, .5)
+                style "sl_page"
+                size 36 color "#ffffff"
+            xalign 0.03 yalign 0.31
+            action ShowMenu("conversation_review")
+        add "sl_bg" align(0.5, 0.5)
+        # add "sl_sl_btn_hover" xalign 0.03 yalign 0.13
+        button:
+            xysize(206, 68)
+            idle_background "sl_sl_btn_hover"
+            hover_background "sl_sl_btn_hover"
+            text "文化常识":
+                align(.3, .5)
+                style "sl_page"
+                size 36 color "#50350f"
+            xalign 0.03 yalign 0.4
+            action NullAction()
+
+    use review_menu(_("Review"), scroll=("vpgrid" if 1010 else "viewport"), yinitial=0.0):
+
+        style_prefix "review"
+
+
         if renpy.get_screen("kana_review"):
-            button:
-                xysize(206, 68)
-                idle_background "sl_sl_btn_idle"
-                hover_background "sl_sl_btn_hover"
-                text "单词回顾":
-                    align(.3, .5)
-                    style "sl_page"
-                    size 36 color "#ffffff"
-                xalign 0.03 yalign 0.22
-                action ShowMenu("vocab_review")
-            button:
-                xysize(206, 68)
-                idle_background "sl_sl_btn_idle"
-                hover_background "sl_sl_btn_hover"
-                text "对话回顾":
-                    align(.3, .5)
-                    style "sl_page"
-                    size 36 color "#ffffff"
-                xalign 0.03 yalign 0.31
-                action ShowMenu("conversation_review")
-            button:
-                xysize(206, 68)
-                idle_background "sl_sl_btn_idle"
-                hover_background "sl_sl_btn_hover"
-                text "文化常识":
-                    align(.3, .5)
-                    style "sl_page"
-                    size 36 color "#ffffff"
-                xalign 0.03 yalign 0.4
-                action ShowMenu("bunka_review")
-            add "sl_bg" align(0.5, 0.5)
-            # add "sl_sl_btn_hover" xalign 0.03 yalign 0.22
-            button:
-                xysize(206, 68)
-                idle_background "sl_sl_btn_hover"
-                hover_background "sl_sl_btn_hover"
-                text "假名回顾":
-                    align(.3, .5)
-                    style "sl_page"
-                    size 36 color "#50350f"
-                xalign 0.03 yalign 0.13
-                action NullAction()
-        # 单词回顾
+            $ review_tmp_lst = chpt1_answer_kana
         elif renpy.get_screen("vocab_review"):
-            button:
-                xysize(206, 68)
-                idle_background "sl_sl_btn_idle"
-                hover_background "sl_sl_btn_hover"
-                text "假名回顾":
-                    align(.3, .5)
-                    style "sl_page"
-                    size 36 color "#ffffff"
-                xalign 0.03 yalign 0.13
-                action ShowMenu("kana_review")
-            button:
-                xysize(206, 68)
-                idle_background "sl_sl_btn_idle"
-                hover_background "sl_sl_btn_hover"
-                text "对话回顾":
-                    align(.3, .5)
-                    style "sl_page"
-                    size 36 color "#ffffff"
-                xalign 0.03 yalign 0.31
-                action ShowMenu("conversation_review")
-            button:
-                xysize(206, 68)
-                idle_background "sl_sl_btn_idle"
-                hover_background "sl_sl_btn_hover"
-                text "文化常识":
-                    align(.3, .5)
-                    style "sl_page"
-                    size 36 color "#ffffff"
-                xalign 0.03 yalign 0.4
-                action ShowMenu("bunka_review")
-            add "sl_bg" align(0.5, 0.5)
-            # add "sl_sl_btn_hover" xalign 0.03 yalign 0.13
-            button:
-                xysize(206, 68)
-                idle_background "sl_sl_btn_hover"
-                hover_background "sl_sl_btn_hover"
-                text "单词回顾":
-                    align(.3, .5)
-                    style "sl_page"
-                    size 36 color "#50350f"
-                xalign 0.03 yalign 0.22
-                action NullAction()
-        # 对话回顾
+            $ review_tmp_lst = chpt1_answer_tango
         elif renpy.get_screen("conversation_review"):
-            button:
-                xysize(206, 68)
-                idle_background "sl_sl_btn_idle"
-                hover_background "sl_sl_btn_hover"
-                text "假名回顾":
-                    align(.3, .5)
-                    style "sl_page"
-                    size 36 color "#ffffff"
-                xalign 0.03 yalign 0.13
-                action ShowMenu("kana_review")
-            button:
-                xysize(206, 68)
-                idle_background "sl_sl_btn_idle"
-                hover_background "sl_sl_btn_hover"
-                text "单词回顾":
-                    align(.3, .5)
-                    style "sl_page"
-                    size 36 color "#ffffff"
-                xalign 0.03 yalign 0.22
-                action ShowMenu("vocab_review")
-            button:
-                xysize(206, 68)
-                idle_background "sl_sl_btn_idle"
-                hover_background "sl_sl_btn_hover"
-                text "文化常识":
-                    align(.3, .5)
-                    style "sl_page"
-                    size 36 color "#ffffff"
-                xalign 0.03 yalign 0.4
-                action ShowMenu("bunka_review")
-            add "sl_bg" align(0.5, 0.5)
-            # add "sl_sl_btn_hover" xalign 0.03 yalign 0.13
-            button:
-                xysize(206, 68)
-                idle_background "sl_sl_btn_hover"
-                hover_background "sl_sl_btn_hover"
-                text "对话回顾":
-                    align(.3, .5)
-                    style "sl_page"
-                    size 36 color "#50350f"
-                xalign 0.03 yalign 0.31
-                action NullAction()
-        # 文化常识
+            $ review_tmp_lst = chpt1_C_answer_kaiwa
         elif renpy.get_screen("bunka_review"):
-            button:
-                xysize(206, 68)
-                idle_background "sl_sl_btn_idle"
-                hover_background "sl_sl_btn_hover"
-                text "假名回顾":
-                    align(.3, .5)
-                    style "sl_page"
-                    size 36 color "#ffffff"
-                xalign 0.03 yalign 0.13
-                action ShowMenu("kana_review")
-            button:
-                xysize(206, 68)
-                idle_background "sl_sl_btn_idle"
-                hover_background "sl_sl_btn_hover"
-                text "单词回顾":
-                    align(.3, .5)
-                    style "sl_page"
-                    size 36 color "#ffffff"
-                xalign 0.03 yalign 0.22
-                action ShowMenu("vocab_review")
-            button:
-                xysize(206, 68)
-                idle_background "sl_sl_btn_idle"
-                hover_background "sl_sl_btn_hover"
-                text "对话回顾":
-                    align(.3, .5)
-                    style "sl_page"
-                    size 36 color "#ffffff"
-                xalign 0.03 yalign 0.31
-                action ShowMenu("conversation_review")
-            add "sl_bg" align(0.5, 0.5)
-            # add "sl_sl_btn_hover" xalign 0.03 yalign 0.13
-            button:
-                xysize(206, 68)
-                idle_background "sl_sl_btn_hover"
-                hover_background "sl_sl_btn_hover"
-                text "文化常识":
-                    align(.3, .5)
-                    style "sl_page"
-                    size 36 color "#50350f"
-                xalign 0.03 yalign 0.4
-                action NullAction()
+            $ review_tmp_lst = chpt1_C_answer_bunka
+        else:
+            $ review_tmp_lst = ["Error"]
+        for i in review_tmp_lst:
+            window:
+                background "review_button_bg"
+                window:
+                    xysize(1336, 158)
+                    xfill True yfill True
+                    text str(i):
+                        xoffset 40 yoffset 10
+                        font "SourceHanSans-VF.ttf"
+                        color "#000000"
 
-        imagebutton:
-            xalign 0.87 yalign 0.1
-            auto "sl_close_%s"
-            action Return()
-
-        grid 3 3:
-            style_prefix "slot"
-            align(0.5, 0.5)
-            xspacing 40
-            yspacing 30
-
-            for i in range (1, 10):
-                button:
-                    xysize(418, 256)
-                    idle_background "sl_slot_bg"
-                    hover_background "sl_slot_bg_hover"
-                    action FileAction(i)
-                    add "sl_slot_bg" align(0.5,0.5)
-                    # text FileTime(i, format=_("{#file_time}%Y年%B%d日  %H:%M"), empty=_("")):
-                    #     color "#fff" xalign 0.5 ypos 240 size 30
-                    # # Delete Slot
-                    # if FileLoadable(i):
-                    #     imagebutton:
-                    #         xalign 1.0
-                    #         auto "sl_delete_%s"
-                    #         action FileDelete(i)
-                    # else:
-                    if True:
-                        # FileSlotName(i, int(FileCurrentPage()))
-                        $ cur_page = FileCurrentPage()
-                        if cur_page == "1":
-                            $ num = i
-                        else:
-                            $ num = i - 1
-                        $ res = str(int(cur_page) - 1) + "%s"%str(num)
-                        text str(res):
-                            align(0.5, 0.5)
-                            style "sl_page"
-                            size 56 bold True
-                        # text "NO DATA":
-                        #     align(0.5, 0.7)
-                        #     style "sl_page"
-                        #     size 18 bold True
-                    add FileScreenshot(i) align(0.5,0.5) size(389, 230)
-                    key "save_delete" action FileDelete(i)
+    imagebutton:
+        xalign 0.87 yalign 0.1
+        auto "sl_close_%s"
+        action Return()
 
 
+style review_window is empty
 
+style review_window:
+    xfill True
+    yfill True
+    xsize 1370
+    ysize 158
+
+
+screen review_menu(title, scroll=None, yinitial=0.0):
+
+    frame:
+        align(0.5, 0.5)
+        top_padding 150
+        bottom_padding 150
+        left_padding 210
+        right_padding 200
+        background None
+
+        hbox:
+
+            ## 导航部分的预留空间。
+            # frame:
+            #     style "game_menu_navigation_frame"
+
+            frame:
+                style_prefix "review_menu"
+
+                background None
+
+                # if scroll == "viewport":
+
+                #     viewport:
+                #         yinitial yinitial
+                #         scrollbars "vertical"
+                #         mousewheel True
+                #         draggable True
+                #         pagekeys True
+
+                #         side_yfill True
+
+                #         spacing 40
+
+                #         vbox:
+                #             transclude
+
+                if scroll == "vpgrid":
+
+                    vpgrid:
+                        cols 1
+                        yinitial yinitial
+
+                        scrollbars "vertical"
+                        mousewheel True
+                        draggable True
+                        pagekeys True
+
+                        side_yfill True
+
+                        spacing 40
+
+                        transclude
+
+                else:
+
+                    transclude
+
+# style review_menu_scrollbars:
+#     xalign 0.9
 
 ## Say screen ##################################################################
 ##
