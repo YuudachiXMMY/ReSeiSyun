@@ -338,7 +338,7 @@ screen review_slots(title):
                     xfill True yfill True
                     text str(i):
                         xoffset 40 yoffset 10
-                        font "SourceHanSans-VF.ttf"
+                        font "SourceHanSansCN-Bold.otf"
                         color "#000000"
 
     imagebutton:
@@ -1257,7 +1257,7 @@ style sl_page is text
 style sl_page_text:
     xalign 0.5 yalign 0.845
     size 42
-    # font "SourceHanSans-VF.ttf"
+    # font "SourceHanSansCN-Bold.otf"
     color "#50350f"
 
 
@@ -1392,7 +1392,7 @@ screen preferences():
 
 
 style mute_setting_label_text:
-    font "SourceHanSans-VF.ttf"
+    font "SourceHanSansCN-Bold.otf"
     size 36
     color "#50350f"
 
@@ -1614,13 +1614,13 @@ screen history():
                 if h.who:
                     text "“" + what + "”":
                         substitute False
-                        font "SourceHanSans-VF.ttf"
+                        font "SourceHanSansCN-Bold.otf"
                         color "#ffffff"
                 else:
                     text what:
                         xoffset 35
                         substitute False
-                        font "SourceHanSans-VF.ttf"
+                        font "SourceHanSansCN-Bold.otf"
                         color "#a9a9a9"
 
                 if h.voice.filename != None:
@@ -1661,7 +1661,7 @@ style history_name:
 
 style history_name_text:
     size 40
-    font "SourceHanSans-VF.ttf"
+    font "SourceHanSansCN-Bold.otf"
     color "#a9a9a9"
     min_width gui.history_name_width
     text_align gui.history_name_xalign
@@ -1683,7 +1683,7 @@ style history_label:
 style history_label_text:
     xalign 0.5
     size 48
-    font "SourceHanSans-VF.ttf"
+    font "SourceHanSansCN-Bold.otf"
     color "#989898"
 
 
@@ -2132,7 +2132,7 @@ style skip_text:
 style skip_triangle:
     ## We have to use a font that has the BLACK RIGHT-POINTING SMALL TRIANGLE
     ## glyph in it.
-    font "SourceHanSans-VF.ttf"
+    font "SourceHanSansCN-Bold.otf"
 
 
 ## Notify screen ###############################################################

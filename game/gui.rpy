@@ -61,7 +61,7 @@ define gui.text_font = "SourceHanSansCN-Bold.otf"
 define gui.name_text_font = "SourceHanSansCN-Bold.otf"
 
 ## The font used for out-of-game text.
-define gui.interface_text_font = "SourceHanSans-VF.ttf"
+define gui.interface_text_font = "SourceHanSansCN-Bold.otf"
 
 ## The size of normal dialogue text.
 define gui.text_size = 36
