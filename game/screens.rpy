@@ -321,25 +321,49 @@ screen review_slots(title):
 
 
         if renpy.get_screen("kana_review"):
-            $ review_tmp_lst = chpt1_answer_kana
+            $ review_tmp_lst = chpt1_C_answer_kana
         elif renpy.get_screen("vocab_review"):
-            $ review_tmp_lst = chpt1_answer_tango
+            $ review_tmp_lst = chpt1_C_answer_tango
         elif renpy.get_screen("conversation_review"):
             $ review_tmp_lst = chpt1_C_answer_kaiwa
         elif renpy.get_screen("bunka_review"):
             $ review_tmp_lst = chpt1_C_answer_bunka
         else:
             $ review_tmp_lst = ["Error"]
-        for i in review_tmp_lst:
-            window:
-                background "review_button_bg"
+
+        if renpy.get_screen("kana_review") or renpy.get_screen("vocab_review"):
+            for i in review_tmp_lst:
                 window:
-                    xysize(1336, 158)
-                    xfill True yfill True
-                    text str(i):
-                        xoffset 40 yoffset 10
-                        font "SourceHanSansCN-Bold.otf"
-                        color "#000000"
+                    if renpy.get_screen("kana_review"):
+                        imagebutton:
+                            xysize(246, 251)
+                            idle "images/HiraKataKANA/"+str(i)+".png"
+                            hover "images/HiraKataKANA/"+str(i)+"2.png"
+                            action Play("sound", "audio/se/sushiyin/"+str(i)+".mp3")
+                    else:
+                        imagebutton:
+                            idle "images/wupin/danci/"+str(i)+"s.png"
+                            hover "images/wupin/danci/"+str(i)+"s.png"
+                            action Play("sound", "audio/se/sushiyin/"+str(i)+".mp3")
+                    window:
+                        xysize(1336, 158)
+                        xfill True yfill True
+                        text str(i):
+                            xoffset 40 yoffset 10
+                            font "SourceHanSansCN-Bold.otf"
+                            color "#000000"
+
+        else:
+            for i in review_tmp_lst:
+                window:
+                    background "review_button_bg"
+                    window:
+                        xysize(1336, 158)
+                        xfill True yfill True
+                        text str(i):
+                            xoffset 40 yoffset 10
+                            font "SourceHanSansCN-Bold.otf"
+                            color "#000000"
 
     imagebutton:
         xalign 0.87 yalign 0.1
@@ -363,59 +387,53 @@ screen review_menu(title, scroll=None, yinitial=0.0):
         top_padding 150
         bottom_padding 150
         left_padding 210
-        right_padding 200
+        if renpy.get_screen("kana_review"):
+            right_padding 200
+        if renpy.get_screen("vocab_review"):
+            right_padding 200
+        else:
+            right_padding 200
         background None
 
-        hbox:
+        frame:
+            style_prefix "review_menu"
 
-            ## 导航部分的预留空间。
-            # frame:
-            #     style "game_menu_navigation_frame"
+            xysize(1623, 1010)
+            background None
 
-            frame:
-                style_prefix "review_menu"
+            if scroll == "vpgrid":
 
-                background None
+                vpgrid:
+                    xysize(1623, 1010)
+                    yinitial yinitial
 
-                # if scroll == "viewport":
+                    scrollbars "vertical"
+                    mousewheel True
+                    draggable True
+                    pagekeys True
 
-                #     viewport:
-                #         yinitial yinitial
-                #         scrollbars "vertical"
-                #         mousewheel True
-                #         draggable True
-                #         pagekeys True
-
-                #         side_yfill True
-
-                #         spacing 40
-
-                #         vbox:
-                #             transclude
-
-                if scroll == "vpgrid":
-
-                    vpgrid:
-                        cols 1
-                        yinitial yinitial
-
-                        scrollbars "vertical"
-                        mousewheel True
-                        draggable True
-                        pagekeys True
-
-                        side_yfill True
-
-                        spacing 40
-
-                        transclude
-
-                else:
+                    side_yfill True
 
                     transclude
 
-# style review_menu_scrollbars:
-#     xalign 0.9
+                    if renpy.get_screen("kana_review"):
+                        cols 5
+                        xoffset 50
+                        xspacing -1100
+                        yspacing 95
+                    elif renpy.get_screen("vocab_review"):
+                        cols 2
+                        xoffset 70
+                        xspacing -700
+                        yspacing 300
+                    else:
+                        cols 1
+                        spacing 40
+
+            else:
+
+                transclude
+
 
 ## Say screen ##################################################################
 ##
@@ -683,7 +701,8 @@ screen r_menu():
 
         vbox:
             xalign 0.7 yalign 0.5
-            spacing 16
+            # spacing 16
+            spacing 23
             textbutton _("存档") action Hide("r_menu"), ShowMenu("save"):
                 xalign 0.5
             textbutton _("读档") action Hide("r_menu"), ShowMenu("load"):
