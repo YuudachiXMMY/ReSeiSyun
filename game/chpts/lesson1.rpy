@@ -193,39 +193,55 @@ label lesson1_2:
     #第一课 假名部分
 
     #{显示立绘 TJ1wx}
-    show TJ 1wx at tjleft with dissolve
+    show TJ 1wx at left with dissolve
     #{播放vioce 2055}
     TeacherTian "接下来我们来学习本课的第二项内容，「あ行～か行」的十个假名。"
     #{显示图片 十个假名}
-    hide TJ with dissolve
-    call screen HiraKataKANA("a_o", "ka_ko")
-    show TJ 1wx at tjleft with dissolve
+    # hide TJ with dissolve
+    show screen HiraKataKANA("a_o", "ka_ko", learning=False)
+    # show TJ 1wx at left with dissolve
     #{播放vioce 2056}
     TeacherTian "请智子同学为我们读一下吧。"
     #{播放vioce 2057}
     TeacherTian "智子ちゃん、ちょっと読んでもらえますか。（智子，能请你读一下吗？）"
     #{显示立绘 ZZ11gx}
-    show ZZ 11gx at right with dissolve:
-        xoffset -250
+    hide TJ with dissolve
+    show ZZ 11gx at left with dissolve:
+        xoffset -150
     #{播放vioce 2058}
     Tomoko "はい。（好的。）"
     #{播放SE 01aka }
+    show screen HiraKataKANA("a_o", "ka_ko", learning=False)
+    play sound "audio/se/sushiyin/01aka.mp3"
     Tomoko "あ、い、う、え、お。か、き、く、け、こ。"
     #{显示立绘 TJ1wx}
-    show TJ 1wx
+    hide ZZ with dissolve
+    show TJ 1wx at left with dissolve:
+        xoffset -150
     #{播放vioce 2059}
     TeacherTian "もう一度お願いします。（请再读一遍。）"
     #{显示立绘 ZZ11gx}
-    show ZZ 11gx
+    hide TJ with dissolve
+    show ZZ 11gx at left with dissolve:
+        xoffset -150
     #{播放SE 01aka }
+    play sound "audio/se/sushiyin/01aka.mp3"
+    show screen HiraKataKANA("a_o", "ka_ko", learning=False)
     Tomoko "あ、い、う、え、お。か、き、く、け、こ。"
+    hide screen HiraKataKANA
     #{显示立绘 TJ1wx}
-    show TJ 1wx
+    hide ZZ with dissolve
+    show TJ 1wx at left with dissolve:
+        xoffset -150
     #{播放vioce 2060}
     TeacherTian "大家可以跟读练习一下哦。"
     #{显示图片 十个假名 点击可以发音}
     # 点击图片可以确认发音，完成学习后点击“结束学习”按钮。
+    hide TJ with dissolve
+    call screen HiraKataKANA("a_o", "ka_ko")
     #{播放vioce 2061}
+    show TJ 1wx at left with dissolve:
+        xoffset -150
     TeacherTian "既然大家都学会了，那么我们来做一个小测试吧。请大家根据听到的读音选择正确的假名。"
     hide ZZ with dissolve
 

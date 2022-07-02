@@ -512,11 +512,11 @@ image textbox_bg:
     "gui/textbox.png"
     xalign 0.5
     yalign 1.0
-    alpha 0.8
+    alpha 0.9
 
 image namebox_bg:
     "gui/namebox.png"
-    alpha 0.8
+    alpha 0.9
 
 style window:
     xalign 0.5

@@ -10,40 +10,41 @@ screen HiraKataKANA(kana1=None, kana2=None, learning=True):
 
 
     # 音量
-    hbox:
-        style_prefix "learn_sound_setting"
-        xalign 0.0 yalign 0.9
-        xoffset -20
-        spacing 60
+    if learning:
+        hbox:
+            style_prefix "learn_sound_setting"
+            xalign 0.0 yalign 0.9
+            xoffset -20
+            spacing 60
 
-        vbox:
-            xoffset 40
-            spacing 40
-            label _("音乐音量")
-            label _("语音音量")
+            vbox:
+                xoffset 40
+                spacing 40
+                label _("音乐音量")
+                label _("语音音量")
 
-        vbox:
-            xoffset 40
-            spacing 42
-            add 'gui/settings/音量-1.png'
-            add 'gui/settings/音量-1.png':
-                yoffset 5
+            vbox:
+                xoffset 40
+                spacing 42
+                add 'gui/settings/音量-1.png'
+                add 'gui/settings/音量-1.png':
+                    yoffset 5
 
-        vbox:
-            yoffset 3
-            spacing 42
-            # bar value Preference("music volume")
-            # bar value Preference("music volume"):
-            #     yoffset 10
-            bar value Preference("music volume")
-            bar value Preference("sound volume")
+            vbox:
+                yoffset 3
+                spacing 42
+                # bar value Preference("music volume")
+                # bar value Preference("music volume"):
+                #     yoffset 10
+                bar value Preference("music volume")
+                bar value Preference("sound volume")
 
-        vbox:
-            xoffset -40
-            spacing 42
-            add 'gui/settings/音量.png'
-            add 'gui/settings/音量.png':
-                yoffset 5
+            vbox:
+                xoffset -40
+                spacing 42
+                add 'gui/settings/音量.png'
+                add 'gui/settings/音量.png':
+                    yoffset 5
 
     # Learn
     vbox:

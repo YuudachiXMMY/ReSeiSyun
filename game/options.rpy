@@ -30,7 +30,7 @@ define config.version = "c1.1.6"
 ## triple-quotes, and leave a blank line between paragraphs.
 
 define gui.about = _p("""
-Built on 22/05/22\n version c1.1.5
+Built on 22/07/02\n version c1.1.6
 """)
 
 
