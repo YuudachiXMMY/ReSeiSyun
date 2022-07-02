@@ -129,10 +129,10 @@ label chpt1_1:
     #{播放vioce 2014}
     LiuYang "ここは高一5組ですよ。（这里就是高一五班哦。）"
     #{显示立绘 ZZ12gx}
-    hide past_cover
     show LY at MidToRight
-    show ZZ 12gx at left with dissolve
-    show past_cover with dissolve
+    hide past_cover
+    show ZZ 12gx at left
+    show past_cover
     #{播放vioce 2015}
     Zhizi "ありがとうございます。（谢谢你。）"
     # TODO: {背景色调变回正常}
