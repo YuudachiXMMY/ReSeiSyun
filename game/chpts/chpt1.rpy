@@ -150,7 +150,6 @@ label chpt1_2:
             $chpt1_select[0] = 0
             jump chpt1_choice_1A
         "B.直接和智子交流。":
-            $ HaoGan += 10
             $chpt1_select[0] = 10
             jump chpt1_choice_1B
 
@@ -178,7 +177,6 @@ label chpt1_3:
             $chpt1_select[1] = 0
             jump chpt1_choice_2A
         "B.はじめまして。（初次见面。）":
-            $ HaoGan += 10
             $chpt1_select[1] = 10
             jump chpt1_choice_2B
 
@@ -315,7 +313,6 @@ label chpt1_4:
             $chpt1_select[2] = 0
             jump chpt1_choice_3A
         "B.……":
-            $ HaoGan += 10
             $chpt1_select[2] = 10
             jump chpt1_choice_3B
 

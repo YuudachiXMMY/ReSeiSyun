@@ -91,7 +91,6 @@ label lesson1_1_q1:
     menu l1_1_q1:
         '日本是先有语言还是先有文字？'
         "A.先有语言":
-            $ HaoGan += 10
             $chpt1_answer_bunka[0] = 10
             jump l1_1_q1A
         "B.先有文字":
@@ -136,7 +135,6 @@ label lesson1_1_q2:
             $chpt1_answer_bunka[1] = 0
             jump l1_1_q2AB
         "C.按照汉字原本的意思来使用":
-            $ HaoGan += 10
             $chpt1_answer_bunka[1] = 10
             jump l1_1_q2C
 
@@ -168,7 +166,6 @@ label lesson1_1_q3:
             $chpt1_answer_bunka[2] = 0
             jump l1_1_q3AC
         "B.假借":
-            $ HaoGan += 10
             $chpt1_answer_bunka[2] = 10
             jump l1_1_q3B
         "C.假如":
@@ -253,7 +250,6 @@ label lesson1_2_q1:
             $chpt1_answer_kana[0] = 0
             jump l1_2_q1AB
         "C.う":
-            $HaoGan += 5
             $chpt1_answer_kana[0] = 5
             jump l1_2_q1C
 
@@ -304,7 +300,6 @@ label lesson1_2_q2:
             $chpt1_answer_kana[1] = 0
             jump l1_2_q2AC
         "B.き":
-            $HaoGan += 5
             $chpt1_answer_kana[1] = 5
             jump l1_2_q2B
         "C.け":
@@ -362,7 +357,6 @@ label lesson1_2_q3:
             $chpt1_answer_kana[2] = 0
             jump l1_2_q3AB
         "C.こ":
-            $HaoGan += 5
             $chpt1_answer_kana[2] = 5
             jump l1_2_q3C
 
@@ -416,7 +410,6 @@ label lesson1_2_q4:
             $chpt1_answer_kana[3] = 0
             jump l1_2_q4AB
         "C.え":
-            $HaoGan += 5
             $chpt1_answer_kana[3] = 5
             jump l1_2_q4C
 
@@ -464,7 +457,6 @@ label lesson1_2_q5:
     pause 1.0
     menu l1_2_q5:
         "A.く":
-            $HaoGan += 5
             $chpt1_answer_kana[4] = 5
             jump l1_2_q5A
         "B.け":
@@ -580,7 +572,6 @@ label lesson1_3_q1:
             $chpt1_answer_tango[0] = 0
             jump l1_3_q1AC
         "B.恋（こい）":
-            $HaoGan += 5
             $chpt1_answer_tango[0] = 5
             jump l1_3_q1B
         "C.会う（あう）":
@@ -630,7 +621,6 @@ label lesson1_3_q2:
     pause 1.0
     menu l1_3_q2:
         "A.愛（あい）":
-            $HaoGan += 5
             $chpt1_answer_tango[1] = 5
             jump l1_3_q2A
         "B.会う（あう）":
@@ -686,7 +676,6 @@ label lesson1_3_q3:
             $chpt1_answer_tango[2] = 0
             jump l1_3_q3AC
         "B.秋（あき）":
-            $HaoGan += 5
             $chpt1_answer_tango[2] = 5
             jump l1_3_q3B
         "C.会う（あう）":
@@ -776,7 +765,6 @@ label lesson1_5_q1:
     #{显示选项  文本框居中，选项竖排1 2}
     menu l1_5_q1:
         "A.こんばんは。":
-            $HaoGan += 10
             $chpt1_answer_kaiwa[0] = 10
             jump l1_5_q1A
         "B.すみません。":
@@ -817,7 +805,6 @@ label lesson1_5_q2:
             $chpt1_answer_kaiwa[1] = 0
             jump l1_5_q2A
         "B.いえいえ。":
-            $HaoGan += 10
             $chpt1_answer_kaiwa[1] = 10
             jump l1_5_q2B
 
@@ -865,7 +852,6 @@ label lesson1_5_q3:
             $chpt1_answer_kaiwa[2] = 0
             jump l1_5_q3A
         "B.お休みなさい。":
-            $HaoGan += 10
             $chpt1_answer_kaiwa[2] = 10
             jump l1_5_q3B
 

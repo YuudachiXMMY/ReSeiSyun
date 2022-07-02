@@ -62,7 +62,6 @@ label prologue_scene_1_1:
             $ prologue_answer[0] = 0
             jump prologue_scene_1_choice_1AC
         "B.茶道":
-            $ HaoGan += 10
             $ prologue_answer[0] = 10
             jump prologue_scene_1_choice_1B
         "C.柔道":
@@ -90,7 +89,6 @@ label prologue_scene_1_2:
     menu prologue_scene_1_choice_2:
         '日本的和服最早受到古代中国的哪种服装的影响？'
         "A.汉服":
-            $ HaoGan += 10
             $prologue_answer[1] = 10
             jump prologue_scene_1_choice_2A
         "B.唐装":
@@ -137,7 +135,6 @@ label prologue_scene_1_3:
     menu prologue_scene_1_choice_3:
         # {显示选项  文本框居中，选项竖排1 2}
         "A.马上接电话。":
-            $ HaoGan += 10
             $prologue_select[0] = 10
             jump prologue_scene_1_choice_3A
         "B.懒得接电话。":
@@ -277,7 +274,6 @@ label prologue_scene_2_1:
             $prologue_select[1] = 0
             jump prologue_scene_1_choice_4A
         "B.要不再等等吧。":
-            $ HaoGan += 10
             $prologue_select[1] = 10
             jump prologue_scene_1_choice_4B
 
@@ -638,7 +634,6 @@ label prologue_scene_2_2:
             $ prologue_select[2] = 0
             jump prologue_scene_2_choice_1A
         "B.10000种组合。":
-            $ HaoGan += 10
             $ prologue_select[2] = 10
             jump prologue_scene_2_choice_1B
 
@@ -685,8 +680,6 @@ label prologue_scene_2_3_Baohe:
     menu prologue_scene_2_choice_2:
         '日本人迎接新年的时候一般会吃 (____)。'
         "A.年糕":
-            $ HaoGan += 10
-            $ Baohe += 1
             $ prologue_answer[2] = 10
         "B.饺子":
             $ prologue_answer[2] = 0
@@ -707,8 +700,6 @@ label prologue_scene_2_3_Baohe:
         "B.饺子":
             $ prologue_answer[3] = 0
         "C.荞麦面":
-            $ HaoGan += 10
-            $ Baohe += 1
             $ prologue_answer[3] = 10
 
     #选择3.荞麦面
@@ -721,8 +712,6 @@ label prologue_scene_2_3_Baohe:
     menu prologue_scene_2_choice_4:
         '(____)是从中国传到日本的民间故事，深受日本人的喜爱。'
         "A.牛郎织女的传说":
-            $ HaoGan += 10
-            $ Baohe += 1
             $ prologue_answer[4] = 10
         "B.桃太郎的传说":
             $ prologue_answer[4] = 0
@@ -742,12 +731,11 @@ label prologue_scene_2_3_Baohe:
         "A.鲤鱼旗":
             $ prologue_answer[5] = 0
         "B.风幡":
-            $ HaoGan += 10
-            $ Baohe += 1
             $ prologue_answer[5] = 10
         "C.灯笼":
             $ prologue_answer[5] = 0
 
+    $ Baohe = (prologue_answer[2] + prologue_answer[3] + prologue_answer[4] + prologue_answer[5]) / 10
     if Baohe == 4:
         jump prologue_scene_2_3_Baohe_Opened
 
@@ -774,7 +762,6 @@ label prologue_scene_2_3_Baohe_NotOpened:
     hide WH
     #宝盒参数归零
     $ Baohe = 0
-    $ HaoGan = HaoGan-(prologue_answer[2]+prologue_answer[3]+prologue_answer[4]+prologue_answer[5])
 
     jump prologue_scene_2_3_Baohe
 
@@ -935,7 +922,6 @@ label prologue_scene_2_4:
     #{显示选项  文本框居中，选项竖排1 2}
     menu prologue_scene_2_choice_6:
         "A.抢过袁巧巧手中的彩纸。":
-            $ HaoGan += 10
             $ prologue_select[3] = 10
             jump prologue_scene_2_choice_6A
         "B.……":

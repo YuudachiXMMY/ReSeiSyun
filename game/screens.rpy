@@ -334,24 +334,28 @@ screen review_slots(title):
         if renpy.get_screen("kana_review") or renpy.get_screen("vocab_review"):
             for i in review_tmp_lst:
                 window:
+                    xfill True yfill True
                     if renpy.get_screen("kana_review"):
+                        xysize(273, 251)
                         imagebutton:
                             xysize(246, 251)
                             idle "images/HiraKataKANA/"+str(i)+".png"
                             hover "images/HiraKataKANA/"+str(i)+"2.png"
                             action Play("sound", "audio/se/sushiyin/"+str(i)+".mp3")
                     else:
+                        xysize(681, 356)
                         imagebutton:
+                            xysize(601, 356)
                             idle "images/wupin/danci/"+str(i)+"s.png"
                             hover "images/wupin/danci/"+str(i)+"s.png"
                             action Play("sound", "audio/se/sushiyin/"+str(i)+".mp3")
-                    window:
-                        xysize(1336, 158)
-                        xfill True yfill True
-                        text str(i):
-                            xoffset 40 yoffset 10
-                            font "SourceHanSansCN-Bold.otf"
-                            color "#000000"
+                    # window:
+                    #     xysize(1336, 158)
+                    #     xfill True yfill True
+                    #     text str(i):
+                    #         xoffset 40 yoffset 10
+                    #         font "SourceHanSansCN-Bold.otf"
+                    #         color "#000000"
 
         else:
             for i in review_tmp_lst:
@@ -383,56 +387,44 @@ style review_window:
 screen review_menu(title, scroll=None, yinitial=0.0):
 
     frame:
-        align(0.5, 0.5)
-        top_padding 150
-        bottom_padding 150
-        left_padding 210
-        if renpy.get_screen("kana_review"):
-            right_padding 200
-        if renpy.get_screen("vocab_review"):
-            right_padding 200
-        else:
-            right_padding 200
+        xysize(1623, 1010)
         background None
+        align(0.5, 0.5)
 
-        frame:
-            style_prefix "review_menu"
+        top_padding 130
+        bottom_padding 100
+        left_padding 130
 
-            xysize(1623, 1010)
-            background None
+        if scroll == "vpgrid":
 
-            if scroll == "vpgrid":
+            vpgrid:
+                # xysize(1623, 1010)
+                # yinitial yinitial
 
-                vpgrid:
-                    xysize(1623, 1010)
-                    yinitial yinitial
+                scrollbars "vertical"
+                mousewheel True
+                draggable True
+                pagekeys True
 
-                    scrollbars "vertical"
-                    mousewheel True
-                    draggable True
-                    pagekeys True
-
-                    side_yfill True
-
-                    transclude
-
-                    if renpy.get_screen("kana_review"):
-                        cols 5
-                        xoffset 50
-                        xspacing -1100
-                        yspacing 95
-                    elif renpy.get_screen("vocab_review"):
-                        cols 2
-                        xoffset 70
-                        xspacing -700
-                        yspacing 300
-                    else:
-                        cols 1
-                        spacing 40
-
-            else:
+                side_yfill True
 
                 transclude
+
+                if renpy.get_screen("kana_review"):
+                    cols 5
+                    xspacing 0
+                    yspacing 20
+                elif renpy.get_screen("vocab_review"):
+                    cols 2
+                    # xspacing 40
+                    yspacing 40
+                else:
+                    cols 1
+                    spacing 40
+
+        else:
+
+            transclude
 
 
 ## Say screen ##################################################################
