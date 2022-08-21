@@ -115,6 +115,7 @@ screen vocab_review():
     use review_slots(_("单词回顾"))
 
 
+# Cancel
 screen conversation_review():
 
     tag menu
