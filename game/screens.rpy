@@ -116,11 +116,11 @@ screen vocab_review():
 
 
 # Cancel
-screen conversation_review():
+# screen conversation_review():
 
-    tag menu
+#     tag menu
 
-    use review_slots(_("对话回顾"))
+#     use review_slots(_("对话回顾"))
 
 
 screen bunka_review():
@@ -155,21 +155,11 @@ screen review_slots(title):
             xysize(206, 68)
             idle_background "sl_sl_btn_idle"
             hover_background "sl_sl_btn_hover"
-            text "对话回顾":
-                align(.3, .5)
-                style "sl_page"
-                size 36 color "#ffffff"
-            xalign 0.03 yalign 0.31
-            action ShowMenu("conversation_review")
-        button:
-            xysize(206, 68)
-            idle_background "sl_sl_btn_idle"
-            hover_background "sl_sl_btn_hover"
             text "文化常识":
                 align(.3, .5)
                 style "sl_page"
                 size 36 color "#ffffff"
-            xalign 0.03 yalign 0.4
+            xalign 0.03 yalign 0.31
             action ShowMenu("bunka_review")
         add "sl_bg" align(0.5, 0.5)
         # add "sl_sl_btn_hover" xalign 0.03 yalign 0.22
@@ -199,21 +189,11 @@ screen review_slots(title):
             xysize(206, 68)
             idle_background "sl_sl_btn_idle"
             hover_background "sl_sl_btn_hover"
-            text "对话回顾":
-                align(.3, .5)
-                style "sl_page"
-                size 36 color "#ffffff"
-            xalign 0.03 yalign 0.31
-            action ShowMenu("conversation_review")
-        button:
-            xysize(206, 68)
-            idle_background "sl_sl_btn_idle"
-            hover_background "sl_sl_btn_hover"
             text "文化常识":
                 align(.3, .5)
                 style "sl_page"
                 size 36 color "#ffffff"
-            xalign 0.03 yalign 0.4
+            xalign 0.03 yalign 0.31
             action ShowMenu("bunka_review")
         add "sl_bg" align(0.5, 0.5)
         # add "sl_sl_btn_hover" xalign 0.03 yalign 0.13
@@ -226,50 +206,6 @@ screen review_slots(title):
                 style "sl_page"
                 size 36 color "#50350f"
             xalign 0.03 yalign 0.22
-            action NullAction()
-    # 对话回顾
-    elif renpy.get_screen("conversation_review"):
-        button:
-            xysize(206, 68)
-            idle_background "sl_sl_btn_idle"
-            hover_background "sl_sl_btn_hover"
-            text "假名回顾":
-                align(.3, .5)
-                style "sl_page"
-                size 36 color "#ffffff"
-            xalign 0.03 yalign 0.13
-            action ShowMenu("kana_review")
-        button:
-            xysize(206, 68)
-            idle_background "sl_sl_btn_idle"
-            hover_background "sl_sl_btn_hover"
-            text "单词回顾":
-                align(.3, .5)
-                style "sl_page"
-                size 36 color "#ffffff"
-            xalign 0.03 yalign 0.22
-            action ShowMenu("vocab_review")
-        button:
-            xysize(206, 68)
-            idle_background "sl_sl_btn_idle"
-            hover_background "sl_sl_btn_hover"
-            text "文化常识":
-                align(.3, .5)
-                style "sl_page"
-                size 36 color "#ffffff"
-            xalign 0.03 yalign 0.4
-            action ShowMenu("bunka_review")
-        add "sl_bg" align(0.5, 0.5)
-        # add "sl_sl_btn_hover" xalign 0.03 yalign 0.13
-        button:
-            xysize(206, 68)
-            idle_background "sl_sl_btn_hover"
-            hover_background "sl_sl_btn_hover"
-            text "对话回顾":
-                align(.3, .5)
-                style "sl_page"
-                size 36 color "#50350f"
-            xalign 0.03 yalign 0.31
             action NullAction()
     # 文化常识
     elif renpy.get_screen("bunka_review"):
@@ -293,16 +229,6 @@ screen review_slots(title):
                 size 36 color "#ffffff"
             xalign 0.03 yalign 0.22
             action ShowMenu("vocab_review")
-        button:
-            xysize(206, 68)
-            idle_background "sl_sl_btn_idle"
-            hover_background "sl_sl_btn_hover"
-            text "对话回顾":
-                align(.3, .5)
-                style "sl_page"
-                size 36 color "#ffffff"
-            xalign 0.03 yalign 0.31
-            action ShowMenu("conversation_review")
         add "sl_bg" align(0.5, 0.5)
         # add "sl_sl_btn_hover" xalign 0.03 yalign 0.13
         button:
@@ -313,7 +239,7 @@ screen review_slots(title):
                 align(.3, .5)
                 style "sl_page"
                 size 36 color "#50350f"
-            xalign 0.03 yalign 0.4
+            xalign 0.03 yalign 0.31
             action NullAction()
 
     use review_menu(_("Review"), scroll=("vpgrid" if 1010 else "viewport"), yinitial=0.0):
@@ -325,8 +251,6 @@ screen review_slots(title):
             $ review_tmp_lst = chpt1_C_answer_kana
         elif renpy.get_screen("vocab_review"):
             $ review_tmp_lst = chpt1_C_answer_tango
-        elif renpy.get_screen("conversation_review"):
-            $ review_tmp_lst = chpt1_C_answer_kaiwa
         elif renpy.get_screen("bunka_review"):
             $ review_tmp_lst = chpt1_C_answer_bunka
         else:
