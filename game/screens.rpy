@@ -242,57 +242,60 @@ screen review_slots(title):
             xalign 0.03 yalign 0.31
             action NullAction()
 
-    use review_menu(_("Review"), scroll=("vpgrid" if 1010 else "viewport"), yinitial=0.0):
+    if renpy.get_screen("kana_review"):
+        $ review_tmp_lst = chpt1_C_answer_kana
+        $ review_tmp_lst_index = chpt1_C_answer_kana_index
+    elif renpy.get_screen("vocab_review"):
+        $ review_tmp_lst = chpt1_C_answer_tango
+        $ review_tmp_lst_index = chpt1_C_answer_tango_index
+    elif renpy.get_screen("bunka_review"):
+        $ review_tmp_lst = chpt1_C_answer_bunka
+        $ review_tmp_lst_index = chpt1_C_answer_bunka_index
+    else:
+        $ review_tmp_lst = ["Error"]
 
-        style_prefix "review"
+    if review_tmp_lst_index != 0:
+        use review_menu(_("Review"), scroll=("vpgrid" if 1010 else "viewport"), yinitial=0.0):
 
+            style_prefix "review"
 
-        if renpy.get_screen("kana_review"):
-            $ review_tmp_lst = chpt1_C_answer_kana
-        elif renpy.get_screen("vocab_review"):
-            $ review_tmp_lst = chpt1_C_answer_tango
-        elif renpy.get_screen("bunka_review"):
-            $ review_tmp_lst = chpt1_C_answer_bunka
-        else:
-            $ review_tmp_lst = ["Error"]
-
-        if renpy.get_screen("kana_review") or renpy.get_screen("vocab_review"):
-            for i in review_tmp_lst:
-                window:
-                    xfill True yfill True
-                    if renpy.get_screen("kana_review"):
-                        xysize(273, 251)
-                        imagebutton:
-                            xysize(246, 251)
-                            idle "images/HiraKataKANA/"+str(i)+".png"
-                            hover "images/HiraKataKANA/"+str(i)+"2.png"
-                            action Play("sound", "audio/se/sushiyin/"+str(i)+".mp3")
-                    else:
-                        xysize(681, 356)
-                        imagebutton:
-                            xysize(601, 356)
-                            idle "images/wupin/danci/"+str(i)+"s.png"
-                            hover "images/wupin/danci/"+str(i)+"s.png"
-                            action Play("sound", "audio/se/sushiyin/"+str(i)+".mp3")
-                    # window:
-                    #     xysize(1336, 158)
-                    #     xfill True yfill True
-                    #     text str(i):
-                    #         xoffset 40 yoffset 10
-                    #         font "SourceHanSansCN-Bold.otf"
-                    #         color "#000000"
-
-        else:
-            for i in review_tmp_lst:
-                window:
-                    background "review_button_bg"
+            if renpy.get_screen("kana_review") or renpy.get_screen("vocab_review"):
+                for i in range(0, review_tmp_lst_index):
                     window:
-                        xysize(1336, 158)
                         xfill True yfill True
-                        text str(i):
-                            xoffset 40 yoffset 10
-                            font "SourceHanSansCN-Bold.otf"
-                            color "#000000"
+                        if renpy.get_screen("kana_review"):
+                            xysize(273, 251)
+                            imagebutton:
+                                xysize(246, 251)
+                                idle "images/HiraKataKANA/"+str(review_tmp_lst[i])+".png"
+                                hover "images/HiraKataKANA/"+str(review_tmp_lst[i])+"2.png"
+                                action Play("sound", "audio/se/sushiyin/"+str(review_tmp_lst[i])+".mp3")
+                        else:
+                            xysize(681, 356)
+                            imagebutton:
+                                xysize(601, 356)
+                                idle "images/wupin/danci/"+str(review_tmp_lst[i])+"s.png"
+                                hover "images/wupin/danci/"+str(review_tmp_lst[i])+"s.png"
+                                action Play("sound", "audio/se/sushiyin/"+str(review_tmp_lst[i])+".mp3")
+                        # window:
+                        #     xysize(1336, 158)
+                        #     xfill True yfill True
+                        #     text str(i):
+                        #         xoffset 40 yoffset 10
+                        #         font "SourceHanSansCN-Bold.otf"
+                        #         color "#000000"
+
+            else:
+                for i in review_tmp_lst:
+                    window:
+                        background "review_button_bg"
+                        window:
+                            xysize(1336, 158)
+                            xfill True yfill True
+                            text str(i):
+                                xoffset 40 yoffset 10
+                                font "SourceHanSansCN-Bold.otf"
+                                color "#000000"
 
     imagebutton:
         xalign 0.87 yalign 0.1
@@ -690,6 +693,21 @@ style r_menu_frame:
 style r_menu_textbutton:
     size 32
 
+
+## Info screen ############################################################
+##
+## Game Infomation
+
+screen info():
+    tag main_menu
+
+    add "gui/main/info_bg.png" zoom .74
+
+    textbutton _("Return"):
+        style "return_button"
+
+        action ShowMenu("main_menu") ,Hide("info")
+
 ################################################################################
 ## Main and Game Menu Screens
 ################################################################################
@@ -700,6 +718,8 @@ style r_menu_textbutton:
 ## to other menus, and to start the game.
 
 screen navigation():
+    tag main_menu
+
     if persistent.debug:
         text "debug: "+str(persistent.debug) xalign 0 yalign 0
 
@@ -744,12 +764,20 @@ screen navigation():
         imagebutton:
             xalign 0.05 yalign 0.05
             idle "gui/main/start.png"
+            hover "gui/main/start_hover.png"
             action Start("prologue_scene_1_1")
 
         imagebutton:
-            xalign 0.04 yalign 0.18
+            xalign 0.05 yalign 0.18
             idle "gui/main/load.png"
+            hover "gui/main/load_hover.png"
             action ShowMenu("load")
+
+        imagebutton:
+            xalign 0.05 yalign 0.31
+            idle "gui/main/info.png"
+            hover "gui/main/info_hover.png"
+            action ShowMenu("info")
 
     # vbox:
     #     # style_prefix "navigation"

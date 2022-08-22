@@ -23,14 +23,14 @@ define gui.show_name = False
 
 ## The version of the game.
 
-define config.version = "c1.1.6"
+define config.version = "c1.1.7"
 
 
 ## Text that is placed on the game's about screen. Place the text between the
 ## triple-quotes, and leave a blank line between paragraphs.
 
 define gui.about = _p("""
-Built on 22/07/02\n version c1.1.6
+Built on 22/08/21\n version c1.1.7
 """)
 
 

@@ -36,6 +36,8 @@ label lesson1_1:
     TeacherTian "大约在公元三世纪至五世纪，汉字逐渐从中国传入日本。"
     #{显示立绘 LY12jy}
     #{播放vioce 2037}
+    hide XY with dissolve
+    show ly 12jy at right with dissolve
     LiuYang "当时没有字典，也没有翻译软件，日本人是如何学习汉字的呢？"
     #{显示黑板背景 p jiaoxue04}
     scene p jiaoxue04 with dissolve
@@ -101,6 +103,8 @@ label lesson1_1_q1:
             jump l1_1_q1BC
 
 label l1_1_q1A:
+    if chpt1_C_answer_bunka_index < 7:
+        $ chpt1_C_answer_bunka_index = 7
     #选择A.语言
     #好感度参数 +10
     #{显示立绘 TJ1gx}
@@ -111,6 +115,8 @@ label l1_1_q1A:
     jump lesson1_1_q2
 
 label l1_1_q1BC:
+    if chpt1_C_answer_bunka_index < 7:
+        $ chpt1_C_answer_bunka_index = 7
     # 选择 其他选项
     #{显示立绘 TJ1ng}
     show TJ 1ng
@@ -139,6 +145,8 @@ label lesson1_1_q2:
             jump l1_1_q2C
 
 label l1_1_q2C:
+    if chpt1_C_answer_bunka_index < 8:
+        $ chpt1_C_answer_bunka_index = 8
     #选择C.按照汉字原本的意思来使用
     #好感度参数 +10
     #{显示立绘 TJ1gx}
@@ -147,6 +155,8 @@ label l1_1_q2C:
     TeacherTian "回答正确。“汉字的正用”，也就是严格遵循汉字的本义使用。例如日语中的“山”，读作“yama”，写作“山”。"
 
 label l1_1_q2AB:
+    if chpt1_C_answer_bunka_index < 8:
+        $ chpt1_C_answer_bunka_index = 8
     # 选择 其他选项
     #{显示立绘 TJ1ng}
     show TJ 1ng
@@ -173,6 +183,8 @@ label lesson1_1_q3:
             jump l1_1_q3AC
 
 label l1_1_q3B:
+    if chpt1_C_answer_bunka_index < 9:
+        $ chpt1_C_answer_bunka_index = 9
     #选择B.假借
     #好感度参数 +10
     #{显示立绘 TJ1gx}
@@ -182,6 +194,8 @@ label l1_1_q3B:
     jump lesson1_2
 
 label l1_1_q3AC:
+    if chpt1_C_answer_bunka_index < 9:
+        $ chpt1_C_answer_bunka_index = 9
     # 选择 其他选项
     #{显示立绘 TJ1ng}
     show TJ 1ng
@@ -211,8 +225,10 @@ label lesson1_2:
     #{播放vioce 2058}
     Tomoko "はい。（好的。）"
     #{播放SE 01aka }
-    show screen HiraKataKANA("a_o", "ka_ko", learning=False)
     play sound "audio/se/sushiyin/01aka.mp3"
+    show screen HiraKataKANA("a_o", "ka_ko", learning=False)
+    if chpt1_C_answer_kana_index < 10:
+        $ chpt1_C_answer_kana_index = 10
     Tomoko "あ、い、う、え、お。か、き、く、け、こ。"
     #{显示立绘 TJ1wx}
     hide ZZ with dissolve
@@ -227,6 +243,8 @@ label lesson1_2:
     #{播放SE 01aka }
     play sound "audio/se/sushiyin/01aka.mp3"
     show screen HiraKataKANA("a_o", "ka_ko", learning=False)
+    if chpt1_C_answer_kana_index < 10:
+        $ chpt1_C_answer_kana_index = 10
     Tomoko "あ、い、う、え、お。か、き、く、け、こ。"
     hide screen HiraKataKANA
     #{显示立绘 TJ1wx}
@@ -528,6 +546,8 @@ label lesson1_3:
     #点击屏幕后逐个在黑板上显示，并同步播放音频，过程中停止其他操作。（音频还没有录好）
     hide TJ with dissolve
     # {显示图片 011ai2}
+    if chpt1_C_answer_tango_index < 1:
+        $ chpt1_C_answer_tango_index = 1
     show 011ai2 at middle with dissolve
     #{播放se 011ai2}
     play sound "audio/se/sushiyin/011ai2.mp3"
@@ -537,6 +557,8 @@ label lesson1_3:
     # {显示图片 012au2}
     show 012au2 at middle with dissolve
     #{播放se 012au2}
+    if chpt1_C_answer_tango_index < 2:
+        $ chpt1_C_answer_tango_index = 2
     play sound "audio/se/sushiyin/012au2.mp3"
     pause 1.0
     Tomoko "会う（あう）。"
@@ -544,6 +566,8 @@ label lesson1_3:
     # {显示图片 013aki2}
     show 013aki2 at middle with dissolve
     #{播放se 013aki2}
+    if chpt1_C_answer_tango_index < 3:
+        $ chpt1_C_answer_tango_index = 3
     play sound "audio/se/sushiyin/013aki2.mp3"
     pause 1.0
     Tomoko "秋（あき）。"
@@ -551,6 +575,8 @@ label lesson1_3:
     # {显示图片 014koi2}
     show 014koi2 at middle with dissolve
     #{播放se 014koi2}
+    if chpt1_C_answer_tango_index < 4:
+        $ chpt1_C_answer_tango_index = 4
     play sound "audio/se/sushiyin/014koi2.mp3"
     pause 1.0
     Tomoko "恋（こい）。"
@@ -919,7 +945,8 @@ label lesson1_6:
     #{显示立绘 WH13rz}
     show WH 13rz
     me "对了，田老师说过睡前要复习一下今天的内容，看一下今天的笔记吧。"
-    #{打开复习回顾界面，添加第一课的内容。并设定倒计时5分钟，无法退出界面。}
+    # TODO: {打开复习回顾界面，添加第一课的内容。并设定倒计时5分钟，无法退出界面。}
+    call screen kana_review()
     #{显示立绘 WH13rz}
     show WH 13rz
     me "复习了一下，果然思路清晰多了。"

@@ -86,7 +86,7 @@ label chpt1_1:
     #{显示 手表 图片w09}
     # TODO: w09
     show w09 at wleft with dissolve
-    "电子表上显示的时间是2012年9月16日。"
+    "电子表上显示的时间是2012年9月3日。"
     "对于突然的穿越，我本应该感到迷茫和恐惧。但不知为何，此时的自己却异常地兴奋和激动。"
     "十年前的自己，在这个熟悉的校园里留下了太多的遗憾和留恋。难道是上天给了我一次重来的机会吗……"
     hide w09 with dissolve
@@ -265,7 +265,7 @@ label chpt1_4:
     show TJ at MidToLeft
     show ZZ 12gx at middle with dissolve
     #{播放vioce 2021}
-    Zhizi "高橋智子です。日本の日章学園から来ました。（我叫高桥智子，来自日本的日章学园。）"
+    Zhizi "高橋智子です。日本の日尚学園から来ました。（我叫高桥智子，来自日本的日尚学园。）"
     #{播放vioce 2022}
     Zhizi "どうぞよろしくお願いします。（请大家多多关照。）"
     #{播放vioce 2023}
@@ -336,6 +336,9 @@ label chpt1_choice_3A:
 label chpt1_5:
     #{显示立绘 ZH12zj}
     #{播放vioce 2028}
+    hide XY with dissolve
+    hide WH with dissolve
+    show ZH 12zj at middle with dissolve
     ZhengHui "喂，别讲话了。老师看着你们呢。"
     #{显示立绘 QQ11sq}
     show QQ 11sq at middle with dissolve

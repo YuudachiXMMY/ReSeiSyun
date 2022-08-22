@@ -896,12 +896,14 @@ label prologue_scene_2_4:
     #{停止BGM  }
     stop music
     #{显示立绘 QQ 21xf}
-    show QQ 21xf at middle with dissolve
+    show QQ 21xf at right with dissolve:
+        xoffset -200
+    show w08 at left with dissolve
     YuanQiaoqiao "行了行了，别狡辩了。看看智子的心愿不就知道了。"
     hide QQ with dissolve
     "袁巧巧突然从时光宝盒里拿走了智子的心愿纸。"
+    hide w08 with dissolve
     #{显示打开的宝盒里只剩下 1张彩纸的图片 w08}
-    show w08 at left with dissolve
 
     #{显示立绘 WH 21kx}
     show WH 21kx at right with dissolve:
