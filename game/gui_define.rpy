@@ -39,7 +39,6 @@ image confirm_no_hover:
 
 ## Save & Load ######################################################################
 ##
-image bg_cover:
 image sl_bg:
     "gui/sl/界面.png"
 

@@ -741,7 +741,7 @@ label prologue_scene_2_3_Baohe:
 
     jump prologue_scene_2_3_Baohe_NotOpened
 
-    #选择2.风幡（吹き流し）
+    #选择2.prologue_scene_1_1（吹き流し）
     #好感度参数 +10
     #打开宝盒参数 +1
     #选择 其他选项

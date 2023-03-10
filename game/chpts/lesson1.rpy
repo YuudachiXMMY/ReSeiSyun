@@ -225,6 +225,7 @@ label lesson1_2:
     #{播放vioce 2058}
     Tomoko "はい。（好的。）"
     #{播放SE 01aka }
+    stop music
     play sound "audio/se/sushiyin/01aka.mp3"
     show screen HiraKataKANA("a_o", "ka_ko", learning=False)
     if chpt1_C_answer_kana_index < 10:
@@ -249,6 +250,7 @@ label lesson1_2:
     hide screen HiraKataKANA
     #{显示立绘 TJ1wx}
     hide ZZ with dissolve
+    play music "audio/bgm/b0109 shangke.mp3"
     show TJ 1wx at left with dissolve:
         xoffset -150
     #{播放vioce 2060}
@@ -262,6 +264,7 @@ label lesson1_2:
         xoffset -150
     TeacherTian "既然大家都学会了，那么我们来做一个小测试吧。请大家根据听到的读音选择正确的假名。"
     hide ZZ with dissolve
+    stop music
 
     jump lesson1_2_q1
 

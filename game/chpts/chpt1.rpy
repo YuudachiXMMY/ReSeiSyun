@@ -341,7 +341,8 @@ label chpt1_5:
     show ZH 12zj at middle with dissolve
     ZhengHui "喂，别讲话了。老师看着你们呢。"
     #{显示立绘 QQ11sq}
-    show QQ 11sq at middle with dissolve
+    show ZH at MidToLeft
+    show QQ 11sq at right with dissolve
     #{播放vioce 2029}
     YuanQiaoqiao "切，胆小鬼。"
     "背后传来了熟悉的声音。高中时代的郑辉还是这么一板一眼，示意我们不要讲话了。旁边的袁巧巧见此露出一脸不屑的表情。"
