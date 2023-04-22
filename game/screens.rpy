@@ -164,228 +164,227 @@ screen agreements():
         vbox:
 
             label "用户服务协议"
-            null height 15
+            null height 20
 
             hbox:
-                text _("在此特别提醒各位用户认真阅读、充分理解本《用户服务协议》（下称《协议》）——用户应认真阅读充分理解本《协议》中各条款。您的安装、使用、获取和登录重启青春App等行为将视为对本《协议》的接受，并同意接受本《协议》各项条款的约束。") style "about_small"
+                text _("在此特别提醒各位用户认真阅读、充分理解本《用户服务协议》（下称《协议》）——用户应认真阅读充分理解本《协议》中各条款。您的安装、使用、获取和登录{color=#f00}“重启青春”{/color}等行为将视为对本《协议》的接受，并同意接受本《协议》各项条款的约束。") style "about_small"
 
-            null height 15
-
-            hbox:
-                text _("重启青春App是由重启青春出版社、重启青春出版社出品，并由重启青春公司提供技术支持和客户服务支持的。") style "about_small"
-
-            null height 15
+            null height 20
 
             hbox:
-                text _("本《协议》是您（下称“用户”）与重启青春公司（以下又称“服务方”）之间关于用户下载、安装、注册、使用软件；以及使用服务方提供的相关服务所订立的协议。本《协议》描述服务方与用户之间关于“软件”知识产权、许可使用及服务相关方面的权利义务。“用户”是指通过服务方提供的获取软件授权的途径获得软件产品授权许可以及使用服务方提供的相关服务的个人或组织。") style "about_small"
+                text _("{color=#f00}“重启青春”{/color}是由{color=#f00}郭侃亮{/color}制作、{color=#f00}华东理工大学出版社有限公司{/color}出品，并由{color=#f00}上海海笛数字出版科技有限公司{/color}上架发行同时提供运营支持和客户服务支持的。") style "about_small"
 
-            null height 15
-
-            hbox:
-                text _("本《协议》可由服务方随时更新，更新后的协议条款一旦公布即代替原来的协议条款，恕不再另行通知。用户可重新下载安装本软件查阅最新版协议条款。在服务方修改《协议》条款后，如果用户不接受修改后的条款，请立即停止使用服务方提供的软件和服务，用户继续使用服务方提供的软件和服务将被视为已接受了修改后的协议。") style "about_small"
-
-            null height 15
+            null height 20
 
             hbox:
-                text _("{b}1. 知识产权声明{/b}") style "about_small_title"
+                text _("本《协议》是您（下称“用户”）与{color=#f00}华东理工大学出版社有限公司{/color}（以下又称“{color=#f00}出品方{/color}”）之间关于用户下载、安装、注册、使用软件；以及使用{color=#f00}出品方{/color}提供的相关服务所订立的协议。本《协议》描述{color=#f00}出品方{/color}与用户之间关于“软件”知识产权、许可使用及服务相关方面的权利义务。“用户”是指通过{color=#f00}出品方{/color}提供的获取软件授权的途径获得软件产品授权许可以及使用{color=#f00}出品方{/color}提供的相关服务的个人或组织。") style "about_small"
 
-            null height 15
-
-            hbox:
-                text _("本“软件”的一切版权、商标权、专利权、商业秘密等知识产权，以及与“软件”相关的所有信息内容，包括但不限于：文字表述及其组合、图标、图饰、图表、色彩、界面设计、版面框架、录像、动画、录音、文字、图像、有关数据、印刷材料、或电子文档等均受中华人民共和国著作权法、商标法、专利法、反不正当竞争法和相应的国际条约以及其他知识产权法律法规的保护，除涉及第三方授权的软件或技术外，归服务方所有。用户不得修改、改编、翻译本软件提供的内容，不得通过反编译、反向工程、反汇编或其它方式从本软件得到源代码。") style "about_small"
-
-            null height 15
+            null height 20
 
             hbox:
-                text _("{b}2. 软件授权范围{/b}") style "about_small_title"
+                text _("本《协议》可由{color=#f00}出品方{/color}随时更新，更新后的协议条款一旦公布即代替原来的协议条款，恕不再另行通知。用户可重新下载安装本软件查阅最新版协议条款。在{color=#f00}出品方{/color}修改《协议》条款后，如果用户不接受修改后的条款，请立即停止使用{color=#f00}出品方{/color}提供的软件和服务，用户继续使用{color=#f00}出品方{/color}提供的软件和服务将被视为已接受了修改后的协议。") style "about_small"
 
-            null height 15
+            null height 20
+
+            hbox:
+                text _("1. 知识产权声明") style "about_small"
+
+            null height 20
+
+            hbox:
+                text _("本“软件”的一切版权、商标权、专利权、商业秘密等知识产权，以及与“软件”相关的所有信息内容，包括但不限于：文字表述及其组合、图标、图饰、图表、色彩、界面设计、版面框架、录像、动画、录音、文字、图像、有关数据、印刷材料、或电子文档等均受中华人民共和国著作权法、商标法、专利法、反不正当竞争法和相应的国际条约以及其他知识产权法律法规的保护，除涉及第三方授权的软件或技术外，归{color=#f00}制作方{/color}所有。用户不得修改、改编、翻译本软件提供的内容，不得通过反编译、反向工程、反汇编或其它方式从本软件得到源代码。") style "about_small" color "#555"
+
+            null height 20
+
+            hbox:
+                text _("2. 软件授权范围") style "about_small"
+
+            null height 20
 
             hbox:
                 text _("2.1 用户可以在手机或移动设备上安装、使用、显示、运行本软件。") style "about_small" color "#555"
 
-            null height 15
+            null height 20
 
             hbox:
-                text _("2.2 保留权利：未明示授权的其他一切权利仍归服务方所有，用户使用其他权利时须另外取得服务方的书面同意。") style "about_small" color "#555"
+                text _("2.2 保留权利：未明示授权的其他一切权利仍归{color=#f00}制作方{/color}所有，用户使用其他权利时须另外取得{color=#f00}制作方{/color}的书面同意。") style "about_small" color "#555"
 
-            null height 15
+            null height 20
 
             hbox:
-                text _("{b}3. 隐私保护{/b}") style "about_small_title"
+                text _("3. 隐私保护") style "about_small"
 
-            null height 15
+            null height 20
 
             hbox:
                 text _("本“软件”并未收集任何个人信息，用户在使用过程中产生的一切数据均存储在用户自身设备上，并由其承担系统受损、资料丢失以及其它任何风险。") style "about_small" color "#555"
 
-            null height 15
+            null height 20
 
             hbox:
-                text _("{b}4. 服务内容{/b}") style "about_small_title"
+                text _("4. 服务内容") style "about_small"
 
-            null height 15
-
-            hbox:
-                text _("4.1 服务方服务的具体内容由服务方根据实际情况提供。") style "about_small" color "#555"
-
-            null height 15
+            null height 20
 
             hbox:
-                text _("4.2 除非本服务协议另有其它明示规定，服务方所推出的新产品、新功能、新服务，均受到本服务协议之规范。") style "about_small" color "#555"
+                text _("4.1 {color=#f00}出品方{/color}服务的具体内容由{color=#f00}出品方{/color}根据实际情况提供。") style "about_small" color "#555"
 
-            null height 15
-
-            hbox:
-                text _("4.3 用户明确同意其使用服务方服务所存在的风险将完全由其自己承担。用户理解并接受下载或通过服务方服务取得的任何信息资料取决于用户自己，并由其承担系统受损、资料丢失以及其它任何风险。") style "about_small" color "#555"
-
-            null height 15
+            null height 20
 
             hbox:
-                text _("4.4 服务方保留随时地、不事先通知地、不需要任何理由地、单方面地中止、终止提供相关服务的权利。该等中止、终止，可能是因为服务方解散、注销、合并、分立，也可能是因为服务方将软件运营权转让给了第三方，还可能是因为软件使用的内容版权到期，还可能是因为国家法律、法规、政策及国家机关的命令或者其他的诸如地震、火灾、海啸、台风、罢工、战争等不可抗力事件，还可能是上列原因之外的其他原因。若服务方的该等中止、终止行为给你造成任何损失的，您同意不向服务方主张任何赔偿或其他责任。") style "about_small" color "#555"
+                text _("4.2 除非本服务协议另有其它明示规定，{color=#f00}出品方{/color}所推出的新产品、新功能、新服务，均受到本服务协议之规范。") style "about_small" color "#555"
 
-            null height 15
-
-            hbox:
-                text _("{b}5. 法律责任与免责{/b}") style "about_small_title"
-
-            null height 15
+            null height 20
 
             hbox:
-                text _("5.1 用户违反本《协议》或相关的服务条款的规定，导致或产生的任何第三方主张的任何索赔、要求或损失，包括合理的律师费，用户同意赔偿服务方与服务方关联公司及合作公司，并使之免受损害。") style "about_small" color "#555"
+                text _("4.3 用户明确同意其使用{color=#f00}出品方{/color}服务所存在的风险将完全由其自己承担。用户理解并接受下载或通过{color=#f00}出品方{/color}服务取得的任何信息资料取决于用户自己，并由其承担系统受损、资料丢失以及其它任何风险。") style "about_small" color "#555"
 
-            null height 15
-
-            hbox:
-                text _("5.2 使用本“软件”由用户自己承担风险，服务方对本“软件”不作任何类型的担保，不论是明示的、默示的或法令的保证和条件，包括但不限于本“软件”的适销性、适用性、无病毒、无疏忽或无技术瑕疵问题、所有权和无侵权的明示或默示担保和条件，对在任何情况下因使用或不能使用本“软件”所产生的直接、间接、偶然、特殊及后续的损害及风险，服务方及合作单位不承担任何责任。") style "about_small" color "#555"
-
-            null height 15
+            null height 20
 
             hbox:
-                text _("5.3 使用本“软件”涉及到互联网服务，可能会受到各个环节不稳定因素的影响，存在因不可抗力、计算机病毒、黑客攻击、系统不稳定、非法内容信息、骚扰信息屏蔽以及其他任何网络、技术、通信线路、信息安全管理措施等原因造成的用户的经济损失，服务方不承担任何责任。") style "about_small" color "#555"
+                text _("4.4 {color=#f00}出品方{/color}保留随时地、不事先通知地、不需要任何理由地、单方面地中止、终止提供相关服务的权利。该等中止、终止，可能是因为{color=#f00}出品方{/color}解散、注销、合并、分立，也可能是因为{color=#f00}出品方{/color}将软件运营权转让给了第三方，还可能是因为软件使用的内容版权到期，还可能是因为国家法律、法规、政策及国家机关的命令或者其他的诸如地震、火灾、海啸、台风、罢工、战争等不可抗力事件，还可能是上列原因之外的其他原因。若{color=#f00}出品方{/color}的该等中止、终止行为给你造成任何损失的，您同意不向{color=#f00}出品方{/color}主张任何赔偿或其他责任。") style "about_small" color "#555"
 
-            null height 15
-
-            hbox:
-                text _("5.4 用户因第三方如电信部门的通讯线路故障、技术问题、网络、电脑故障、系统不稳定性及其他各种不可抗力原因而遭受的一切损失，服务方不承担责任。") style "about_small" color "#555"
-
-            null height 15
+            null height 20
 
             hbox:
-                text _("5.5 因技术故障等不可抗事件影响到服务的正常运行的，服务方承诺在第一时间内与相关单位配合，及时处理进行修复，但用户因此而遭受的一切损失，服务方及合作单位不承担责任。") style "about_small" color "#555"
+                text _("5. 法律责任与免责") style "about_small"
 
-            null height 15
+            null height 20
 
             hbox:
-                text _("{b}6. 其他条款{/b}") style "about_small_title"
+                text _("5.1 用户违反本《协议》或相关的服务条款的规定，导致或产生的任何第三方主张的任何索赔、要求或损失，包括合理的律师费，用户同意赔偿{color=#f00}出品方{/color}与{color=#f00}出品方{/color}关联公司及合作公司，并使之免受损害。") style "about_small" color "#555"
 
-            null height 15
+            null height 20
+
+            hbox:
+                text _("5.2 使用本“软件”由用户自己承担风险，{color=#f00}出品方{/color}对本“软件”不作任何类型的担保，不论是明示的、默示的或法令的保证和条件，包括但不限于本“软件”的适销性、适用性、无病毒、无疏忽或无技术瑕疵问题、所有权和无侵权的明示或默示担保和条件，对在任何情况下因使用或不能使用本“软件”所产生的直接、间接、偶然、特殊及后续的损害及风险，{color=#f00}出品方{/color}及合作单位不承担任何责任。") style "about_small" color "#555"
+
+            null height 20
+
+            hbox:
+                text _("5.3 使用本“软件”涉及到互联网服务，可能会受到各个环节不稳定因素的影响，存在因不可抗力、计算机病毒、黑客攻击、系统不稳定、非法内容信息、骚扰信息屏蔽以及其他任何网络、技术、通信线路、信息安全管理措施等原因造成的用户的经济损失，{color=#f00}出品方{/color}不承担任何责任。") style "about_small" color "#555"
+
+            null height 20
+
+            hbox:
+                text _("5.4 用户因第三方如电信部门的通讯线路故障、技术问题、网络、电脑故障、系统不稳定性及其他各种不可抗力原因而遭受的一切损失，{color=#f00}出品方{/color}不承担责任。") style "about_small" color "#555"
+
+            null height 20
+
+            hbox:
+                text _("5.5 因技术故障等不可抗事件影响到服务的正常运行的，{color=#f00}出品方{/color}承诺在第一时间内与相关单位配合，及时处理进行修复，但用户因此而遭受的一切损失，{color=#f00}出品方{/color}及合作单位不承担责任。") style "about_small" color "#555"
+
+            null height 20
+
+            hbox:
+                text _("6. 其他条款") style "about_small"
+
+            null height 20
 
             hbox:
                 text _("6.1 本《协议》所定的任何条款的部分或全部无效者，不影响其它条款的效力。") style "about_small" color "#555"
 
-            null height 15
+            null height 20
 
             hbox:
-                text _("6.2 本《协议》的解释、效力及纠纷的解决，适用于中华人民共和国法律。若用户和服务方之间发生任何纠纷或争议，首先应友好协商解决，协商不成的，用户在此完全同意将纠纷或争议提交重启青春公司所在地即上海有管辖权的人民法院管辖。") style "about_small" color "#555"
+                text _("6.2 本《协议》的解释、效力及纠纷的解决，适用于中华人民共和国法律。若用户和服务方之间发生任何纠纷或争议，首先应友好协商解决，协商不成的，用户在此完全同意将纠纷或争议提交{color=#f00}出品方{/color}公司所在地即上海有管辖权的人民法院管辖。") style "about_small" color "#555"
 
-            null height 15
-
-            hbox:
-                text _("6.3 本《协议》版权由服务方所有，服务方保留一切解释权利。本文中提及的软件和服务名称有可能为服务方的注册商标或商标，受法律保护。") style "about_small" color "#555"
-
-            null height 15
-
-            label "{b}用户隐私政策{/b}"
-            null height 15
-
+            null height 20
 
             hbox:
-                text _("发布时间：2020年10月15日") style "about_small_alignLast" color "#555"
-            null height 15
-            hbox:
-                text _("生效时间：2020年10月15日") style "about_small_alignLast" color "#555"
-            null height 15
+                text _("6.3 本《协议》版权由{color=#f00}出品方{/color}所有，{color=#f00}出品方{/color}保留一切解释权利。本文中提及的软件和服务名称有可能为{color=#f00}出品方{/color}的注册商标或商标，受法律保护。") style "about_small" color "#555"
+
+            null height 20
+
+            label "用户隐私政策"
+            null height 20
+
 
             hbox:
-                text _("本用户隐私政策所适用的“重启青春App” 移动应用，是XXX（地址：XXX）出品，并由上海海笛数字出版科技有限公司及子公司上海商笛数字出版科技有限公司（地址：上海市郭守敬路498号22号楼）提供客户服务支持和技术服务支持的。本隐私政策所适用的用户（以下称“用户”或“您”）是指通过“重启青春App” 移动应用以及相关软件及网络服务获得各种在线的和线下的服务（以下统称“重启青春App”）的用户。非常感谢您对XXX、上海海笛数字出版科技有限公司和上海商笛数字出版科技有限公司（以下统称“我们”）的信任和支持，我们尊重并保护您的隐私。本政策与您使用重启青春App的服务关系紧密，我们建议您仔细阅读并理解本政策全部内容，在确认充分理解并同意后使用重启青春App产品或服务。{b}如您对本政策内容有任何疑问、意见或建议，请及时通过客服热线（4000213100）咨询，如果不同意本政策的任何内容或者无法理解本政策相关内容，请您立即停止访问和使用“重启青春App” 。{/b}") style "about_small"
+                text _("发布时间：2022年4月18日") style "about_small_alignLast" color "#555" xalign 1.0
+            null height 20
+            hbox:
+                text _("生效时间：2020年4月18日") style "about_small_alignLast" color "#555"
+            null height 20
 
-            null height 15
+            hbox:
+                text _("本用户隐私政策所适用的{color=#f00}“重启青春”{/color}移动应用，{color=#f00}是由郭侃亮制作、华东理工大学出版社有限公司（地址：上海市徐汇区梅陇路130号）出品，并由上海海笛数字出版科技有限公司（地址：上海市郭守敬路498号22号楼）上架发行同时提供运营支持和客户服务支持的。{/color}本隐私政策所适用的用户（以下称“用户”或“您”）是指通过{color=#f00}“重启青春”{/color}移动应用以及相关软件及网络服务获得各种在线的和线下的服务（以下统称{color=#f00}“重启青春”{/color}）的用户。非常感谢您对{color=#f00}郭侃亮制作团队、华东理工大学出版社有限公司{/color}、上海海笛数字出版科技有限公司（以下统称“我们”）的信任和支持，我们尊重并保护您的隐私。本政策与您使用{color=#f00}“重启青春”{/color}的服务关系紧密，我们建议您仔细阅读并理解本政策全部内容，在确认充分理解并同意后使用{color=#f00}“重启青春”{/color}产品或服务。{b}如您对本政策内容有任何疑问、意见或建议，请及时通过客服热线（4000213100）咨询，如果不同意本政策的任何内容或者无法理解本政策相关内容，请您立即停止访问和使用{color=#f00}“重启青春”{/color}。{/b}") style "about_small"
 
+            null height 20
 
             hbox:
                 text _("{b}一、我们如何收集个人信息：{/b}") style "about_small"
-            null height 15
+            null height 20
 
             hbox:
-                text _(" 重启青春App为纯离线应用，无需创建账号，我们也未收集任何用户相关个人信息。") style "about_small" color "#555"
+                text _("  重启青春App为纯离线应用，无需创建账号，我们也未收集任何用户相关个人信息。") style "about_small" color "#555"
 
-            null height 15
+            null height 20
 
             hbox:
                 text _("{b}（一）系统权限说明{/b}") style "about_small"
-            null height 15
+            null height 20
 
             hbox:
-                text _(" 您在使用重启青春App对应服务时不需要调用您的设备功能权限。如出现调用设备功能权限的申请，您可能下载了非正版软件，请您立即停止访问和使用“重启青春App” 。") style "about_small" color "#555"
+                text _("您在使用{color=#f00}“重启青春”{/color}对应服务时不需要调用您的设备功能权限。如出现调用设备功能权限的申请，您可能下载了非正版软件，请您立即停止访问和使用{color=#f00}“重启青春”{/color}。") style "about_small" color "#555"
 
-            null height 15
+            null height 20
 
             hbox:
                 text _("{b}（二）其他{/b}") style "about_small"
-            null height 15
+            null height 20
 
             hbox:
-                text _(" 请您理解，我们向你提供的服务是不断更新和发展的。如您选择使用了前述说明当中尚未涵盖的其他服务，基于该服务我们需要收集您的信息的，我们会通过页面提示、交互流程或协议约定的方式另行向您说明信息收集的范围与目的，并征得您的同意。") style "about_small" color "#555"
+                text _("请您理解，我们向你提供的服务是不断更新和发展的。如您选择使用了前述说明当中尚未涵盖的其他服务，基于该服务我们需要收集您的信息的，我们会通过页面提示、交互流程或协议约定的方式另行向您说明信息收集的范围与目的，并征得您的同意。") style "about_small" color "#555"
 
-            null height 15
+            null height 20
 
             hbox:
                 text _("{b}二、对第三方责任的声明{/b}") style "about_small"
-            null height 15
+            null height 20
 
             hbox:
-                text _("重启青春App 本未接入任何第三方SDK。") style "about_small" color "#555"
+                text _("  {color=#f00}“重启青春”{/color}本未接入任何第三方SDK。") style "about_small" color "#555"
 
-            null height 15
+            null height 20
 
             hbox:
                 text _("三、未成年人隐私权特别约定") style "about_small"
 
-            null height 15
+            null height 20
 
             hbox:
                 text _("1、我们期望父母或监护人指导未成年人使用我们的服务。我们承诺未收集任何未成年人的个人信息。") style "about_small" color "#555"
 
-            null height 15
+            null height 20
 
             hbox:
                 text _("2、{color=#111}{b}如您为未成年人，建议请您的父母或监护人阅读本政策，并在征得您父母或监护人同意的前提下使用我们的服务。{/b}{/color}如您的监护人不同意您按照本政策使用我们的服务，请您立即终止使用我们的服务。") style "about_small" color "#555"
 
-            null height 15
+            null height 20
 
             hbox:
                 text _("{b}四、本政策的适用及更新{/b}") style "about_small"
 
-            null height 15
+            null height 20
 
             hbox:
-                text _("{b}1、本隐私政策适用于重启青春App 向您提供的所有服务。{/b}") style "about_small"
+                text _("{b}1、本隐私政策适用于{color=#f00}“重启青春”{/color}向您提供的所有服务。{/b}") style "about_small"
 
-            null height 15
+            null height 20
 
             hbox:
-                text _("需要特别说明的是，本隐私政策不适用重启青春App 关联方、重启青春App 合作机构或其他第三方向你提供的服务。重启青春App 也可能含有到其他网站的链接，我们会依据法律法规的要求采取必要措施对相关网站进行审查（包括审查网站经营资质、通过技术手段对相关网站的安全情况进行合理且初步识别、督促该网站经营者根据法律规定保护您的个人信息安全），但我们无法保证该链接网站的运营方会按照我们的要求采取保护措施。{color=#111}{b}我们建议您查看该网站的隐私权政策，了解他们如何处理你的信息，以便审慎决策。{/b}{/color}") style "about_small" color "#555"
+                text _("需要特别说明的是，本隐私政策不适用{color=#f00}“重启青春”{/color}关联方、{color=#f00}“重启青春”{/color}合作机构或其他第三方向你提供的服务。{color=#f00}“重启青春”{/color}也可能含有到其他网站的链接，我们会依据法律法规的要求采取必要措施对相关网站进行审查（包括审查网站经营资质、通过技术手段对相关网站的安全情况进行合理且初步识别、督促该网站经营者根据法律规定保护您的个人信息安全），但我们无法保证该链接网站的运营方会按照我们的要求采取保护措施。{color=#111}{b}我们建议您查看该网站的隐私权政策，了解他们如何处理你的信息，以便审慎决策。{/b}{/color}") style "about_small" color "#555"
 
-            null height 15
+            null height 20
 
             hbox:
                 text _("2、我们与您达成的其他关于个人信息和隐私的条款视为对本政策的补充，本政策存在未涉及内容的，适用其他条款的约定。若因新增产品、服务、功能且需收集、使用、提供您的个人信息的，我们将另行获取您的同意。") style "about_small" color "#555"
 
-            null height 15
+            null height 20
 
             hbox:
-                text _("{b}3、发生下列重大变化情形并可能导致您在本政策项下权利的实质减损或产生重大影响时，我们会适时对本政策进行更新：{/b}") style "about_small"
+                text _("{b}发生下列重大变化情形并可能导致您在本政策项下权利的实质减损或产生重大影响时，我们会适时对本政策进行更新：{/b}") style "about_small"
 
             hbox:
                 text _("""{b}
@@ -395,54 +394,50 @@ screen agreements():
 （4）您访问和管理个人信息的方式发生变化；
 （5）数据安全能力、信息安全风险发生变化；
 （6）用户询问、投诉的渠道和机制，以及外部纠纷解决机构及联络方式发生变化；
-（7）其他可能对您的个人信息权益产生重大影响的变化。
-{/b}
-                """) style "about_small"
+（7）其他可能对您的个人信息权益产生重大影响的变化。{/b}""") style "about_small"
 
-            null height 15
+            null height 20
 
             hbox:
-                text _("{b}如本政策发生更新，我们将以重启青春App 页面公告的方式来通知您。为了您能及时接收到通知，建议您在联系方式更新时及时通知我们。如您在本政策更新生效后继续使用重启青春App 服务，即表示您已充分阅读、理解并接受更新后的政策并愿意受更新后的政策约束。{/b}") style "about_small"
+                text _("{b}如本政策发生更新，我们将以{color=#f00}“重启青春”{/color}页面公告的方式来通知您。为了您能及时接收到通知，建议您在联系方式更新时及时通知我们。如您在本政策更新生效后继续使用{color=#f00}“重启青春”{/color}服务，即表示您已充分阅读、理解并接受更新后的政策并愿意受更新后的政策约束。{/b}") style "about_small"
 
-            null height 15
+            null height 20
 
             hbox:
-                text _("{b}您可以在重启青春App查看本政策。我们鼓励您在每次使用重启青春App 时都查阅我们的隐私政策。{/b}") style "about_small"
+                text _("{b}您可以在{color=#f00}“重启青春”{/color}查看本政策。我们鼓励您在每次使用{color=#f00}“重启青春”{/color}时都查阅我们的隐私政策。{/b}") style "about_small"
 
-            null height 15
+            null height 20
 
             hbox:
                 text _("{b}五、联系我们{/b}") style "about_small"
 
-            null height 15
+            null height 20
 
             hbox:
-                text _("1、XXX的联系地址为：XXX，上海海笛数字出版科技有限公司/上海商笛数字出版科技有限公司的联系地址为：上海市郭守敬路498号22号楼。") style "about_small" color "#555"
+                text _("1、{color=#f00}华东理工大学出版社{/color}的联系地址为：上海市徐汇区{color=#f00}梅陇路130号{/color}，{color=#f00}上海海笛数字出版科技有限公司的联系地址为{/color}：上海市郭守敬路498号22号楼。") style "about_small" color "#555"
 
-            null height 15
+            null height 20
 
             hbox:
                 text _("2、我们成立了专门的个人信息保护小组，如有个人信息保护的相关问题，请与我们联系，邮箱地址：jacky@haidii.com。") style "about_small" color "#555"
 
-            null height 15
+            null height 20
 
             hbox:
                 text _("{b}六、投诉反馈渠道{/b}") style "about_small"
 
-            null height 15
+            null height 20
 
             hbox:
                 text _("{b}投诉反馈受理电话：4000213100 （工作日9:00-18:00）{/b}") style "about_small"
 
-            null height 15
+            null height 20
 
             hbox:
                 text _("{b}邮箱地址：service@mingshukeji.com（受理书面投诉）{/b}") style "about_small"
 
-            null height 15
+            null height 20
 
-            hbox:
-                text _("您还可以通过重启青春App内意见反馈等自助渠道反馈您的意见，一般情况下客服人员将于15个工作日内响应您的诉求。") style "about_small" color "#555"
 
             hbox:
                 xalign 0.5
