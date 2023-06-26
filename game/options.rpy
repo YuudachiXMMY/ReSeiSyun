@@ -12,7 +12,7 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
-define config.name = _("ReSeiSyun")
+define config.name = _("重启青春")
 
 
 ## Determines if the title given above is shown on the main menu screen. Set
@@ -23,14 +23,28 @@ define gui.show_name = False
 
 ## The version of the game.
 
-define config.version = "c1.2.1"
+define config.version = "c1.3.3"
 
 
 ## Text that is placed on the game's about screen. Place the text between the
 ## triple-quotes, and leave a blank line between paragraphs.
 
 define gui.about = _p("""
-Built on 2023/04/21\n version c1.2.1
+"[config.name!t]"
+version [config.version]
+Built on 2023/06/16
+
+Notes:
+Ready for First Release.
+
+企画（Producer）
+郭侃亮
+
+程序（Programmer/Developer）
+芯玫墨韵（吴海荣）
+
+Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only]
+
 """)
 
 
@@ -39,6 +53,9 @@ Built on 2023/04/21\n version c1.2.1
 ## or semicolons.
 
 define build.name = "ReSeiSyun"
+
+
+define config.window_icon = "gui/window_icon.png"
 
 
 ## Sounds and music ############################################################
@@ -113,6 +130,11 @@ define config.window = "auto"
 
 define config.window_show_transition = Dissolve(.2)
 define config.window_hide_transition = Dissolve(.2)
+
+
+## Android #####################################################################region
+
+define build.android_permissions = [  ]
 
 
 ## Preference defaults #########################################################
