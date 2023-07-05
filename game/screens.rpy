@@ -149,6 +149,7 @@ screen agreements_menu(title, yinitial=0.0):
 
 
 screen agreements():
+    zorder 102
     modal True
     predict False
 
@@ -1049,6 +1050,7 @@ style r_menu_textbutton:
 ## Game Infomation
 
 screen info():
+    zorder 101
     # tag main_menu
 
     add "gui/main/info_bg.png" zoom .74
