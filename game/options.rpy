@@ -23,7 +23,7 @@ define gui.show_name = False
 
 ## The version of the game.
 
-define config.version = "c1.3.3"
+define config.version = "c1.3.5"
 
 
 ## Text that is placed on the game's about screen. Place the text between the
@@ -32,10 +32,10 @@ define config.version = "c1.3.3"
 define gui.about = _p("""
 "[config.name!t]"
 version [config.version]
-Built on 2023/06/16
+Built on 2023/07/13
 
 Notes:
-Ready for First Release.
+Fixed Start Error.
 
 企画（Producer）
 郭侃亮
