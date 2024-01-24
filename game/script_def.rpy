@@ -59,9 +59,9 @@ init python hide:
 
 #################################################################
 ## Default Sound Channels
-define config.default_music_volume = 0.5
-define config.default_sfx_volume = 0.4
 define config.default_voice_volume = 0.8
+define config.default_music_volume = 0.9
+define config.default_sfx_volume = 0.4
 define config.auto_voice = "audio/voice/{id}.mp3"
 
 

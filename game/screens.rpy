@@ -114,6 +114,8 @@ screen agreements_menu(title, yinitial=0.0):
 
     #     hbox:
 
+    key "K_AC_BACK" action Quit(confirm=True)
+
     frame:
         background "sl_bg"
         left_margin 214
@@ -129,9 +131,8 @@ screen agreements_menu(title, yinitial=0.0):
             top_margin 20
             bottom_margin 20
 
-            viewport:
+            viewport  id "vp":
                 yinitial yinitial
-                scrollbars "vertical"
                 mousewheel True
                 draggable True
                 pagekeys True
@@ -141,6 +142,10 @@ screen agreements_menu(title, yinitial=0.0):
                 vbox:
                     transclude
 
+            vbar value YScrollValue("vp") xsize 30 xalign 1.025 yalign 0.5
+
+style side_agreements_menu:
+    xsize 10
 
     # textbutton _("Return"):
     #     style "return_button"
@@ -218,7 +223,8 @@ screen agreements():
             null height 20
 
             hbox:
-                text _("本“软件”并未收集任何个人信息，用户在使用过程中产生的一切数据均存储在用户自身设备上，并由其承担系统受损、资料丢失以及其它任何风险。") style "about_small" color "#555"
+                # text _("本“软件”并未收集任何个人信息，用户在使用过程中产生的一切数据均存储在用户自身设备上，并由其承担系统受损、资料丢失以及其它任何风险。") style "about_small" color "#555"
+                text _("在运行“软件”时，我们需要收集用户使用的设备MAC地址、设备名称、设备类型和版本、软件安装列表，获取设备传感器、监听传感器的相关信息，以保障您能够正常使用本软件。用户在使用本软件过程中，产生的一切数据均存储在用户自身设备上，因此需要获取储存权限。我们不承担在数据储存过程中所产生的系统受损、资料丢失及其它任何风险。") style "about_small" color "#555"
 
             null height 20
 
@@ -442,6 +448,7 @@ screen agreements():
 
             hbox:
                 xalign 0.5
+                spacing 60
                 textbutton _("拒绝"):
                     action Quit(confirm=False)
                 textbutton _("同意"):
@@ -911,6 +918,8 @@ screen quick_menu():
     ## Ensure this appears on top of other screens.
     zorder 100
 
+    key "K_AC_BACK" action Quit(confirm=True)
+
     if quick_menu and renpy.get_screen("say"):
 
         window:
@@ -919,7 +928,7 @@ screen quick_menu():
             background "quick_bg"
 
             imagebutton:
-                yalign 0.5 xalign 0.125
+                yalign 0.5 xalign 0.12
                 auto "quick_skip_%s"
                 action Skip() alternate Skip(fast=False, confirm=True)
 
@@ -1146,6 +1155,7 @@ screen navigation():
             hover "gui/main/quit_hover.png"
             action Quit(confirm=True)
 
+    key "K_AC_BACK" action Quit(confirm=True)
 
 style navigation_button is gui_button
 style navigation_button_text is gui_button_text

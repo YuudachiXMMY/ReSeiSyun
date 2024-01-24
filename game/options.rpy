@@ -23,7 +23,7 @@ define gui.show_name = False
 
 ## The version of the game.
 
-define config.version = "c1.3.5"
+define config.version = "c1.3.6"
 
 
 ## Text that is placed on the game's about screen. Place the text between the
@@ -35,7 +35,7 @@ version [config.version]
 Built on 2023/07/13
 
 Notes:
-Fixed Start Error.
+Fix Android Agreements.
 
 企画（Producer）
 郭侃亮
@@ -132,11 +132,6 @@ define config.window_show_transition = Dissolve(.2)
 define config.window_hide_transition = Dissolve(.2)
 
 
-## Android #####################################################################region
-
-define build.android_permissions = [  ]
-
-
 ## Preference defaults #########################################################
 
 ## Controls the default text speed. The default, 0, is infinite, while any other
@@ -226,12 +221,19 @@ init python:
     build.documentation('*.html')
     build.documentation('*.txt')
 
+    build.android_permissions = []
+
 
 ## A Google Play license key is required to download expansion files and perform
 ## in-app purchases. It can be found on the "Services & APIs" page of the Google
 ## Play developer console.
 
 # define build.google_play_key = "..."
+
+
+## Android #####################################################################
+
+define build.android_permissions = []
 
 
 ## The username and project name associated with an itch.io project, separated
