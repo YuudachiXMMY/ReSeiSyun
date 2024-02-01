@@ -102,8 +102,8 @@ label lesson2_1_q1:
             jump l2_1_q1BC
 
 label l2_1_q1A:
-    if chpt2_C_answer_bunka_index < 1:
-        $ chpt2_C_answer_bunka_index = 1
+    if chpt2_C_answer_bunka_index < 2:
+        $ chpt2_C_answer_bunka_index = 2
     #选择1.
     #好感度参数 +10
     #{显示立绘 TJ 1gx}
@@ -114,8 +114,8 @@ label l2_1_q1A:
     jump lesson2_1_q2
 
 label l2_1_q1BC:
-    if chpt2_C_answer_bunka_index < 1:
-        $ chpt2_C_answer_bunka_index = 1
+    if chpt2_C_answer_bunka_index < 2:
+        $ chpt2_C_answer_bunka_index = 2
     # 选择 其他选项
     #{显示立绘 TJ 1ng}
     show TJ 1ng
@@ -139,8 +139,8 @@ label lesson2_1_q2:
             jump l2_1_q2AC
 
 label l2_1_q2B:
-    if chpt2_C_answer_bunka_index < 2:
-        $ chpt2_C_answer_bunka_index = 2
+    if chpt2_C_answer_bunka_index < 3:
+        $ chpt2_C_answer_bunka_index = 3
     #选择2.
     #好感度参数 +10
     #{显示立绘 TJ 1gx}
@@ -151,8 +151,8 @@ label l2_1_q2B:
     jump lesson2_1_q3
 
 label l2_1_q2AC:
-    if chpt2_C_answer_bunka_index < 2:
-        $ chpt2_C_answer_bunka_index = 2
+    if chpt2_C_answer_bunka_index < 3:
+        $ chpt2_C_answer_bunka_index = 3
     # 选择 其他选项
     #{显示立绘 TJ 1ng}
     show TJ 1ng
@@ -177,8 +177,8 @@ label lesson2_1_q3:
             jump l2_1_q3C
 
 label l2_1_q3C:
-    if chpt2_C_answer_bunka_index < 3:
-        $ chpt2_C_answer_bunka_index = 3
+    if chpt2_C_answer_bunka_index < 4:
+        $ chpt2_C_answer_bunka_index = 4
     #选择3
     #好感度参数 +10
     #{显示立绘 TJ 1gx}
@@ -189,8 +189,8 @@ label l2_1_q3C:
     jump lesson2_2
 
 label l2_1_q3AB:
-    if chpt2_C_answer_bunka_index < 3:
-        $ chpt2_C_answer_bunka_index = 3
+    if chpt2_C_answer_bunka_index < 4:
+        $ chpt2_C_answer_bunka_index = 4
     # 选择 其他选项
     #{显示立绘 TJ 1ng}
     show TJ 1ng

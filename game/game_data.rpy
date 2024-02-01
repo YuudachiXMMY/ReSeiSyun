@@ -50,7 +50,33 @@ define chpt2_C_answer_kaiwa = [
 
 default chpt2_C_answer_bunka_index = 0
 define chpt2_C_answer_bunka = [
+    "日本人为什么要在吃饭前要说「いただきます」（我吃咯）？\n正确回答：{u}表示对事物的敬意{/u}",
     '平假名为什么又被称为女手？\n正确答案：{u}早期平假名多为女性所用{/u}',
     '平假名的起源是？\n正确答案：{u}汉字的草书{/u}',
-    '以下哪个不是片假名的功能？\n正确答案：{u}作为助词使用{/u}'
+    "片假名现在的功能是什么？\n正确回答：{u}标注外国的人名和地名、突出需要强调的词{/u}"
+]
+
+## Chapter 3
+default chpt3_C_answer_kana_index = 0
+define chpt3_C_answer_kana = [
+    "sa","shi","su","se","so",
+    "ta","chi","tu","te","to"
+]
+
+default chpt3_C_answer_tango_index = 0
+define chpt3_C_answer_tango = [
+    "021sushi2", "022suki2", "023uta2", "024tuki2"
+]
+
+default chpt3_C_answer_kaiwa_index = 0
+define chpt3_C_answer_kaiwa = [
+    "\n正确回答：{u}{/u}",
+    "\n正确回答：{u}{/u}"
+]
+
+default chpt3_C_answer_bunka_index = 0
+define chpt3_C_answer_bunka = [
+    '\n正确答案：{u}{/u}',
+    '\n正确答案：{u}{/u}',
+    '\n正确答案：{u}{/u}'
 ]

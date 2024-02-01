@@ -309,6 +309,8 @@ label chpt2_5:
     show XY 12dx at f_left with dissolve
     ZhouXiaoyu "你们在干什么？"
     #{显示立绘LY 12wx}
+    if chpt2_C_answer_bunka_index < 1:
+        $ chpt2_C_answer_bunka_index = 1
     show LY 12wx at f_right with dissolve
     LiuYang "这是日本人的习惯，在吃饭前要说「いただきます」，表示对食物的敬意。"
     #{显示立绘XY 11zm}
