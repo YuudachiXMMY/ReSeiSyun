@@ -1,4 +1,4 @@
-#第一章
+#第二章
 label chpt2_1:
 
     # 显示第二章过渡幕间图片
@@ -68,6 +68,8 @@ label chpt2_2:
             jump chpt2_choice_1B
 
 label chpt2_choice_1B:
+    if chpt2_C_answer_kaiwa_index < 1:
+        $ chpt2_C_answer_kaiwa_index = 1
     #选择1.
     #好感度参数 +10
     me "次は体育の授業ですよ。一緒に行きましょうか。（下节是体育课，我们一起去吧。）"
@@ -75,6 +77,8 @@ label chpt2_choice_1B:
     jump chpt2_3
 
 label chpt2_choice_1A:
+    if chpt2_C_answer_kaiwa_index < 1:
+        $ chpt2_C_answer_kaiwa_index = 1
     #选择2.
     me "不对，不对。食べましょう是邀请一起吃饭的意思，应该说……"
     me "次は体育の授業ですよ。一緒に行きましょうか。（下节是体育课，我们一起去吧。）"
@@ -225,6 +229,8 @@ label chpt2_4:
             jump chpt2_choice_2B
 
 label chpt2_choice_2A:
+    if chpt2_C_answer_kaiwa_index < 2:
+        $ chpt2_C_answer_kaiwa_index = 2
     #选择1.
     me "不对，すみません是道歉的意思。应该说……"
     me "大丈夫。気にしないで。（没事，别介意。）"
@@ -232,6 +238,8 @@ label chpt2_choice_2A:
     jump chpt2_5
 
 label chpt2_choice_2B:
+    if chpt2_C_answer_kaiwa_index < 2:
+        $ chpt2_C_answer_kaiwa_index = 2
     #选择2.
     #好感度参数 +10
     me "大丈夫。気にしないで。（没事，别介意。）"

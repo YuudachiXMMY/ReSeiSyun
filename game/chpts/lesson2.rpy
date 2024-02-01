@@ -1,3 +1,4 @@
+#第二课
 label lesson2_1:
     #{播放BGM b0206}
     play music "audio/bgm/b0206.mp3"
