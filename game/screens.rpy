@@ -4,6 +4,8 @@
 
 init offset = -1
 
+
+
 define config.auto_voice = "audio/voice/{id}.mp3"
 
 
@@ -154,6 +156,8 @@ style side_agreements_menu:
 
 
 screen agreements():
+    # $ renpy.add_layer("memory", above="screens", below=None, menu_clear=False, sticky=None)
+
     zorder 102
     modal True
     predict False
@@ -633,14 +637,14 @@ screen review_slots(title):
             action NullAction()
 
     if renpy.get_screen("kana_review"):
-        $ review_tmp_lst = chpt1_C_answer_kana
-        $ review_tmp_lst_index = chpt1_C_answer_kana_index
+        $ review_tmp_lst = chpt1_C_answer_kana[:chpt1_C_answer_kana_index] + chpt2_C_answer_kana[:chpt2_C_answer_kana_index]
+        $ review_tmp_lst_index = len(review_tmp_lst)
     elif renpy.get_screen("vocab_review"):
-        $ review_tmp_lst = chpt1_C_answer_tango
-        $ review_tmp_lst_index = chpt1_C_answer_tango_index
+        $ review_tmp_lst = chpt1_C_answer_tango[:chpt1_C_answer_tango_index] + chpt2_C_answer_tango[:chpt2_C_answer_tango_index]
+        $ review_tmp_lst_index = len(review_tmp_lst)
     elif renpy.get_screen("bunka_review"):
-        $ review_tmp_lst = chpt1_C_answer_bunka
-        $ review_tmp_lst_index = chpt1_C_answer_bunka_index
+        $ review_tmp_lst = chpt1_C_answer_bunka[:chpt1_C_answer_bunka_index] + chpt2_C_answer_bunka[:chpt2_C_answer_bunka_index]
+        $ review_tmp_lst_index = len(review_tmp_lst)
     else:
         $ review_tmp_lst = ["Error"]
 
@@ -1125,6 +1129,11 @@ screen navigation():
             $tmp += str(i)+" "
         text "chpt1_answer_tango: "+tmp xalign 0 yalign 0.24
 
+        $tmp=""
+        for i in chpt2_select:
+            $tmp += str(i)+" "
+        text "chpt2_select: "+tmp xalign 0 yalign 0.27
+
     if main_menu:
         # add "main_bg"
         add "gui/main/logo.png" xalign 1.0 yalign 1.0
@@ -1134,7 +1143,7 @@ screen navigation():
             xalign 0.05 yalign 0.05
             idle "gui/main/start.png"
             hover "gui/main/start_hover.png"
-            action Start()
+            action Start("chpt2_1")
 
         imagebutton:
             xalign 0.05 yalign 0.18

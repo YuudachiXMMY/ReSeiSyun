@@ -1,6 +1,10 @@
-﻿# 第一幕   序
+﻿# 序章
 label prologue_scene_1_1:
+
+    scene pz 00 with Dissolve(4)
+    pause 0.5
     #{黑屏}
+    scene black_bg with dissolve
     #{播放SE s0101手机闹钟响起的声音}（所有se的播放都设定画面停止到播放结束以后）
     play music "audio/se/s0101 naozhong.mp3"
     me "……"
@@ -69,6 +73,8 @@ label prologue_scene_1_1:
             jump prologue_scene_1_choice_1AC
 
 label prologue_scene_1_choice_1B:
+    if chpt1_C_answer_bunka_index < 1:
+        $ chpt1_C_answer_bunka_index = 1
     # 选择答案后跳转
     #选择2.茶道
     #好感度参数 +10
@@ -77,6 +83,8 @@ label prologue_scene_1_choice_1B:
     jump prologue_scene_1_2
 
 label prologue_scene_1_choice_1AC:
+    if chpt1_C_answer_bunka_index < 1:
+        $ chpt1_C_answer_bunka_index = 1
     # 选择 其他选项
     me "唉，好像不太对。"
     me "应该是2.茶道。日本的茶道起源于中国。“和”指祥和，“敬”指尊敬，“清”指清洁，“寂”指幽寂。"
@@ -99,6 +107,8 @@ label prologue_scene_1_2:
             jump prologue_scene_1_choice_2BC
 
 label prologue_scene_1_choice_2A:
+    if chpt1_C_answer_bunka_index < 2:
+        $ chpt1_C_answer_bunka_index = 2
     #选择1.汉服
     #好感度参数 +10
     me "嗯，确实是这个答案。日本和服，初仿中国魏晋隋唐时期吴地的汉服，称为“吴服”，后又学习唐初衣冠制度，称为“唐衣”。"
@@ -106,6 +116,8 @@ label prologue_scene_1_choice_2A:
     jump prologue_scene_1_3
 
 label prologue_scene_1_choice_2BC:
+    if chpt1_C_answer_bunka_index < 2:
+        $ chpt1_C_answer_bunka_index = 2
     #选择 其他选项
     me "唉，好像不太对。"
     me "应该是1.汉服。日本和服，初仿中国魏晋隋唐时期吴地的汉服，称为“吴服”，后又学习唐初衣冠制度，称为“唐衣”。"
@@ -737,6 +749,9 @@ label prologue_scene_2_3_Baohe:
 
     $ Baohe = (prologue_answer[2] + prologue_answer[3] + prologue_answer[4] + prologue_answer[5]) / 10
     if Baohe == 4:
+
+        if chpt1_C_answer_bunka_index < 6:
+            $ chpt1_C_answer_bunka_index = 6
         jump prologue_scene_2_3_Baohe_Opened
 
     jump prologue_scene_2_3_Baohe_NotOpened

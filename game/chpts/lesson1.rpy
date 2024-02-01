@@ -854,6 +854,8 @@ label lesson1_5_q2:
             jump l1_5_q2B
 
 label l1_5_q2B:
+    if chpt1_C_answer_kaiwa_index < 1:
+        $ chpt1_C_answer_kaiwa_index = 1
     #选择B.
     #好感度参数 +10
     #{显示立绘 WH11kx}
@@ -863,6 +865,8 @@ label l1_5_q2B:
     jump lesson1_5_q3
 
 label l1_5_q2A:
+    if chpt1_C_answer_kaiwa_index < 1:
+        $ chpt1_C_answer_kaiwa_index = 1
     #选择A.
     #{显示立绘 WH11kx}
     show WH 11kx
@@ -901,6 +905,8 @@ label lesson1_5_q3:
             jump l1_5_q3B
 
 label l1_5_q3B:
+    if chpt1_C_answer_kaiwa_index < 2:
+        $ chpt1_C_answer_kaiwa_index = 2
     #选择B.
     #好感度参数 +10
     #{显示立绘 WH11wx}
@@ -911,6 +917,8 @@ label l1_5_q3B:
     jump lesson1_6
 
 label l1_5_q3A:
+    if chpt1_C_answer_kaiwa_index < 2:
+        $ chpt1_C_answer_kaiwa_index = 2
     #选择A.
     #{显示立绘 WH11kx}
     show WH 11kx
@@ -957,4 +965,4 @@ label lesson1_6:
 
     hide WH with dissolve
 
-    return
+    jump chpt2_1

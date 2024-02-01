@@ -1,6 +1,9 @@
 #第一章
 label chpt1_1:
 
+    scene pz 01 with Dissolve(4)
+    pause 0.5
+
     #{画面逐渐变亮  睁眼动画}
     scene black_bg with dissolve
     me "……"

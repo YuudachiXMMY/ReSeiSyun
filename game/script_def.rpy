@@ -13,6 +13,8 @@ define YuanQiaoqiao = Character("袁巧巧", color='#ffff')
 define Tomoko = Character("高桥智子", color='#ffff')
 define Zhizi = Character("智子", color='#ffff')
 
+define config.layers = ["master", "transient", "screens", "overlay", "over_screen"]
+
 
 #################################################################
 ## Lesson 1 Greetings
@@ -37,6 +39,13 @@ default chpt1_answer_bunka = [0, 0, 0]
 default chpt1_answer_kana = [0, 0, 0, 0, 0]
 default chpt1_answer_tango = [0, 0, 0]
 default chpt1_answer_kaiwa = [0, 0, 0]
+
+# Chpt 2
+default chpt2_select = [0, 0, 0, 0, 0]
+default chpt2_answer_bunka = [0, 0, 0]
+default chpt2_answer_kana = [0, 0, 0, 0, 0]
+default chpt2_answer_tango = [0, 0, 0]
+default chpt2_answer_kaiwa = [0, 0, 0]
 
 
 #################################################################
@@ -69,11 +78,14 @@ define config.auto_voice = "audio/voice/{id}.mp3"
 ## Hirakana & Katakana
 define HiraKataKANA = {
     "a_o" : ["a","i","u","e","o"],
-    "ka_ko" : ["ka","ki","ku","ke","ko"]
+    "ka_ko" : ["ka","ki","ku","ke","ko"],
+    "sa_so" : ["sa", "shi", "su", "se", "so"],
+    "ta_to" : ["ta", "chi", "tu", "te", "to"]
 }
 
 ## Dango
 define Dango_L1 = ["011ai2", "012au2", "013aki2", "014koi2"]
+define Dango_L2 = ["021sushi2", "022suki2", "023uta2", "024tuki2"]
 
 
 #################################################################
