@@ -1,15 +1,15 @@
 #第三章
 label chpt3_1:
 
-
+    scene black_bg with Dissolve(2)
     #显示第二章过渡幕间图片
     #{显示背景  pz 03 }
-    scene pz 03 with Dissolve(4)
-    pause 0.5
+    scene pz 03 with Dissolve(2)
+    pause 1
     #{播放BGM b0301}
     play music "audio/bgm/b0301.mp3"  fadein 2.0
     #{显示背景  p05 jiaoshijiu }
-    scene p05 jiaoshijiu with dissolve
+    scene p05 jiaoshijiu with Dissolve(2.5)
     #{显示立绘WH 11kx}
     show WH 11kx at middle with dissolve
     "一晃穿越回这个世界已经三天了，内心渐渐地有些留恋这个地方。"

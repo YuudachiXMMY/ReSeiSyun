@@ -1,12 +1,13 @@
 #第二章
 label chpt2_1:
 
+    scene black_bg with Dissolve(2)
     # 显示第二章过渡幕间图片
     #{显示背景  pz 02 }
-    scene pz 02 with Dissolve(4)
-    pause 0.5
+    scene pz 02 with Dissolve(2)
+    pause 1
     #（画面黑屏）
-    scene black_bg with dissolve
+    scene black_bg with Dissolve(2.5)
     # （手机闹钟响起的声音）
     play music "audio/se/s0101 naozhong.mp3" fadein 2.0
     # TODO: {显示立绘WH12my}

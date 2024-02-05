@@ -6,7 +6,7 @@ label lesson1_1:
     #{显示立绘 TJ1gx}
     show TJ 1gx at tjleft with dissolve
     #{播放BGM b0109 }
-    play music "audio/bgm/b0109 shangke.mp3" fadein 2.0
+    play music "audio/bgm/b0109 shangke.mp3" fadein 2.0 volume 0.1
     #{播放vioce 2030}
     TeacherTian "各位同学，欢迎大家进入日语学习的第一课。"
     #{播放vioce 2031}
@@ -955,6 +955,8 @@ label lesson1_6:
     show LY 12gx
     #{播放vioce 2078}
     LiuYang "嗨，紧张什么呀。日语说得很不错啊。"
+    hide LY with dissolve
+    show WH at middle with dissolve
     "刘洋反而安慰起我来。"
     "刘洋的坦然让我感到了一丝愧疚。原本应该是刘洋接到这个电话，现在却被我……"
     "不知道这场神奇的穿越之旅会持续到什么时候。"

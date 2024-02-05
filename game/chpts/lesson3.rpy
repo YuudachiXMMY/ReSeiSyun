@@ -2,7 +2,7 @@
 label lesson3_1:
 
     #{播放BGM b0202}
-    play music "audio/bgm/b0202.mp3"  fadein 2.0
+    play music "audio/bgm/b0202.mp3"  fadein 2.0 volume 0.1
     # TODO:{显示背景  p05 jiaoshijiu }
     scene p jiaoxue13 with dissolve
     #第三课 文化常识

@@ -1,7 +1,7 @@
 #第二课
 label lesson2_1:
     #{播放BGM b0206}
-    play music "audio/bgm/b0206.mp3"
+    play music "audio/bgm/b0206.mp3" fadein 2.0 volume 0.1
     #{显示背景 p jiaoxue07}
     scene p jiaoxue07 with dissolve
     #{显示立绘TJ 1wx}

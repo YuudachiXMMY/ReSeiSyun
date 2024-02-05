@@ -1,11 +1,11 @@
 #第一章
 label chpt1_1:
 
-    scene pz 01 with Dissolve(4)
-    pause 0.5
+    scene pz 01 with Dissolve(2)
+    pause 1
 
     #{画面逐渐变亮  睁眼动画}
-    scene black_bg with dissolve
+    scene black_bg with Dissolve(2.5)
     me "……"
     me "……"
     #{显示学校楼道图片 p04 zoulang2}
@@ -345,7 +345,8 @@ label chpt1_5:
     ZhengHui "喂，别讲话了。老师看着你们呢。"
     #{显示立绘 QQ11sq}
     show ZH at MidToLeft
-    show QQ 11sq at right with dissolve
+    show QQ 11sq at right with dissolve:
+        xoffset -200
     #{播放vioce 2029}
     YuanQiaoqiao "切，胆小鬼。"
     "背后传来了熟悉的声音。高中时代的郑辉还是这么一板一眼，示意我们不要讲话了。旁边的袁巧巧见此露出一脸不屑的表情。"
