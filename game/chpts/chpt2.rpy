@@ -8,7 +8,7 @@ label chpt2_1:
     #（画面黑屏）
     scene black_bg with dissolve
     # （手机闹钟响起的声音）
-    play music "audio/se/s0101 naozhong.mp3"
+    play music "audio/se/s0101 naozhong.mp3" fadein 2.0
     # TODO: {显示立绘WH12my}
     # show WH 12my at middle with dissolve
     me "……"
@@ -21,7 +21,7 @@ label chpt2_1:
     me "……"
     "缓缓睁开眼，映入眼帘的是熟悉而又陌生的天花板。"
     #{播放BGM b0201 }
-    play music "audio/bgm/b0201.mp3"
+    play music "audio/bgm/b0201.mp3" fadein 2.0
     #{显示立绘WH12rz}
     show WH 12rz at middle with dissolve
     "从床上坐起，环顾四周，发现自己仍置身于高中寝室。"
@@ -44,7 +44,7 @@ label chpt2_1:
     "洗漱完毕，我收拾收拾书包，和刘洋一同出门走向教室。"
 
     #{播放BGM b0202 }
-    play music "audio/bgm/b0202.mp3"
+    play music "audio/bgm/b0202.mp3" fadein 2.0
     #{显示背景  p05 jiaoshijiu }
     scene p05 jiaoshijiu with dissolve
     "时间转眼就到了上午最后一节课。我看了一眼黑板上的课表，是体育课。"
@@ -68,8 +68,6 @@ label chpt2_2:
             jump chpt2_choice_1B
 
 label chpt2_choice_1B:
-    if chpt2_C_answer_kaiwa_index < 1:
-        $ chpt2_C_answer_kaiwa_index = 1
     #选择1.
     #好感度参数 +10
     me "次は体育の授業ですよ。一緒に行きましょうか。（下节是体育课，我们一起去吧。）"
@@ -77,8 +75,6 @@ label chpt2_choice_1B:
     jump chpt2_3
 
 label chpt2_choice_1A:
-    if chpt2_C_answer_kaiwa_index < 1:
-        $ chpt2_C_answer_kaiwa_index = 1
     #选择2.
     me "不对，不对。食べましょう是邀请一起吃饭的意思，应该说……"
     me "次は体育の授業ですよ。一緒に行きましょうか。（下节是体育课，我们一起去吧。）"
@@ -86,6 +82,8 @@ label chpt2_choice_1A:
     jump chpt2_3
 
 label chpt2_3:
+    if chpt2_C_answer_kaiwa_index < 1:
+        $ chpt2_C_answer_kaiwa_index = 1
     #{显示立绘ZZ13xf}
     show ZZ 13xf
     Zhizi "助かります。誘ってくれてありがとう。（帮大忙了，谢谢你邀请我。）"
@@ -137,7 +135,7 @@ label chpt2_3:
 
     scene black_bg with dissolve
     #{播放BGM b0203 }
-    play music "audio/bgm/b0203.mp3"
+    play music "audio/bgm/b0203.mp3"  fadein 2.0
     scene p07 caochang with dissolve
     #（回到过去的记忆 画面黄色）
     show ZZ 13gx at left with dissolve
@@ -179,7 +177,7 @@ label chpt2_3:
     #（结束回忆，画面恢复正常）
     scene p07 caochang with dissolve
     #{播放BGM b0204}
-    play music "audio/bgm/b0204.mp3"
+    play music "audio/bgm/b0204.mp3" fadein 2.0
     "既然是回到了过去，那是不是马上就会……"
     "只见场上的刘洋正在和场外看球的智子和小雨打招呼，没注意到对手趁此机会发起了进攻。"
     "正如预想的那样，足球向场外飞过来……"
@@ -229,8 +227,6 @@ label chpt2_4:
             jump chpt2_choice_2B
 
 label chpt2_choice_2A:
-    if chpt2_C_answer_kaiwa_index < 2:
-        $ chpt2_C_answer_kaiwa_index = 2
     #选择1.
     me "不对，すみません是道歉的意思。应该说……"
     me "大丈夫。気にしないで。（没事，别介意。）"
@@ -238,8 +234,6 @@ label chpt2_choice_2A:
     jump chpt2_5
 
 label chpt2_choice_2B:
-    if chpt2_C_answer_kaiwa_index < 2:
-        $ chpt2_C_answer_kaiwa_index = 2
     #选择2.
     #好感度参数 +10
     me "大丈夫。気にしないで。（没事，别介意。）"
@@ -247,8 +241,10 @@ label chpt2_choice_2B:
     jump chpt2_5
 
 label chpt2_5:
+    if chpt2_C_answer_kaiwa_index < 2:
+        $ chpt2_C_answer_kaiwa_index = 2
     #{播放BGM b0202}
-    play music "audio/bgm/b0202.mp3"
+    play music "audio/bgm/b0202.mp3" fadein 2.0
     #{显示立绘LY 11jy}
     show WH at f_rright
     show ZZ at f_right:
@@ -292,7 +288,7 @@ label chpt2_5:
     ZhouXiaoyu "那太好了！"
 
     #{播放BGM b0205}
-    play music "audio/bgm/b0205.mp3"
+    play music "audio/bgm/b0205.mp3" fadein 2.0
     # （食堂）
     #{显示背景 p08 shitang }
     scene p08 shitang

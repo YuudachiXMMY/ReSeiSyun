@@ -25,30 +25,6 @@ image l1 picture4 = "images/greetings/l1/Picture4.jpg"
 
 
 #################################################################
-## Variables
-default HaoGan = 0
-# define persistent.lesson1_attempt = []
-# Prologue
-default prologue_select = [0, 0, 0, 0]
-default prologue_answer = [0, 0, 0, 0, 0, 0]
-default Baohe = 0
-
-# Chpt 1
-default chpt1_select = [0, 0, 0, 0, 0]
-default chpt1_answer_bunka = [0, 0, 0]
-default chpt1_answer_kana = [0, 0, 0, 0, 0]
-default chpt1_answer_tango = [0, 0, 0]
-default chpt1_answer_kaiwa = [0, 0, 0]
-
-# Chpt 2
-default chpt2_select = [0, 0, 0, 0, 0]
-default chpt2_answer_bunka = [0, 0, 0]
-default chpt2_answer_kana = [0, 0, 0, 0, 0]
-default chpt2_answer_tango = [0, 0, 0]
-default chpt2_answer_kaiwa = [0, 0, 0]
-
-
-#################################################################
 ## Auto Declar Pictures
 init python hide:
     for file in renpy.list_files():
@@ -72,20 +48,6 @@ define config.default_voice_volume = 0.8
 define config.default_music_volume = 0.9
 define config.default_sfx_volume = 0.4
 define config.auto_voice = "audio/voice/{id}.mp3"
-
-
-#################################################################
-## Hirakana & Katakana
-define HiraKataKANA = {
-    "a_o" : ["a","i","u","e","o"],
-    "ka_ko" : ["ka","ki","ku","ke","ko"],
-    "sa_so" : ["sa", "shi", "su", "se", "so"],
-    "ta_to" : ["ta", "chi", "tu", "te", "to"]
-}
-
-## Dango
-define Dango_L1 = ["011ai2", "012au2", "013aki2", "014koi2"]
-define Dango_L2 = ["021sushi2", "022suki2", "023uta2", "024tuki2"]
 
 
 #################################################################

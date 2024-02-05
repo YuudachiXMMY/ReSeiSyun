@@ -102,29 +102,29 @@ label lesson2_1_q1:
             jump l2_1_q1BC
 
 label l2_1_q1A:
-    if chpt2_C_answer_bunka_index < 2:
-        $ chpt2_C_answer_bunka_index = 2
     #选择1.
     #好感度参数 +10
     #{显示立绘 TJ 1gx}
     show TJ 1gx
     #{播放 SE zhengque}
+    play sound "audio/se/sushiyin/zhengque.mp3"
     TeacherTian "回答正确。实际上平假名不仅限于女性使用，《古今和歌集》等男性书写的作品中也使用了平假名。"
 
     jump lesson2_1_q2
 
 label l2_1_q1BC:
-    if chpt2_C_answer_bunka_index < 2:
-        $ chpt2_C_answer_bunka_index = 2
     # 选择 其他选项
     #{显示立绘 TJ 1ng}
     show TJ 1ng
-    #{播放 SE cuowu}
+    #{播放se cuowu}
+    play sound "audio/se/sushiyin/cuowu.mp3"
     TeacherTian "上课要认真听讲哦。实际上平假名不仅限于女性使用，《古今和歌集》等男性书写的作品中也使用了平假名。"
 
     jump lesson2_1_q2
 
 label lesson2_1_q2:
+    if chpt2_C_answer_bunka_index < 2:
+        $ chpt2_C_answer_bunka_index = 2
     show TJ 1gx
     menu l2_1_q2:
         '平假名的起源是？'
@@ -139,29 +139,30 @@ label lesson2_1_q2:
             jump l2_1_q2AC
 
 label l2_1_q2B:
-    if chpt2_C_answer_bunka_index < 3:
-        $ chpt2_C_answer_bunka_index = 3
     #选择2.
     #好感度参数 +10
     #{显示立绘 TJ 1gx}
     show TJ 1gx
     #{播放 SE zhengque}
+    play sound "audio/se/sushiyin/zhengque.mp3"
     TeacherTian "回答正确。宫中的女官们将汉字的草书简化成便于书写的形式，慢慢地演变成了平假名。"
 
     jump lesson2_1_q3
 
 label l2_1_q2AC:
-    if chpt2_C_answer_bunka_index < 3:
-        $ chpt2_C_answer_bunka_index = 3
     # 选择 其他选项
     #{显示立绘 TJ 1ng}
     show TJ 1ng
-    #{播放 SE cuowu}
+    #{播放se cuowu}
+    play sound "audio/se/sushiyin/cuowu.mp3"
+    play sound "audio/se/sushiyin/cuowu.mp3"
     TeacherTian "上课要认真听讲哦。宫中的女官们将汉字的草书简化成便于书写的形式，慢慢地演变成了平假名。"
 
     jump lesson2_1_q3
 
 label lesson2_1_q3:
+    if chpt2_C_answer_bunka_index < 3:
+        $ chpt2_C_answer_bunka_index = 3
     #{显示立绘TJ 1gx}
     show TJ 1gx at tjleft
     menu l2_1_q3:
@@ -177,29 +178,29 @@ label lesson2_1_q3:
             jump l2_1_q3C
 
 label l2_1_q3C:
-    if chpt2_C_answer_bunka_index < 4:
-        $ chpt2_C_answer_bunka_index = 4
     #选择3
     #好感度参数 +10
     #{显示立绘 TJ 1gx}
     show TJ 1gx
     #{播放 SE zhengque}
+    play sound "audio/se/sushiyin/zhengque.mp3"
     TeacherTian "回答正确。现在的片假名主要用于表示外来语。例如外国的人名、地名、专有词汇，或是其他需要强调的词。"
 
     jump lesson2_2
 
 label l2_1_q3AB:
-    if chpt2_C_answer_bunka_index < 4:
-        $ chpt2_C_answer_bunka_index = 4
     # 选择 其他选项
     #{显示立绘 TJ 1ng}
     show TJ 1ng
-    #{播放 SE cuowu}
+    #{播放se cuowu}
+    play sound "audio/se/sushiyin/cuowu.mp3"
     TeacherTian "上课要认真听讲哦。现在的片假名主要用于表示外来语。例如外国的人名、地名、专有词汇，或是其他需要强调的词。"
 
     jump lesson2_2
 
 label lesson2_2:
+    if chpt2_C_answer_bunka_index < 4:
+        $ chpt2_C_answer_bunka_index = 4
     #{停止播放BGM}
     stop music
     #第二课 假名部分
@@ -277,6 +278,7 @@ label l2_2_q1C:
     #{显示立绘 TJ 1gx}
     show TJ 1gx
     #{播放 SE zhengque}
+    play sound "audio/se/sushiyin/zhengque.mp3"
     TeacherTian "回答正确。"
     jump lesson2_2_q2
 
@@ -285,6 +287,7 @@ label l2_2_q1AB:
     #{显示立绘 TJ 1ng}
     show TJ 1ng
     #{播放se cuowu}
+    play sound "audio/se/sushiyin/cuowu.mp3"
     TeacherTian "好像不太对哦，再听一遍。"
     #循环到第一题的位置
     jump lesson2_2_q1
@@ -313,6 +316,7 @@ label l2_2_q2B:
     #{显示立绘 TJ 1gx}
     show TJ 1gx
     #{播放 SE zhengque}
+    play sound "audio/se/sushiyin/zhengque.mp3"
     TeacherTian "回答正确。"
     jump lesson2_2_q3
 
@@ -321,6 +325,7 @@ label l2_2_q2AC:
     #{显示立绘 TJ 1ng}
     show TJ 1ng
     #{播放se cuowu}
+    play sound "audio/se/sushiyin/cuowu.mp3"
     TeacherTian "好像不太对哦，再听一遍。"
     #循环到第二题的位置
     jump lesson2_2_q2
@@ -348,6 +353,7 @@ label l2_2_q3C:
     #{显示立绘 TJ 1gx}
     show TJ 1gx
     #{播放 SE zhengque}
+    play sound "audio/se/sushiyin/zhengque.mp3"
     TeacherTian "回答正确。"
     jump lesson2_2_q4
 
@@ -356,6 +362,7 @@ label l2_2_q3AB:
     #{显示立绘 TJ 1ng}
     show TJ 1ng
     #{播放se cuowu}
+    play sound "audio/se/sushiyin/cuowu.mp3"
     TeacherTian "好像不太对哦，再听一遍。"
     #循环到第三题的位置
     jump lesson2_2_q3
@@ -383,6 +390,7 @@ label l2_2_q4B:
     #{显示立绘 TJ 1gx}
     show TJ 1gx
     #{播放 SE zhengque}
+    play sound "audio/se/sushiyin/zhengque.mp3"
     TeacherTian "回答正确。"
     jump lesson2_2_q5
 
@@ -391,6 +399,7 @@ label l2_2_q4AC:
     #{显示立绘 TJ 1ng}
     show TJ 1ng
     #{播放se cuowu}
+    play sound "audio/se/sushiyin/cuowu.mp3"
     TeacherTian "好像不太对哦，再听一遍。"
     #循环到第四题的位置
     jump lesson2_2_q4
@@ -418,6 +427,7 @@ label l2_2_q5B:
     #{显示立绘 TJ 1gx}
     show TJ 1gx
     #{播放 SE zhengque}
+    play sound "audio/se/sushiyin/zhengque.mp3"
     TeacherTian "回答正确。"
     jump lesson2_3
 
@@ -426,13 +436,15 @@ label l2_2_q5AC:
     #{显示立绘 TJ 1ng}
     show TJ 1ng
     #{播放se cuowu}
+    play sound "audio/se/sushiyin/cuowu.mp3"
     TeacherTian "好像不太对哦，再听一遍。"
     #循环到第五题的位置
     jump lesson2_2_q5
 
 
 label lesson2_3:
-    # TODO
+    #{显示立绘TJ 1gx}
+    show TJ 1gx
     TeacherTian "这十个假名大家都已经掌握了，接下来我们来看一下它们可以组成哪些单词。"
     TeacherTian "智子ちゃん、こちらの単語を読んでもらえますか。（智子，能请你读一下这些单词吗？）"
     #{显示立绘ZZ 11wx}
@@ -443,7 +455,7 @@ label lesson2_3:
     if chpt2_C_answer_tango_index < 1:
         $ chpt2_C_answer_tango_index = 1
 
-    # TODO: 021sushi2
+    # 021sushi2
     if chpt2_C_answer_tango_index < 1:
         $ chpt2_C_answer_tango_index = 1
     show 021sushi2 at middle with dissolve
@@ -451,7 +463,7 @@ label lesson2_3:
     Zhizi "寿司（すし）。"
     hide 021sushi2 with dissolve
 
-    # TODO: 022suki2
+    # 022suki2
     if chpt2_C_answer_tango_index < 2:
         $ chpt2_C_answer_tango_index = 2
     show 022suki2 at middle with dissolve
@@ -459,7 +471,7 @@ label lesson2_3:
     Zhizi "好き（すき）。"
     hide 022suki2 with dissolve
 
-    # TODO: 023uta2
+    # 023uta2
     if chpt2_C_answer_tango_index < 3:
         $ chpt2_C_answer_tango_index = 3
     show 023uta2 at middle with dissolve
@@ -467,7 +479,7 @@ label lesson2_3:
     Zhizi "唄（うた）。"
     hide 023uta2 with dissolve
 
-    # TODO: 024tuki2
+    # 024tuki2
     if chpt2_C_answer_tango_index < 4:
         $ chpt2_C_answer_tango_index = 4
     show 024tuki2 at middle with dissolve
@@ -516,6 +528,7 @@ label l2_3_q1A:
     #{显示立绘 TJ 1gx}
     show TJ 1gx
     #{播放 SE zhengque}
+    play sound "audio/se/sushiyin/zhengque.mp3"
     TeacherTian "回答正确。"
 
     jump lesson2_3_q2
@@ -525,6 +538,7 @@ label l2_3_q1BC:
     #{显示立绘 TJ 1ng}
     show TJ 1ng
     #{播放se cuowu}
+    play sound "audio/se/sushiyin/cuowu.mp3"
     TeacherTian "好像不太对哦，再听一遍。"
     #循环到本题上方
 
@@ -554,6 +568,7 @@ label l2_3_q2A:
     #{显示立绘 TJ 1gx}
     show TJ 1gx
     #{播放 SE zhengque}
+    play sound "audio/se/sushiyin/zhengque.mp3"
     TeacherTian "回答正确。"
     jump lesson2_3_q3
 
@@ -562,6 +577,7 @@ label l2_3_q2BC:
     #{显示立绘 TJ 1ng}
     show TJ 1ng
     #{播放se cuowu}
+    play sound "audio/se/sushiyin/cuowu.mp3"
     TeacherTian "好像不太对哦，再听一遍。"
     #循环到本题上方
     jump lesson2_3_q2
@@ -590,6 +606,7 @@ label l2_3_q3C:
     #{显示立绘 TJ 1gx}
     show TJ 1gx
     #{播放 SE zhengque}
+    play sound "audio/se/sushiyin/zhengque.mp3"
     TeacherTian "回答正确。"
     jump lesson2_4
 
@@ -598,6 +615,7 @@ label l2_3_q3AB:
     #{显示立绘 TJ 1ng}
     show TJ 1ng
     #{播放se cuowu}
+    play sound "audio/se/sushiyin/cuowu.mp3"
     TeacherTian "好像不太对哦，再听一遍。"
     #循环到本题上方
     jump lesson2_3_q3
@@ -730,16 +748,16 @@ label lesson2_5:
     show WH 12rz
     me "对了，田老师说过睡前要复习一下今天上课的内容，看一下笔记吧。"
     #{打开复习回顾界面，添加第二课的内容。}
-
+    #（打开复习回忆界面、增加第二课内容，文化常识、假名）
+    stop music
     #{停止播放BGM}
 
-    #{显示立绘 WH 13rz}
-    show WH 13rz
-    me "复习了一下，果然思路清晰多了。"
+    call screen bunka_review()
 
-    #（打开复习回忆界面、增加第二课内容，文化常识、假名）
+    #{显示立绘 WH 13rz}
+    show WH 13rz at middle with dissolve
+    me "复习了一下，果然思路清晰多了。"
     me "好了，时间不早了，先休息吧……"
 
-    hide WH with dissolve
 
-    return
+    jump chpt3_1

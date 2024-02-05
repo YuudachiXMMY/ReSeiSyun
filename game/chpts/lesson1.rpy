@@ -6,7 +6,7 @@ label lesson1_1:
     #{显示立绘 TJ1gx}
     show TJ 1gx at tjleft with dissolve
     #{播放BGM b0109 }
-    play music "audio/bgm/b0109 shangke.mp3"
+    play music "audio/bgm/b0109 shangke.mp3" fadein 2.0
     #{播放vioce 2030}
     TeacherTian "各位同学，欢迎大家进入日语学习的第一课。"
     #{播放vioce 2031}
@@ -103,8 +103,6 @@ label lesson1_1_q1:
             jump l1_1_q1BC
 
 label l1_1_q1A:
-    if chpt1_C_answer_bunka_index < 7:
-        $ chpt1_C_answer_bunka_index = 7
     #选择A.语言
     #好感度参数 +10
     #{显示立绘 TJ1gx}
@@ -115,8 +113,6 @@ label l1_1_q1A:
     jump lesson1_1_q2
 
 label l1_1_q1BC:
-    if chpt1_C_answer_bunka_index < 7:
-        $ chpt1_C_answer_bunka_index = 7
     # 选择 其他选项
     #{显示立绘 TJ1ng}
     show TJ 1ng
@@ -126,6 +122,8 @@ label l1_1_q1BC:
     jump lesson1_1_q2
 
 label lesson1_1_q2:
+    if chpt1_C_answer_bunka_index < 7:
+        $ chpt1_C_answer_bunka_index = 7
     #{显示立绘 TJ1wx}
     show TJ 1wx
     TeacherTian "第二题。"
@@ -145,8 +143,6 @@ label lesson1_1_q2:
             jump l1_1_q2C
 
 label l1_1_q2C:
-    if chpt1_C_answer_bunka_index < 8:
-        $ chpt1_C_answer_bunka_index = 8
     #选择C.按照汉字原本的意思来使用
     #好感度参数 +10
     #{显示立绘 TJ1gx}
@@ -155,8 +151,6 @@ label l1_1_q2C:
     TeacherTian "回答正确。“汉字的正用”，也就是严格遵循汉字的本义使用。例如日语中的“山”，读作“yama”，写作“山”。"
 
 label l1_1_q2AB:
-    if chpt1_C_answer_bunka_index < 8:
-        $ chpt1_C_answer_bunka_index = 8
     # 选择 其他选项
     #{显示立绘 TJ1ng}
     show TJ 1ng
@@ -164,6 +158,8 @@ label l1_1_q2AB:
     TeacherTian "上课要认真听讲哦。“汉字的正用”，也就是严格遵循汉字的本义使用。例如日语中的“山”，读作“yama”，写作“山”。"
 
 label lesson1_1_q3:
+    if chpt1_C_answer_bunka_index < 8:
+        $ chpt1_C_answer_bunka_index = 8
     #{显示立绘 TJ1wx}
     show TJ 1wx
     TeacherTian "第三题。"
@@ -183,8 +179,6 @@ label lesson1_1_q3:
             jump l1_1_q3AC
 
 label l1_1_q3B:
-    if chpt1_C_answer_bunka_index < 9:
-        $ chpt1_C_answer_bunka_index = 9
     #选择B.假借
     #好感度参数 +10
     #{显示立绘 TJ1gx}
@@ -194,8 +188,6 @@ label l1_1_q3B:
     jump lesson1_2
 
 label l1_1_q3AC:
-    if chpt1_C_answer_bunka_index < 9:
-        $ chpt1_C_answer_bunka_index = 9
     # 选择 其他选项
     #{显示立绘 TJ1ng}
     show TJ 1ng
@@ -204,6 +196,8 @@ label l1_1_q3AC:
     jump lesson1_2
 
 label lesson1_2:
+    if chpt1_C_answer_bunka_index < 9:
+        $ chpt1_C_answer_bunka_index = 9
     #第一课 假名部分
 
     #{显示立绘 TJ1wx}
@@ -250,7 +244,7 @@ label lesson1_2:
     hide screen HiraKataKANA
     #{显示立绘 TJ1wx}
     hide ZZ with dissolve
-    play music "audio/bgm/b0109 shangke.mp3"
+    play music "audio/bgm/b0109 shangke.mp3" fadein 2.0
     show TJ 1wx at left with dissolve:
         xoffset -150
     #{播放vioce 2060}
@@ -295,7 +289,8 @@ label l1_2_q1C:
     #好感度参数 +5
     #{显示立绘 TJ1gx}
     show TJ 1gx
-    #{播放se zhengque}
+    #{播放zhengque}
+    play sound "audio/se/sushiyin/zhengque.mp3"
     TeacherTian "回答正确。"
 
     jump lesson1_2_q2
@@ -316,7 +311,8 @@ label l1_2_q1AB:
     LiuYang "我觉得这道题是C.う。"
     #{显示立绘 TJ1gx}
     show TJ 1gx
-    #{播放se zhengque}
+    #{播放zhengque}
+    play sound "audio/se/sushiyin/zhengque.mp3"
     TeacherTian "回答正确。"
     hide LY with dissolve
 
@@ -348,7 +344,8 @@ label l1_2_q2B:
     #好感度参数 +5
     #{显示立绘 TJ1gx}
     show TJ 1gx
-    #{播放se zhengque}
+    #{播放zhengque}
+    play sound "audio/se/sushiyin/zhengque.mp3"
     TeacherTian "回答正确。"
 
     jump lesson1_2_q3
@@ -369,7 +366,8 @@ label l1_2_q2AC:
     ZhouXiaoyu "应该选B.き。"
     #{显示立绘 TJ1gx}
     show TJ 1gx
-    #{播放se zhengque}
+    #{播放zhengque}
+    play sound "audio/se/sushiyin/zhengque.mp3"
     TeacherTian "回答正确。"
     hide XY with dissolve
 
@@ -402,7 +400,8 @@ label l1_2_q3C:
     #好感度参数 +5
     #{显示立绘 TJ1gx}
     show TJ 1gx
-    #{播放se zhengque}
+    #{播放zhengque}
+    play sound "audio/se/sushiyin/zhengque.mp3"
     TeacherTian "回答正确。"
 
     jump lesson1_2_q4
@@ -423,7 +422,8 @@ label l1_2_q3AB:
     YuanQiaoqiao "这题我知道，应该是C.こ。"
     #{显示立绘 TJ1gx}
     show TJ 1gx
-    #{播放se zhengque}
+    #{播放zhengque}
+    play sound "audio/se/sushiyin/zhengque.mp3"
     TeacherTian "回答正确。"
     hide QQ with dissolve
 
@@ -455,7 +455,8 @@ label l1_2_q4C:
     #好感度参数 +5
     #{显示立绘 TJ1gx}
     show TJ 1gx
-    #{播放se zhengque}
+    #{播放zhengque}
+    play sound "audio/se/sushiyin/zhengque.mp3"
     TeacherTian "回答正确。"
 
     jump lesson1_2_q5
@@ -476,7 +477,8 @@ label l1_2_q4AB:
     ZhengHui "是C.え吧。"
     #{显示立绘 TJ1gx}
     show TJ 1gx
-    #{播放se zhengque}
+    #{播放zhengque}
+    play sound "audio/se/sushiyin/zhengque.mp3"
     TeacherTian "回答正确。"
     hide ZH with dissolve
 
@@ -508,7 +510,8 @@ label l1_2_q5A:
     #好感度参数 +5
     #{显示立绘 TJ1gx}
     show TJ 1gx
-    #{播放se zhengque}
+    #{播放zhengque}
+    play sound "audio/se/sushiyin/zhengque.mp3"
     TeacherTian "回答正确。"
 
     jump lesson1_3
@@ -529,7 +532,8 @@ label l1_2_q5BC:
     ZhouXiaoyu "这道题应该是A.く。"
     #{显示立绘 TJ1gx}
     show TJ 1gx
-    #{播放se zhengque}
+    #{播放zhengque}
+    play sound "audio/se/sushiyin/zhengque.mp3"
     TeacherTian "回答正确。"
     hide XY with dissolve
 
@@ -628,7 +632,8 @@ label l1_3_q1B:
     #好感度参数 +5
     #{显示立绘 TJ1gx}
     show TJ 1gx
-    #{播放se zhengque}
+    #{播放zhengque}
+    play sound "audio/se/sushiyin/zhengque.mp3"
     TeacherTian "回答正确。"
 
     jump lesson1_3_q2
@@ -649,7 +654,8 @@ label l1_3_q1AC:
     YuanQiaoqiao "选B.恋（こい），是恋爱的意思。对不对？"
     #{显示立绘 TJ1gx}
     show TJ 1gx
-    #{播放se zhengque}
+    #{播放zhengque}
+    play sound "audio/se/sushiyin/zhengque.mp3"
     TeacherTian "回答正确。"
     hide QQ with dissolve
 
@@ -680,7 +686,8 @@ label l1_3_q2A:
     #好感度参数 +5
     #{显示立绘 TJ1gx}
     show TJ 1gx
-    #{播放se zhengque}
+    #{播放zhengque}
+    play sound "audio/se/sushiyin/zhengque.mp3"
     TeacherTian "回答正确。"
 
     jump lesson1_3_q3
@@ -701,7 +708,8 @@ label l1_3_q2BC:
     LiuYang "这题很简单，选A.愛（あい）。"
     #{显示立绘 TJ1gx}
     show TJ 1gx
-    #{播放se zhengque}
+    #{播放zhengque}
+    play sound "audio/se/sushiyin/zhengque.mp3"
     TeacherTian "回答正确。"
     hide LY with dissolve
 
@@ -732,7 +740,8 @@ label l1_3_q3B:
     #好感度参数 +5
     #{显示立绘 TJ1gx}
     show TJ 1gx
-    #{播放se zhengque}
+    #{播放zhengque}
+    play sound "audio/se/sushiyin/zhengque.mp3"
     TeacherTian "回答正确。"
 
     jump lesson1_4
@@ -753,7 +762,8 @@ label l1_3_q3AC:
     ZhouXiaoyu "是B.秋（あき），意思是秋天。"
     #{显示立绘 TJ1gx}
     show TJ 1gx
-    #{播放se zhengque}
+    #{播放zhengque}
+    play sound "audio/se/sushiyin/zhengque.mp3"
     TeacherTian "回答正确。"
     hide XY with dissolve
 
@@ -813,7 +823,7 @@ label lesson1_5_q1:
             $chpt1_answer_kaiwa[0] = 10
             jump l1_5_q1A
         "B.すみません。":
-            $chpt1_select[3] = 0
+            $chpt1_answer_kaiwa[0] = 0
             jump l1_5_q1B
 
 label l1_5_q1A:
@@ -854,8 +864,6 @@ label lesson1_5_q2:
             jump l1_5_q2B
 
 label l1_5_q2B:
-    if chpt1_C_answer_kaiwa_index < 1:
-        $ chpt1_C_answer_kaiwa_index = 1
     #选择B.
     #好感度参数 +10
     #{显示立绘 WH11kx}
@@ -865,8 +873,6 @@ label l1_5_q2B:
     jump lesson1_5_q3
 
 label l1_5_q2A:
-    if chpt1_C_answer_kaiwa_index < 1:
-        $ chpt1_C_answer_kaiwa_index = 1
     #选择A.
     #{显示立绘 WH11kx}
     show WH 11kx
@@ -876,6 +882,8 @@ label l1_5_q2A:
     jump lesson1_5_q3
 
 label lesson1_5_q3:
+    if chpt1_C_answer_kaiwa_index < 1:
+        $ chpt1_C_answer_kaiwa_index = 1
     #{显示立绘 ZZ11}
     show ZZ 11gx
     #{播放vioce 2074}
@@ -905,8 +913,6 @@ label lesson1_5_q3:
             jump l1_5_q3B
 
 label l1_5_q3B:
-    if chpt1_C_answer_kaiwa_index < 2:
-        $ chpt1_C_answer_kaiwa_index = 2
     #选择B.
     #好感度参数 +10
     #{显示立绘 WH11wx}
@@ -917,8 +923,6 @@ label l1_5_q3B:
     jump lesson1_6
 
 label l1_5_q3A:
-    if chpt1_C_answer_kaiwa_index < 2:
-        $ chpt1_C_answer_kaiwa_index = 2
     #选择A.
     #{显示立绘 WH11kx}
     show WH 11kx
@@ -929,6 +933,8 @@ label l1_5_q3A:
     jump lesson1_6
 
 label lesson1_6:
+    if chpt1_C_answer_kaiwa_index < 2:
+        $ chpt1_C_answer_kaiwa_index = 2
     #{显示立绘 WH11jy}
     show WH 11jy at RightToMid:
         xoffset 100

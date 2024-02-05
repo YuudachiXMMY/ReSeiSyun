@@ -73,8 +73,6 @@ label prologue_scene_1_1:
             jump prologue_scene_1_choice_1AC
 
 label prologue_scene_1_choice_1B:
-    if chpt1_C_answer_bunka_index < 1:
-        $ chpt1_C_answer_bunka_index = 1
     # 选择答案后跳转
     #选择2.茶道
     #好感度参数 +10
@@ -83,8 +81,6 @@ label prologue_scene_1_choice_1B:
     jump prologue_scene_1_2
 
 label prologue_scene_1_choice_1AC:
-    if chpt1_C_answer_bunka_index < 1:
-        $ chpt1_C_answer_bunka_index = 1
     # 选择 其他选项
     me "唉，好像不太对。"
     me "应该是2.茶道。日本的茶道起源于中国。“和”指祥和，“敬”指尊敬，“清”指清洁，“寂”指幽寂。"
@@ -92,6 +88,8 @@ label prologue_scene_1_choice_1AC:
     jump prologue_scene_1_2
 
 label prologue_scene_1_2:
+    if chpt1_C_answer_bunka_index < 1:
+        $ chpt1_C_answer_bunka_index = 1
     me "再来做一题试试看。"
 
     menu prologue_scene_1_choice_2:
@@ -107,8 +105,6 @@ label prologue_scene_1_2:
             jump prologue_scene_1_choice_2BC
 
 label prologue_scene_1_choice_2A:
-    if chpt1_C_answer_bunka_index < 2:
-        $ chpt1_C_answer_bunka_index = 2
     #选择1.汉服
     #好感度参数 +10
     me "嗯，确实是这个答案。日本和服，初仿中国魏晋隋唐时期吴地的汉服，称为“吴服”，后又学习唐初衣冠制度，称为“唐衣”。"
@@ -116,8 +112,6 @@ label prologue_scene_1_choice_2A:
     jump prologue_scene_1_3
 
 label prologue_scene_1_choice_2BC:
-    if chpt1_C_answer_bunka_index < 2:
-        $ chpt1_C_answer_bunka_index = 2
     #选择 其他选项
     me "唉，好像不太对。"
     me "应该是1.汉服。日本和服，初仿中国魏晋隋唐时期吴地的汉服，称为“吴服”，后又学习唐初衣冠制度，称为“唐衣”。"
@@ -125,6 +119,8 @@ label prologue_scene_1_choice_2BC:
     jump prologue_scene_1_3
 
 label prologue_scene_1_3:
+    if chpt1_C_answer_bunka_index < 2:
+        $ chpt1_C_answer_bunka_index = 2
     me "真是令人怀念，没想到高中时代学的一些知识现在都还记得。"
     "那时候最喜欢上日语课， 只可惜没有认真学习……"
     #{播放s0105钥匙掉在地上的声音}

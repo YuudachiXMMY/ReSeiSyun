@@ -32,7 +32,7 @@ label chpt1_1:
     #{播放vioce 2002}
     Zhizi "おひさ……しぶり？（好久……不见吗？）"
     #{播放BGM  0108 }
-    play music "audio/bgm/b0108 xiaoyuan.mp3"
+    play music "audio/bgm/b0108 xiaoyuan.mp3" fadein 2.0
     "眼前的智子和十年前一模一样，我心里顿时百感交集。当年我正是在这个走廊上与智子偶遇的。"
     "当时我正飞奔去老师的办公室，来不及躲避拐角处出现的智子，一个踉跄跌倒在地上。"
     "我想象过无数次重逢的场景，万万没想到竟然又是如此狼狈，真是太丢脸了。"
@@ -142,7 +142,7 @@ label chpt1_1:
     hide past_cover with dissolve
     scene p04 zoulang with dissolve
     #{播放BGM  b0108  xiaoyuan}
-    play music "audio/bgm/b0108 xiaoyuan.mp3"
+    play music "audio/bgm/b0108 xiaoyuan.mp3" fadein 2.0
     "看到我还愣在原地，周小雨又给我使了使眼色，让我赶快去叫刘洋。"
 
 label chpt1_2:
@@ -220,7 +220,7 @@ label chpt1_4:
     me "只是学过一点而已，呵呵……"
     "我终于有机会像学霸一样耍一回酷……这种感觉还真不错。"
     #{播放SE s0114高跟鞋脚步声}
-    play sound "audio/se/s0114 gaogenxie.mp3"
+    play sound "audio/se/s0114 gaogenxie.mp3" fadein 2.0
     #{显示立绘 TJ1jy}
     hide ZZ with dissolve
     show TJ 1jy at left with dissolve
@@ -241,7 +241,7 @@ label chpt1_4:
     TeacherTian "あ、こんにちは。待たせてごめんね。（你好，不好意思让你久等了。）"
     "班里的同学们也注意到了教室门口的动静，都探出头来张望。"
     #{播放SE s0115 嘈杂的声音}
-    play sound "audio/se/s0115 jiaoshi.mp3"
+    play sound "audio/se/s0115 jiaoshi.mp3" fadein 2.0
     "两位美女的出现让班里的同学们抑制不住躁动的心情。"
     #{显示立绘 TJ1wx}
     show TJ 1wx
@@ -257,7 +257,7 @@ label chpt1_4:
     # TODO: {播放SE   上课铃声}
     # play sound "audio/se/"
     #{播放BGM  0109 shangke }
-    play music "audio/bgm/b0109 shangke.mp3"
+    play music "audio/bgm/b0109 shangke.mp3" fadein 2.0
     #{显示立绘 TJ1wx}
     show TJ 1wx at middle with dissolve
     #{播放vioce 202023}

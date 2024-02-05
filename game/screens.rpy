@@ -637,13 +637,13 @@ screen review_slots(title):
             action NullAction()
 
     if renpy.get_screen("kana_review"):
-        $ review_tmp_lst = chpt1_C_answer_kana[:chpt1_C_answer_kana_index] + chpt2_C_answer_kana[:chpt2_C_answer_kana_index]
+        $ review_tmp_lst = chpt1_C_answer_kana[:chpt1_C_answer_kana_index] + chpt2_C_answer_kana[:chpt2_C_answer_kana_index] + chpt3_C_answer_kana[:chpt3_C_answer_kana_index]
         $ review_tmp_lst_index = len(review_tmp_lst)
     elif renpy.get_screen("vocab_review"):
-        $ review_tmp_lst = chpt1_C_answer_tango[:chpt1_C_answer_tango_index] + chpt2_C_answer_tango[:chpt2_C_answer_tango_index]
+        $ review_tmp_lst = chpt1_C_answer_tango[:chpt1_C_answer_tango_index] + chpt2_C_answer_tango[:chpt2_C_answer_tango_index] + chpt3_C_answer_tango[:chpt3_C_answer_tango_index]
         $ review_tmp_lst_index = len(review_tmp_lst)
     elif renpy.get_screen("bunka_review"):
-        $ review_tmp_lst = chpt1_C_answer_bunka[:chpt1_C_answer_bunka_index] + chpt2_C_answer_bunka[:chpt2_C_answer_bunka_index]
+        $ review_tmp_lst = chpt1_C_answer_bunka[:chpt1_C_answer_bunka_index] + chpt2_C_answer_bunka[:chpt2_C_answer_bunka_index] + chpt3_C_answer_bunka[:chpt3_C_answer_bunka_index]
         $ review_tmp_lst_index = len(review_tmp_lst)
     else:
         $ review_tmp_lst = ["Error"]
@@ -1143,7 +1143,7 @@ screen navigation():
             xalign 0.05 yalign 0.05
             idle "gui/main/start.png"
             hover "gui/main/start_hover.png"
-            action Start("chpt2_1")
+            action Start()
 
         imagebutton:
             xalign 0.05 yalign 0.18

@@ -1,3 +1,51 @@
+#################################################################
+## Hirakana & Katakana
+define HiraKataKANA = {
+    "a_o" : ["a","i","u","e","o"],
+    "ka_ko" : ["ka","ki","ku","ke","ko"],
+    "sa_so" : ["sa", "shi", "su", "se", "so"],
+    "ta_to" : ["ta", "chi", "tu", "te", "to"],
+    "na_no" : ["na","ni","nu","ne","no"],
+    "ha_ho" : ["ha","hi","fu","he","ho"],
+}
+
+## Dango
+define Dango_L1 = ["011ai2", "012au2", "013aki2", "014koi2"]
+define Dango_L2 = ["021sushi2", "022suki2", "023uta2", "024tuki2"]
+define Dango_L3 = ["031inu2", "032neko2", "033hana2", "034hoshi2"]
+
+
+#################################################################
+## Variables
+default HaoGan = 0
+# define persistent.lesson1_attempt = []
+# Prologue
+default prologue_select = [0, 0, 0, 0]
+default prologue_answer = [0, 0, 0, 0, 0, 0]
+default Baohe = 0
+
+# Chpt 1
+default chpt1_select = [0, 0, 0]
+default chpt1_answer_bunka = [0, 0, 0]
+default chpt1_answer_kana = [0, 0, 0, 0, 0]
+default chpt1_answer_tango = [0, 0, 0]
+default chpt1_answer_kaiwa = [0, 0, 0]
+
+# Chpt 2
+default chpt2_select = [0, 0]
+default chpt2_answer_bunka = [0, 0, 0]
+default chpt2_answer_kana = [0, 0, 0, 0, 0]
+default chpt2_answer_tango = [0, 0, 0]
+default chpt2_answer_kaiwa = []
+
+# Chpt 3
+default chpt3_select = [0, 0]
+default chpt3_answer_bunka = [0, 0, 0]
+default chpt3_answer_kana = [0, 0, 0, 0, 0]
+default chpt3_answer_tango = [0, 0, 0]
+default chpt3_answer_kaiwa = [0, 0]
+
+#################################################################
 ## Chapter 1
 default chpt1_C_answer_kana_index = 0
 define chpt1_C_answer_kana = [
@@ -30,6 +78,8 @@ define chpt1_C_answer_bunka = [
     "“万叶假名”中的“假”指什么意思？\n正确答案：{u}假借{/u}"
 ]
 
+
+#################################################################
 ## Chapter 2
 default chpt2_C_answer_kana_index = 0
 define chpt2_C_answer_kana = [
@@ -44,8 +94,8 @@ define chpt2_C_answer_tango = [
 
 default chpt2_C_answer_kaiwa_index = 0
 define chpt2_C_answer_kaiwa = [
-    "我：“智子不认识去操场的路，要不要和她打个招呼？”\n正确回答：{u}一緒に行きましょうか。{/u}",
-    "我想安慰一下智子不必担心，应该说……\n正确回答：{u}大丈夫。気にしないで。{/u}"
+    "如何用邀请他人和你一起同行？\n正确回答：{u}一緒に行きましょうか。{/u}",
+    "如何安慰他人？\n正确回答：{u}大丈夫。気にしないで。{/u}"
 ]
 
 default chpt2_C_answer_bunka_index = 0
@@ -56,27 +106,29 @@ define chpt2_C_answer_bunka = [
     "片假名现在的功能是什么？\n正确回答：{u}标注外国的人名和地名、突出需要强调的词{/u}"
 ]
 
+
+#################################################################
 ## Chapter 3
 default chpt3_C_answer_kana_index = 0
 define chpt3_C_answer_kana = [
-    "sa","shi","su","se","so",
-    "ta","chi","tu","te","to"
+    "na","ni","nu","ne","no",
+    "ha","hi","fu","he","ho"
 ]
 
 default chpt3_C_answer_tango_index = 0
 define chpt3_C_answer_tango = [
-    "021sushi2", "022suki2", "023uta2", "024tuki2"
+    "031inu2", "032neko2", "033hana2", "034hoshi2"
 ]
 
 default chpt3_C_answer_kaiwa_index = 0
 define chpt3_C_answer_kaiwa = [
-    "\n正确回答：{u}{/u}",
-    "\n正确回答：{u}{/u}"
+    "如何主动提出帮别人带路？\n正确回答：{u}「私でよければ、案内します」（可以的话，我带你去吧）{/u}",
+    "如何夸奖对方可爱？\n正确回答：{u}「とても可愛いですよ」（非常可爱哦）{/u}"
 ]
 
 default chpt3_C_answer_bunka_index = 0
 define chpt3_C_answer_bunka = [
-    '\n正确答案：{u}{/u}',
-    '\n正确答案：{u}{/u}',
-    '\n正确答案：{u}{/u}'
+    '徐福东渡的故事最早在哪本书中有记录？\n正确答案：{u}《史记·秦始皇本纪》中有相关的记载{/u}',
+    '日本佐贺市金立神社举办的大型祭祀活动祭拜的人是谁？\n正确答案：{u}徐福{/u}',
+    '中国的铁器、铜器、丝帛在哪个朝代传入了日本？\n正确答案：{u}在两汉时期，中国的铁器、铜器、丝帛等传入了日本{/u}'
 ]
