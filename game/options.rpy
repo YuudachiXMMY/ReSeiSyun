@@ -23,7 +23,7 @@ define gui.show_name = False
 
 ## The version of the game.
 
-define config.version = "c1.4.0"
+define config.version = "c1.4.1"
 
 
 ## Text that is placed on the game's about screen. Place the text between the
@@ -32,10 +32,10 @@ define config.version = "c1.4.0"
 define gui.about = _p("""
 "[config.name!t]"
 version [config.version]
-Built on 2024/02/02
+Built on 2024/02/04
 
 Notes:
-Updated Chapter 2, Lesson 2, Chapter 3, and Lesson 3. Waiting for Voice files.
+Update based on 2024/02/04 feedbacks
 
 企画（Producer）
 郭侃亮
