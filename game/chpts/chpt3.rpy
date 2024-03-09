@@ -22,7 +22,9 @@ label chpt3_1:
     Zhizi "鄭さんと袁さんはどこに行ったんですか。（郑辉和巧巧去哪儿了？）"
     "智子一脸疑惑地看着我，我的思绪被拉回了现实中。"
     #{显示立绘LY 13wx}
-    show LY 13wx at middle with dissolve
+    hide WH
+    show LY 13wx at right
+    with dissolve
     LiuYang "今日は新入生を勧誘するためのサークル活動日なんです。（今天是学校的社团招新日。）"
     "在一旁的刘洋见我愣在原地，便回复了智子。"
     #{显示立绘LY 11wx}
@@ -34,8 +36,9 @@ label chpt3_1:
     "在一旁的周小雨看了看刘洋，又狠狠地瞪了我一眼。"
     "当年的社团招新我没去参加，这次……"
     #{显示立绘XY 12dx}
-    hide WH
-    show XY 12dx at t_right with dissolve
+    hide ZZ
+    show XY 12dx at left
+    with dissolve
     ZhouXiaoyu "啊呀，田老师让我中午去整理资料。让王浩带你去逛逛吧。"
     #{显示立绘LY 12qx}
     show LY 12qx
@@ -47,7 +50,8 @@ label chpt3_1:
     hide LY
     hide XY
     #{显示立绘WH 11zm}
-    show WH 11zm at middle with dissolve
+    show WH 11zm at middle
+    with dissolve
     "小雨竭力帮我助攻，不抓住这个机会实在说不过去。"
     jump chpt3_2
 
@@ -85,7 +89,7 @@ label chpt3_3:
     show ZZ 13xf at left with dissolve
     Zhizi "よかった。王さんがいてくれると、心強いです。（太棒了。有你在，我就安心了。）"
     #{显示立绘WH 12zm}
-    show WH 12zm
+    show WH 11kx
     "第一次拥有和智子独处的机会，这感觉真奇妙。虽然内心已经是一个二十几岁的成年人了，但我还是不由得有些紧张。"
 
     #{显示背景  p09 shetuan }
@@ -101,7 +105,7 @@ label chpt3_3:
     #{显示立绘ZZ 13ys}
     show WH at MidToRight:
         xoffset 75
-    show ZZ 13ys at left with dissolve
+    show ZZ 13jy at left with dissolve
     Zhizi "文化創意部ってどんなことをする部活なんですか。（文化创意社是做什么的呢？）"
     #{显示立绘WH 12gx}
     show WH 12gx
@@ -115,56 +119,80 @@ label chpt3_3:
     show ZZ 12jy
     Zhizi "王さん、どうしたの？（王浩，你怎么了？）"
     #{显示立绘WH 12ng}
-    show WH 12ng
+    show WH 11my
     "我急忙摇摇头，低下头加快脚步向前走，掩饰心中的羞涩。"
     #{显示立绘ZZ 13jy}
     show ZZ 13jy
     Zhizi "あれ、日本アニメじゃない？すごい！（那不是日本的动漫吗？好厉害呀！）"
-    "我顺着她的目光看去，原来是袁巧巧担任部长的动漫社。她正站在台前拿着宣传单招呼着同学们，台子上挂着许多日本动漫的手绘图，还有中日文对照的宣传海报。有不少男生都围过来看热闹。"
+    hide ZZ
+    hide WH
+    show QQ 12wx at middle
+    with dissolve
+    "我顺着她的目光看去，原来是袁巧巧担任部长的动漫社。"
+    "她正站在台前拿着宣传单招呼着同学们，台子上挂着许多日本动漫的手绘图，还有中日文对照的宣传海报。"
+    "有不少男生都围过来看热闹。"
+    show QQ 13wx
     "面对那些男生的调侃，巧巧并不搭理，还在专注地宣传动漫社。"
     #{显示立绘WH 11wx}
-    show WH 11wx
+    hide QQ
+    show WH 11wx at middle
+    with dissolve
     "看到巧巧被那么多狂热的粉丝包围着，我犹豫要不要去和她打招呼。"
     "这时，巧巧突然看到了智子，便快步走到智子身边，一把拉住她的手。"
     #{显示立绘QQ 11gx}
-    show ZZ at middle with dissolve
-    show QQ 11gx at left with dissolve
+    hide WH
+    show QQ 11gx at left
+    with dissolve
     YuanQiaoqiao "智子，来我们这里看看呀。你那么可爱，来给我们做模特吧。"
     #{显示立绘ZZ 14ys}
-    show ZZ 14ys
+    show ZZ 14ys at t_right with dissolve
     "智子有点被她的热情吓到了，红着脸怯怯地看了看我，我急忙向她解释。"
     #{显示立绘WH 12gx}
-    show WH 12gx
+    hide QQ
+    hide ZZ
+    show WH 12gx at middle
+    with dissolve
     me "袁さんはアニメの話になると、いつもハイテンションだから。（袁巧巧一提到动漫的话题，兴致就很高。）"
     #{显示立绘ZZ 11xf}
-    show ZZ 11xf
+    hide WH
+    show ZZ 11xf at right
+    with dissolve
     "智子回握住袁巧巧的手，开心地笑了。"
     Zhizi "いえいえ、そんなことないです。袁さんこそ可愛いですよ。（哪里，巧巧你才很可爱呢。）"
     #{显示立绘QQ 13tq}
-    show QQ 13tq
+    show QQ 13wx at left with dissolve
     YuanQiaoqiao "哈哈哈，我听懂了卡哇伊。谢谢你呀！"
     YuanQiaoqiao "对了，能让我给你画张肖像画吗？"
     #{显示立绘WH 12rz}
-    show WH 12rz
+    hide QQ
+    hide ZZ
+    show WH 12rz at middle
+    with dissolve
     "我这才发现放在台子上的图都是动漫人物的肖像画。"
     #{显示立绘ZZ 14jy}
-    show ZZ 14jy
+    hide WH
+    show ZZ 14jy at t_right
+    with dissolve
     Zhizi "ええ？似顔絵ですか。私でいいんですか…（啊，肖像画吗？我做模特没问题吗……）"
     #{显示立绘QQ 13dy}
-    show QQ 13dy
+    show QQ 13dy at left with dissolve
     YuanQiaoqiao "当然可以啊，画出来一定很好看，对不对王浩？"
     #{显示立绘WH 11zm}
-    show WH 11zm
+    hide ZZ
+    show WH 11kx at t_right
+    with dissolve
     "巧巧的眼睛却瞟向我，等待我的回应。一下子有点手足无措。"
     "智子捕捉到我的窘态，噗嗤笑了。"
     #{显示立绘ZZ 11xf}
-    show ZZ 11xf
+    hide WH
+    show ZZ 11xf at t_right
+    with dissolve
     "智子不好意思地坐到椅子上，安静地等袁巧巧画画……"
     #{显示立绘QQ 11gx}
     show QQ 11gx
     "过了好一会儿，巧巧画好了。她得意洋洋地把画展示给我和智子看。"
     YuanQiaoqiao "怎么样，我画的不错吧？"
-    #{显示智子的肖像画 w11}
+    # TODO:{显示智子的肖像画 w11}
     jump chpt3_4
 
 label chpt3_4:
@@ -183,7 +211,9 @@ label chpt3_choice_2B:
     #选择2.
     #好感度参数 +10
     #{显示立绘WH 11wx}
-    show WH 11wx
+    hide ZZ
+    show WH 11wx at t_right
+    with dissolve
     me "とってもかわいいですよ！（真的很可爱！）"
     jump chpt3_5
 
@@ -191,7 +221,9 @@ label chpt3_choice_2A:
     #选择1.
     me "虽然感觉有些不好意思，但是巧巧确实画的不错，还是真心夸赞吧。"
     #{显示立绘WH 11wx}
-    show WH 11wx
+    hide ZZ
+    show WH 11wx at t_right
+    with dissolve
     me "とってもかわいいですよ！（真的很可爱！）"
     jump chpt3_5
 
@@ -199,7 +231,9 @@ label chpt3_5:
     if chpt3_C_answer_kaiwa_index < 2:
         $ chpt3_C_answer_kaiwa_index = 2
     #{显示立绘ZZ 14wx}
-    show ZZ 14wx
+    hide WH
+    show ZZ 14wx at t_right
+    with dissolve
     Zhizi "（脸红）あ……ありがとう。"
     "智子突然显得很害羞。我本意是说巧巧的画，没想到一语双关。"
     #{显示立绘QQ 12wx}
@@ -207,19 +241,24 @@ label chpt3_5:
     YuanQiaoqiao "（一把将画塞进我手里）喏，王浩你拿好了。"
     #{智子的肖像画消失 w11消失}
     #{显示立绘WH 11gx}
-    show WH 11gx
+    hide ZZ
+    show WH 11gx at t_right
+    with dissolve
     me "啊？给我吗？"
     #{显示立绘QQ 11tq}
-    show QQ 11tq
+    show QQ 11xf
     YuanQiaoqiao "看在你懂得欣赏的份上，就送给你做为礼物吧。"
+    "巧巧鬼灵精怪地冲我眨眨眼。"
     #{显示立绘ZZ 14ys}
-    show ZZ 14ys
-    "巧巧鬼灵精怪地冲我眨眨眼。智子虽然听不懂中文，但也有些不好意思地低下头。"
+    hide QQ
+    show ZZ 14wx at left
+    with dissolve
+    "智子虽然听不懂中文，但也有些不好意思地低下头。"
     #{显示立绘WH 13wx}
-    show WH 13wx
+    show WH 13wx at t_right
     me "でも、やっぱりこれは智子ちゃんにあげた方がいいと思うな。（可是，我想还是送给智子比较好。）"
     #{显示立绘ZZ 13sq}
-    show ZZ 13sq
+    show ZZ 14wx
     Zhizi "（惊讶）え？"
     #{显示立绘WH 11my}
     show WH 11my
@@ -229,17 +268,20 @@ label chpt3_5:
     Zhizi "そうだね……絶対に忘れられない思い出になると思う。（嗯，这一定会是最难忘的回忆。）"
 
     #{显示立绘QQ 13wx}
-    show QQ 13wx
+    hide ZZ
+    hide WH
+    show QQ 13wx at middle
+    with dissolve
     YuanQiaoqiao "你们再去别的地方逛逛吧。哦对了，那边是‘游戏制作社’。郑辉笨手笨脚的，、帮忙去捧个场呗？"
     "朝着巧巧手指的地方望去，游戏制作社的展台和动漫社比起来确实是门可罗雀。"
 
+    #（以下的对话保留原来三个人同时出现的模式）
     #{播放BGM b0301}
     play music "audio/bgm/b0301.mp3"  fadein 2.0
     #{显示立绘ZH 12wx}
-    hide QQ
-    hide WH
-    hide ZZ
-    show ZH 12wx at t_left with dissolve
+    scene p09 shetuan with dissolve
+    show ZH 12wx at t_left
+    with dissolve
     ZhengHui "王浩，我就知道你会来。"
     # TODO: {显示立绘WH 12zm}
     show WH 12zm at t_right with dissolve:

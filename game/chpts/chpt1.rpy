@@ -121,25 +121,25 @@ label chpt1_1:
     "周小雨一边给我使眼色，一边小声地对我说。"
     "因为刘洋的爸爸在日企工作，所以只有他在入学的时候就会说一点日语。当年也是他负责陪同智子……"
     # TODO: {背景色调变成回忆场景}
+    scene black_bgRRR
+    hide past_cover onlayer over_screen
     scene p04 zoulang with dissolve
     #{停止BGM  }
     stop music fadeout 1.0
     #{显示立绘 LY11gx}
     show LY 11gx at middle
-    show past_cover with dissolve
+    show past_cover onlayer over_screen
+    with dissolve
     #{播放vioce 2013}
     LiuYang "はじめまして、劉洋です。（初次见面，我是刘洋。）"
     #{播放vioce 2014}
     LiuYang "ここは高一5組ですよ。（这里就是高一五班哦。）"
     #{显示立绘 ZZ12gx}
     show LY at MidToRight
-    hide past_cover
     show ZZ 12gx at left
-    show past_cover
     #{播放vioce 2015}
     Zhizi "ありがとうございます。（谢谢你。）"
     # TODO: {背景色调变回正常}
-    hide past_cover with dissolve
     scene p04 zoulang with dissolve
     #{播放BGM  b0108  xiaoyuan}
     play music "audio/bgm/b0108 xiaoyuan.mp3" fadein 2.0
@@ -222,8 +222,9 @@ label chpt1_4:
     #{播放SE s0114高跟鞋脚步声}
     play sound "audio/se/s0114 gaogenxie.mp3" fadein 2.0
     #{显示立绘 TJ1jy}
-    hide ZZ with dissolve
-    show TJ 1jy at left with dissolve
+    hide ZZ
+    show TJ 1jy at left
+    with dissolve
     #{播放vioce 2018}
     TeacherTian "王浩日语不错嘛。"
     "身后传来一个亲切的声音。"
@@ -280,9 +281,10 @@ label chpt1_4:
     #{播放vioce 20242}
     LiuYang "好的。"
     #{显示立绘 WH12kx}
-    hide LY with dissolve
-    hide ZZ with dissolve
-    hide TJ with dissolve
+    hide LY
+    hide ZZ
+    hide TJ
+    with dissolve
     show WH 12kx at middle with dissolve
     me "（叹气）果然还是这样……"
     #{显示立绘 XY12cx}
@@ -339,8 +341,9 @@ label chpt1_choice_3A:
 label chpt1_5:
     #{显示立绘 ZH12zj}
     #{播放vioce 2028}
-    hide XY with dissolve
-    hide WH with dissolve
+    hide XY
+    hide WH
+    with dissolve
     show ZH 12zj at middle with dissolve
     ZhengHui "喂，别讲话了。老师看着你们呢。"
     #{显示立绘 QQ11sq}

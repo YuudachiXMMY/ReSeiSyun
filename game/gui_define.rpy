@@ -12,9 +12,6 @@ image bg_cover:
 image black_bg:
     "gui/black.png"
 
-image memory_cover:
-    "images/bg/memory.png"
-
 image past_cover:
     "gui/past.png"
 

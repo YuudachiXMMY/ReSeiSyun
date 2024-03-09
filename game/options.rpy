@@ -32,10 +32,10 @@ define config.version = "c1.4.1"
 define gui.about = _p("""
 "[config.name!t]"
 version [config.version]
-Built on 2024/02/04
+Built on 2024/02/19
 
 Notes:
-Update based on 2024/02/04 feedbacks
+Update based on 2024/02/04 feedbacks, revised chpt 2-3
 
 企画（Producer）
 郭侃亮

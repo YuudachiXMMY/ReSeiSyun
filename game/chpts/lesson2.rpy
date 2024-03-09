@@ -25,7 +25,8 @@ label lesson2_1:
     TeacherTian "上节课说到汉字传到日本之后开始为日本人所用。但实际上，汉字在当时被视为权威和尊严的代表，一般只有男性才可以使用。"
     #{显示立绘QQ 11sq}
     hide TJ
-    show QQ 11sq at tjleft with dissolve
+    show QQ 11sq at tjleft
+    with dissolve
     YuanQiaoqiao "那女性怎么办呢？难道就无法使用文字了吗？"
     #{显示背景 p jiaoxue09}
     scene p jiaoxue09 with dissolve
@@ -35,7 +36,8 @@ label lesson2_1:
     TeacherTian "由于汉字笔画较多，因此宫中的女官们将汉字的草书简化成便于书写的形式，慢慢地演变成了平假名。"
     #{显示立绘LY 12gx}
     hide TJ
-    show LY 12gx at tjleft with dissolve
+    show LY 12gx at tjleft
+    with dissolve
     LiuYang "原来如此。难怪之前听说过平假名也被称为女手。"
     #{显示背景 p jiaoxue10}
     scene p jiaoxue10 with dissolve
@@ -45,15 +47,18 @@ label lesson2_1:
     TeacherTian "不过，实际上平假名不仅限于女性使用，《古今和歌集》等男性书写的作品中也使用了平假名。"
     #{显示立绘XY 12zm}
     hide TJ
-    show XY 12zm at tjleft with dissolve
+    show XY 12jy at tjleft
+    with dissolve
     ZhouXiaoyu "那现在日语中的平假名有什么作用呢？"
     #{显示立绘TJ 1gx}
     hide XY
-    show TJ 1gx at tjleft with dissolve
+    show TJ 1gx at tjleft
+    with dissolve
     TeacherTian "现在日语中的平假名除了用于书写和语单词、标注汉字读音以外，还常常用于单词的词尾部分，如「分かる、美味しい」等。"
     #{显示立绘ZH 12wn}
     hide TJ with dissolve
-    show ZH 12wn at tjleft with dissolve
+    show ZH 12wn at tjleft
+    with dissolve
     ZhengHui "原来是这样呀。那片假名有什么用呢？"
     #{显示背景 p jiaoxue11}
     scene p jiaoxue11 with dissolve
@@ -62,7 +67,8 @@ label lesson2_1:
     TeacherTian "这个问题问得很好，其实片假名和平假名原本有完全不同的用途。片假名比平假名出现的时间还要早，大约诞生于公元八世纪。当时日本的僧人在念佛经的时候，为了标注汉字的读音，便用汉字的偏旁部首做一些标记。这些标记慢慢变成了一种假名文字。"
     #{显示立绘QQ 13xf}
     hide TJ
-    show QQ 13xf at tjleft with dissolve
+    show QQ 13xf at tjleft
+    with dissolve
     YuanQiaoqiao "原来不论平假名还是片假名，都和汉字密切相关啊！"
     #{显示背景 p jiaoxue12}
     scene p jiaoxue12 with dissolve
@@ -71,11 +77,13 @@ label lesson2_1:
     TeacherTian "是的，不过现在的片假名主要用于表示外来语。例如外国的人名、地名、专有词汇，或是其他需要强调的词。"
     #{显示立绘XY 11zm}
     hide TJ
-    show XY 11zm at tjleft with dissolve
+    show XY 11zm at tjleft
+    with dissolve
     ZhouXiaoyu "那么平假名、片假名、汉字到底应该怎么用呢？"
     #{显示立绘TJ 1wx}
     hide XY
-    show TJ 1wx at tjleft with dissolve
+    show TJ 1wx at tjleft
+    with dissolve
     TeacherTian "问得好。其实这三种文字都是日语中的正式文字，常见的文章中也会混用。日文也被称为「漢字仮名交じり文」，译为汉字假名混合文。"
 
     #{显示立绘TJ 1gx}
@@ -211,9 +219,10 @@ label lesson2_2:
     TeacherTian "请智子同学为我们读一下吧。"
     TeacherTian "智子ちゃん、ちょっと読んでもらえますか。（智子，能请你读一下吗？）"
     #{显示立绘ZZ 11gx}
-    hide TJ with dissolve
-    show ZZ 11gx at left with dissolve:
+    hide TJ
+    show ZZ 11gx at left:
         xoffset -150
+    with dissolve
     Zhizi "はい。（好的。）"
     #{播放SE sata10 }
     play sound "audio/se/sushiyin/sata10.mp3"
@@ -223,22 +232,25 @@ label lesson2_2:
     # TODO: Hard Pause
     Zhizi "さ、し、す、せ、そ、た、ち、つ、て、と。"
     #{显示立绘TJ 1wx}
-    hide ZZ with dissolve
-    show TJ 1wx at left with dissolve:
+    hide ZZ
+    show TJ 1wx at left:
         xoffset -150
+    with dissolve
     TeacherTian "もう一度お願いします。（请再读一遍。）"
     #{播放SE sata10 }
     play sound "audio/se/sushiyin/sata10.mp3"
-    hide TJ with dissolve
-    show ZZ 11gx at left with dissolve:
+    hide TJ
+    show ZZ 11gx at left:
         xoffset -150
+    with dissolve
     # TODO: Hard Pause
     Zhizi "さ、し、す、せ、そ、た、ち、つ、て、と。"
     hide screen HiraKataKANA
     #{显示立绘TJ 1gx}
-    hide ZZ with dissolve
-    show TJ 1gx at left with dissolve:
+    hide ZZ
+    show TJ 1gx at left :
         xoffset -150
+    with dissolve
     TeacherTian "大家可以跟读练习一下哦。"
 
     # TODO:{显示图片 十个假名 点击可以发音}
@@ -250,14 +262,15 @@ label lesson2_2:
         xoffset -150
     TeacherTian "既然大家都学会了，那么我们来做一个小测试吧。请大家根据听到的读音选择正确的假名。"
     #循环到此处
-    hide ZZ with dissolve
 
     jump lesson2_2_q1
 
 label lesson2_2_q1:
     stop music
     #{播放se diyiti}
+    hide ZZ
     show TJ 1wx
+    with dissolve
     TeacherTian "第一题。"
     play sound "audio/se/sushiyin/su.mp3"
     pause 1.5
@@ -489,8 +502,9 @@ label lesson2_3:
 
     show TJ 1wx at tjleft with dissolve
     TeacherTian "大家可以跟读练习一下哦。"
-    hide TJ with dissolve
-    hide ZZ with dissolve
+    hide TJ
+    hide ZZ
+    with dissolve
 
     #{TODO: 显示图片1-4  点击可以发音}
     call screen Dango(Dango_L2)
@@ -500,13 +514,14 @@ label lesson2_3:
     show TJ 1wx at tjleft with dissolve
     TeacherTian "既然大家都学会了，那么我们来做一个小测试吧。请大家根据听到的读音选择正确的单词。"
 
-    hide ZZ with dissolve
 
     jump lesson2_3_q1
 
 label lesson2_3_q1:
     #{播放se diyiti}
+    hide ZZ
     show TJ 1wx
+    with dissolve
     TeacherTian "第一题。"
     #{播放se 021sushi}
     pause 1.5
@@ -640,27 +655,36 @@ label lesson2_5:
     "晚自修结束后，回到宿舍。躺在床上，我的心情有些复杂。"
     "这一次神奇的穿越，让我带着所有的记忆回到了智子身边。"
     #{显示立绘WH 11zm}
-    show WH 11zm at middle with dissolve
-    "虽然很高兴能走近智子，愉快地和她交流。但我总觉得自己像个小偷，偷走了本应该属于智子和刘洋的故事。而且，现在的自己还是那个浑浑噩噩的状态，又如何能够给她幸福呢。"
-    "此时，我忽然想起了周小雨。中午吃饭的时候她那欲言又止的样子，好像是遇到了什么烦心事，而且似乎和刘洋有关。于是我忍不住拿出手机给周小雨发了短信。"
+    show WH 11ng at middle with dissolve
+    "虽然很高兴能走近智子，愉快地和她交流。但我总觉得自己像个小偷，偷走了本应该属于智子和刘洋的故事。"
+    "而且，现在的自己还是那个浑浑噩噩的状态，又如何能够给她幸福呢。"
+    show WH 12jy
+    "此时，我忽然想起了周小雨。中午吃饭的时候她那欲言又止的样子，好像是遇到了什么烦心事，而且似乎和刘洋有关。"
+    "于是我忍不住拿出手机给周小雨发了短信。"
     #{显示立绘WH 12rz}
-    show WH 12rz at MidToRight
+    show WH 12wx at left with dissolve
     me "小雨，在吗？"
     #{显示立绘XY 13jy}
-    show XY 13jy at left with dissolve
+    hide WH
+    show XY 13jy at left
+    with dissolve
     ZhouXiaoyu "怎么了，王浩？有什么事吗？"
     "我的短信也许会让周小雨感到意外。我高中的时候几乎不会主动和女生发消息。对于高中生来说，称呼好像也过于亲昵了。"
     #{显示立绘WH 13rz}
-    show WH 13rz
+    hide XY
+    show WH 13rz at left
+    with dissolve
     me "是这样的，中午看你有些失落，所以想来问问。"
     "周小雨很久没有回复，我有些焦急，又发了一条消息。"
     #{显示立绘WH 11zm}
-    show WH 11zm
+    show WH 13kx
     me "你是不是喜欢刘洋啊？"
     "出于成年人的直觉，以及对高中生活的八卦和好奇，我直截了当地向周小雨确认她的心情。"
     "这次她秒回了。"
     #{显示立绘XY 13jy}
-    show XY 13jy
+    hide WH
+    show XY 13jy at left
+    with dissolve
     ZhouXiaoyu "有……那么明显吗？"
     "周小雨毫不避讳的回答，反而让我感到有些诧异。当时只觉得他们是关系很好的朋友，完全没想到这一层。随即，对话框接连跳了出来。"
     #{显示立绘XY 13wx}
@@ -668,80 +692,117 @@ label lesson2_5:
     ZhouXiaoyu "我和刘洋一起长大的，初中时我们还是同桌。"
     ZhouXiaoyu "他可能一直只是把我当成朋友吧。"
     #{显示立绘WH 12rz}
-    show WH 12rz
+    hide XY
+    show WH 12rz at left
+    with dissolve
     me "为什么这么说呢？"
     #{显示立绘XY 12bx}
-    show XY 12bx
+    hide WH
+    show XY 12bx at left
+    with dissolve
     ZhouXiaoyu "女生的第六感吧(*^-^)。初中的时候，有一次我的手不小心受伤了，他主动来帮我拿书包，课间还帮我倒水，班里同学起哄说我们两个人在谈恋爱。"
     #{显示立绘XY 13bx}
     show XY 13bx
     ZhouXiaoyu "你猜刘洋怎么着？"
     #{显示立绘WH 11rz}
-    show WH 11rz
+    hide XY
+    show WH 11rz at left
+    with dissolve
     me "他让你别放心上？"
     #{显示立绘XY 11bx}
-    show XY 11bx
+    hide WH
+    show XY 11bx at left
+    with dissolve
     ZhouXiaoyu "他把造谣的人打了一顿。坚持说和我只是普通朋友，让造谣的人闭嘴。"
     ZhouXiaoyu "在那之后就没有人再开玩笑了。不过我们俩的关系也变得有点古怪，好像都在避免尴尬。"
     me "所以你还是挺在乎他的咯？"
     #{显示立绘XY 13zm}
-    show XY 13zm
+    show XY 13bx
     ZhouXiaoyu "上高中以后，我发现原来自己有点喜欢他。看到他和别的女生聊天，心里也会觉得有些不开心，想想自己也挺小家子气的……"
     #{显示立绘WH 12zm}
-    show WH 12zm
+    hide XY
+    show WH 12zm at left
+    with dissolve
     me "我看刘洋其实一直都很关心你啊，只是不善于表达吧。"
     #{显示立绘XY 13jy}
-    show XY 13jy
-    ZhouXiaoyu "诶(´•༝•`)，有时候觉得他挺懂我的，但有时候却感觉很疏远。"
+    hide WH
+    show XY 13jy at left
+    with dissolve
+    ZhouXiaoyu "诶(´•_•`)，有时候觉得他挺懂我的，但有时候却感觉很疏远。"
     #{显示立绘WH 11wx}
-    show WH 11wx
+    hide XY
+    show WH 11wx at left
+    with dissolve
     me "男生的喜欢，有时候可能自己也未必能察觉。"
     me "对了，中午说起梦想的事情，你遇到了什么困难吗？"
     #{显示立绘XY 13wx}
-    show XY 13wx
+    hide WH
+    show XY 13wx at left
+    with dissolve
     ZhouXiaoyu "你真细心，没想到这也被你发现了。刘洋觉得我想成为一名钢琴家，但其实我并没有那么高的天赋，对自己也没什么信心。"
     ZhouXiaoyu "我很想大学有机会和刘洋一起去日本，但是家里的经济条件不允许。"
     #{显示立绘WH 12rz}
-    show WH 12rz
+    hide XY
+    show WH 12rz at left
+    with dissolve
     me "那或许他愿意留在国内和你一起上大学呢？不问问怎么知道。"
     #{显示立绘XY 13dy}
-    show XY 13dy
+    hide WH
+    show XY 13dy at left
+    with dissolve
     ZhouXiaoyu "说了要是被拒绝了，还要一起上课，多尴尬呀。而且，我不能那么自私，让刘洋放弃去日本的机会……"
     #{显示立绘WH 12zm}
-    show WH 12zm
+    hide XY
+    show WH 12zm at left
+    with dissolve
     me "有道理。不过，我相信会有一个两全其美的方案的。"
     "小雨和刘洋两个人最终选择在国内读大学。一个读了音乐教育，一个学了社会学。说不定当时刘洋就是为了小雨才放弃了去日本的机会。站在上帝视角的我自信满满地为小雨打气。"
     me "即使在国内读本科，研究生也还有机会一起去日本嘛。"
     "我想起了小雨说的她后来去日本读研究生的事情，便补充了一句。"
     #{显示立绘XY 13wx}
-    show XY 13wx
+    hide WH
+    show XY 13wx at left
+    with dissolve
     ZhouXiaoyu "确实，你说得对。人生有很多选择。(＾ω＾) "
     "小雨回复了我一个笑脸。我看着自己发给小雨的话语，仿佛看到了另一个自己在说话。这些话或许也是对我自己说的，人生真的有很多可能性。或许我应该更真诚地面对自己的感情。"
     #{显示立绘XY 12bx}
     show XY 12bx
     ZhouXiaoyu "对了对了，明天是什么日子你记得吗？"
     #{显示立绘WH 11zm}
-    show WH 11zm
+    hide XY
+    show WH 11zm at left
+    with dissolve
     me "你是说社团招新对吧。"
     #{显示立绘XY 11wx}
-    show XY 11wx
+    hide WH
+    show XY 11wx at left
+    with dissolve
     ZhouXiaoyu "你要不要带智子去逛逛？"
     #{显示立绘WH 12zm}
-    show WH 12zm
+    hide XY
+    show WH 12zm at left
+    with dissolve
     me "你明天不去吗？"
     #{显示立绘XY 12wx}
-    show XY 12wx
+    hide WH
+    show XY 12wx at left
+    with dissolve
     ZhouXiaoyu "帮你创造机会呀，你不想要和智子独处的机会？"
     "周小雨已从自己的故事里抽出身来，切换了频道，开始考虑起了帮我助攻的事情。"
     "当年的社团招新活动我并没有参加，或许这次能创造一些新的回忆。"
     #{显示立绘WH 11wx}
-    show WH 11wx
+    hide XY
+    show WH 11wx at left
+    with dissolve
     me "好啊，那我就陪智子去逛逛吧。"
     #{显示立绘XY 13wx}
-    show XY 13wx
+    hide WH
+    show XY 13wx at left
+    with dissolve
     ZhouXiaoyu "好嘞，包在我身上吧。晚安。(〃'▽'〃) "
-    hide XY with dissolve
-    show WH at middle with dissolve
+    hide XY
+    show WH 12kx at middle
+    with dissolve
     "又是一个笑脸，我仿佛看到了手机那一端周小雨的坏笑。"
 
     #{显示立绘WH 12rz}

@@ -15,14 +15,17 @@ label lesson3_1:
     show WH 12kx at middle with dissolve
     "当年好像田老师讲过……"
     #{显示立绘LY 11hz}
-    show LY 11hz at right with dissolve
+    hide WH
+    show LY 11hz at right
+    with dissolve
     LiuYang "田老师，徐福东渡的故事应该体现了中日交流吧？"
     #{显示立绘TJ 1wx}
     show TJ 1wx at tjleft with dissolve
     TeacherTian "没错，徐福的确是一位非常著名的人物。秦始皇曾派他东渡寻找仙药。"
     #{显示立绘XY 11zm}
     hide LY
-    show XY 11zm at t_right with dissolve
+    show XY 11jy at t_right
+    with dissolve
     ZhouXiaoyu "老师，徐福的故事是真的吗？还是只是传说呀？"
     #{显示立绘TJ 1gx}
     show TJ 1gx
@@ -30,33 +33,39 @@ label lesson3_1:
     TeacherTian "《史记·秦始皇本纪》中有这样的记载：‘齐人徐巿（fú）等上书，言海中有三神山，名曰蓬莱、方丈、瀛洲，仙人居之。请得斋戒，与童男女求之。于是遣徐巿发童男女数千人，入海求仙人。’"
     #{显示立绘QQ 13jy}
     hide WH
-    show QQ 13jy at middle with dissolve
+    hide XY
+    show QQ 13jy at t_right
+    with dissolve
     YuanQiaoqiao "徐福渡海居然是为了找神仙，真是神奇的传说啊！"
     #{显示立绘TJ 1gx}
     show TJ 1gx
     TeacherTian "传说虽然不能等同于史实，但从日本考古界出土的文物来看，在徐福东渡的公元前三世纪，确实有大批中国移民渡海到达日本，并带去了许多大陆的先进文明。"
     #{显示立绘ZH 11wx}
-    hide XY
-    show ZH 11wx at t_right with dissolve
+    hide QQ
+    show ZH 11wx at t_right
+    with dissolve
     ZhengHui "哦！原来如此。"
     #{显示立绘TJ 1gx}
     show TJ 1gx
     TeacherTian "日本佐贺市的金立神社，每隔50年都会举办一项规模盛大的祭祀活动。这项历史悠久的传统活动祭拜的人便是这位两千多年前来到日本的友好使者。"
     #{显示立绘WH 11wx}
-    hide QQ
-    show WH 11wx at middle with dissolve
+    hide ZH
+    show WH 11wx at t_right
+    with dissolve
     me "那当时的中国文明一定对日本产生了很大的影响吧？"
     #{显示立绘TJ 1gx}
     show TJ 1gx
     TeacherTian "没错。在两汉时期，中国的铁器、铜器、丝帛等也传入了日本，促进了古代日本的生产技术和文化的发展。"
     TeacherTian "之后，隋唐时期，日本派遣使节前来学习中国文化。宋元时期，民间贸易活跃，僧侣往来频繁……"
     #{显示立绘LY 11jy}
-    hide ZH
-    show LY 11jy at right with dissolve
+    hide WH
+    show LY 11jy at right
+    with dissolve
     LiuYang "中日两国之间的文化交流可真是历史悠久呀。"
     #{显示立绘TJ 1wx}
     show TJ 1wx
     TeacherTian "是啊，学好日语可以帮助大家更好地了解中日两国的文化交流史。"
+    hide LY with dissolve
     TeacherTian "我们来做一个小测试，看看大家是否掌握了刚才所讲的知识。"
 
     jump lesson3_1_q1
@@ -181,9 +190,10 @@ label lesson3_2:
     TeacherTian "请智子同学为我们读一下吧。"
     TeacherTian "智子ちゃん、ちょっと読んでもらえますか。（智子，能请你读一下吗？）"
     #{显示立绘ZZ 12xf}
-    hide TJ with dissolve
-    show ZZ 12xf at left with dissolve:
+    hide TJ
+    show ZZ 12xf at left:
         xoffset -150
+    with dissolve
     Tomoko "はい。（好的。）"
     #{播放 SE naha10}
     play sound "audio/se/sushiyin/naha10.mp3"
@@ -192,22 +202,25 @@ label lesson3_2:
         $ chpt3_C_answer_kana_index = 10
     # TODO: Hard Pause
     Tomoko "な、に、ぬ、ね、の、は、ひ、ふ、へ、ほ。"
-    hide ZZ with dissolve
-    show TJ 1gx at left with dissolve:
+    hide ZZ
+    show TJ 1gx at left :
         xoffset -150
+    with dissolve
     TeacherTian "もう一度お願いします。（请再读一遍。）"
     #{播放 SE naha10}
     play sound "audio/se/sushiyin/naha10.mp3"
-    hide TJ with dissolve
-    show ZZ 12xf at left with dissolve:
+    hide TJ
+    show ZZ 12xf at left:
         xoffset -150
+    with dissolve
     # TODO: Hard Pause
     Tomoko "な、に、ぬ、ね、の、は、ひ、ふ、へ、ほ。"
     hide screen HiraKataKANA
     #{显示立绘TJ 1gx}
-    hide ZZ with dissolve
-    show TJ 1gx at left with dissolve:
+    hide ZZ
+    show TJ 1gx at left:
         xoffset -150
+    with dissolve
     TeacherTian "大家可以跟读练习一下哦。"
 
     # TODO:{显示图片 十个假名 点击可以发音}
@@ -219,14 +232,15 @@ label lesson3_2:
         xoffset -150
     TeacherTian "既然大家都学会了，那么我们来做一个小测试吧。请大家根据听到的读音选择正确的假名。"
     #循环到此处
-    hide ZZ with dissolve
 
     jump lesson3_2_q1
 
 label lesson3_2_q1:
     stop music
     #{播放 SE diyiti}
+    hide ZZ
     show TJ 1wx
+    with dissolve
     TeacherTian "第一题。"
     play sound "audio/se/sushiyin/ni.mp3"
     pause 1.5
@@ -458,8 +472,9 @@ label lesson3_3:
     #{显示立绘TJ 1wx}
     show TJ 1wx at tjleft with dissolve
     TeacherTian "大家可以跟读练习一下哦。"
-    hide TJ with dissolve
-    hide ZZ with dissolve
+    hide TJ
+    hide ZZ
+    with dissolve
 
     #{TODO: 显示图片1-4  点击可以发音}
     call screen Dango(Dango_L3)
@@ -468,13 +483,14 @@ label lesson3_3:
     show TJ 1wx at tjleft with dissolve
     TeacherTian "既然大家都学会了，那么我们来做一个小测试吧。请大家根据听到的读音选择正确的单词。"
 
-    hide ZZ with dissolve
 
     jump lesson3_3_q1
 
 label lesson3_3_q1:
     #{播放 SE diyiti}
+    hide ZZ
     show TJ 1wx
+    with dissolve
     TeacherTian "第一题。"
     #{播放 SE 033hana}
     pause 1.5
@@ -610,20 +626,26 @@ label lesson3_5:
     #{显示立绘WH 11wx}
     show WH 11wx
     me "哦，这样啊。"
-    "突然，我心里泛起一丝不安。本来今天应该是刘洋和智子一起去逛社团的，然而我却暗暗和周小雨一起改变了历史，这会不会影响未来的结果呢？可是转念一想，或许上天让我现在回到这里，就是给我一次改变的机会。"
+    hide WH
+    hide LY
+    with dissolve
+    "突然，我心里泛起一丝不安。"
+    "本来今天应该是刘洋和智子一起去逛社团的，然而我却暗暗和周小雨一起改变了历史，这会不会影响未来的结果呢？"
+    "可是转念一想，或许上天让我现在回到这里，就是给我一次改变的机会。"
     #{显示立绘WH 11ng}
-    show WH 11ng
+    show WH 12wx at middle with dissolve
     me "你……觉得智子怎么样？"
     "我鼓起勇气说起这个话题。"
     #{显示立绘LY 12gx}
-    show LY 12gx
+    show WH at MidToRight
+    show LY 12jy at left with dissolve
     LiuYang "挺好啊。怎么了？"
     "刘洋不假思索的回答让我有些意外。"
     #{显示立绘WH 11ng}
     show WH 11ng
     me "那小雨呢？"
     #{显示立绘LY 11jy}
-    show LY 11jy
+    show LY 11wx
     LiuYang "小雨怎么了？"
     #{显示立绘WH 11wx}
     show WH 11wx
@@ -632,13 +654,14 @@ label lesson3_5:
     show LY 11jy
     LiuYang "为什么突然问这个问题啊？难不成你……"
     #{显示立绘WH 11rz}
-    show WH 11rz
+    show WH 12kx
     "我也不知为何会脱口问出小雨的事情。刘洋的回答中略带一丝紧张和不安。"
     me "不不不，我没那个意思。你不是说你们是青梅竹马嘛，关系也比较好。好奇而已。"
     #{显示立绘LY 11gx}
     show LY 11gx
     LiuYang "哦，吓我一跳。我还想谁会喜欢上那个傻丫头呢。"
     "刘洋略带释然的话语中反而透出了一些暧昧。"
+    show WH 12wx
     "原来如此……这两个人原来是两情相悦，却彼此没有敞开心扉。怪不得10年后还未修成正果。"
     #{显示立绘LY 12wx}
     show LY 12wx
@@ -668,28 +691,32 @@ label lesson3_5:
     LiuYang "哦，这样啊。确实这样也不错。"
     #{显示立绘WH 12wx}
     hide LY
-    show WH 12wx at middle with dissolve
-    "不知道刘洋对我这突如其来的建议是否会感觉有些奇怪。既然原世界线里刘洋和小雨同时考上了华师大，那我就按照这个路线推他们一把吧，也算是成人之美。"
+    show WH 12wx at middle
+    with dissolve
+    "不知道刘洋对我这突如其来的建议是否会感觉有些奇怪。"
+    "既然原世界线里刘洋和小雨同时考上了华师大，那我就按照这个路线推他们一把吧，也算是成人之美。"
     #{停止播放BGM }
     stop music fadeout 2.0
 
     "我躺在床上，迷迷糊糊快要睡着的时候，听见刘洋的声音。"
     #{显示立绘LY 12jy}
     hide WH
-    show LY 12jy at left with dissolve
+    show LY 12jy at left
+    with dissolve
     LiuYang "这是什么？新游戏吗？"
     #{显示游戏光盘封面 w12}
     "刘洋举起我放在桌上的光盘问我。"
     #{显示立绘WH 13kx}
-    show WH 13kx at t_right with dissolve
+    show WH 11jy at t_right with dissolve
     #{播放BGM b0305}
     play music "audio/bgm/b0304.mp3"  fadein 2.0
     me "啊，是郑辉给我的，他做的日语学习游戏。"
     #{显示立绘LY 13qx}
     show LY 13qx
     LiuYang "这倒是挺新鲜的。"
-    hide LY with dissolve
-    hide WH with dissolve
+    hide LY
+    hide WH
+    with dissolve
     "睡意一扫而空。我突然想到我还没有体验过这个游戏。我很好奇当年没有打开的游戏里藏着怎样的世界。"
     "我打开电脑，放入光盘。"
     #{显示游戏过程 w13}

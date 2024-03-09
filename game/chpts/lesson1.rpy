@@ -36,8 +36,9 @@ label lesson1_1:
     TeacherTian "大约在公元三世纪至五世纪，汉字逐渐从中国传入日本。"
     #{显示立绘 LY12jy}
     #{播放vioce 2037}
-    hide XY with dissolve
-    show ly 12jy at right with dissolve
+    hide XY
+    show ly 12jy at right
+    with dissolve
     LiuYang "当时没有字典，也没有翻译软件，日本人是如何学习汉字的呢？"
     #{显示黑板背景 p jiaoxue04}
     scene p jiaoxue04 with dissolve
@@ -213,9 +214,10 @@ label lesson1_2:
     #{播放vioce 2057}
     TeacherTian "智子ちゃん、ちょっと読んでもらえますか。（智子，能请你读一下吗？）"
     #{显示立绘 ZZ11gx}
-    hide TJ with dissolve
-    show ZZ 11gx at left with dissolve:
+    hide TJ
+    show ZZ 11gx at left:
         xoffset -150
+    with dissolve
     #{播放vioce 2058}
     Tomoko "はい。（好的。）"
     #{播放SE 01aka }
@@ -226,15 +228,17 @@ label lesson1_2:
         $ chpt1_C_answer_kana_index = 10
     Tomoko "あ、い、う、え、お。か、き、く、け、こ。"
     #{显示立绘 TJ1wx}
-    hide ZZ with dissolve
-    show TJ 1wx at left with dissolve:
+    hide ZZ
+    show TJ 1wx at left:
         xoffset -150
+    with dissolve
     #{播放vioce 2059}
     TeacherTian "もう一度お願いします。（请再读一遍。）"
     #{显示立绘 ZZ11gx}
-    hide TJ with dissolve
-    show ZZ 11gx at left with dissolve:
+    hide TJ
+    show ZZ 11gx at left:
         xoffset -150
+    with dissolve
     #{播放SE 01aka }
     play sound "audio/se/sushiyin/01aka.mp3"
     show screen HiraKataKANA("a_o", "ka_ko", learning=False)
@@ -243,10 +247,11 @@ label lesson1_2:
     Tomoko "あ、い、う、え、お。か、き、く、け、こ。"
     hide screen HiraKataKANA
     #{显示立绘 TJ1wx}
-    hide ZZ with dissolve
+    hide ZZ
     play music "audio/bgm/b0109 shangke.mp3" fadein 2.0
-    show TJ 1wx at left with dissolve:
+    show TJ 1wx at left:
         xoffset -150
+    with dissolve
     #{播放vioce 2060}
     TeacherTian "大家可以跟读练习一下哦。"
     #{显示图片 十个假名 点击可以发音}
@@ -314,13 +319,14 @@ label l1_2_q1AB:
     #{播放zhengque}
     play sound "audio/se/sushiyin/zhengque.mp3"
     TeacherTian "回答正确。"
-    hide LY with dissolve
 
     jump lesson1_2_q2
 
 label lesson1_2_q2:
     #{显示立绘 TJ1wx}
+    hide LY
     show TJ 1wx
+    with dissolve
     TeacherTian "第二题。"
     #{播放se dierti}
     #play sound "audio/se/sushiyin/dierti.mp3"
@@ -369,14 +375,15 @@ label l1_2_q2AC:
     #{播放zhengque}
     play sound "audio/se/sushiyin/zhengque.mp3"
     TeacherTian "回答正确。"
-    hide XY with dissolve
 
     jump lesson1_2_q3
 
 
 label lesson1_2_q3:
     #{显示立绘 TJ1wx}
+    hide XY
     show TJ 1wx
+    with dissolve
     TeacherTian "第三题。"
     #{播放se disanti}
     #play sound "audio/se/sushiyin/disanti.mp3"
@@ -425,13 +432,14 @@ label l1_2_q3AB:
     #{播放zhengque}
     play sound "audio/se/sushiyin/zhengque.mp3"
     TeacherTian "回答正确。"
-    hide QQ with dissolve
 
     jump lesson1_2_q4
 
 label lesson1_2_q4:
     #{显示立绘 TJ1wx}
+    hide QQ
     show TJ 1wx
+    with dissolve
     TeacherTian "第四题。"
     #{播放se disiti}
     #play sound "audio/se/sushiyin/disiti.mp3"
@@ -480,13 +488,14 @@ label l1_2_q4AB:
     #{播放zhengque}
     play sound "audio/se/sushiyin/zhengque.mp3"
     TeacherTian "回答正确。"
-    hide ZH with dissolve
 
     jump lesson1_2_q5
 
 label lesson1_2_q5:
     #{显示立绘 TJ1wx}
+    hide ZH
     show TJ 1wx
+    with dissolve
     TeacherTian "第五题。"
     #{播放se diwuti}
     #play sound "audio/se/sushiyin/diwuti.mp3"
@@ -535,13 +544,14 @@ label l1_2_q5BC:
     #{播放zhengque}
     play sound "audio/se/sushiyin/zhengque.mp3"
     TeacherTian "回答正确。"
-    hide XY with dissolve
 
     jump lesson1_3
 
 label lesson1_3:
     #{显示立绘 TJ1wx}
+    hide XY
     show TJ 1wx
+    with dissolve
     #{播放vioce 20617}
     TeacherTian "这十个假名大家都已经掌握了，接下来我们来看一下它们可以组成哪些单词。"
     #{播放vioce 2062}
@@ -592,8 +602,9 @@ label lesson1_3:
     show TJ 1wx at tjleft with dissolve
     #{播放vioce 2064}
     TeacherTian "大家可以跟读练习一下哦。"
-    hide TJ with dissolve
-    hide ZZ with dissolve
+    hide TJ
+    hide ZZ
+    with dissolve
     #{显示图片1-4  点击可以发音}
     call screen Dango(Dango_L1)
     # 点击图片可以确认发音，完成学习后点击“结束学习”按钮。
@@ -602,13 +613,14 @@ label lesson1_3:
     #{播放vioce 2065}
     TeacherTian "既然大家都学会了，那么我们来做一个小测试吧。请大家根据听到的读音选择正确的单词。"
 
-    hide ZZ with dissolve
 
     jump lesson1_3_q1
 
 label lesson1_3_q1:
     #{显示立绘 TJ1wx}
+    hide ZZ
     show TJ 1wx
+    with dissolve
     TeacherTian "第一题。"
     #{播放se diyiti}
     #play sound "audio/se/sushiyin/diyiti.mp3"
@@ -657,13 +669,14 @@ label l1_3_q1AC:
     #{播放zhengque}
     play sound "audio/se/sushiyin/zhengque.mp3"
     TeacherTian "回答正确。"
-    hide QQ with dissolve
 
     jump lesson1_3_q2
 
 label lesson1_3_q2:
     #{显示立绘 TJ1wx}
+    hide QQ
     show TJ 1wx
+    with dissolve
     TeacherTian "第二题。"
     #play sound "audio/se/sushiyin/dierti.mp3"
     pause 1.5
@@ -711,13 +724,14 @@ label l1_3_q2BC:
     #{播放zhengque}
     play sound "audio/se/sushiyin/zhengque.mp3"
     TeacherTian "回答正确。"
-    hide LY with dissolve
 
     jump lesson1_3_q3
 
 label lesson1_3_q3:
     #{显示立绘 TJ1wx}
+    hide LY
     show TJ 1wx
+    with dissolve
     TeacherTian "第三题。"
     #play sound "audio/se/sushiyin/disanti.mp3"
     pause 1.5
@@ -765,14 +779,15 @@ label l1_3_q3AC:
     #{播放zhengque}
     play sound "audio/se/sushiyin/zhengque.mp3"
     TeacherTian "回答正确。"
-    hide XY with dissolve
 
     jump lesson1_4
 
 label lesson1_4:
     # {播放SE  下课铃}
     #{显示立绘 TJ1wx}
+    hide XY
     show TJ 1wx
+    with dissolve
     #{播放vioce 2069}
     TeacherTian "今天的内容就是这些，同学们都掌握了吗？"
     #{播放vioce 2070}
@@ -918,8 +933,6 @@ label l1_5_q3B:
     #{显示立绘 WH11wx}
     show WH 11wx
     me "お休みなさい。（晚安。）"
-    hide ZZ with dissolve
-
     jump lesson1_6
 
 label l1_5_q3A:
@@ -928,16 +941,16 @@ label l1_5_q3A:
     show WH 11kx
     me "现在是晚上该休息的时间了……"
     me "お休みなさい。（晚安。）"
-    hide ZZ with dissolve
-
     jump lesson1_6
 
 label lesson1_6:
+    hide ZZ
     if chpt1_C_answer_kaiwa_index < 2:
         $ chpt1_C_answer_kaiwa_index = 2
     #{显示立绘 WH11jy}
     show WH 11jy at RightToMid:
         xoffset 100
+    with dissolve
     me "……"
     me "没想到智子会主动给我打电话……还约我一起吃午饭。"
     me "当年因为不会说日语，只能在一旁看着刘洋和智子聊天。"
@@ -955,8 +968,9 @@ label lesson1_6:
     show LY 12gx
     #{播放vioce 2078}
     LiuYang "嗨，紧张什么呀。日语说得很不错啊。"
-    hide LY with dissolve
-    show WH at middle with dissolve
+    hide LY
+    show WH at middle
+    with dissolve
     "刘洋反而安慰起我来。"
     "刘洋的坦然让我感到了一丝愧疚。原本应该是刘洋接到这个电话，现在却被我……"
     "不知道这场神奇的穿越之旅会持续到什么时候。"

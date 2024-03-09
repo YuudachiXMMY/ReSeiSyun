@@ -39,7 +39,11 @@ label chpt2_1:
     #{显示立绘LY11jy}
     show LY 11jy
     LiuYang "怎么了？你看上去好像没有什么精神。"
+    show WH 11kx
     me "没什么，还没缓过神来。哈哈。"
+    hide LY
+    hide WH
+    with dissolve
     "十年前每个相似的早晨又一下子闪回到我的眼前。"
     "刘洋很习惯早睡早起的生活，从没在脸上表现出困倦。而我则是一名不折不扣的起床困难户。熟悉又怀念的记忆向我不断涌来。"
     "洗漱完毕，我收拾收拾书包，和刘洋一同出门走向教室。"
@@ -92,14 +96,15 @@ label chpt2_3:
     #{显示立绘XY11dy}
     hide WH
     hide ZZ
-    show XY 11dy at t_left with dissolve
+    show XY 11jy at t_left
+    with dissolve
     ZhouXiaoyu "王浩，你刚才说了什么吗？"
     #{显示立绘LY13jy}
-    show LY 13jy at t_right with dissolve:
+    show LY 13qx at t_right with dissolve:
         xoffset 250
     LiuYang "他邀请智子和我们一起走。"
     #{显示立绘XY11zm}
-    show XY 11zm
+    show XY 11cx
     ZhouXiaoyu "哎哟，没看出来王浩还是个暖男嘛。不像某些人……"
     "周小雨朝着刘洋看了一眼，明显话里有话。刘洋却微微一笑，好像并没有察觉。"
     #{显示立绘QQ11jy}
@@ -115,22 +120,27 @@ label chpt2_3:
     show WH 12zm at middle with dissolve
     me "要不然现在就去找她吧。"
     me "啊，在那儿。"
-    show WH at t_MidToRight
+    hide WH
     #{显示立绘ZZ 14xf}
-    show ZZ 14xf at t_left with dissolve
+    show ZZ 14xf at left
     #{显示立绘XY 12dx}
-    show XY 12dx at middle with dissolve
+    show XY 12dx at t_right
+    with dissolve
     "智子正从教学楼的方向走过来。周小雨陪在一旁，好像在向她介绍学校各处的场馆设施和同学们的学习生活。"
     "足球场上，校足球队正在训练。刘洋在场上带球过人的动作行云流水，英姿飒爽。"
     "周小雨陪着智子有说有笑地一起向足球场走去。"
     #{显示立绘ZZ 13gx}
     show ZZ 13gx
     #{显示立绘XY 11bx}
-    show XY 11bx
+    show XY 11wx
+    with dissolve
     "智子和小雨正聚精会神地看着比赛。"
     "我停下脚步，心里不禁打起了退堂鼓。"
     #{显示立绘WH 11zm}
-    show WH 11zm
+    hide ZZ
+    hide XY
+    show WH 11zm at middle
+    with dissolve
     me "……要不还是别去打扰她们两个了。我也不懂足球，省得自讨没趣。"
     me "不对，这个场景之前也发生过……"
 
@@ -139,11 +149,11 @@ label chpt2_3:
     play music "audio/bgm/b0203.mp3"  fadein 2.0
     scene p07 caochang with dissolve
     #（回到过去的记忆 画面黄色）
-    show ZZ 13gx at left with dissolve
-    show XY 11bx at right with dissolve:
+    show ZZ 13gx at left
+    show XY 11bx at right:
         xoffset -300
-    show memory_cover onlayer over_screen with dissolve:
-        alpha 0.5
+    show past_cover onlayer over_screen
+    with dissolve
     "智子和小雨正聚精会神地看着比赛。"
     "我停下脚步，心里不禁打起了退堂鼓。"
     me "……要不还是别去打扰她们两个了。我也不懂足球，省得自讨没趣。"
@@ -153,7 +163,7 @@ label chpt2_3:
     Zhizi "あぶない！"
     "我猛地回头，发现一个足球失控飞出场外，直直地向智子的脸上飞去。"
     "智子想要侧身躲闪却已来不及，害怕地闭上了眼睛。"
-    show ZZ with hpunch
+    show XY 13dy with hpunch
     "情急之下，周小雨伸出左手挡在智子面前，足球重重地打在了她的手腕上。"
     ZhouXiaoyu "……啊！"
     #{显示立绘ZZ 14ys}
@@ -163,20 +173,22 @@ label chpt2_3:
     "足球队的队员们也赶过来查看情况。"
     hide ZZ
     #{显示立绘LY 11jy}
-    show LY 11jy at left with dissolve
+    show LY 11jy at left
+    with dissolve
     "刘洋一脸紧张地看着周小雨被打中的手腕"
     LiuYang "小雨，你还好吗？都怪我……"
     #{显示立绘XY 13jy}
-    show XY 13jy
+    show XY 13dy
     ZhouXiaoyu "还好……"
     "疼痛让周小雨的声音有些颤抖。刘洋想要伸手扶小雨，看到了她手腕上的黑色球印，显然伤得不轻。"
     LiuYang "疼得厉害吗？要不要去医务室？"
     "周小雨看似平静，但泪水却在眼眶里打转。"
 
-    scene black_bg with dissolve
-    hide memory_cover onlayer over_screen with dissolve
+    scene black_bgRRR
+    hide past_cover onlayer over_screen
     #（结束回忆，画面恢复正常）
-    scene p07 caochang with dissolve
+    scene p07 caochang
+    with dissolve
     #{播放BGM b0204}
     play music "audio/bgm/b0204.mp3" fadein 2.0
     "既然是回到了过去，那是不是马上就会……"
@@ -195,6 +207,7 @@ label chpt2_3:
     me "小心！"
     "周小雨一惊，急忙拉着智子往旁边躲了一步。"
     # TODO: （声效扑球撞击声）
+    hide ZZ
     show WH with hpunch
     "球啪的一声打在我的手掌上，我飞扑倒地……"
     #{显示立绘WH 11zm}
@@ -204,7 +217,8 @@ label chpt2_3:
     #{显示立绘XY 13jy}
     show XY 13jy
     ZhouXiaoyu "王浩！你没事吧？"
-    #{显示立绘ZZ 14jy}
+    #{显示立绘ZZ 14ys}
+    show ZZ 13ys at middle with dissolve
     "智子握着小雨的手，好像也有点惊魂未定的样子。她看了看足球场，又将视线移到了我的脸上。"
     Zhizi "王さん、大丈夫ですか。ごめんなさい。（王浩，你没事吧？对不起！）"
     "智子惊慌失措地看着我，露出焦急而充满歉意的表情。"
@@ -215,8 +229,11 @@ label chpt2_4:
     #{停止BGM }
     stop music
 
+    hide ZZ
+    hide XY
     #{显示立绘WH 11rz}
-    show WH 11rz
+    show WH 11rz at middle
+    with dissolve
     "我想安慰一下智子不必担心，应该说……"
     #{显示选项  文本框居中，选项竖排1 2}
     menu chapt2_choice_2:
@@ -247,22 +264,24 @@ label chpt2_5:
     #{播放BGM b0202}
     play music "audio/bgm/b0202.mp3" fadein 2.0
     #{显示立绘LY 11jy}
-    show WH at f_rright
-    show ZZ at f_right:
-        xoffset -75
-    show XY at f_left:
-        xoffset 75
-    show LY 11jy at f_lleft with dissolve
+    show LY 11jy at left
+    show WH at t_right
+    with dissolve
     "这时，刘洋也从足球场上跑过来，在我们三人面前停住了脚步。"
     LiuYang "你们没事吧？都怪我分了神，没注意到球被踢飞了。不好意思啊！"
     #{显示立绘XY 12dy}
-    show XY 12dy
+    hide WH
+    show XY 12dy at t_right
+    with dissolve
     ZhouXiaoyu "我和智子没事，多亏了王浩。"
     #{显示立绘LY 11gx}
     show LY 11gx
     LiuYang "谢谢你啊王浩，幸亏有你在。"
     #{显示立绘WH 12my}
-    show WH 12my
+    hide LY
+    show WH 12my at left:
+        xoffset 75
+    with dissolve
     me "没事没事，别介意。"
     #{显示立绘WH11hz}
     "刘洋看了看小雨，又低头向智子表示歉意。"
@@ -270,24 +289,32 @@ label chpt2_5:
     show XY 12wx
     ZhouXiaoyu "你俩可是来对了。我刚刚和智子说了半天鸡同鸭讲。两位大神帮我翻译一下呗？"
     #{显示立绘LY 13gx}
-    show LY 13gx
+    hide XY
+    show LY 13gx at right
+    with dissolve
     "我和刘洋对视了一眼。刘洋随即点了点头。"
     LiuYang "可以啊，我没问题。"
     #（后文中默认王浩和刘洋会为其他小伙伴进行翻译，对话中就不以转述的形式出现。）
     "我想起昨晚智子邀我和她一起吃午餐的短信。"
     #{显示立绘WH 11rz}
-    show WH 11rz
+    show WH 11gx
     me "……行呀，我也没问题。要不中午一起吃饭吧。"
     "见智子一脸迷茫，我赶忙向她解释。"
     me "四人で一緒に昼ご飯を食べましょうか。（我们四个人一起吃吧。）"
     #{显示立绘ZZ 11xf}
-    show ZZ 11xf
+    hide LY
+    show ZZ 11xf at t_right
+    with dissolve
     Zhizi "もちろんです。うれしい。（当然可以啦。我很乐意。）"
     me "智子也说可以。"
     #{显示立绘XY 13dx}
-    show XY 13dx
+    hide WH
+    show XY 13dx at left
+    with dissolve
     ZhouXiaoyu "那太好了！"
 
+
+    ## TODO: (这后面的对话也是同一时间画面中只出现两个人物)
     #{播放BGM b0205}
     play music "audio/bgm/b0205.mp3" fadein 2.0
     # （食堂）
@@ -295,30 +322,37 @@ label chpt2_5:
     scene p08 shitang
     "四个人同坐一张桌子，我和智子面对面，刘洋和周小雨面对面。"
     #{显示立绘ZZ 11gx}
-    show ZZ 11gx at f_lleft with dissolve:
-        xoffset 75
+    show ZZ 11gx at left with dissolve
     Zhizi "いただきます。（我开始吃了。）"
     #{显示立绘WH 13rz}
-    show WH 13rz at f_rright with dissolve
+    show WH 13my at t_right with dissolve
     me "いただきます。（我开始吃了。）"
     "智子双手合十，小声地说了这样一句。我也跟着说了一句，周小雨看着我俩笑开了花。"
     #{显示立绘XY 12dx}
-    show XY 12dx at f_left with dissolve
+    hide ZZ
+    show XY 12jy at left
+    with dissolve
     ZhouXiaoyu "你们在干什么？"
     #{显示立绘LY 12wx}
     if chpt2_C_answer_bunka_index < 1:
         $ chpt2_C_answer_bunka_index = 1
-    show LY 12wx at f_right with dissolve
+    hide WH
+    show LY 12wx at right
+    with dissolve
     LiuYang "这是日本人的习惯，在吃饭前要说「いただきます」，表示对食物的敬意。"
     #{显示立绘XY 11zm}
     show XY 11zm
     ZhouXiaoyu "哦，为什么要对食物表示敬意呢？"
     #{显示立绘ZZ 13wx}
-    show ZZ 13wx
+    hide XY
+    show ZZ 13wx at left
+    with dissolve
     Zhizi "実は「いただきます」には意味が二つあります。（其实‘我开始吃了’这句话里有两层含义。）"
     Zhizi "一つは食事を作ってくれる人や飼育、栽培をしている人に感謝の気持ちを伝えること。（第一层含义是向给我们做菜和饲养动物、栽培作物的人们表达感谢。）"
     #{显示立绘WH 12wx}
-    show WH 12wx
+    hide LY
+    show WH 12wx at t_right
+    with dissolve
     me "もう一つは「尊い命をいただく」という意味だね。（另一层含义是向我们索取的尊贵生命表示感谢，对吧？）"
     #{显示立绘ZZ 14xf}
     show ZZ 14xf
@@ -331,31 +365,45 @@ label chpt2_5:
 
     "看到小雨听得有些云里雾里，刘洋便岔开了话题。"
     #{显示立绘LY 12gx}
-    show LY 12gx
+    hide WH
+    show LY 12gx at right
+    with dissolve
     LiuYang "对了，大家想过将来要做什么吗？"
     #{显示立绘XY 11wx}
-    show XY 11wx
+    hide ZZ
+    show XY 11wx at left
+    with dissolve
     ZhouXiaoyu "我想做的事可多了。"
     LiuYang "哈哈哈，你不是想做钢琴演奏家吗？"
     #{显示立绘ZZ 14xf}
-    show ZZ 14xf
+    hide LY
+    show ZZ 14xf at t_right
+    with dissolve
     Zhizi "すごい。（太厉害了。）"
     #{显示立绘XY 13zm}
     show XY 13zm
     ZhouXiaoyu "别听他瞎说，我还没想好呢。有很多要考虑的事……"
     #{显示立绘LY 12hz}
-    show LY 12hz
+    hide ZZ
+    show LY 12hz at right
+    with dissolve
     LiuYang "有什么好多想的，有梦想就努力去实现呗！"
     "听到刘洋的话，周小雨张了张嘴想说些什么，又沉默了。"
     #{显示立绘WH 11rz}
-    show WH 11rz
+    hide XY
+    show WH 11rz at left
+    with dissolve
     "周小雨欲言又止，气氛有些尴尬，于是我把话题抛给了智子。"
     me "智子ちゃん、いや、高橋さんはどうですか。（智子，哦不对，高桥你的梦想是什么呢？）"
     #{显示立绘ZZ 13wx}
-    show ZZ 13wx
+    hide LY
+    show ZZ 13wx at t_right
+    with dissolve
     Zhizi "夢ですか。私はアナウンサーになりたいです。（梦想啊，我想成为一个电视台主持人。）"
     #{显示立绘XY 11dx}
-    show XY 11dx
+    hide WH
+    show XY 11dx at left
+    with dissolve
     ZhouXiaoyu "好棒啊。"
     "我不由得想起周小雨说智子在日本电视台录制节目的事情。虽然穿越到高中时代，看到智子在眼前让我非常高兴。但不知道现在的她怎么样了……"
     #{显示立绘ZZ 11xf}
@@ -365,28 +413,40 @@ label chpt2_5:
     show ZZ 13wx
     Zhizi "劉さんと王さんはどうですか。（刘洋、王浩，你们的梦想是什么呢？）"
     #{显示立绘LY 11rz}
-    show LY 11rz
+    hide ZZ
+    show LY 11rz at right
+    with dissolve
     LiuYang "外交官になりたいかな。日本に留学するとか。（我以后想做一个外交官吧，可能会去日本留学。）"
     #{显示立绘XY 11dy}
     show XY 11dy
     "或许是我的错觉，听到刘洋的话，小雨的脸上露出了些许担忧的表情。"
     #{显示立绘ZZ 13wx}
-    show ZZ 13wx
+    hide XY
+    show ZZ 13wx at left
+    with dissolve
     Zhizi "そうなんですか。さすがですね。（这样啊，真是了不起）"
     "智子又笑着望向我。"
     #{显示立绘ZZ 11xf}
+    hide LY
     show ZZ 11xf
+    show WH 11ng at t_right
+    with dissolve
     Zhizi "王さんはどうですか。（王浩，你呢？）"
-    #{显示立绘WH 11zm}
-    show WH 11zm
+    #{显示立绘WH 11ng}
     "原来只剩我还没有说自己的梦想了，我一下有点不知所措。"
     me "私、私は無職になるかも。（我……我可能要在家啃老了。）"
     "说起将来的事情，想到刚刚辞职的经历，我不由得感到前途渺茫，感伤了起来，不敢看智子的眼睛。"
     #{显示立绘ZZ 13wx}
-    show ZZ 13wx
+    hide WH
+    show ZZ 13wx at middle
+    with dissolve
     Zhizi "そんなことないですよ。王さんは優しいから、きっとうまくいきますよ。（怎么会，你这么善良，一定会很顺利的。）"
     "得到智子的宽慰，我心里好受了一些。但是在成人的世界里善良或许反而是最大的弱点吧。"
-    "我再次思考起自己的梦想。高中时代的我，只觉得顺其自然就好，船到桥头自然直。可是后来的生活却仿佛是踩着西瓜皮过日子，自己的人生永远在别人的指挥之下。如果再给我一次机会的话，我又该如何选择呢……"
+    hide ZZ with dissolve
+    "我再次思考起自己的梦想。高中时代的我，只觉得顺其自然就好，船到桥头自然直。"
+    "可是后来的生活却仿佛是踩着西瓜皮过日子，自己的人生永远在别人的指挥之下。"
+    "如果再给我一次机会的话，我又该如何选择呢……"
+    show ZZ 13gx at middle with dissolve
     Zhizi "ご馳走さまでした。（感谢款待。）"
     "智子吃完饭后，很有礼貌地说了一句‘感谢款待’，便又认真地听我们说话。不知不觉中，我们四个人度过了愉快的午休时间……"
 
