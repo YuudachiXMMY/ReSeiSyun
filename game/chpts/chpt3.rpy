@@ -191,8 +191,9 @@ label chpt3_3:
     #{显示立绘QQ 11gx}
     show QQ 11gx
     "过了好一会儿，巧巧画好了。她得意洋洋地把画展示给我和智子看。"
-    YuanQiaoqiao "怎么样，我画的不错吧？"
     # TODO:{显示智子的肖像画 w11}
+    show w11 at middle with dissolve
+    YuanQiaoqiao "怎么样，我画的不错吧？"
     jump chpt3_4
 
 label chpt3_4:
@@ -240,6 +241,7 @@ label chpt3_5:
     show QQ 12wx
     YuanQiaoqiao "（一把将画塞进我手里）喏，王浩你拿好了。"
     #{智子的肖像画消失 w11消失}
+    hide w11
     #{显示立绘WH 11gx}
     hide ZZ
     show WH 11gx at t_right

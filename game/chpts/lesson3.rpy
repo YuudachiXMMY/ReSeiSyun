@@ -27,13 +27,14 @@ label lesson3_1:
     show XY 11jy at t_right
     with dissolve
     ZhouXiaoyu "老师，徐福的故事是真的吗？还是只是传说呀？"
-    #{显示立绘TJ 1gx}
-    show TJ 1gx
+    #{显示背景  p jiaoxue15}
+    scene p jiaoxue15
+    #{显示立绘TJ 1gx}"
+    show TJ 1gx at tjleft
+    with dissolve
     TeacherTian "这个问题问得好。虽然目前还无法断定徐福去的是否就是现在的日本，但是“徐福东渡”的故事确实在史料中有所记载。"
     TeacherTian "《史记·秦始皇本纪》中有这样的记载：‘齐人徐巿（fú）等上书，言海中有三神山，名曰蓬莱、方丈、瀛洲，仙人居之。请得斋戒，与童男女求之。于是遣徐巿发童男女数千人，入海求仙人。’"
     #{显示立绘QQ 13jy}
-    hide WH
-    hide XY
     show QQ 13jy at t_right
     with dissolve
     YuanQiaoqiao "徐福渡海居然是为了找神仙，真是神奇的传说啊！"
@@ -45,16 +46,21 @@ label lesson3_1:
     show ZH 11wx at t_right
     with dissolve
     ZhengHui "哦！原来如此。"
+    #{显示背景  p jiaoxue16}
+    scene p jiaoxue16
     #{显示立绘TJ 1gx}
-    show TJ 1gx
+    show TJ 1gx at tjleft
+    with dissolve
     TeacherTian "日本佐贺市的金立神社，每隔50年都会举办一项规模盛大的祭祀活动。这项历史悠久的传统活动祭拜的人便是这位两千多年前来到日本的友好使者。"
     #{显示立绘WH 11wx}
-    hide ZH
     show WH 11wx at t_right
     with dissolve
     me "那当时的中国文明一定对日本产生了很大的影响吧？"
+    #{显示背景  p jiaoxue17}
+    scene p jiaoxue17
     #{显示立绘TJ 1gx}
-    show TJ 1gx
+    show TJ 1gx at tjleft
+    with dissolve
     TeacherTian "没错。在两汉时期，中国的铁器、铜器、丝帛等也传入了日本，促进了古代日本的生产技术和文化的发展。"
     TeacherTian "之后，隋唐时期，日本派遣使节前来学习中国文化。宋元时期，民间贸易活跃，僧侣往来频繁……"
     #{显示立绘LY 11jy}
@@ -437,7 +443,7 @@ label lesson3_3:
     if chpt3_C_answer_tango_index < 1:
         $ chpt3_C_answer_tango_index = 1
     show 031inu2 at middle with dissolve
-    play sound "audio/se/sushiyin/031inu2.mp3"
+    # play sound "audio/se/sushiyin/031inu2.mp3"
     Tomoko "犬（いぬ）。"
     hide 031inu2 with dissolve
 
@@ -446,7 +452,7 @@ label lesson3_3:
     if chpt3_C_answer_tango_index < 2:
         $ chpt3_C_answer_tango_index = 2
     show 032neko2 at middle with dissolve
-    play sound "audio/se/sushiyin/032neko2.mp3"
+    # play sound "audio/se/sushiyin/032neko2.mp3"
     Tomoko "猫（ねこ）。"
     hide 032neko2 with dissolve
 
@@ -455,7 +461,7 @@ label lesson3_3:
     if chpt3_C_answer_tango_index < 3:
         $ chpt3_C_answer_tango_index = 3
     show 033hana2 at middle with dissolve
-    play sound "audio/se/sushiyin/033hana2.mp3"
+    # play sound "audio/se/sushiyin/033hana2.mp3"
     Tomoko "花（はな）。"
     hide 033hana2 with dissolve
 
@@ -464,7 +470,7 @@ label lesson3_3:
     if chpt3_C_answer_tango_index < 4:
         $ chpt3_C_answer_tango_index = 4
     show 034hoshi2 at middle with dissolve
-    play sound "audio/se/sushiyin/034hoshi2.mp3"
+    # play sound "audio/se/sushiyin/034hoshi2.mp3"
     Tomoko "星（ほし）。"
     hide 034hoshi2 with dissolve
 
@@ -705,6 +711,7 @@ label lesson3_5:
     with dissolve
     LiuYang "这是什么？新游戏吗？"
     #{显示游戏光盘封面 w12}
+    show w12 at middle with dissolve
     "刘洋举起我放在桌上的光盘问我。"
     #{显示立绘WH 13kx}
     show WH 11jy at t_right with dissolve
@@ -720,20 +727,44 @@ label lesson3_5:
     "睡意一扫而空。我突然想到我还没有体验过这个游戏。我很好奇当年没有打开的游戏里藏着怎样的世界。"
     "我打开电脑，放入光盘。"
     #{显示游戏过程 w13}
+    hide w12
+    show w13 at middle
+    with dissolve
     "电脑上出现了一间日语教室，同学们正在教室里上日语课。"
     #{显示游戏过程 w14}
+    hide w13
+    show w14 at middle
+    with dissolve
+    "刘洋举起我放在桌上的光盘问我。"
     "主人公是个日语学渣，在课上回答不出老师的问题。"
     "再次回到教室的时候，发现老师和同学们都不见了。"
     #{显示游戏过程 w15}
+    hide w14
+    show w15 at middle
+    with dissolve
     "不知为何幻想世界的入口被打开，突然出现了幻想世界的怪物，把老师和同学都抓走了。"
     #{显示游戏过程 w16}
+    hide w15
+    show w16 at middle
+    with dissolve
     "通过回答日语题目来收集道具，拯救被困在幻想世界里的老师和同学。"
     #{显示游戏过程 w17}
+    hide w16
+    show w17 at middle
+    with dissolve
+    pause 2
     #{显示游戏过程 w18}
+    hide w17
+    show w18 at middle
+    with dissolve
     "打怪的过程中有日语解题环节，故事情节也很有趣。"
     #{显示游戏过程 w19}
+    hide w18
+    show w19 at middle
+    with dissolve
     "还有很多有意思的技能，升级以后还能替换装备。"
     #{物品图片消失}
+    hide w19 with dissolve
     "竟然是RPG类型的游戏，没想到高中时代的郑辉已经能够做出完成度那么高的游戏了。打怪+学日语的模式确实新颖。"
     "有时间我试试能不能玩通关……"
 

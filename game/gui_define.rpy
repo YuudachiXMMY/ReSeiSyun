@@ -12,6 +12,9 @@ image bg_cover:
 image black_bg:
     "gui/black.png"
 
+image white_bg:
+    "gui/white.png"
+
 image past_cover:
     "gui/past.png"
 

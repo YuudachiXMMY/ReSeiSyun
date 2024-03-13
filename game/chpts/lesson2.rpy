@@ -472,7 +472,7 @@ label lesson2_3:
     if chpt2_C_answer_tango_index < 1:
         $ chpt2_C_answer_tango_index = 1
     show 021sushi2 at middle with dissolve
-    play sound "audio/se/sushiyin/021sushi2.mp3"
+    # play sound "audio/se/sushiyin/021sushi2.mp3"
     Zhizi "寿司（すし）。"
     hide 021sushi2 with dissolve
 
@@ -480,7 +480,7 @@ label lesson2_3:
     if chpt2_C_answer_tango_index < 2:
         $ chpt2_C_answer_tango_index = 2
     show 022suki2 at middle with dissolve
-    play sound "audio/se/sushiyin/022suki2.mp3"
+    # play sound "audio/se/sushiyin/022suki2.mp3"
     Zhizi "好き（すき）。"
     hide 022suki2 with dissolve
 
@@ -488,7 +488,7 @@ label lesson2_3:
     if chpt2_C_answer_tango_index < 3:
         $ chpt2_C_answer_tango_index = 3
     show 023uta2 at middle with dissolve
-    play sound "audio/se/sushiyin/023uta2.mp3"
+    # play sound "audio/se/sushiyin/023uta2.mp3"
     Zhizi "唄（うた）。"
     hide 023uta2 with dissolve
 
@@ -496,7 +496,7 @@ label lesson2_3:
     if chpt2_C_answer_tango_index < 4:
         $ chpt2_C_answer_tango_index = 4
     show 024tuki2 at middle with dissolve
-    play sound "audio/se/sushiyin/024tuki2.mp3"
+    # play sound "audio/se/sushiyin/024tuki2.mp3"
     Zhizi "月（つき）。"
     hide 024tuki2 with dissolve
 

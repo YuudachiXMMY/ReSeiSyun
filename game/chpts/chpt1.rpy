@@ -120,16 +120,18 @@ label chpt1_1:
     ZhouXiaoyu "快去叫刘洋过来。"
     "周小雨一边给我使眼色，一边小声地对我说。"
     "因为刘洋的爸爸在日企工作，所以只有他在入学的时候就会说一点日语。当年也是他负责陪同智子……"
-    # TODO: {背景色调变成回忆场景}
-    scene black_bgRRR
-    hide past_cover onlayer over_screen
-    scene p04 zoulang with dissolve
     #{停止BGM  }
     stop music fadeout 1.0
+    # TODO: {背景色调变成回忆场景}
+    # scene black_bgRRR
+    # hide past_cover onlayer over_screen
+    scene black_bg with Dissolve(1.5)
+    scene p04 zoulang2jiu with dissolve
     #{显示立绘 LY11gx}
     show LY 11gx at middle
-    show past_cover onlayer over_screen
     with dissolve
+    # show past_cover onlayer over_screen
+    # with dissolve
     #{播放vioce 2013}
     LiuYang "はじめまして、劉洋です。（初次见面，我是刘洋。）"
     #{播放vioce 2014}
@@ -140,6 +142,7 @@ label chpt1_1:
     #{播放vioce 2015}
     Zhizi "ありがとうございます。（谢谢你。）"
     # TODO: {背景色调变回正常}
+    scene white_bg with Dissolve(1.5)
     scene p04 zoulang with dissolve
     #{播放BGM  b0108  xiaoyuan}
     play music "audio/bgm/b0108 xiaoyuan.mp3" fadein 2.0

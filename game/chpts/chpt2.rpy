@@ -144,15 +144,16 @@ label chpt2_3:
     me "……要不还是别去打扰她们两个了。我也不懂足球，省得自讨没趣。"
     me "不对，这个场景之前也发生过……"
 
-    scene black_bg with dissolve
-    #{播放BGM b0203 }
-    play music "audio/bgm/b0203.mp3"  fadein 2.0
-    scene p07 caochang with dissolve
+    # scene black_bg with dissolve
+    #{播放BGM b0507
+    play music "audio/bgm/b0507.mp3"  fadein 2.0
+    scene black_bg with Dissolve(1.5)
+    scene p07 caochangjiu with dissolve
     #（回到过去的记忆 画面黄色）
     show ZZ 13gx at left
     show XY 11bx at right:
         xoffset -300
-    show past_cover onlayer over_screen
+    # show past_cover onlayer over_screen
     with dissolve
     "智子和小雨正聚精会神地看着比赛。"
     "我停下脚步，心里不禁打起了退堂鼓。"
@@ -184,13 +185,13 @@ label chpt2_3:
     LiuYang "疼得厉害吗？要不要去医务室？"
     "周小雨看似平静，但泪水却在眼眶里打转。"
 
-    scene black_bgRRR
-    hide past_cover onlayer over_screen
+    # scene black_bgRRR
+    # hide past_cover onlayer over_screen
     #（结束回忆，画面恢复正常）
-    scene p07 caochang
-    with dissolve
-    #{播放BGM b0204}
-    play music "audio/bgm/b0204.mp3" fadein 2.0
+    scene white_bg with Dissolve(1.5)
+    scene p07 caochangjiu with dissolve
+    #{播放BGM b0507
+    play music "audio/bgm/b0507.mp3" fadein 2.0
     "既然是回到了过去，那是不是马上就会……"
     "只见场上的刘洋正在和场外看球的智子和小雨打招呼，没注意到对手趁此机会发起了进攻。"
     "正如预想的那样，足球向场外飞过来……"
@@ -327,7 +328,7 @@ label chpt2_5:
     #{显示立绘WH 13rz}
     show WH 13my at t_right with dissolve
     me "いただきます。（我开始吃了。）"
-    "智子双手合十，小声地说了这样一句。我也跟着说了一句，周小雨看着我俩笑开了花。"
+    "智子双手合十，小声地说了这样一句。我也跟着说了一句，周小雨看着我俩露出了惊讶的表情。"
     #{显示立绘XY 12dx}
     hide ZZ
     show XY 12jy at left
