@@ -87,7 +87,6 @@ label chpt1_1:
     ZhouXiaoyu "对啊。你今天怎么了？神神叨叨的。"
     "说完，周小雨抬起手看了一眼手表。"
     #{显示 手表 图片w09}
-    # TODO: w09
     show w09 at wleft with dissolve
     "电子表上显示的时间是2012年9月3日。"
     "对于突然的穿越，我本应该感到迷茫和恐惧。但不知为何，此时的自己却异常地兴奋和激动。"
@@ -258,8 +257,7 @@ label chpt1_4:
     "这里曾经有过很多美好，但也留下了很多无法弥补的遗憾。"
     "是上天垂怜，让我重来一次，还是这一切只是一个梦？"
     "如果是梦，也太真实了……。"
-    # TODO: {播放SE   上课铃声}
-    # play sound "audio/se/"
+    # {播放SE   上课铃声}
     #{播放BGM  0109 shangke }
     play music "audio/bgm/b0109 shangke.mp3" fadein 2.0
     #{显示立绘 TJ1wx}

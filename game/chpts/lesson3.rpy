@@ -1,9 +1,8 @@
-#第三课13rz
+#第三课
 label lesson3_1:
 
     #{播放BGM b0202}
     play music "audio/bgm/b0202.mp3"  fadein 2.0 volume 0.1
-    # TODO:{显示背景  p05 jiaoshijiu }
     scene p jiaoxue13 with dissolve
     #第三课 文化常识
     #{显示立绘TJ 1gx}
@@ -106,7 +105,7 @@ label l3_1_q1AB:
     #{显示立绘 TJ 1ng}
     show TJ 1ng
     #{播放 se cuowu}
-    play sound "audio/se/sushiyin/cuowu.mp3"
+    play sound "audio/se/sushiyin/cuowu.mp3"  fadein 2.0
     TeacherTian "上课要认真听讲哦。《史记·秦始皇本纪》中有相关的记载。"
     jump lesson3_1_q2
 
@@ -142,7 +141,7 @@ label l3_1_q2BC:
     #{显示立绘 TJ 1ng}
     show TJ 1ng
     #{播放 se cuowu}
-    play sound "audio/se/sushiyin/cuowu.mp3"
+    play sound "audio/se/sushiyin/cuowu.mp3"  fadein 2.0
     TeacherTian "上课要认真听讲哦。日本佐贺市的金立神社，每隔50年都会举办一项规模盛大的祭祀徐福活动。"
     jump lesson3_1_q3
 
@@ -178,7 +177,7 @@ label l3_1_q3AC:
     #{显示立绘 TJ 1ng}
     show TJ 1ng
     #{播放 se cuowu}
-    play sound "audio/se/sushiyin/cuowu.mp3"
+    play sound "audio/se/sushiyin/cuowu.mp3"  fadein 2.0
     TeacherTian "上课要认真听讲哦。在两汉时期，中国的铁器、铜器、丝帛等也传入了日本，促进了古代日本的生产技术和文化的发展。"
     jump lesson3_2
 
@@ -229,7 +228,7 @@ label lesson3_2:
     with dissolve
     TeacherTian "大家可以跟读练习一下哦。"
 
-    # TODO:{显示图片 十个假名 点击可以发音}
+    # {显示图片 十个假名 点击可以发音}
     # 点击图片可以确认发音，完成学习后点击“结束学习”按钮。
     hide TJ with dissolve
     call screen HiraKataKANA("na_no", "ha_ho")
@@ -482,7 +481,7 @@ label lesson3_3:
     hide ZZ
     with dissolve
 
-    #{TODO: 显示图片1-4  点击可以发音}
+    #{显示图片1-4  点击可以发音}
     call screen Dango(Dango_L3)
     # 点击图片可以确认发音，完成学习后点击“结束学习”按钮。
 
@@ -784,4 +783,4 @@ label lesson3_5:
 
     hide WH with dissolve
 
-    return
+    jump chpt4_1

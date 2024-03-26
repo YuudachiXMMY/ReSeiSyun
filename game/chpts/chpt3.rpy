@@ -191,7 +191,7 @@ label chpt3_3:
     #{显示立绘QQ 11gx}
     show QQ 11gx
     "过了好一会儿，巧巧画好了。她得意洋洋地把画展示给我和智子看。"
-    # TODO:{显示智子的肖像画 w11}
+    # {显示智子的肖像画 w11}
     show w11 at middle with dissolve
     YuanQiaoqiao "怎么样，我画的不错吧？"
     jump chpt3_4
@@ -285,7 +285,7 @@ label chpt3_5:
     show ZH 12wx at t_left
     with dissolve
     ZhengHui "王浩，我就知道你会来。"
-    # TODO: {显示立绘WH 12zm}
+    #  {显示立绘WH 12zm}
     show WH 12zm at t_right with dissolve:
         xoffset 75
     me "要不是袁巧巧提醒，我还真没注意到这个社团。"
@@ -336,6 +336,7 @@ label chpt3_5:
     show WH 12ng
     "智子的话点醒了我，只要不放弃的话……我也曾有过很多想法，我却让它们在脑海中一闪而过，没有付诸行动。和郑辉、巧巧相比，我真是差得太远了……"
     # （上课铃声）
+    play music "audio/bgm/b0109 shangke.mp3" fadein 2.0
     #{显示立绘WH 11wx}
     show WH 11wx
     me "あっ、もうこんな時間。日本語の授業が始まるから、そろそろ教室に戻ろうか。（啊，已经这个点了。日语课要开始了，我们回教室吧。）"

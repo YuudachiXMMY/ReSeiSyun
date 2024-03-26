@@ -7,12 +7,18 @@ define HiraKataKANA = {
     "ta_to" : ["ta", "chi", "tu", "te", "to"],
     "na_no" : ["na","ni","nu","ne","no"],
     "ha_ho" : ["ha","hi","fu","he","ho"],
+    "ma_mo" : ["ma","mi","mu","me","mo"],
+    "ya_yo" : ["ya","yu","yo"],
+    "ra_ro" : ["ra","ri","ru","re","ro"],
+    "wa_n" : ["wa","wo","n"],
 }
 
 ## Dango
 define Dango_L1 = ["011ai2", "012au2", "013aki2", "014koi2"]
 define Dango_L2 = ["021sushi2", "022suki2", "023uta2", "024tuki2"]
 define Dango_L3 = ["031inu2", "032neko2", "033hana2", "034hoshi2"]
+define Dango_L4 = ["041machi2", "042ame2", "043heya2", "044yume2"]
+define Dango_L5 = ["051sora2", "052iro2", "053watashi2", "054hon2"]
 
 
 #################################################################
@@ -36,7 +42,7 @@ default chpt2_select = [0, 0]
 default chpt2_answer_bunka = [0, 0, 0]
 default chpt2_answer_kana = [0, 0, 0, 0, 0]
 default chpt2_answer_tango = [0, 0, 0]
-default chpt2_answer_kaiwa = []
+default chpt2_answer_kaiwa = [] # Not Used
 
 # Chpt 3
 default chpt3_select = [0, 0]
@@ -44,6 +50,20 @@ default chpt3_answer_bunka = [0, 0, 0]
 default chpt3_answer_kana = [0, 0, 0, 0, 0]
 default chpt3_answer_tango = [0, 0, 0]
 default chpt3_answer_kaiwa = [0, 0]
+
+# Chpt 4
+default chpt4_select = [] # Not Used
+default chpt4_answer_bunka = [0, 0, 0]
+default chpt4_answer_kana = [0, 0, 0, 0, 0]
+default chpt4_answer_tango = [0, 0, 0]
+default chpt4_answer_kaiwa = [0]
+
+# Chpt 5
+default chpt5_select = [] # Not Used
+default chpt5_answer_bunka = [0, 0, 0]
+default chpt5_answer_kana = [0, 0, 0, 0, 0]
+default chpt5_answer_tango = [0, 0, 0]
+default chpt5_answer_kaiwa = [0, 0]
 
 #################################################################
 ## Chapter 1
@@ -60,9 +80,8 @@ define chpt1_C_answer_tango = [
 
 default chpt1_C_answer_kaiwa_index = 0
 define chpt1_C_answer_kaiwa = [
-
-    "智子：“今日はありがとう。王さんはとても日本語がお上手ですね。\n（今天谢谢你的帮助。你的日语说得真好啊。）”我应该说……\n正确回答：{u}いえいえ。{/u}",
-    "我：“智子打来的电话？！我应该如何回答……”\n正确回答：{u}こんばんは。{/u}"
+    "智子：“今日はありがとう。王さんはとても日本語がお上手ですね。\n（今天谢谢你的帮助。你的日语说得真好啊。）”我应该说……\n正确回答：{u}「いえいえ。」{/u}",
+    "我：“智子打来的电话？！我应该如何回答……”\n正确回答：{u}「こんばんは。」{/u}"
 ]
 
 default chpt1_C_answer_bunka_index = 0
@@ -94,8 +113,8 @@ define chpt2_C_answer_tango = [
 
 default chpt2_C_answer_kaiwa_index = 0
 define chpt2_C_answer_kaiwa = [
-    "如何用邀请他人和你一起同行？\n正确回答：{u}一緒に行きましょうか。{/u}",
-    "如何安慰他人？\n正确回答：{u}大丈夫。気にしないで。{/u}"
+    "如何用邀请他人和你一起同行？\n正确回答：{u}「一緒に行きましょうか。」{/u}",
+    "如何安慰他人？\n正确回答：{u}「大丈夫。気にしないで。。」{/u}"
 ]
 
 default chpt2_C_answer_bunka_index = 0
@@ -122,8 +141,8 @@ define chpt3_C_answer_tango = [
 
 default chpt3_C_answer_kaiwa_index = 0
 define chpt3_C_answer_kaiwa = [
-    "如何主动提出帮别人带路？\n正确回答：{u}「私でよければ、案内します」（可以的话，我带你去吧）{/u}",
-    "如何夸奖对方可爱？\n正确回答：{u}「とても可愛いですよ」（非常可爱哦）{/u}"
+    "如何主动提出帮别人带路？\n正确回答：{u}「私でよければ、案内します。」（可以的话，我带你去吧）{/u}",
+    "如何夸奖对方可爱？\n正确回答：{u}「とても可愛いですよ。」（非常可爱哦）{/u}"
 ]
 
 default chpt3_C_answer_bunka_index = 0
@@ -131,4 +150,57 @@ define chpt3_C_answer_bunka = [
     '徐福东渡的故事最早在哪本书中有记录？\n正确答案：{u}《史记·秦始皇本纪》中有相关的记载{/u}',
     '日本佐贺市金立神社举办的大型祭祀活动祭拜的人是谁？\n正确答案：{u}徐福{/u}',
     '中国的铁器、铜器、丝帛在哪个朝代传入了日本？\n正确答案：{u}在两汉时期，中国的铁器、铜器、丝帛等传入了日本{/u}'
+]
+
+
+#################################################################
+## Chapter 4
+default chpt4_C_answer_kana_index = 0
+define chpt4_C_answer_kana = [
+    ["ma","mi","mu","me","mo"],
+    ["ya","yu","yo"]
+]
+
+default chpt4_C_answer_tango_index = 0
+define chpt4_C_answer_tango = [
+    "041machi2", "042ame2", "043heya2", "044yume2"
+]
+
+default chpt4_C_answer_kaiwa_index = 0
+define chpt4_C_answer_kaiwa = [
+    "如何回答「こんばんは。」？\n正确回答：{u}「こんばんは。」（晚上好）{/u}"
+]
+
+default chpt4_C_answer_bunka_index = 0
+define chpt4_C_answer_bunka = [
+    '以下哪项是日本和服的起源？\n正确答案：{u}中国的汉服{/u}',
+    '汉服什么时候传入了日本？\n正确答案：{u}三国时期{/u}',
+    '日本什么时候从中国引入了服饰制度？\n正确答案：{u}奈良时代{/u}'
+]
+
+
+#################################################################
+## Chapter 5
+default chpt5_C_answer_kana_index = 0
+define chpt5_C_answer_kana = [
+    ["ma","mi","mu","me","mo"],
+    ["ya","yu","yo"]
+]
+
+default chpt5_C_answer_tango_index = 0
+define chpt5_C_answer_tango = [
+    "051sora2", "052iro2", "053watashi2", "054hon2"
+]
+
+default chpt5_C_answer_kaiwa_index = 0
+define chpt5_C_answer_kaiwa = [
+    "十年前好像也有过这样的场景。最终因为要和大家一起行动，智子没好意思提，也没有人注意到。\n正确回答：{u}「行って見る？」（晚上好）{/u}",
+    "王さんも来てくれる？\n正确回答：{u}「うん、必ず会いに行くよ。」（晚上好）{/u}",
+]
+
+default chpt5_C_answer_bunka_index = 0
+define chpt5_C_answer_bunka = [
+    '“料理”一词在中国古代的意思是什么？\n正确答案：{u}处理事务{/u}',
+    '以下哪种日本料理不是起源于中国的？\n正确答案：{u}咖喱{/u}',
+    '以下哪一项不是日本人过年时吃的食物？\n正确答案：{u}水饺{/u}'
 ]

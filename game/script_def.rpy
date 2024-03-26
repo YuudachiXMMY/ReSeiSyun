@@ -13,6 +13,9 @@ define YuanQiaoqiao = Character("袁巧巧", color='#ffff')
 define Tomoko = Character("高桥智子", color='#ffff')
 define Zhizi = Character("智子", color='#ffff')
 
+define GirlA = Character("女生A", color='#ffff')
+define GirlB = Character("女生B", color='#ffff')
+
 define config.layers = ["master", "transient", "screens", "overlay", "over_screen"]
 
 

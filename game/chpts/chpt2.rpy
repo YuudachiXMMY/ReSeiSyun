@@ -14,11 +14,11 @@ label chpt2_1:
     # show WH 12my at middle with dissolve
     me "……"
     me "今天是……"
-    hide WH with dissolve
+    # hide WH with dissolve
     stop music
     # TODO:（画面逐渐变亮 睁眼动画）
     #{显示背景  p06 qinshi zao }（这个是新的背景）
-    scene p06 qinshi zao with dissolve
+    scene p06 qinshi zao with Dissolve(2)
     me "……"
     "缓缓睁开眼，映入眼帘的是熟悉而又陌生的天花板。"
     #{播放BGM b0201 }
@@ -207,7 +207,8 @@ label chpt2_3:
     "周小雨听到我的声音愣在原地，有点不知所措。"
     me "小心！"
     "周小雨一惊，急忙拉着智子往旁边躲了一步。"
-    # TODO: （声效扑球撞击声）
+    # （声效扑球撞击声）
+    play sound "audio/se/s0113 zhuangdao.mp3"
     hide ZZ
     show WH with hpunch
     "球啪的一声打在我的手掌上，我飞扑倒地……"
@@ -315,7 +316,7 @@ label chpt2_5:
     ZhouXiaoyu "那太好了！"
 
 
-    ## TODO: (这后面的对话也是同一时间画面中只出现两个人物)
+    ## (这后面的对话也是同一时间画面中只出现两个人物)
     #{播放BGM b0205}
     play music "audio/bgm/b0205.mp3" fadein 2.0
     # （食堂）

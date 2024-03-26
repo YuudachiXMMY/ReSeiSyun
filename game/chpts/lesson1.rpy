@@ -60,7 +60,7 @@ label lesson1_1:
     scene p jiaoxue05 with dissolve
     #{播放vioce 2042}
     TeacherTian "这里的“假”就是“假借(汉字)”的意思。“万叶假名”借用一部分汉字的读音来记录日语中原本的发音。"
-    # TODO: {显示图片 山的万叶假名}
+    # {显示图片 山的万叶假名}
     #{播放vioce 2043}
     TeacherTian "例如日语中的“山”读作“yama”，就可以用“也麻、野麻”等汉字来记录。这种使用方法就被称为“万叶假名”。"
     #{显示立绘 QQ12jy}
@@ -88,7 +88,7 @@ label lesson1_1_q1:
     #{显示立绘 TJ1wx}
     show TJ 1wx at tjleft with dissolve
     TeacherTian "第一题。"
-    # TODO: {播放se diyiti}
+    #  {播放se diyiti}
     #play sound "audio/se/sushiyin/diyiti.mp3"
     pause 1.5
     menu l1_1_q1:
@@ -128,7 +128,7 @@ label lesson1_1_q2:
     #{显示立绘 TJ1wx}
     show TJ 1wx
     TeacherTian "第二题。"
-    # TODO: {播放se dierti}
+    # {播放se dierti}
     #play sound "audio/se/sushiyin/dierti.mp3"
     pause 1.5
     menu l1_1_q2:
@@ -305,7 +305,7 @@ label l1_2_q1AB:
     #{显示立绘 TJ1ng}
     show TJ 1ng
     #{播放se cuowu}
-    play sound "audio/se/sushiyin/cuowu.mp3"
+    play sound "audio/se/sushiyin/cuowu.mp3"  fadein 2.0
     TeacherTian "好像不太对哦，再听一遍。"
     #{播放SE u}
     play sound "audio/se/sushiyin/u.mp3"
@@ -361,7 +361,7 @@ label l1_2_q2AC:
     #{显示立绘 TJ1ng}
     show TJ 1ng
     #{播放se cuowu}
-    play sound "audio/se/sushiyin/cuowu.mp3"
+    play sound "audio/se/sushiyin/cuowu.mp3"  fadein 2.0
     TeacherTian "好像不太对哦，再听一遍。"
     #{播放SE ki}
     play sound "audio/se/sushiyin/ki.mp3"
@@ -418,7 +418,7 @@ label l1_2_q3AB:
     #{显示立绘 TJ1ng}
     show TJ 1ng
     #{播放se cuowu}
-    play sound "audio/se/sushiyin/cuowu.mp3"
+    play sound "audio/se/sushiyin/cuowu.mp3"  fadein 2.0
     TeacherTian "好像不太对哦，再听一遍。"
     #{播放SE ko}
     play sound "audio/se/sushiyin/ko.mp3"
@@ -474,7 +474,7 @@ label l1_2_q4AB:
     #{显示立绘 TJ1ng}
     show TJ 1ng
     #{播放se cuowu}
-    play sound "audio/se/sushiyin/cuowu.mp3"
+    play sound "audio/se/sushiyin/cuowu.mp3"  fadein 2.0
     TeacherTian "好像不太对哦，再听一遍。"
     #{播放SE e}
     play sound "audio/se/sushiyin/e.mp3"
@@ -530,7 +530,7 @@ label l1_2_q5BC:
     #{显示立绘 TJ1ng}
     show TJ 1ng
     #{播放se cuowu}
-    play sound "audio/se/sushiyin/cuowu.mp3"
+    play sound "audio/se/sushiyin/cuowu.mp3"  fadein 2.0
     TeacherTian "好像不太对哦，再听一遍。"
     #{播放SE ku}
     play sound "audio/se/sushiyin/ku.mp3"
@@ -655,7 +655,7 @@ label l1_3_q1AC:
     #{显示立绘 TJ1ng}
     show TJ 1ng
     #{播放se cuowu}
-    play sound "audio/se/sushiyin/cuowu.mp3"
+    play sound "audio/se/sushiyin/cuowu.mp3"  fadein 2.0
     TeacherTian "好像不太对哦，再听一遍。"
     # {播放SE  koi}
     play sound "audio/se/sushiyin/014koi2.mp3"
@@ -710,7 +710,7 @@ label l1_3_q2BC:
     #{显示立绘 TJ1ng}
     show TJ 1ng
     #{播放se cuowu}
-    play sound "audio/se/sushiyin/cuowu.mp3"
+    play sound "audio/se/sushiyin/cuowu.mp3"  fadein 2.0
     TeacherTian "好像不太对哦，再听一遍。"
     # {播放SE  ai}
     play sound "audio/se/sushiyin/011ai2.mp3"
@@ -765,7 +765,7 @@ label l1_3_q3AC:
     #{显示立绘 TJ1ng}
     show TJ 1ng
     #{播放se cuowu}
-    play sound "audio/se/sushiyin/cuowu.mp3"
+    play sound "audio/se/sushiyin/cuowu.mp3"  fadein 2.0
     TeacherTian "好像不太对哦，再听一遍。"
     # {播放SE  aki}
     play sound "audio/se/sushiyin/013aki2.mp3"
@@ -812,7 +812,7 @@ label lesson1_5:
     show WH 13wx
     me "看着老师们倾尽全力在讲台上讲课，心里有一种莫名的感动。"
     me "毕业了以后，很少能碰到像“老师”这样愿意为他人付出、不求回报的大人。"
-    # TODO: {显示 手机来电 图片w10  2012年的华为手机}
+    # {显示 手机来电 图片w10  2012年的华为手机}
     show w10 at wleft with dissolve
     #{播放se s0116 shoujiling }
     play sound "audio/se/s0116 shoujiling.mp3"
@@ -978,7 +978,7 @@ label lesson1_6:
     #{显示立绘 WH13rz}
     show WH 13rz
     me "对了，田老师说过睡前要复习一下今天的内容，看一下今天的笔记吧。"
-    # TODO: {打开复习回顾界面，添加第一课的内容。并设定倒计时5分钟，无法退出界面。}
+    # {打开复习回顾界面，添加第一课的内容。并设定倒计时5分钟，无法退出界面。}
     call screen kana_review()
     #{显示立绘 WH13rz}
     show WH 13rz
