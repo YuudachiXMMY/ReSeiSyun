@@ -20,13 +20,13 @@ screen HiraKataKANA(kana1=None, kana2=None, learning=True):
             vbox:
                 xoffset 40
                 spacing 40
-                label _("音乐音量")
+                # label _("音乐音量")
                 label _("语音音量")
 
             vbox:
                 xoffset 40
                 spacing 42
-                add 'gui/settings/音量-1.png'
+                # add 'gui/settings/音量-1.png'
                 add 'gui/settings/音量-1.png':
                     yoffset 5
 
@@ -36,13 +36,13 @@ screen HiraKataKANA(kana1=None, kana2=None, learning=True):
                 # bar value Preference("music volume")
                 # bar value Preference("music volume"):
                 #     yoffset 10
-                bar value Preference("music volume")
+                # bar value Preference("music volume")
                 bar value Preference("sound volume")
 
             vbox:
                 xoffset -40
                 spacing 42
-                add 'gui/settings/音量.png'
+                # add 'gui/settings/音量.png'
                 add 'gui/settings/音量.png':
                     yoffset 5
 

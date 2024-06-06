@@ -189,7 +189,7 @@ label chpt2_3:
     # hide past_cover onlayer over_screen
     #（结束回忆，画面恢复正常）
     scene white_bg with Dissolve(1.5)
-    scene p07 caochangjiu with dissolve
+    scene p07 caochang with dissolve
     #{播放BGM b0507
     play music "audio/bgm/b0507.mp3" fadein 2.0
     "既然是回到了过去，那是不是马上就会……"

@@ -105,11 +105,26 @@ style frame:
 ################################################################################
 
 
+# Hard Pause Screen
+screen disable_Lmouse():
+    zorder 110
+    # modal True
+
+    key "mouseup_1" action NullAction()
+    # key "rollback" action NullAction()
+    key "right_click_menu" action NullAction()
+    key "rollforward" action NullAction()
+    key "dismiss" action NullAction()
+    key "button_ignore" action NullAction()
+    key "skip" action NullAction()
+    key "toggle_skip" action NullAction()
+    key "fast_skip" action NullAction()
+
 label splashscreen: # before_main_menu:
     if not persistent.agreements_yes:
         call screen agreements
 
-# AGM
+# Agreement
 screen agreements_menu(title, yinitial=0.0):
 
     # style_prefix "agreements_menu"
@@ -1071,7 +1086,7 @@ screen info():
 
     add "gui/main/info_bg.png" zoom .74
 
-    on 'show' action Play('music', "audio/bgm/ztq_zw.mp3")
+    on 'show' action Play('music', "audio/bgm/bokunosekai.mp3")
 
     textbutton _("返回"):
         style "return_button"
@@ -1096,46 +1111,46 @@ screen navigation():
 
     on 'show' action Play('music', "audio/bgm/ztq_ry.mp3")
 
-    if persistent.debug:
-        text "debug: "+str(persistent.debug) xalign 0 yalign 0
+    # if persistent.debug:
+    #     text "debug: "+str(persistent.debug) xalign 0 yalign 0
 
-        $tmp=""
-        for i in prologue_select:
-            $tmp += str(i)+" "
-        text "prologue_select: "+tmp xalign 0 yalign 0.03
+    #     $tmp=""
+    #     for i in prologue_select:
+    #         $tmp += str(i)+" "
+    #     text "prologue_select: "+tmp xalign 0 yalign 0.03
 
-        $tmp=""
-        for i in prologue_answer:
-            $tmp += str(i)+" "
-        text "prologue_answer: "+tmp xalign 0 yalign 0.06
+    #     $tmp=""
+    #     for i in prologue_answer:
+    #         $tmp += str(i)+" "
+    #     text "prologue_answer: "+tmp xalign 0 yalign 0.06
 
-        text "宝盒: "+str(Baohe) xalign 0 yalign 0.09
-        text "基础好感: "+str(HaoGan) xalign 0 yalign 0.12
+    #     text "宝盒: "+str(Baohe) xalign 0 yalign 0.09
+    #     text "基础好感: "+str(HaoGan) xalign 0 yalign 0.12
 
-        $tmp=""
-        for i in chpt1_select:
-            $tmp += str(i)+" "
-        text "chpt1_select: "+tmp xalign 0 yalign 0.15
+    #     $tmp=""
+    #     for i in chpt1_select:
+    #         $tmp += str(i)+" "
+    #     text "chpt1_select: "+tmp xalign 0 yalign 0.15
 
-        $tmp=""
-        for i in chpt1_answer_bunka:
-            $tmp += str(i)+" "
-        text "chpt1_answer_bunka: "+tmp xalign 0 yalign 0.18
+    #     $tmp=""
+    #     for i in chpt1_answer_bunka:
+    #         $tmp += str(i)+" "
+    #     text "chpt1_answer_bunka: "+tmp xalign 0 yalign 0.18
 
-        $tmp=""
-        for i in chpt1_answer_kana:
-            $tmp += str(i)+" "
-        text "chpt1_answer_kana: "+tmp xalign 0 yalign 0.21
+    #     $tmp=""
+    #     for i in chpt1_answer_kana:
+    #         $tmp += str(i)+" "
+    #     text "chpt1_answer_kana: "+tmp xalign 0 yalign 0.21
 
-        $tmp=""
-        for i in chpt1_answer_tango:
-            $tmp += str(i)+" "
-        text "chpt1_answer_tango: "+tmp xalign 0 yalign 0.24
+    #     $tmp=""
+    #     for i in chpt1_answer_tango:
+    #         $tmp += str(i)+" "
+    #     text "chpt1_answer_tango: "+tmp xalign 0 yalign 0.24
 
-        $tmp=""
-        for i in chpt2_select:
-            $tmp += str(i)+" "
-        text "chpt2_select: "+tmp xalign 0 yalign 0.27
+    #     $tmp=""
+    #     for i in chpt2_select:
+    #         $tmp += str(i)+" "
+    #     text "chpt2_select: "+tmp xalign 0 yalign 0.27
 
     if main_menu:
         # add "main_bg"

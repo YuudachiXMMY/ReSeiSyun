@@ -35,15 +35,16 @@ label lesson5_1:
     #{显示立绘TJ 1wx}
     show TJ 1wx at tjleft with dissolve
     TeacherTian "没错，王浩你很厉害哦。日本从平安时代开始使用“料理”一词，原本指处理食材，后来慢慢用于指称菜肴。"
+    scene blackboard with dissolve
     #{显示立绘QQ 11jy}
     show QQ 11jy at t_right with dissolve
     YuanQiaoqiao "原来是这样啊。"
     #{显示立绘TJ 1gx}
-    show TJ 1gx
+    show TJ 1gx at tjleft with dissolve
     TeacherTian "那么，你们知道有哪些“日本料理”起源于中国吗？"
     #{显示立绘ZZ 13ys}
     hide QQ
-    show ZZ 13ys at t_right
+    show ZZ 11jy at t_right
     with dissolve
     Tomoko "ラーメンは中国から伝わったんですね。（拉面是从中国传到日本的吧？）"
     #{显示背景  p jiaoxue30}
@@ -54,7 +55,8 @@ label lesson5_1:
     #{显示背景  p jiaoxue31}
     scene p jiaoxue31 with dissolve
     #{显示立绘XY 11zm}
-    show XY 11zm at t_right with dissolve
+    show XY 11zm at right with dissolve:
+        xoffset -150
     ZhouXiaoyu "这样说来，我想起历史老师曾说过中国早在周朝就有吃生鱼片的记载。"
     #{显示立绘TJ 1gx}
     show TJ 1gx at tjleft with dissolve
@@ -63,28 +65,35 @@ label lesson5_1:
     scene p jiaoxue32 with dissolve
     TeacherTian "不过有一些日本的菜品虽然名字和中国菜很相近，但是做法和味道有很大的区别，例如日本的饺子和中国的饺子就不太一样。"
     #{显示立绘ZH 12zj}
-    show ZH 12zj at t_right with dissolve
+    show ZH 12zj at left with dissolve:
+        xoffset -150
     ZhengHui "听说日本的饺子一般是煎饺，或者油炸的饺子，是吗？"
     #{显示立绘ZZ 14sq}
-    show ZZ 14sq at left with dissolve
-    Tomoko "はい、そうです。中国は水餃子ですね。（是的，中国人习惯吃水饺对吗？）"
-    #{显示立绘WH 13gx}
     hide ZH
-    show WH 13gx at t_right
+    show ZZ 14sq at left:
+        xoffset -150
+    with dissolve
+    Tomoko "はい、そうです。中国は水餃子ですね。（是的，中国人习惯吃水饺对吗？）"
+    #{显示背景 heiban }
+    scene blackboard with dissolve
+    #{显示立绘WH 13gx}
+    show WH 13gx at middle
     with dissolve
     me "そうです。それに、中国では、お正月の時に、よく餃子を食べるので、餃子は中国人にとって、特別な意味があります。（是的。而且在中国，因为大家常会在过年的时候吃饺子，所以饺子对中国人来说有特别的意义。）"
     #{显示立绘LY 13jy}
     hide WH
-    show LY 13jy at right
+    show LY 13jy at middle
     with dissolve
     LiuYang "智子ちゃん、日本では年越しの時に何を食べますか。（智子，日本过年的时候大家会吃什么呢？）"
     #{显示背景  p jiaoxue33}
     scene p jiaoxue33 with dissolve
     #{显示立绘ZZ 13gx}
-    show ZZ 13gx at left with dissolve
+    show ZZ 13gx at left with dissolve:
+        xoffset -200
     Tomoko "えっと、日本も地域によって多少違いはありますが、「年越しそば」や「お雑煮」などを食べます。（虽然日本不同地域也有差别，但常吃“过年荞麦面”和“年糕杂煮”之类的。）"
     #{显示立绘XY 13wx}
-    show XY 13wx at t_right with dissolve
+    show XY 13wx at right with dissolve:
+        xoffset -150
     ZhouXiaoyu "原来如此，真有趣。"
 
     #{显示立绘TJ 1gx}
@@ -122,7 +131,7 @@ label l5_1_q1BC:
     #{显示立绘 TJ 1ng}
     show TJ 1ng
     #{播放 SE cuowu}
-    play sound "audio/se/sushiyin/cuowu.mp3"  fadein 2.0
+    play sound "audio/se/sushiyin/cuowu.mp3"
     TeacherTian "上课要认真听讲哦。“料理”一词起源于中国，原意指的是“处理事务”。"
     jump lesson5_1_q2
 
@@ -158,7 +167,7 @@ label l5_1_q2AB:
     #{显示立绘 TJ 1ng}
     show TJ 1ng
     #{播放 SE cuowu}
-    play sound "audio/se/sushiyin/cuowu.mp3"  fadein 2.0
+    play sound "audio/se/sushiyin/cuowu.mp3"
     TeacherTian "上课要认真听讲哦。寿司和生鱼片都是起源于中国。"
     jump lesson5_1_q3
 
@@ -195,7 +204,7 @@ label l5_1_q3AC:
     #{显示立绘 TJ 1ng}
     show TJ 1ng
     #{播放 SE cuowu}
-    play sound "audio/se/sushiyin/cuowu.mp3"  fadein 2.0
+    play sound "audio/se/sushiyin/cuowu.mp3"
     TeacherTian "上课要认真听讲哦。日本人过年常吃“过年荞麦面”和“年糕杂煮”等食物。"
     jump lesson5_2
 
@@ -224,6 +233,7 @@ label lesson5_2:
     if chpt5_C_answer_kana_index < 10:
         $ chpt5_C_answer_kana_index = 10
     #{播放 SE rawa10}
+    play sound "audio/se/sushiyin/rawa10.mp3"
     Tomoko "ら、り、る、れ、ろ、わ、を、ん。"
     #{显示立绘TJ 1wx}
     hide ZZ
@@ -237,6 +247,7 @@ label lesson5_2:
         xoffset -150
     with dissolve
     #{播放 SE rawa10}
+    play sound "audio/se/sushiyin/rawa10.mp3"
     Tomoko "ら、り、る、れ、ろ、わ、を、ん。"
     hide screen HiraKataKANA
     #{显示立绘TJ 1gx}
@@ -293,7 +304,7 @@ label l5_2_q1BC:
     #{显示立绘 TJ 1ng}
     show TJ 1ng
     #{播放se cuowu}
-    play sound "audio/se/sushiyin/cuowu.mp3"  fadein 2.0
+    play sound "audio/se/sushiyin/cuowu.mp3"
     TeacherTian "好像不太对哦，再听一遍。"
     #循环到第本题开始的位置
     jump lesson5_2_q1
@@ -331,7 +342,7 @@ label l5_2_q2AC:
     #{显示立绘 TJ 1ng}
     show TJ 1ng
     #{播放se cuowu}
-    play sound "audio/se/sushiyin/cuowu.mp3"  fadein 2.0
+    play sound "audio/se/sushiyin/cuowu.mp3"
     TeacherTian "好像不太对哦，再听一遍。"
     #循环到第本题开始的位置
     jump lesson5_2_q2
@@ -368,7 +379,7 @@ label l5_2_q3BC:
     #{显示立绘 TJ 1ng}
     show TJ 1ng
     #{播放se cuowu}
-    play sound "audio/se/sushiyin/cuowu.mp3"  fadein 2.0
+    play sound "audio/se/sushiyin/cuowu.mp3"
     TeacherTian "好像不太对哦，再听一遍。"
     #循环到第本题开始的位置
     jump lesson5_2_q3
@@ -404,7 +415,7 @@ label l5_2_q4BC:
     #{显示立绘 TJ 1ng}
     show TJ 1ng
     #{播放se cuowu}
-    play sound "audio/se/sushiyin/cuowu.mp3"  fadein 2.0
+    play sound "audio/se/sushiyin/cuowu.mp3"
     TeacherTian "好像不太对哦，再听一遍。"
     #循环到第本题开始的位置
     jump lesson5_2_q4
@@ -440,7 +451,7 @@ label l5_2_q5AC:
     #{显示立绘 TJ 1ng}
     show TJ 1ng
     #{播放se cuowu}
-    play sound "audio/se/sushiyin/cuowu.mp3"  fadein 2.0
+    play sound "audio/se/sushiyin/cuowu.mp3"
     TeacherTian "好像不太对哦，再听一遍。"
     #循环到第本题开始的位置
     jump lesson5_2_q5
@@ -543,7 +554,7 @@ label l5_3_q1AC:
     #{显示立绘 TJ 1ng}
     show TJ 1ng
     #{播放se cuowu}
-    play sound "audio/se/sushiyin/cuowu.mp3"  fadein 2.0
+    play sound "audio/se/sushiyin/cuowu.mp3"
     TeacherTian "好像不太对哦，再听一遍。"
     #循环到本题上方
     jump lesson5_3_q1
@@ -583,7 +594,7 @@ label l5_3_q2AC:
     #{显示立绘 TJ 1ng}
     show TJ 1ng
     #{播放se cuowu}
-    play sound "audio/se/sushiyin/cuowu.mp3"  fadein 2.0
+    play sound "audio/se/sushiyin/cuowu.mp3"
     TeacherTian "好像不太对哦，再听一遍。"
     #循环到本题上方
     jump lesson5_3_q2
@@ -620,7 +631,7 @@ label l5_3_q3AB:
     #{显示立绘 TJ 1ng}
     show TJ 1ng
     #{播放se cuowu}
-    play sound "audio/se/sushiyin/cuowu.mp3"  fadein 2.0
+    play sound "audio/se/sushiyin/cuowu.mp3"
     TeacherTian "好像不太对哦，再听一遍。"
     #循环到本题上方
     jump lesson5_3_q3

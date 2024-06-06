@@ -1,4 +1,13 @@
 #第五章
+screen stop_scr():
+    key "dismiss" action [[]]
+    key "rollforward" action [[]]
+    key "button_ignore" action [[]]
+    key "button_select" action [[]]
+    key "skip" action [[]]
+    key "toggle_skip" action [[]]
+    key "fast_skip" action [[]]
+
 label chpt5_1:
     #{播放bgm0502}
     play music "audio/bgm/b0502.mp3"
@@ -32,24 +41,157 @@ label chpt5_1:
     "丢下一句感谢，小雨便匆匆跑出了教室。"
     "十年前，因为小雨的手受了伤，所以大家没有一起为智子举办过什么活动。现在给智子准备的这份惊喜，变成了原来的世界线上没有发生过的事……"
 
+    scene p05 jiaoshijiu with dissolve
+    "我按照小雨的安排，带智子去音乐教室。"
+    "不知不觉我们已经走到了音乐教室的门口，小雨正在音乐教室里练习自己的原创歌曲。"
+
     #{播放bgm0503 shinianhou}歌曲强制播放完毕，下面的台词和图片都自动定时播放
 
     #场景在音乐教室门口
     #{显示背景  p11 yinyue}
     scene p11 yinyue with dissolve
+    #{显示立绘XY13wx}
+    show XY 13wx at left with dissolve
     play music "audio/bgm/b0503 shinianhou.mp3" fadein 0.5
-    $ renpy.pause(102, hard=True)
+
+    # Total 102 seconds
+    # $ renpy.pause(102, hard=True)
+    show screen stop_scr
+
+    $ pauseTime = 2.4
+    $ blackPauseTime = 0.4
 
     #{显示立绘ZZ 14xf}
-    show ZZ 14xf at middle with dissolve
-    Zhizi "綺麗な歌声ですね。（好动听的歌声啊）。"
-    "不知不觉我已经带着智子走到了音乐教室的门口。"
-    "小雨的歌声透过微微开启的大门传了出来。"
-    "为了不打扰小雨，智子静静地站在门口示意我不要打扰她。"
-    "在这首歌是我们高中时代的种种回忆……"
+    $ renpy.pause(3.3, hard=True)
+    show ZZ 14xf at t_right with dissolve
+    Zhizi "綺麗な歌声ですね。（好动听的歌声啊）。{w=3}{nw}"
+    "小雨的歌声透过微微开启的大门传了出来。{w=3}{nw}"
+    "为了不打扰小雨，智子静静地站在门口示意我不要打扰她。{w=3}{nw}"
+    "在这首歌是我们高中时代的种种回忆……{w=3}{nw}"
 
-    #固定时间显示图片，每张图片之间进行切换（渐暗渐明）
+    scene black_bg with dissolve
+    $ renpy.pause(blackPauseTime, hard=True)
+    scene huiyi (1) with dissolve
+    $ renpy.pause(pauseTime, hard=True)
 
+    scene black_bg with dissolve
+    $ renpy.pause(blackPauseTime, hard=True)
+    scene huiyi (2) with dissolve
+    $ renpy.pause(pauseTime, hard=True)
+
+    scene black_bg with dissolve
+    $ renpy.pause(blackPauseTime, hard=True)
+    scene huiyi (3) with dissolve
+    $ renpy.pause(pauseTime, hard=True)
+
+    scene black_bg with dissolve
+    $ renpy.pause(blackPauseTime, hard=True)
+    scene huiyi (4) with dissolve
+    $ renpy.pause(pauseTime, hard=True)
+
+    scene black_bg with dissolve
+    $ renpy.pause(blackPauseTime, hard=True)
+    scene huiyi (5) with dissolve
+    $ renpy.pause(pauseTime, hard=True)
+
+    scene black_bg with dissolve
+    $ renpy.pause(blackPauseTime, hard=True)
+    scene huiyi (6) with dissolve
+    $ renpy.pause(pauseTime, hard=True)
+
+    scene black_bg with dissolve
+    $ renpy.pause(blackPauseTime, hard=True)
+    scene huiyi (7) with dissolve
+    $ renpy.pause(pauseTime, hard=True)
+
+    scene black_bg with dissolve
+    $ renpy.pause(blackPauseTime, hard=True)
+    scene huiyi (8) with dissolve
+    $ renpy.pause(pauseTime, hard=True)
+
+    scene black_bg with dissolve
+    $ renpy.pause(blackPauseTime, hard=True)
+    scene huiyi (9) with dissolve
+    $ renpy.pause(pauseTime, hard=True)
+
+    scene black_bg with dissolve
+    $ renpy.pause(blackPauseTime, hard=True)
+    scene huiyi (10) with dissolve
+    $ renpy.pause(pauseTime, hard=True)
+
+    scene black_bg with dissolve
+    $ renpy.pause(blackPauseTime, hard=True)
+    scene huiyi (11) with dissolve
+    $ renpy.pause(pauseTime, hard=True)
+
+    scene black_bg with dissolve
+    $ renpy.pause(blackPauseTime, hard=True)
+    scene huiyi (12) with dissolve
+    $ renpy.pause(pauseTime, hard=True)
+
+    scene black_bg with dissolve
+    $ renpy.pause(blackPauseTime, hard=True)
+    scene huiyi (13) with dissolve
+    $ renpy.pause(pauseTime, hard=True)
+
+    scene black_bg with dissolve
+    $ renpy.pause(blackPauseTime, hard=True)
+    scene huiyi (14) with dissolve
+    $ renpy.pause(pauseTime, hard=True)
+
+    scene black_bg with dissolve
+    $ renpy.pause(blackPauseTime, hard=True)
+    scene huiyi (15) with dissolve
+    $ renpy.pause(pauseTime, hard=True)
+
+    scene black_bg with dissolve
+    $ renpy.pause(blackPauseTime, hard=True)
+    scene huiyi (16) with dissolve
+    $ renpy.pause(pauseTime, hard=True)
+
+    scene black_bg with dissolve
+    $ renpy.pause(blackPauseTime, hard=True)
+    scene huiyi (17) with dissolve
+    $ renpy.pause(pauseTime, hard=True)
+
+    scene black_bg with dissolve
+    $ renpy.pause(blackPauseTime, hard=True)
+    scene huiyi (18) with dissolve
+    $ renpy.pause(pauseTime, hard=True)
+
+    scene black_bg with dissolve
+    $ renpy.pause(blackPauseTime, hard=True)
+    scene huiyi (19) with dissolve
+    $ renpy.pause(pauseTime, hard=True)
+
+    scene black_bg with dissolve
+    $ renpy.pause(blackPauseTime, hard=True)
+    scene huiyi (20) with dissolve
+    $ renpy.pause(pauseTime, hard=True)
+
+    scene black_bg with dissolve
+    $ renpy.pause(blackPauseTime, hard=True)
+    scene huiyi (21) with dissolve
+    $ renpy.pause(pauseTime, hard=True)
+
+    scene black_bg with dissolve
+    $ renpy.pause(blackPauseTime, hard=True)
+    scene huiyi (22) with dissolve
+    $ renpy.pause(pauseTime, hard=True)
+
+    scene black_bg with dissolve
+    $ renpy.pause(blackPauseTime, hard=True)
+
+    #固定时间显示图片回忆集（之后补），每张图片之间进行切换（渐暗渐明）
+    #音乐结束以后可以开始自由操控
+
+    stop music fadeout 1.0
+    hide screen stop_scr
+
+    scene p11 yinyue with dissolve
+
+    #{播放bgm0502}
+    play music "audio/bgm/b0502.mp3" fadein 0.5
     #{显示立绘XY 13dx}
     hide ZZ
     show XY 13dx at middle
@@ -60,14 +202,13 @@ label chpt5_1:
     show WH 11rz at middle
     with dissolve
     me "みんなで感謝の気持ちを込めて、智子ちゃんへの唄を書いたの。（大家为了表达感谢，写了一首歌送给你。）"
-    #{播放bgm0502}
-    play music "audio/bgm/b0502.mp3"
     #{显示立绘ZZ 13jy}
     hide WH
     show ZZ 13jy at middle
     with dissolve
     Zhizi "私のために歌を書いてくれたの？（是写给我的歌吗？）"
     #{显示立绘QQ 13xf}
+    hide ZZ
     show QQ 13xf at t_right
     with dissolve
     YuanQiaoqiao "谢谢智子这几天给我们带来了那么多的快乐。"
@@ -121,6 +262,11 @@ label chpt5_1:
     ZhouXiaoyu "好的，田老师。马上来。"
     hide XY with dissolve
     "要不是田老师的提醒，差点忘了下午要去七宝老街。"
+
+    scene black_bg with dissolve
+    #屏幕渐暗渐明
+    #{播放bgm0501}
+    play music "audio/bgm/b0501.mp3" fadein 1
 
     "一行人上了公交车，准备前往七宝老街开展文化体验活动。"
 
@@ -193,28 +339,26 @@ label chpt5_1:
     #{显示物品 w20}
     hide ZZ
     hide WH
+    show w20 at middle
     show ZZ 13jy at t_right
-    show w20 at wleft
     with dissolve
     "智子的目光落在商店里一个个精美的小盒子上，好奇地停下了脚步。"
     #{显示立绘ZZ 13jy}
     Zhizi "これって、お茶？（这是……茶叶吗？）"
     #{显示立绘QQ 12gx}
-    hide ZZ
-    show QQ 12gx at t_right
+    show QQ 12gx at left
     with dissolve
     YuanQiaoqiao "对啊，这是中国的茶叶。"
     #{显示立绘ZZ 14jy}
-    hide QQ
     show ZZ 14jy at t_right
-    with dissolve
     Zhizi "なんか日本のお茶とちょっと違う感じがするね。（和日本的茶感觉不太一样呢。）"
     #{显示立绘LY 12rz}
-    hide w20
+    hide QQ
     show LY 12rz at left
     with dissolve
     LiuYang "実は……（其实……）"
     #{显示立绘XY 12cx}
+    hide w20
     hide ZZ
     show XY 12cx at t_right
     with dissolve
@@ -229,7 +373,7 @@ label chpt5_1:
     me "日本でよく飲まれている抹茶は緑茶の一種で、乾燥させた緑茶を擦って粉末にしたものなんだよね。実は抹茶の製法は、中国から伝わったらしいよ。（日本人常喝的抹茶也是绿茶的一种，是把绿茶烘干后磨成粉末制成的。其实抹茶的制作方法也是从中国传入日本的。）"
     #{显示立绘ZZ 12ys}
     show WH at MidToRight
-    show ZZ 12ys at left
+    show ZZ 11jy at left
     with dissolve
     Zhizi "確か、お茶は今から800年ほど前、中国から伝わったって本で読んだことがある。（我在书中读到过，茶好像是在大约800年前从中国传入的。）"
     #{显示立绘WH 12zm}
@@ -246,33 +390,33 @@ label chpt5_1:
     "小雨朝我笑了笑，比划了一个胜利的手势。真是贴心的助攻。"
     #{显示物品 w21}
     hide XY
-    show w21 at wleft
+    show w21 at middle
     with dissolve
     #{显示立绘QQ 13gx}
-    show QQ 13gx at t_right
+    show QQ 13gx at left
     with dissolve
     YuanQiaoqiao "快来看啊，这件汉服好漂亮，智子穿上一定很好看！"
     #{显示立绘ZZ 13wx}
-    hide QQ
     show ZZ 13wx at t_right
     with dissolve
     Zhizi "かんふくですね。（这是汉服吧。）"
     #{显示立绘LY 13wx}
-    hide ZZ
-    show LY 13wx at right
+    hide QQ
+    show LY 13wx at left
     with dissolve
     LiuYang "そう。中国の伝統的な服装だよ。（是的，这是中国的传统服饰。）"
     #{显示立绘ZZ 14wx}
-    hide LY
     show ZZ 14wx at t_right
     with dissolve
     Zhizi "よく見ると、日本の着物と似てるところがあるね。（仔细一看，和日本的和服有些相似呢。）"
     #{显示立绘ZZ 14sq}
     hide w21
-    show ZZ 14sq at left
+    hide LY
+    show ZZ 14sq at middle
     with dissolve
     Zhizi "あ、あそこは？（啊，那里是？）"
     #{显示立绘WH 11rz}
+    show ZZ at MidToLeft
     show WH 11rz at t_right with dissolve
     me "何？（什么？）"
     #{显示立绘ZZ 13jy}
@@ -375,22 +519,18 @@ label chpt5_2:
     me "老板，你还会说日语啊，厉害厉害。"
     "店主" "这有啥，现在日本客人多。听多了也就能说一些。"
     #{显示物品 w22}
-    hide WH
-    show w22 at wleft
+    show w22 at middle
     #{显示立绘ZZ 13wx}
-    show ZZ 13wx at t_right with dissolve
+    show ZZ 13wx
+    with dissolve
     Zhizi "とてもかわいい飾りですね。これにはどんな意味が込められているの？（好可爱的吊饰。这个吊饰有什么含义吗？）"
     #{显示立绘WH 12gx}
-    hide ZZ
-    show WH 12gx at t_right
-    with dissolve
+    show WH 12gx
     me "「中国結び」といって、古くから伝わったものみたいだけど……（这个叫做“中国结”，好像是从古代流传下来的……）"
     "说到这里，突然卡壳了。我才意识到，虽然经常看到中国结这个饰品，但我从来没想过它的由来和意义。"
     "店主" "嘿嘿，中国结的由来你们不知道了吧。其实早在远古时代，人们为了不遗忘事情，就用结绳的方式来记录。小事则小结其绳，大事便大结其绳。"
     #{显示立绘ZZ 11jy}
-    hide WH
-    show ZZ 11jy at t_right
-    with dissolve
+    show ZZ 11jy
     Zhizi "大事なことを忘れないために糸で「結ぶ」のですね。（原来是为了不忘记重要的事情，而用绳子打结啊。）"
     "店主" "正是如此。随着历史演变，后来结也被用来表达人的感情，例如男女之间的情思。"
     #{显示立绘ZZ 11gx}
@@ -400,7 +540,6 @@ label chpt5_2:
     #{显示立绘WH 12jy}
     hide ZZ
     hide w22
-    with dissolve
     show WH 12jy at middle
     with dissolve
     "啊，就是挂在那把钥匙上的中国结！"
@@ -416,7 +555,7 @@ label chpt5_2:
     me "プレゼントしてくれるって。（他说送给你。）"
     #{显示立绘ZZ1jy}
     show WH at MidToRight
-    show ZZ 11 jy at left with dissolve
+    show ZZ 11jy at left with dissolve
     Zhizi "え、いいんですか。すみません、ありがとうございます。（啊，可以吗？真不好意思，谢谢！）"
     "智子脸微微发红，很高兴地收下了这份礼物。"
 
@@ -425,9 +564,11 @@ label chpt5_2:
     #{显示立绘XY 11jy}
     hide WH
     hide ZZ
-    show XY 11jy at left with dissolve
+    show XY 11jy at middle
+    with dissolve
     ZhouXiaoyu "王浩，你们还在这里啊。"
     #{显示立绘WH 11jy}
+    show XY at MidToLeft
     show WH 11jy at t_right with dissolve
     "小雨从背后走来，拍了一下我的右肩。我这才意识到我们在店里待了挺长时间。抬头望去，夕阳映红了老街上的店铺招牌。"
     #{显示立绘XY 11bx}
@@ -441,14 +582,13 @@ label chpt5_2:
     #{显示立绘QQ 11gx}
     hide XY
     hide ZZ
-    show QQ 11gx at t_right
+    show QQ 11gx at left
     with dissolve
     YuanQiaoqiao "快看我们买了什么。"
-    show w21 at wleft with dissolve
+    show w21 at middle with dissolve
     "巧巧也从旁边蹿了出来，举起了一件红白相间的汉服。"
     #{显示物品 w21}
     #{显示立绘ZH 11gx}
-    hide QQ
     show ZH 11gx at t_right
     with dissolve
     ZhengHui "巧巧给智子挑了一套汉服。她可是把自己的零花钱都贡献出来了。"
@@ -510,6 +650,7 @@ label chpt5_2:
     "过了10分钟左右，智子和我们汇合，一起上了公交车准备回学校。"
     "回学校的路上，大家有说有笑。但是大家心里都知道，智子明天就要回国了，这一别不知道何时才能再见。"
     #{播放bgm0505}
+    play music "audio/bgm/b0505.mp3" fadein 0.5
     "智子一言不发，静静地望着窗外，若有所思。"
     #{显示立绘WH 11ng}
     show WH 11ng at middle with dissolve
@@ -635,21 +776,19 @@ label chpt5_3:
     Zhizi "これ、使ってもいいかなあ。とてもきれいな箱だけど。（用这个可以吗？虽然这个盒子这么漂亮，有点可惜。）"
     #{显示物品w20}
     hide ZH
-    show w20 at wleft
+    show w20 at middle
     with dissolve
     "智子指着刚刚收到的礼物——茶叶，取出里面的茶叶罐，放在大家面前。"
     #{显示立绘XY 13dx}
-    hide ZZ
-    show XY 13dx at t_right
+    show XY 13dx at left
     with dissolve
     ZhouXiaoyu "当然可以啊。"
     #{显示立绘ZZ 13wx}
-    hide XY
-    show ZZ 13wx at t_right
-    with dissolve
+    show ZZ 13wx
     Zhizi "じゃあ、決まりね。（好，那就这么定了。）"
     #{显示立绘QQ 11wx}
     hide w20
+    hide XY
     show QQ 11wx at left
     with dissolve
     YuanQiaoqiao "可是，我们要把它藏在什么地方呢？"
@@ -693,7 +832,7 @@ label chpt5_3:
     #{停止播放bgm}
     stop music
     #{显示背景  p14 xiaomen}
-    scene p02 xiaomen with dissolve
+    scene p14 xiaomen with dissolve
     "没过多久，校车在校门口停下了。"
     #{显示立绘TJ 1gx}
     show TJ 1gx at middle with dissolve
@@ -824,7 +963,7 @@ label chpt5_3:
     #{显示立绘WH 12zm}
     hide ZH
     hide XY
-    show WH 12zm at middle
+    show WH 13rz at middle
     with dissolve
     "不知怎么的，我的心底蓦然生出一丝不安。好像直觉在催促着我，告诉我周围的一切很快就要消失……"
     "我下意识地牵起智子的手，向教室外面跑去……"
@@ -918,6 +1057,8 @@ label chpt5_3:
     with dissolve
     me "哎，都过去10年了，你还没抓住机会啊。"
     me "「彼女に本当の気持ちを伝える」でしょ。（你不是说‘要告诉她自己的心意’吗？）"
+    #停止播放bgm
+    stop music fadeout 1.0
     #{显示立绘LY 23rz}
     hide WH
     show LY 23rz at middle
@@ -939,6 +1080,8 @@ label chpt5_3:
     #{显示立绘LY 21qx}
     show LY 21qx
     LiuYang "好时候是什么时候啊……"
+    #{播放bgm0502}
+    play music "audio/bgm/b0502.mp3" fadein 0.5
     #{显示立绘XY 22dx}
     show XY 22dx
     ZhouXiaoyu "哈哈哈。好吧好吧。那先给你一年见习期，好好表现哦。"
@@ -1002,42 +1145,56 @@ label chpt5_3:
     play music "audio/bgm/b0508.mp3"
 
     #{显示物品 w23}
-    show w23 at wleft with dissolve
+    show w23 at middle with dissolve
     #播放朗读以下内容的音频，中间不能打断
     Zhizi "（第一封信……）"
 
-    "(程序：这里能否做成图片的形式，直接在图片里做好信件格式)"
+    show screen disable_Lmouse()
 
-    "皆さんへ
-    一週間の短期留学の間、本当にお世話になりました。
-    初めての留学で、最初はちょっと不安でしたが、
-    皆が優しくしてくれたおかげで、すぐに馴染むことができました。
-    一緒に勉強したり、遊びに行ったりして最高の思い出ができました。
-    本当にありがとうございました。この経験は一生忘れません。
-    いつか必ずまたどこかで会いましょう。
-        高橋智子"
-    # $ renpy.pause(5, hard=True)
+    "{cps=8}皆さんへ{/cps}{p=2}{nw}"
+    "{cps=8}{space=25}一週間の短期留学の間、本当にお世話になりました。{/cps}{p=2}{nw}"
+
+    "{cps=8}{space=40}初めての留学で、最初はちょっと不安でしたが、\n
+    皆が優しくしてくれたおかげで、すぐに馴染むことができました。{/cps}{p=2}{nw}"
+
+    "{cps=8}{space=35}一緒に勉強したり、遊びに行ったりして最高の思い出ができました。\n
+    {space=30}本当にありがとうございました。この経験は一生忘れません。{/cps}{p=2}{nw}"
+
+    "{cps=8}{space=25}いつか必ずまたどこかで会いましょう。\n \n
+    {space=430}高橋智子{/cps}{p=2}{nw}"
+
+    hide screen disable_Lmouse
+
 
     #{显示物品 w24}
     hide w23
-    show w24 at wleft
+    show w24 at middle
     with dissolve
 
     #播放朗读以下内容的音频，中间不能打断
     Zhizi "（第二封信……）"
 
-    "王さんへ
-    いつも気を使ってくれてありがとう。
-    臆病な私をたくさん褒めてくれて、すごく自信がついた。
-    王さんは自分のことを取柄がないとか言っていたけど、
-    本当はみんなのことを誰よりも大事に思っているよね。
-    そういうところがとても好きだよ。
-    いろいろ大変なことがあるかもしれないけど、
-    皆と一緒にいれば、なんだか乗り越えられる気がする。
-    また、会えるといいね。さようなら。
+    show screen disable_Lmouse()
 
-    智子より"
-    # $ renpy.pause(5, hard=True)
+    "{cps=8}王さんへ{/cps}{p=2}{nw}"
+    "{cps=8}{space=25}いつも気を使ってくれてありがとう。{/cps}{p=2}{nw}"
+
+    "{cps=8}{space=25}臆病な私をたくさん褒めてくれて、すごく自信がついた。{/cps}{p=2}{nw}"
+
+    "{cps=8}{space=35}王さんは自分のことを取柄がないとか言っていたけど、\n
+    本当はみんなのことを誰よりも大事に思っているよね。{/cps}{p=2}{nw}"
+
+    "{cps=8}{space=25}そういうところがとても好きだよ。{/cps}{p=2}{nw}"
+
+    "{cps=8}{space=35}いろいろ大変なことがあるかもしれないけど、\n
+    皆と一緒にいれば、なんだか乗り越えられる気がする。{/cps}{p=2}{nw}"
+
+    "{cps=8}{space=25}また、会えるといいね。さようなら。\n\n
+
+    {space=420}智子より{/cps}{p=2}{nw}"
+
+    hide screen disable_Lmouse
+
 
     hide w23 with dissolve
 
@@ -1071,7 +1228,7 @@ label End2:
     #结局二 好感度达到XX以上触发
     #{停止播放bgm }
     stop music
-    scene p05 jiaoshixin2 with Dissolve(2)
+    scene black_bg with Dissolve(2)
     #{显示立绘WH 23gx}
     show WH 23gx at middle with dissolve
     "看到智子给自己的留言，我思绪万千。没有想到一无是处的自己还能够给周围的人带来改变。"
@@ -1092,7 +1249,7 @@ label End2:
     LiuYang "王浩，王浩！起来咯。"
     #{显示立绘ZH 12zj}
     hide LY
-    show ZH 12zj at middle
+    show ZH 22zj at middle
     with dissolve
     ZhengHui "哎，奇怪了。游戏应该已经结束了呀，他怎么还没醒。"
     #{显示立绘QQ 23jy}
@@ -1102,14 +1259,14 @@ label End2:
     YuanQiaoqiao "是不是你设计的这个游戏程序有问题啊？"
     #{显示立绘ZH 12zj}
     hide QQ
-    show ZH 12zj at middle
+    show ZH 22zj at middle
     with dissolve
     ZhengHui "不应该啊……"
     "耳边传来很多熟悉的声音。这时我才注意到周围一片漆黑，头上好像套着一个重重的头盔。"
 
     #屏幕亮起
     #{显示背景  p16 xinjia}
-    scene p15 xinjia with Dissolve(2)
+    scene p16 xinjia with Dissolve(2)
     #{播放bgm 0509}
     play music "audio/bgm/b0509.mp3"
     #{显示立绘WH 22wx}
@@ -1161,10 +1318,12 @@ label End2:
 
 label EndingSubtitle:
 
-    "TODO: 这里会报一个找不到BGM：bokunosekai的错。后面就是片尾字幕"
+    stop music fadeout 2.0
+
+    scene black_bg with Dissolve(2)
 
     #{播放bgm bokunosekai}
-    play music "audio/bgm/bokunosekai.mp3"
+    play music "audio/bgm/bokunosekai.mp3" fadein 0.5
 
     #片尾字幕
     "TODO: 片尾字幕"

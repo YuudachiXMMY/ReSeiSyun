@@ -125,7 +125,7 @@ label l2_1_q1BC:
     #{显示立绘 TJ 1ng}
     show TJ 1ng
     #{播放se cuowu}
-    play sound "audio/se/sushiyin/cuowu.mp3"  fadein 2.0
+    play sound "audio/se/sushiyin/cuowu.mp3"
     TeacherTian "上课要认真听讲哦。实际上平假名不仅限于女性使用，《古今和歌集》等男性书写的作品中也使用了平假名。"
 
     jump lesson2_1_q2
@@ -162,7 +162,7 @@ label l2_1_q2AC:
     #{显示立绘 TJ 1ng}
     show TJ 1ng
     #{播放se cuowu}
-    play sound "audio/se/sushiyin/cuowu.mp3"  fadein 2.0
+    play sound "audio/se/sushiyin/cuowu.mp3"
     TeacherTian "上课要认真听讲哦。宫中的女官们将汉字的草书简化成便于书写的形式，慢慢地演变成了平假名。"
 
     jump lesson2_1_q3
@@ -200,7 +200,7 @@ label l2_1_q3AB:
     #{显示立绘 TJ 1ng}
     show TJ 1ng
     #{播放se cuowu}
-    play sound "audio/se/sushiyin/cuowu.mp3"  fadein 2.0
+    play sound "audio/se/sushiyin/cuowu.mp3"
     TeacherTian "上课要认真听讲哦。现在的片假名主要用于表示外来语。例如外国的人名、地名、专有词汇，或是其他需要强调的词。"
 
     jump lesson2_2
@@ -299,7 +299,7 @@ label l2_2_q1AB:
     #{显示立绘 TJ 1ng}
     show TJ 1ng
     #{播放se cuowu}
-    play sound "audio/se/sushiyin/cuowu.mp3"  fadein 2.0
+    play sound "audio/se/sushiyin/cuowu.mp3"
     TeacherTian "好像不太对哦，再听一遍。"
     #循环到第一题的位置
     jump lesson2_2_q1
@@ -337,7 +337,7 @@ label l2_2_q2AC:
     #{显示立绘 TJ 1ng}
     show TJ 1ng
     #{播放se cuowu}
-    play sound "audio/se/sushiyin/cuowu.mp3"  fadein 2.0
+    play sound "audio/se/sushiyin/cuowu.mp3"
     TeacherTian "好像不太对哦，再听一遍。"
     #循环到第二题的位置
     jump lesson2_2_q2
@@ -374,7 +374,7 @@ label l2_2_q3AB:
     #{显示立绘 TJ 1ng}
     show TJ 1ng
     #{播放se cuowu}
-    play sound "audio/se/sushiyin/cuowu.mp3"  fadein 2.0
+    play sound "audio/se/sushiyin/cuowu.mp3"
     TeacherTian "好像不太对哦，再听一遍。"
     #循环到第三题的位置
     jump lesson2_2_q3
@@ -411,7 +411,7 @@ label l2_2_q4AC:
     #{显示立绘 TJ 1ng}
     show TJ 1ng
     #{播放se cuowu}
-    play sound "audio/se/sushiyin/cuowu.mp3"  fadein 2.0
+    play sound "audio/se/sushiyin/cuowu.mp3"
     TeacherTian "好像不太对哦，再听一遍。"
     #循环到第四题的位置
     jump lesson2_2_q4
@@ -448,7 +448,7 @@ label l2_2_q5AC:
     #{显示立绘 TJ 1ng}
     show TJ 1ng
     #{播放se cuowu}
-    play sound "audio/se/sushiyin/cuowu.mp3"  fadein 2.0
+    play sound "audio/se/sushiyin/cuowu.mp3"
     TeacherTian "好像不太对哦，再听一遍。"
     #循环到第五题的位置
     jump lesson2_2_q5
@@ -552,7 +552,7 @@ label l2_3_q1BC:
     #{显示立绘 TJ 1ng}
     show TJ 1ng
     #{播放se cuowu}
-    play sound "audio/se/sushiyin/cuowu.mp3"  fadein 2.0
+    play sound "audio/se/sushiyin/cuowu.mp3"
     TeacherTian "好像不太对哦，再听一遍。"
     #循环到本题上方
 
@@ -591,7 +591,7 @@ label l2_3_q2BC:
     #{显示立绘 TJ 1ng}
     show TJ 1ng
     #{播放se cuowu}
-    play sound "audio/se/sushiyin/cuowu.mp3"  fadein 2.0
+    play sound "audio/se/sushiyin/cuowu.mp3"
     TeacherTian "好像不太对哦，再听一遍。"
     #循环到本题上方
     jump lesson2_3_q2
@@ -629,7 +629,7 @@ label l2_3_q3AB:
     #{显示立绘 TJ 1ng}
     show TJ 1ng
     #{播放se cuowu}
-    play sound "audio/se/sushiyin/cuowu.mp3"  fadein 2.0
+    play sound "audio/se/sushiyin/cuowu.mp3"
     TeacherTian "好像不太对哦，再听一遍。"
     #循环到本题上方
     jump lesson2_3_q3

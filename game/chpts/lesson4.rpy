@@ -76,6 +76,8 @@ label lesson4_1:
     jump lesson4_1_q1
 
 label lesson4_1_q1:
+    #{显示背景 heiban }
+    scene blackboard with dissolve
     show TJ 1gx at tjleft with dissolve
     menu l4_1_q1:
         '以下哪项是日本和服的起源？'
@@ -104,7 +106,7 @@ label l4_1_q1AC:
     #{显示立绘 TJ 1ng}
     show TJ 1ng
     #{播放 SE cuowu}
-    play sound "audio/se/sushiyin/cuowu.mp3"  fadein 2.0
+    play sound "audio/se/sushiyin/cuowu.mp3"
     TeacherTian "上课要认真听讲哦。日本的和服是在中国的汉服的基础上演变而来。"
     jump lesson4_1_q2
 
@@ -140,7 +142,7 @@ label l4_1_q2BC:
     #{显示立绘 TJ 1ng}
     show TJ 1ng
     #{播放 SE cuowu}
-    play sound "audio/se/sushiyin/cuowu.mp3"  fadein 2.0
+    play sound "audio/se/sushiyin/cuowu.mp3"
     TeacherTian "上课要认真听讲哦。日本在弥生时代与中国三国时期的吴国贸易往来密切，吴国的纺织缝纫技术和服饰由此传至日本。"
     jump lesson4_1_q3
 
@@ -177,7 +179,7 @@ label l4_1_q3AC:
     #{显示立绘 TJ 1ng}
     show TJ 1ng
     #{播放 SE cuowu}
-    play sound "audio/se/sushiyin/cuowu.mp3"  fadein 2.0
+    play sound "audio/se/sushiyin/cuowu.mp3"
     TeacherTian "上课要认真听讲哦。奈良时代日本正式从中国引入了服饰制度，当时朝廷颁布的“衣服令”仿效了唐代的冠服制度。"
     jump lesson4_2
 
@@ -209,6 +211,7 @@ label lesson4_2:
     #{显示立绘ZZ 12wx}
     show ZZ 12wx
     #{播放 SE maya10}
+    play sound "audio/se/sushiyin/maya10.mp3"
     Tomoko "ま、み、む、め、も、や、ゆ、よ。"
     #{显示立绘TJ 1gx}
     hide ZZ
@@ -222,6 +225,7 @@ label lesson4_2:
         xoffset -150
     with dissolve
     #{播放 SE maya10}
+    play sound "audio/se/sushiyin/maya10.mp3"
     Tomoko "ま、み、む、め、も、や、ゆ、よ。"
     hide screen HiraKataKANA
     #{显示立绘TJ 1gx}
@@ -278,7 +282,7 @@ label l4_2_q1BC:
     #{显示立绘 TJ 1ng}
     show TJ 1ng
     #{播放se cuowu}
-    play sound "audio/se/sushiyin/cuowu.mp3"  fadein 2.0
+    play sound "audio/se/sushiyin/cuowu.mp3"
     TeacherTian "好像不太对哦，再听一遍。"
     #循环到第本题开始的位置
     jump lesson4_2_q1
@@ -316,7 +320,7 @@ label l4_2_q2AC:
     #{显示立绘 TJ 1ng}
     show TJ 1ng
     #{播放se cuowu}
-    play sound "audio/se/sushiyin/cuowu.mp3"  fadein 2.0
+    play sound "audio/se/sushiyin/cuowu.mp3"
     TeacherTian "好像不太对哦，再听一遍。"
     #循环到第本题开始的位置
     jump lesson4_2_q2
@@ -353,7 +357,7 @@ label l4_2_q3AC:
     #{显示立绘 TJ 1ng}
     show TJ 1ng
     #{播放se cuowu}
-    play sound "audio/se/sushiyin/cuowu.mp3"  fadein 2.0
+    play sound "audio/se/sushiyin/cuowu.mp3"
     TeacherTian "好像不太对哦，再听一遍。"
     #循环到第本题开始的位置
     jump lesson4_2_q3
@@ -389,7 +393,7 @@ label l4_2_q4AB:
     #{显示立绘 TJ 1ng}
     show TJ 1ng
     #{播放se cuowu}
-    play sound "audio/se/sushiyin/cuowu.mp3"  fadein 2.0
+    play sound "audio/se/sushiyin/cuowu.mp3"
     TeacherTian "好像不太对哦，再听一遍。"
     #循环到第本题开始的位置
     jump lesson4_2_q4
@@ -425,7 +429,7 @@ label l4_2_q5AC:
     #{显示立绘 TJ 1ng}
     show TJ 1ng
     #{播放se cuowu}
-    play sound "audio/se/sushiyin/cuowu.mp3"  fadein 2.0
+    play sound "audio/se/sushiyin/cuowu.mp3"
     TeacherTian "好像不太对哦，再听一遍。"
     #循环到第本题开始的位置
     jump lesson4_2_q5
@@ -528,7 +532,7 @@ label l4_3_q1AB:
     #{显示立绘 TJ 1ng}
     show TJ 1ng
     #{播放se cuowu}
-    play sound "audio/se/sushiyin/cuowu.mp3"  fadein 2.0
+    play sound "audio/se/sushiyin/cuowu.mp3"
     TeacherTian "好像不太对哦，再听一遍。"
     #循环到本题上方
     jump lesson4_3_q1
@@ -568,7 +572,7 @@ label l4_3_q2AC:
     #{显示立绘 TJ 1ng}
     show TJ 1ng
     #{播放se cuowu}
-    play sound "audio/se/sushiyin/cuowu.mp3"  fadein 2.0
+    play sound "audio/se/sushiyin/cuowu.mp3"
     TeacherTian "好像不太对哦，再听一遍。"
     #循环到本题上方
     jump lesson4_3_q2
@@ -605,7 +609,7 @@ label l4_3_q3AB:
     #{显示立绘 TJ 1ng}
     show TJ 1ng
     #{播放se cuowu}
-    play sound "audio/se/sushiyin/cuowu.mp3"  fadein 2.0
+    play sound "audio/se/sushiyin/cuowu.mp3"
     TeacherTian "好像不太对哦，再听一遍。"
     #循环到本题上方
     jump lesson4_3_q3
@@ -732,7 +736,7 @@ label lesson4_5:
     hide ZZ with dissolve
     "刚想躺下休息，突然想起了电话铃。"
     #{播放BGM b0405 shinianhou}
-    play music "audio/bgm/b0405 shinianhou.mp3"
+    # play music "audio/bgm/b0405 shinianhou.mp3"
     #{显示立绘XY 13zm}
     show XY 13zm at left with dissolve
     ZhouXiaoyu "喂，王浩。你在忙什么呢，怎么不回消息啊！"

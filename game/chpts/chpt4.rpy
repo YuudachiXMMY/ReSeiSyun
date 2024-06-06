@@ -106,23 +106,37 @@ label chpt4_1:
     #{显示立绘WH 11zm}
     show WH 11zm
     "我抬头顺着智子所指的方向看去，两个穿着外校校服的女生正在展台旁边大声地说着什么。"
+    hide WH
+    hide ZZ
+    with dissolve
+    show LR1 at left with dissolve
     GirlA "诶，你看。"
+    show LR2 at t_right with dissolve
     GirlB "哇，这都好意思拿出来卖啊？"
     GirlA "这么幼稚，估计是小学生画的吧。"
+    hide LR1
+    hide LR2
+    with dissolve
     "今天正巧是有外校的学生来参观。两个女生看上去挺斯文的，说话却是很是不礼貌。"
     "她们手指的那幅画正是放在展台中间的作品，好像是一个动漫作品里的人物。"
     "在一旁的巧巧明显有些尴尬，只当作没听见。"
     "我刚想上前，智子忽然拉住了我，并小声对我说。"
     #{显示立绘ZZ 11sq}
-    show ZZ 11sq
+    show ZZ 11sq at middle with dissolve
     Zhizi "録音したら？（先把他们的话录下来吧。）"
     "智子说的确实有理，我便凑了上去打开了手机的录音键。"
+    hide ZZ
+    show LR1 at left
+    show LR2 at t_right
+    with dissolve
     GirlA "是啊，看来这个学校的学生都是小学生的智商吧。哈哈哈哈。"
     "两人相视一眼不遮拦地笑了起来。"
     #{显示立绘ZH 12zj}
     hide WH
     hide ZZ
-    show ZH 12zj at middle
+    show LR2 at middle:
+        xoffset -300
+    show ZH 12zj at t_right
     with dissolve
     ZhengHui "你们说什么！！"
     "郑辉呵斥着走了过来。"
@@ -140,7 +154,7 @@ label chpt4_1:
     "被激恼的郑辉想冲上去理论，我赶紧上前拦住了他。"
     #{显示立绘WH 13zm}
     hide ZH
-    show WH 13zm at middle
+    show WH 13zm at t_right
     with dissolve
     me "（晃了晃手里的手机）这可是你们自己亲口说的吧。"
     "我拿出了手机，打开了功放。"
@@ -150,7 +164,9 @@ label chpt4_1:
     "两个人不但不想认错，反而开始假哭起来。正在众人僵持之际……"
     #{显示立绘TJ 1ng}
     hide WH
-    show TJ 1ng at middle
+    hide LR1
+    hide LR2
+    show TJ 1wx at middle
     with dissolve
     TeacherTian "两位同学怎么了？有什么事情需要和你们带队老师沟通的吗？"
     "回头一看，刘洋和小雨带着田静老师赶了过来。"

@@ -305,7 +305,7 @@ label l1_2_q1AB:
     #{显示立绘 TJ1ng}
     show TJ 1ng
     #{播放se cuowu}
-    play sound "audio/se/sushiyin/cuowu.mp3"  fadein 2.0
+    play sound "audio/se/sushiyin/cuowu.mp3"
     TeacherTian "好像不太对哦，再听一遍。"
     #{播放SE u}
     play sound "audio/se/sushiyin/u.mp3"
@@ -361,7 +361,7 @@ label l1_2_q2AC:
     #{显示立绘 TJ1ng}
     show TJ 1ng
     #{播放se cuowu}
-    play sound "audio/se/sushiyin/cuowu.mp3"  fadein 2.0
+    play sound "audio/se/sushiyin/cuowu.mp3"
     TeacherTian "好像不太对哦，再听一遍。"
     #{播放SE ki}
     play sound "audio/se/sushiyin/ki.mp3"
@@ -418,7 +418,7 @@ label l1_2_q3AB:
     #{显示立绘 TJ1ng}
     show TJ 1ng
     #{播放se cuowu}
-    play sound "audio/se/sushiyin/cuowu.mp3"  fadein 2.0
+    play sound "audio/se/sushiyin/cuowu.mp3"
     TeacherTian "好像不太对哦，再听一遍。"
     #{播放SE ko}
     play sound "audio/se/sushiyin/ko.mp3"
@@ -474,7 +474,7 @@ label l1_2_q4AB:
     #{显示立绘 TJ1ng}
     show TJ 1ng
     #{播放se cuowu}
-    play sound "audio/se/sushiyin/cuowu.mp3"  fadein 2.0
+    play sound "audio/se/sushiyin/cuowu.mp3"
     TeacherTian "好像不太对哦，再听一遍。"
     #{播放SE e}
     play sound "audio/se/sushiyin/e.mp3"
@@ -530,7 +530,7 @@ label l1_2_q5BC:
     #{显示立绘 TJ1ng}
     show TJ 1ng
     #{播放se cuowu}
-    play sound "audio/se/sushiyin/cuowu.mp3"  fadein 2.0
+    play sound "audio/se/sushiyin/cuowu.mp3"
     TeacherTian "好像不太对哦，再听一遍。"
     #{播放SE ku}
     play sound "audio/se/sushiyin/ku.mp3"
@@ -655,7 +655,7 @@ label l1_3_q1AC:
     #{显示立绘 TJ1ng}
     show TJ 1ng
     #{播放se cuowu}
-    play sound "audio/se/sushiyin/cuowu.mp3"  fadein 2.0
+    play sound "audio/se/sushiyin/cuowu.mp3"
     TeacherTian "好像不太对哦，再听一遍。"
     # {播放SE  koi}
     play sound "audio/se/sushiyin/014koi2.mp3"
@@ -710,7 +710,7 @@ label l1_3_q2BC:
     #{显示立绘 TJ1ng}
     show TJ 1ng
     #{播放se cuowu}
-    play sound "audio/se/sushiyin/cuowu.mp3"  fadein 2.0
+    play sound "audio/se/sushiyin/cuowu.mp3"
     TeacherTian "好像不太对哦，再听一遍。"
     # {播放SE  ai}
     play sound "audio/se/sushiyin/011ai2.mp3"
@@ -765,7 +765,7 @@ label l1_3_q3AC:
     #{显示立绘 TJ1ng}
     show TJ 1ng
     #{播放se cuowu}
-    play sound "audio/se/sushiyin/cuowu.mp3"  fadein 2.0
+    play sound "audio/se/sushiyin/cuowu.mp3"
     TeacherTian "好像不太对哦，再听一遍。"
     # {播放SE  aki}
     play sound "audio/se/sushiyin/013aki2.mp3"

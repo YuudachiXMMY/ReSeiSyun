@@ -76,8 +76,10 @@ label lesson3_1:
     jump lesson3_1_q1
 
 label lesson3_1_q1:
+    #{显示背景 heiban }
+    scene blackboard with dissolve
     #{显示立绘TJ 1gx}
-    show TJ 1gx at tjleft
+    show TJ 1gx at tjleft with dissolve
     menu l3_1_q1:
         '徐福东渡的故事最早在哪本书中有记录？'
         "1.后汉书":
@@ -105,7 +107,7 @@ label l3_1_q1AB:
     #{显示立绘 TJ 1ng}
     show TJ 1ng
     #{播放 se cuowu}
-    play sound "audio/se/sushiyin/cuowu.mp3"  fadein 2.0
+    play sound "audio/se/sushiyin/cuowu.mp3"
     TeacherTian "上课要认真听讲哦。《史记·秦始皇本纪》中有相关的记载。"
     jump lesson3_1_q2
 
@@ -141,7 +143,7 @@ label l3_1_q2BC:
     #{显示立绘 TJ 1ng}
     show TJ 1ng
     #{播放 se cuowu}
-    play sound "audio/se/sushiyin/cuowu.mp3"  fadein 2.0
+    play sound "audio/se/sushiyin/cuowu.mp3"
     TeacherTian "上课要认真听讲哦。日本佐贺市的金立神社，每隔50年都会举办一项规模盛大的祭祀徐福活动。"
     jump lesson3_1_q3
 
@@ -177,7 +179,7 @@ label l3_1_q3AC:
     #{显示立绘 TJ 1ng}
     show TJ 1ng
     #{播放 se cuowu}
-    play sound "audio/se/sushiyin/cuowu.mp3"  fadein 2.0
+    play sound "audio/se/sushiyin/cuowu.mp3"
     TeacherTian "上课要认真听讲哦。在两汉时期，中国的铁器、铜器、丝帛等也传入了日本，促进了古代日本的生产技术和文化的发展。"
     jump lesson3_2
 
@@ -275,7 +277,7 @@ label l3_2_q1AC:
     #{显示立绘 TJ 1ng}
     show TJ 1ng
     #{播放se cuowu}
-    play sound "audio/se/sushiyin/cuowu.mp3"  fadein 2.0
+    play sound "audio/se/sushiyin/cuowu.mp3"
     TeacherTian "好像不太对哦，再听一遍。"
     #循环到第本题开始的位置
     jump lesson3_2_q1
@@ -311,7 +313,7 @@ label l3_2_q2BC:
     #{显示立绘 TJ 1ng}
     show TJ 1ng
     #{播放se cuowu}
-    play sound "audio/se/sushiyin/cuowu.mp3"  fadein 2.0
+    play sound "audio/se/sushiyin/cuowu.mp3"
     TeacherTian "好像不太对哦，再听一遍。"
     #循环到第本题开始的位置
     jump lesson3_2_q2
@@ -347,7 +349,7 @@ label l3_2_q3BC:
     #{显示立绘 TJ 1ng}
     show TJ 1ng
     #{播放se cuowu}
-    play sound "audio/se/sushiyin/cuowu.mp3"  fadein 2.0
+    play sound "audio/se/sushiyin/cuowu.mp3"
     TeacherTian "好像不太对哦，再听一遍。"
     #循环到第本题开始的位置
     jump lesson3_2_q3
@@ -383,7 +385,7 @@ label l3_2_q4AC:
     #{显示立绘 TJ 1ng}
     show TJ 1ng
     #{播放se cuowu}
-    play sound "audio/se/sushiyin/cuowu.mp3"  fadein 2.0
+    play sound "audio/se/sushiyin/cuowu.mp3"
     TeacherTian "好像不太对哦，再听一遍。"
     #循环到第本题开始的位置
     jump lesson3_2_q4
@@ -419,7 +421,7 @@ label l3_2_q5AB:
     #{显示立绘 TJ 1ng}
     show TJ 1ng
     #{播放se cuowu}
-    play sound "audio/se/sushiyin/cuowu.mp3"  fadein 2.0
+    play sound "audio/se/sushiyin/cuowu.mp3"
     TeacherTian "好像不太对哦，再听一遍。"
     #循环到第本题开始的位置
     jump lesson3_2_q5
@@ -526,7 +528,7 @@ label l3_3_q1AB:
     #{显示立绘 TJ 1ng}
     show TJ 1ng
     #{播放se cuowu}
-    play sound "audio/se/sushiyin/cuowu.mp3"  fadein 2.0
+    play sound "audio/se/sushiyin/cuowu.mp3"
     TeacherTian "好像不太对哦，再听一遍。"
     #循环到本题上方
     jump lesson3_3_q1
@@ -564,7 +566,7 @@ label l3_3_q2AC:
     #{显示立绘 TJ 1ng}
     show TJ 1ng
     #{播放se cuowu}
-    play sound "audio/se/sushiyin/cuowu.mp3"  fadein 2.0
+    play sound "audio/se/sushiyin/cuowu.mp3"
     TeacherTian "好像不太对哦，再听一遍。"
     #循环到本题上方
     jump lesson3_3_q2
@@ -602,7 +604,7 @@ label l3_3_q3AC:
     #{显示立绘 TJ 1ng}
     show TJ 1ng
     #{播放se cuowu}
-    play sound "audio/se/sushiyin/cuowu.mp3"  fadein 2.0
+    play sound "audio/se/sushiyin/cuowu.mp3"
     TeacherTian "好像不太对哦，再听一遍。"
     #循环到本题上方
     jump lesson3_3_q3
