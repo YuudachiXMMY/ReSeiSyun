@@ -1,7 +1,8 @@
 #第二章
 label chpt2_1:
 
-    scene black_bg with Dissolve(2)
+    scene black_bg with Dissolve(3)
+    scene white_bg with Dissolve(3)
     # 显示第二章过渡幕间图片
     #{显示背景  pz 02 }
     scene pz 02 with Dissolve(2)

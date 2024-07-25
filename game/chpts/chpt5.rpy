@@ -1,13 +1,4 @@
 #第五章
-screen stop_scr():
-    key "dismiss" action [[]]
-    key "rollforward" action [[]]
-    key "button_ignore" action [[]]
-    key "button_select" action [[]]
-    key "skip" action [[]]
-    key "toggle_skip" action [[]]
-    key "fast_skip" action [[]]
-
 label chpt5_1:
     #{播放bgm0502}
     play music "audio/bgm/b0502.mp3"
@@ -56,6 +47,7 @@ label chpt5_1:
 
     # Total 102 seconds
     # $ renpy.pause(102, hard=True)
+    $ _skipping = False
     show screen stop_scr
 
     $ pauseTime = 2.4
@@ -187,6 +179,7 @@ label chpt5_1:
 
     stop music fadeout 1.0
     hide screen stop_scr
+    $ _skipping = True
 
     scene p11 yinyue with dissolve
 
@@ -494,43 +487,73 @@ label chpt5_2:
 
     #{播放bgm0301}
     play music "audio/bgm/b0301.mp3"
+    hide WH
+    hide ZZ
+    show dianzhu at middle
+    with dissolve
     "店主" "这位小哥，给女朋友买个中国结吧，讨个口彩。"
     #{显示立绘WH 11jy}
-    show WH 11jy
+    hide dianzhu
+    show WH 11jy at middle
+    with dissolve
     me "不，不是女朋友啦。这位是日本来的朋友。"
+    hide WH
+    show dianzhu at middle
+    with dissolve
     "店主" "哎哟，还是个日本女孩子，看你们挺般配啊。"
     "被店主这么一说，我有些手足无措。"
     #{显示立绘ZZ 11jy}
-    show ZZ 11jy
+    hide dianzhu
+    show ZZ 11jy at middle
+    with dissolve
     Zhizi "え、何？（啊，什么？）"
     "看到我和店主攀谈起来，智子很好奇我们在说些什么。"
     #{显示立绘WH 11rz}
-    show WH 11rz
+    show ZZ at MidToLeft
+    show WH 11rz at t_right with dissolve
     me "あ、今日はいい天気ですねって。（啊，他说今天的天气很好……）"
     "刚刚的话自然不好意思翻译给智子听，我便撒了个小谎。"
+    hide WH
+    hide ZZ
+    show dianzhu at middle
+    with dissolve
     "店主" "ちゅうごくむすび、かわいい。どうぞ、どうぞ。（中国结，可爱。请，请。）"
     #{显示立绘ZZ 14wx}
-    show ZZ 14wx
+    hide dianzhu
+    show ZZ 14wx at middle
+    with dissolve
     Zhizi "あ、ありがとうございます。（谢，谢谢。）"
     "店主突然用日语大声吆喝起来，我也着实吃了一惊。"
     "虽然是半吊子的日语，却充满了感染力。他一边说着卡哇伊，一边从架子上取下一个中国结，塞到智子手里。也不知道他是在夸中国结可爱，还是在夸智子。"
     #{显示立绘WH 13jy}
-    show WH 13jy
+    hide ZZ
+    show WH 13jy at middle
+    with dissolve
     me "老板，你还会说日语啊，厉害厉害。"
+    hide WH
+    show dianzhu at middle
+    with dissolve
     "店主" "这有啥，现在日本客人多。听多了也就能说一些。"
+    #{显示立绘ZZ 13wx}
+    hide dianzhu
+    show ZZ 13wx at left
     #{显示物品 w22}
     show w22 at middle
-    #{显示立绘ZZ 13wx}
-    show ZZ 13wx
     with dissolve
     Zhizi "とてもかわいい飾りですね。これにはどんな意味が込められているの？（好可爱的吊饰。这个吊饰有什么含义吗？）"
     #{显示立绘WH 12gx}
-    show WH 12gx
+    show WH 12gx at t_right with dissolve
     me "「中国結び」といって、古くから伝わったものみたいだけど……（这个叫做“中国结”，好像是从古代流传下来的……）"
     "说到这里，突然卡壳了。我才意识到，虽然经常看到中国结这个饰品，但我从来没想过它的由来和意义。"
+    hide w22
+    hide ZZ
+    hide WH
+    show dianzhu at middle
+    with dissolve
     "店主" "嘿嘿，中国结的由来你们不知道了吧。其实早在远古时代，人们为了不遗忘事情，就用结绳的方式来记录。小事则小结其绳，大事便大结其绳。"
     #{显示立绘ZZ 11jy}
-    show ZZ 11jy
+    show dianzhu at MidToLeft
+    show ZZ 11jy at t_right with dissolve
     Zhizi "大事なことを忘れないために糸で「結ぶ」のですね。（原来是为了不忘记重要的事情，而用绳子打结啊。）"
     "店主" "正是如此。随着历史演变，后来结也被用来表达人的感情，例如男女之间的情思。"
     #{显示立绘ZZ 11gx}
@@ -539,7 +562,8 @@ label chpt5_2:
     "智子认真欣赏着手中的红色中国结，我突然意识到好像在哪里看到过……"
     #{显示立绘WH 12jy}
     hide ZZ
-    hide w22
+    hide dianzhu
+    # hide w22
     show WH 12jy at middle
     with dissolve
     "啊，就是挂在那把钥匙上的中国结！"
@@ -548,6 +572,8 @@ label chpt5_2:
     #{显示立绘WH 13kx}
     show WH 13kx
     me "老板，这个中国结多少钱？"
+    show WH at MidToRight
+    show dianzhu at left with dissolve
     "店主" "哈哈哈，我跟你们这么投缘，又是日本客人。就送给你们吧，记得以后给我介绍点生意哦。"
     #{显示立绘WH 13jy}
     show WH 13jy
@@ -555,6 +581,7 @@ label chpt5_2:
     me "プレゼントしてくれるって。（他说送给你。）"
     #{显示立绘ZZ1jy}
     show WH at MidToRight
+    hide dianzhu
     show ZZ 11jy at left with dissolve
     Zhizi "え、いいんですか。すみません、ありがとうございます。（啊，可以吗？真不好意思，谢谢！）"
     "智子脸微微发红，很高兴地收下了这份礼物。"
@@ -571,8 +598,8 @@ label chpt5_2:
     show XY at MidToLeft
     show WH 11jy at t_right with dissolve
     "小雨从背后走来，拍了一下我的右肩。我这才意识到我们在店里待了挺长时间。抬头望去，夕阳映红了老街上的店铺招牌。"
-    #{显示立绘XY 11bx}
-    show XY 11bx
+    #{显示立绘XY 12wx}
+    show XY 12wx
     ZhouXiaoyu "智子ちゃん、这盒茶叶是送你的礼物。"
     #{显示立绘ZZ 14gx}
     hide WH
@@ -832,6 +859,8 @@ label chpt5_3:
     #{停止播放bgm}
     stop music
     #{显示背景  p14 xiaomen}
+    scene black_bg with Dissolve(2.5)
+    # scene white_bg with Dissolve(1.5)
     scene p14 xiaomen with dissolve
     "没过多久，校车在校门口停下了。"
     #{显示立绘TJ 1gx}
@@ -862,8 +891,8 @@ label chpt5_3:
     #{播放bgm0506}
     play music "audio/bgm/b0506.mp3"
     "我们几个回到了教室，小雨得意地看了看刘洋。"
-    #{显示立绘XY 12bx}
-    show XY 12bx at middle with dissolve
+    #{显示立绘XY 12cx}
+    show XY 12cx at middle with dissolve
     ZhouXiaoyu "嘻嘻，这不就搞定了嘛。大家赶快写吧。"
     hide XY with dissolve
     "小雨果然有做班长的天赋。和老师同学都能相处融洽，也懂得变通。"
@@ -963,7 +992,7 @@ label chpt5_3:
     #{显示立绘WH 12zm}
     hide ZH
     hide XY
-    show WH 13rz at middle
+    show WH 13zm at middle
     with dissolve
     "不知怎么的，我的心底蓦然生出一丝不安。好像直觉在催促着我，告诉我周围的一切很快就要消失……"
     "我下意识地牵起智子的手，向教室外面跑去……"
@@ -1149,6 +1178,7 @@ label chpt5_3:
     #播放朗读以下内容的音频，中间不能打断
     Zhizi "（第一封信……）"
 
+    $ _skipping = False
     show screen disable_Lmouse()
 
     "{cps=8}皆さんへ{/cps}{p=2}{nw}"
@@ -1163,6 +1193,7 @@ label chpt5_3:
     "{cps=8}{space=25}いつか必ずまたどこかで会いましょう。\n \n
     {space=430}高橋智子{/cps}{p=2}{nw}"
 
+    $ _skipping = True
     hide screen disable_Lmouse
 
 
@@ -1174,6 +1205,7 @@ label chpt5_3:
     #播放朗读以下内容的音频，中间不能打断
     Zhizi "（第二封信……）"
 
+    $ _skipping = False
     show screen disable_Lmouse()
 
     "{cps=8}王さんへ{/cps}{p=2}{nw}"
@@ -1193,6 +1225,7 @@ label chpt5_3:
 
     {space=420}智子より{/cps}{p=2}{nw}"
 
+    $ _skipping = True
     hide screen disable_Lmouse
 
 
@@ -1203,23 +1236,39 @@ label chpt5_3:
 
     #黑屏
     scene black_bg with Dissolve(2)
+    stop music fadeout 2.0
 
-    menu:
-        "（由于数值还没确定，这里先直接进行结局选择）"
-        "结局一":
-            jump End1
-        "结局二":
-            jump End2
+    $ total_score = (sum(prologue_select) + sum(prologue_answer) + \
+                    sum(chpt1_select) + sum(chpt1_answer_bunka) + sum(chpt1_answer_kana) + sum(chpt1_answer_tango) + sum(chpt1_answer_kaiwa) + \
+                    sum(chpt2_select) + sum(chpt2_answer_bunka) + sum(chpt2_answer_kana) + sum(chpt2_answer_tango) + sum(chpt2_answer_kaiwa) + \
+                    sum(chpt3_select) + sum(chpt3_answer_bunka) + sum(chpt3_answer_kana) + sum(chpt3_answer_tango) + sum(chpt3_answer_kaiwa) + \
+                    sum(chpt4_select) + sum(chpt4_answer_bunka) + sum(chpt4_answer_kana) + sum(chpt4_answer_tango) + sum(chpt4_answer_kaiwa) + \
+                    sum(chpt5_select) + sum(chpt5_answer_bunka) + sum(chpt5_answer_kana) + sum(chpt5_answer_tango) + sum(chpt5_answer_kaiwa) )
+
+    if total_score > 300:
+        jump End2
+    else:
+        jump End1
+
+    # menu:
+    #     "（由于数值还没确定，这里先直接进行结局选择）"
+    #     "结局一":
+    #         jump End1
+    #     "结局二":
+    #         jump End2
 
 
 label End1:
 
     #{播放bgm bokunosekai}
-    play music "audio/bgm/b0406 xiaoyu.mp3" fadein 1.0
+    # play music "audio/bgm/b0406 xiaoyu.mp3" fadein 1.0
+    stop music fadeout 3.0
     #结局一 好感度XXX分以下结局
     #{显示立绘WH 23gx}
     # show WH 23gx at middle with dissolve
     "虽然过去无法改变，但通过重启青春的经历，我弥补了很多青春岁月中留下的遗憾。"
+    "但是我依然没有勇气坦白自己对智子的情感。"
+    "或许有一天，我会成长为一个勇敢的男子汉，期待那时候能够再次与智子重逢……"
 
     jump EndingSubtitle
 
@@ -1227,8 +1276,6 @@ label End1:
 label End2:
     #结局二 好感度达到XX以上触发
     #{停止播放bgm }
-    stop music
-    scene black_bg with Dissolve(2)
     #{显示立绘WH 23gx}
     show WH 23gx at middle with dissolve
     "看到智子给自己的留言，我思绪万千。没有想到一无是处的自己还能够给周围的人带来改变。"
@@ -1308,24 +1355,34 @@ label End2:
     with dissolve
     Zhizi "ただいま。（我回来了。）"
     "智子一脸微笑地走了进来，包上挂着当年的那个中国结……"
-    hide ZZ with dissolve
+    # hide ZZ with dissolve
     "是的，一年前智子回国的时候，接受了我的告白。"
     "在经历了一年的交往以后，我们得到了大家的祝福，走入了婚姻的殿堂。这里是我和智子的新家。"
     "这次的时光穿越让我想起了当年的那个胆小而不敢向前看的自己，也让我再次体会到了要想成功必须变得勇敢、坦率和真诚。"
     "给周围的人带去幸福的人，最终也能找到属于自己的幸福……"
+    hide ZZ with dissolve
 
     jump EndingSubtitle
 
 label EndingSubtitle:
-
-    stop music fadeout 2.0
-
-    scene black_bg with Dissolve(2)
-
     #{播放bgm bokunosekai}
     play music "audio/bgm/bokunosekai.mp3" fadein 0.5
 
+    window hide
+
+    show screen stop_scr
+    $ _skipping = False
+
     #片尾字幕
-    "TODO: 片尾字幕"
+    show ending_script with dissolve:
+        ypos 0
+        linear 208 ypos -(9537-1180)
+
+    $ renpy.pause(208, hard=True)
+
+    hide screen stop_scr
+
+    stop music
+    pause
 
     return

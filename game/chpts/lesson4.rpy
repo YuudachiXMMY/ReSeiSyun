@@ -76,7 +76,7 @@ label lesson4_1:
     jump lesson4_1_q1
 
 label lesson4_1_q1:
-    #{显示背景 heiban }
+    #{显示背景 blackboard }
     scene blackboard with dissolve
     show TJ 1gx at tjleft with dissolve
     menu l4_1_q1:
@@ -450,7 +450,7 @@ label lesson4_3:
     if chpt4_C_answer_tango_index < 1:
         $ chpt4_C_answer_tango_index = 1
     show 041machi2 at middle with dissolve
-    play sound "audio/se/sushiyin/041machi2.mp3"
+    # play sound "audio/se/sushiyin/041machi2.mp3"
     Tomoko "町（まち）。"
     hide 041machi2 with dissolve
 
@@ -459,7 +459,7 @@ label lesson4_3:
     if chpt4_C_answer_tango_index < 2:
         $ chpt4_C_answer_tango_index = 2
     show 042ame2 at middle with dissolve
-    play sound "audio/se/sushiyin/042ame2.mp3"
+    # play sound "audio/se/sushiyin/042ame2.mp3"
     Tomoko "雨（あめ）。"
     hide 042ame2 with dissolve
 
@@ -467,7 +467,7 @@ label lesson4_3:
     if chpt4_C_answer_tango_index < 3:
         $ chpt4_C_answer_tango_index = 3
     show 043heya2 at middle with dissolve
-    play sound "audio/se/sushiyin/043heya2.mp3"
+    # play sound "audio/se/sushiyin/043heya2.mp3"
     Tomoko "部屋（へや）。"
     hide 043heya2 with dissolve
 
@@ -475,7 +475,7 @@ label lesson4_3:
     if chpt4_C_answer_tango_index < 4:
         $ chpt4_C_answer_tango_index = 4
     show 044yume2 at middle with dissolve
-    play sound "audio/se/sushiyin/044yume2.mp3"
+    # play sound "audio/se/sushiyin/044yume2.mp3"
     Tomoko "夢（ゆめ）。"
     hide 044yume2 with dissolve
 
@@ -617,8 +617,8 @@ label l4_3_q3AB:
 label lesson4_4:
     #{播放BGM b0403}
     play music "audio/bgm/b0403.mp3"
-    #{显示背景  heiban}
-    scene heiban with dissolve
+    #{显示背景  blackboard}
+    scene blackboard with dissolve
     #{显示立绘TJ 1gx}
     show TJ 1gx at tjleft with dissolve
     TeacherTian "今天的内容就是这些，同学们都掌握了吗？"
@@ -636,6 +636,7 @@ label lesson4_4:
     hide QQ
     show LY 13wx at right
     with dissolve
+    # TODO: Missing Voice Audio
     LiuYang "中国の古い町って感じかな。（就是中国的古镇。）"
     #{显示立绘ZZ 11gx}
     show ZZ 11gx

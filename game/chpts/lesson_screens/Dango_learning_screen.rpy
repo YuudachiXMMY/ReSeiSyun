@@ -25,8 +25,8 @@ screen Dango(tar=None, learning=True):
         vbox:
             xoffset 40
             spacing 42
-            # add 'gui/settings/音量-1.png'
-            add 'gui/settings/音量-1.png':
+            # add 'gui/settings/volume-1.png'
+            add 'gui/settings/volume-1.png':
                 yoffset 5
 
         vbox:
@@ -41,8 +41,8 @@ screen Dango(tar=None, learning=True):
         vbox:
             xoffset -40
             spacing 42
-            # add 'gui/settings/音量.png'
-            add 'gui/settings/音量.png':
+            # add 'gui/settings/volume.png'
+            add 'gui/settings/volume.png':
                 yoffset 5
 
     # Learn
@@ -87,7 +87,7 @@ style learn_sound_setting_slider:
     thumb "setting_slider_2_btn_idle"
 
 style learn_sound_setting_label_text:
-    font "经典中圆简.ttf"
+    font "classic_cir.ttf"
     size 36
     color "#ffffff"
 

@@ -1,11 +1,12 @@
 ﻿# 序章
 label prologue_scene_1_1:
-
-    scene black_bg with Dissolve(2)
+    scene black_bg with Dissolve(3)
+    scene white_bg with Dissolve(3)
     scene pz 00 with Dissolve(2)
     pause 1
     #{黑屏}
     scene black_bg with Dissolve(2.5)
+
     #{播放SE s0101手机闹钟响起的声音}（所有se的播放都设定画面停止到播放结束以后）
     play music "audio/se/s0101 naozhong.mp3"
     me "……"

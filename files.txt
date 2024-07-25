@@ -1,0 +1,1516 @@
+SourceHanSans-VF.ttf
+SourceHanSansCN-Bold.otf
+SourceHanSansHW-VF.ttf.ttc
+classic_cir.ttf
+game_data.rpy
+game_data.rpyc
+game_keysym.rpy
+game_keysym.rpyc
+gui.rpy
+gui.rpyc
+gui_define.rpy
+gui_define.rpyc
+options.rpy
+options.rpyc
+screens.rpy
+screens.rpyc
+script.rpy
+script.rpyc
+script_def.rpy
+script_def.rpyc
+audio\bgm\b0101 yume.mp3
+audio\bgm\b0102 houkagonoyuzora.mp3
+audio\bgm\b0103 toikioku_healing.mp3
+audio\bgm\b0104 xiaomen.mp3
+audio\bgm\b0105 jiaoshi.mp3
+audio\bgm\b0107 shiguangbaohe.mp3
+audio\bgm\b0108 xiaoyuan.mp3
+audio\bgm\b0109 shangke.mp3
+audio\bgm\b0110 sushe.mp3
+audio\bgm\b0201.mp3
+audio\bgm\b0202.mp3
+audio\bgm\b0203.mp3
+audio\bgm\b0204.mp3
+audio\bgm\b0205.mp3
+audio\bgm\b0206.mp3
+audio\bgm\b0301.mp3
+audio\bgm\b0302.mp3
+audio\bgm\b0303.mp3
+audio\bgm\b0304.mp3
+audio\bgm\b0401.mp3
+audio\bgm\b0402.mp3
+audio\bgm\b0403.mp3
+audio\bgm\b0404.mp3
+audio\bgm\b0405 shinianhou.mp3
+audio\bgm\b0406 xiaoyu.mp3
+audio\bgm\b0501.mp3
+audio\bgm\b0502.mp3
+audio\bgm\b0503 shinianhou.mp3
+audio\bgm\b0504.mp3
+audio\bgm\b0505.mp3
+audio\bgm\b0506.mp3
+audio\bgm\b0507.mp3
+audio\bgm\b0508.mp3
+audio\bgm\b0509.mp3
+audio\bgm\bokunosekai.mp3
+audio\bgm\piantou.mp3
+audio\bgm\ztq_ry.mp3
+audio\bgm\ztq_zw.mp3
+audio\bgm\备用\备用1（三拍子悠扬）.mp3
+audio\bgm\备用\备用1（三拍子轻快）.mp3
+audio\se\cuowu.mp3
+audio\se\dierti.mp3
+audio\se\disanti.mp3
+audio\se\disiti.mp3
+audio\se\diwuti.mp3
+audio\se\diyiti.mp3
+audio\se\s0101 naozhong.mp3
+audio\se\s0102 zhengli.mp3
+audio\se\s0103 book.mp3
+audio\se\s0104 Harmony.mp3
+audio\se\s0105 yaochi.mp3
+audio\se\s0106 dadianhua.mp3
+audio\se\s0107 zoulu.mp3
+audio\se\s0108 kaimen.mp3
+audio\se\s0109 shujia.mp3
+audio\se\s01092 dabukaisuo.mp3
+audio\se\s0110 kaisuo.mp3
+audio\se\s0111 zhituan.mp3
+audio\se\s0112 paobu.mp3
+audio\se\s0113 zhuangdao.mp3
+audio\se\s0114 gaogenxie.mp3
+audio\se\s0115 jiaoshi.mp3
+audio\se\s0116 shoujiling.mp3
+audio\se\zhengque.mp3
+audio\se\备用 Harmony.ogg
+audio\se\sushiyin\011ai2.mp3
+audio\se\sushiyin\012au2.mp3
+audio\se\sushiyin\013aki2.mp3
+audio\se\sushiyin\014koi2.mp3
+audio\se\sushiyin\01aka.mp3
+audio\se\sushiyin\021sushi2.mp3
+audio\se\sushiyin\022suki2.mp3
+audio\se\sushiyin\023uta2.mp3
+audio\se\sushiyin\024tuki2.mp3
+audio\se\sushiyin\031inu2.mp3
+audio\se\sushiyin\032neko2.mp3
+audio\se\sushiyin\033hana2.mp3
+audio\se\sushiyin\034hoshi2.mp3
+audio\se\sushiyin\041machi2.mp3
+audio\se\sushiyin\042ame2.mp3
+audio\se\sushiyin\043heya2.mp3
+audio\se\sushiyin\044yume2.mp3
+audio\se\sushiyin\051sora2.mp3
+audio\se\sushiyin\052iro2.mp3
+audio\se\sushiyin\053watashi2.mp3
+audio\se\sushiyin\054hon2.mp3
+audio\se\sushiyin\a.mp3
+audio\se\sushiyin\aka10.mp3
+audio\se\sushiyin\chi.mp3
+audio\se\sushiyin\cuowu.mp3
+audio\se\sushiyin\dierti.mp3
+audio\se\sushiyin\disanti.mp3
+audio\se\sushiyin\disiti.mp3
+audio\se\sushiyin\diwuti.mp3
+audio\se\sushiyin\diyiti.mp3
+audio\se\sushiyin\e.mp3
+audio\se\sushiyin\fu.mp3
+audio\se\sushiyin\ha.mp3
+audio\se\sushiyin\he.mp3
+audio\se\sushiyin\hi.mp3
+audio\se\sushiyin\ho.mp3
+audio\se\sushiyin\hu.mp3
+audio\se\sushiyin\i.mp3
+audio\se\sushiyin\ka.mp3
+audio\se\sushiyin\ke.mp3
+audio\se\sushiyin\ki.mp3
+audio\se\sushiyin\ko.mp3
+audio\se\sushiyin\ku.mp3
+audio\se\sushiyin\ma.mp3
+audio\se\sushiyin\maya10.mp3
+audio\se\sushiyin\me.mp3
+audio\se\sushiyin\mi.mp3
+audio\se\sushiyin\mo.mp3
+audio\se\sushiyin\mu.mp3
+audio\se\sushiyin\n.mp3
+audio\se\sushiyin\na.mp3
+audio\se\sushiyin\naha10.mp3
+audio\se\sushiyin\ne.mp3
+audio\se\sushiyin\ni.mp3
+audio\se\sushiyin\no.mp3
+audio\se\sushiyin\nu.mp3
+audio\se\sushiyin\o.mp3
+audio\se\sushiyin\ra.mp3
+audio\se\sushiyin\rawa10.mp3
+audio\se\sushiyin\re.mp3
+audio\se\sushiyin\ri.mp3
+audio\se\sushiyin\ro.mp3
+audio\se\sushiyin\ru.mp3
+audio\se\sushiyin\sa.mp3
+audio\se\sushiyin\sata10.mp3
+audio\se\sushiyin\se.mp3
+audio\se\sushiyin\shi.mp3
+audio\se\sushiyin\so.mp3
+audio\se\sushiyin\su.mp3
+audio\se\sushiyin\ta.mp3
+audio\se\sushiyin\te.mp3
+audio\se\sushiyin\to.mp3
+audio\se\sushiyin\tu.mp3
+audio\se\sushiyin\u.mp3
+audio\se\sushiyin\wa.mp3
+audio\se\sushiyin\wo.mp3
+audio\se\sushiyin\ya.mp3
+audio\se\sushiyin\yo.mp3
+audio\se\sushiyin\yu.mp3
+audio\se\sushiyin\zhengque.mp3
+audio\voice\7a185ed8.mp3
+audio\voice\End2_0748d313.mp3
+audio\voice\End2_0890ed27.mp3
+audio\voice\End2_2857550e.mp3
+audio\voice\End2_62775f9c.mp3
+audio\voice\End2_73523878.mp3
+audio\voice\End2_a9396843.mp3
+audio\voice\End2_eb07305d.mp3
+audio\voice\End2_f4695d7b.mp3
+audio\voice\chpt1_1_0434c91b.mp3
+audio\voice\chpt1_1_0a9894f6.mp3
+audio\voice\chpt1_1_1b16da60.mp3
+audio\voice\chpt1_1_1d984c07.mp3
+audio\voice\chpt1_1_1e0f9e94.mp3
+audio\voice\chpt1_1_1f57d298.mp3
+audio\voice\chpt1_1_3fd4d270.mp3
+audio\voice\chpt1_1_8227e39c.mp3
+audio\voice\chpt1_1_8efdda92.mp3
+audio\voice\chpt1_1_9d78cce0.mp3
+audio\voice\chpt1_1_ae2369f3.mp3
+audio\voice\chpt1_1_c8537939.mp3
+audio\voice\chpt1_1_d608514c.mp3
+audio\voice\chpt1_1_dfa5a189.mp3
+audio\voice\chpt1_1_f9473541.mp3
+audio\voice\chpt1_1_f9d86384.mp3
+audio\voice\chpt1_4_00f94bec.mp3
+audio\voice\chpt1_4_054a2591.mp3
+audio\voice\chpt1_4_0a75455f.mp3
+audio\voice\chpt1_4_0ba679b9.mp3
+audio\voice\chpt1_4_1aa42c6a.mp3
+audio\voice\chpt1_4_1e450fe1.mp3
+audio\voice\chpt1_4_9176b967.mp3
+audio\voice\chpt1_4_94992837.mp3
+audio\voice\chpt1_4_abb00fc2.mp3
+audio\voice\chpt1_4_d17cd37b.mp3
+audio\voice\chpt1_4_d6be7657.mp3
+audio\voice\chpt1_4_d718f971.mp3
+audio\voice\chpt1_4_ddf652b2.mp3
+audio\voice\chpt1_4_f390b38c.mp3
+audio\voice\chpt1_4_f551fcb6.mp3
+audio\voice\chpt1_4_f57e1755.mp3
+audio\voice\chpt1_5_0bc22a65.mp3
+audio\voice\chpt1_5_7a722f1f.mp3
+audio\voice\chpt2_1_3aa08fcb.mp3
+audio\voice\chpt2_1_ea322591.mp3
+audio\voice\chpt2_3_227e01a9.mp3
+audio\voice\chpt2_3_47b561b1.mp3
+audio\voice\chpt2_3_4cfa899e.mp3
+audio\voice\chpt2_3_5a96bdbb.mp3
+audio\voice\chpt2_3_70787fe4.mp3
+audio\voice\chpt2_3_7b645406.mp3
+audio\voice\chpt2_3_82c29f15.mp3
+audio\voice\chpt2_3_95c87c3e.mp3
+audio\voice\chpt2_3_a2c9f31f.mp3
+audio\voice\chpt2_3_a441817b.mp3
+audio\voice\chpt2_3_a51b68bb.mp3
+audio\voice\chpt2_3_cf56cea8.mp3
+audio\voice\chpt2_3_f20eded9.mp3
+audio\voice\chpt2_5_03dd411a.mp3
+audio\voice\chpt2_5_0756256e.mp3
+audio\voice\chpt2_5_084e92fe.mp3
+audio\voice\chpt2_5_0df05b75.mp3
+audio\voice\chpt2_5_1524597f.mp3
+audio\voice\chpt2_5_17d8a259.mp3
+audio\voice\chpt2_5_43a37288.mp3
+audio\voice\chpt2_5_49fa1ee8.mp3
+audio\voice\chpt2_5_559cc780.mp3
+audio\voice\chpt2_5_5baa6380.mp3
+audio\voice\chpt2_5_5d6f05a2.mp3
+audio\voice\chpt2_5_679082b9.mp3
+audio\voice\chpt2_5_74f78227.mp3
+audio\voice\chpt2_5_7c122703.mp3
+audio\voice\chpt2_5_84a3ee8d.mp3
+audio\voice\chpt2_5_9f6be31f.mp3
+audio\voice\chpt2_5_a19c6183.mp3
+audio\voice\chpt2_5_a2325a39.mp3
+audio\voice\chpt2_5_b9661181.mp3
+audio\voice\chpt2_5_c972b136.mp3
+audio\voice\chpt2_5_ccd8391b.mp3
+audio\voice\chpt2_5_cd1af785.mp3
+audio\voice\chpt2_5_d3fe45ae.mp3
+audio\voice\chpt2_5_f1ec9a21.mp3
+audio\voice\chpt2_5_f43636dd.mp3
+audio\voice\chpt2_5_f58b1eec.mp3
+audio\voice\chpt2_5_fad6894c.mp3
+audio\voice\chpt2_5_ff95f10e.mp3
+audio\voice\chpt3_1_088bd525.mp3
+audio\voice\chpt3_1_3a3ce418.mp3
+audio\voice\chpt3_1_64e5ba50.mp3
+audio\voice\chpt3_1_9578bb1a.mp3
+audio\voice\chpt3_1_9efff755.mp3
+audio\voice\chpt3_1_d8b4921a.mp3
+audio\voice\chpt3_1_e0f1dcf2.mp3
+audio\voice\chpt3_3_28248d44.mp3
+audio\voice\chpt3_3_2830da5f.mp3
+audio\voice\chpt3_3_31f1f08b.mp3
+audio\voice\chpt3_3_6aa03caa.mp3
+audio\voice\chpt3_3_760a1910.mp3
+audio\voice\chpt3_3_79daa194.mp3
+audio\voice\chpt3_3_91a44d71.mp3
+audio\voice\chpt3_3_a7fa8db6.mp3
+audio\voice\chpt3_3_c796a5bb.mp3
+audio\voice\chpt3_3_c96a5c4f.mp3
+audio\voice\chpt3_3_e5e5798c.mp3
+audio\voice\chpt3_3_f07fbbd7.mp3
+audio\voice\chpt3_5_0913536a.mp3
+audio\voice\chpt3_5_10f1dde2.mp3
+audio\voice\chpt3_5_13f96f14.mp3
+audio\voice\chpt3_5_2322a695.mp3
+audio\voice\chpt3_5_2e1df24b.mp3
+audio\voice\chpt3_5_4cb6f37b.mp3
+audio\voice\chpt3_5_6217d55b.mp3
+audio\voice\chpt3_5_7217fea7.mp3
+audio\voice\chpt3_5_75f3142e.mp3
+audio\voice\chpt3_5_899b1033.mp3
+audio\voice\chpt3_5_ac84795b.mp3
+audio\voice\chpt3_5_bb8792b3.mp3
+audio\voice\chpt3_5_bfd296e1.mp3
+audio\voice\chpt3_5_c5421755.mp3
+audio\voice\chpt3_5_d695a3be.mp3
+audio\voice\chpt3_5_e7e3a205.mp3
+audio\voice\chpt4_1_0aec85ab.mp3
+audio\voice\chpt4_1_0cdfb377.mp3
+audio\voice\chpt4_1_0e450013.mp3
+audio\voice\chpt4_1_15dd1b56.mp3
+audio\voice\chpt4_1_253178b0.mp3
+audio\voice\chpt4_1_26f6b1cc.mp3
+audio\voice\chpt4_1_30799f2c.mp3
+audio\voice\chpt4_1_371224d9.mp3
+audio\voice\chpt4_1_3a871422.mp3
+audio\voice\chpt4_1_3c15b629.mp3
+audio\voice\chpt4_1_414623d8.mp3
+audio\voice\chpt4_1_41cd9444.mp3
+audio\voice\chpt4_1_47eb2949.mp3
+audio\voice\chpt4_1_63844f9c.mp3
+audio\voice\chpt4_1_64c3c5f0.mp3
+audio\voice\chpt4_1_681966dd.mp3
+audio\voice\chpt4_1_681966dd_1.mp3
+audio\voice\chpt4_1_6988474d.mp3
+audio\voice\chpt4_1_6b289006.mp3
+audio\voice\chpt4_1_7881f71a.mp3
+audio\voice\chpt4_1_7890105c.mp3
+audio\voice\chpt4_1_7eb7e6d1.mp3
+audio\voice\chpt4_1_9051be4c.mp3
+audio\voice\chpt4_1_9abec20d.mp3
+audio\voice\chpt4_1_9c7537bc.mp3
+audio\voice\chpt4_1_9dd7b538.mp3
+audio\voice\chpt4_1_a0b82ec9.mp3
+audio\voice\chpt4_1_a54ec995.mp3
+audio\voice\chpt4_1_b25c7513.mp3
+audio\voice\chpt4_1_b4b67c27.mp3
+audio\voice\chpt4_1_c96fc2ce.mp3
+audio\voice\chpt4_1_d79e1c0d.mp3
+audio\voice\chpt4_1_dc7d1671.mp3
+audio\voice\chpt4_1_f280b225.mp3
+audio\voice\chpt4_1_f39d8fb7.mp3
+audio\voice\chpt4_1_f644c782.mp3
+audio\voice\chpt5_1_01a3b873.mp3
+audio\voice\chpt5_1_0b5c8f3c.mp3
+audio\voice\chpt5_1_147355f2.mp3
+audio\voice\chpt5_1_15d27dc0.mp3
+audio\voice\chpt5_1_1850a367.mp3
+audio\voice\chpt5_1_26aa4a83.mp3
+audio\voice\chpt5_1_2bf1aa72.mp3
+audio\voice\chpt5_1_2c02214f.mp3
+audio\voice\chpt5_1_3ae12983.mp3
+audio\voice\chpt5_1_3d32fd01.mp3
+audio\voice\chpt5_1_4368dcbb.mp3
+audio\voice\chpt5_1_5336d957.mp3
+audio\voice\chpt5_1_56619f5d.mp3
+audio\voice\chpt5_1_58781e3e.mp3
+audio\voice\chpt5_1_663d3079.mp3
+audio\voice\chpt5_1_663e3971.mp3
+audio\voice\chpt5_1_69f1641a.mp3
+audio\voice\chpt5_1_6aadcf89.mp3
+audio\voice\chpt5_1_6d7edb08.mp3
+audio\voice\chpt5_1_6f848261.mp3
+audio\voice\chpt5_1_7431adf8.mp3
+audio\voice\chpt5_1_7b539395.mp3
+audio\voice\chpt5_1_834a550c.mp3
+audio\voice\chpt5_1_8b9d523d.mp3
+audio\voice\chpt5_1_8c03461d.mp3
+audio\voice\chpt5_1_8df0dbbb.mp3
+audio\voice\chpt5_1_9b5637a8.mp3
+audio\voice\chpt5_1_a1a178ba.mp3
+audio\voice\chpt5_1_aebae07e.mp3
+audio\voice\chpt5_1_b249588f.mp3
+audio\voice\chpt5_1_baa852c4.mp3
+audio\voice\chpt5_1_bbd0e8fc.mp3
+audio\voice\chpt5_1_c451f7c1.mp3
+audio\voice\chpt5_1_c962faec.mp3
+audio\voice\chpt5_1_e269f222.mp3
+audio\voice\chpt5_1_e3e710e1.mp3
+audio\voice\chpt5_1_ec1dc449.mp3
+audio\voice\chpt5_1_ed5cc90d.mp3
+audio\voice\chpt5_1_ef547ff4.mp3
+audio\voice\chpt5_2_08f513cd.mp3
+audio\voice\chpt5_2_1db6b6ee.mp3
+audio\voice\chpt5_2_2e5ee1f7.mp3
+audio\voice\chpt5_2_2e897471.mp3
+audio\voice\chpt5_2_2f149f14.mp3
+audio\voice\chpt5_2_3059fca8.mp3
+audio\voice\chpt5_2_31c7544d.mp3
+audio\voice\chpt5_2_3b98beb5.mp3
+audio\voice\chpt5_2_417d012a.mp3
+audio\voice\chpt5_2_46c6f4f0.mp3
+audio\voice\chpt5_2_4b4ad7bd.mp3
+audio\voice\chpt5_2_4b71785c.mp3
+audio\voice\chpt5_2_53bce970.mp3
+audio\voice\chpt5_2_592088ef.mp3
+audio\voice\chpt5_2_64bd91d5.mp3
+audio\voice\chpt5_2_6cd58c0e.mp3
+audio\voice\chpt5_2_77b72d9a.mp3
+audio\voice\chpt5_2_85ebaed6.mp3
+audio\voice\chpt5_2_8b7aca31.mp3
+audio\voice\chpt5_2_8ea5a2b0.mp3.mp3
+audio\voice\chpt5_2_8f660b62.mp3
+audio\voice\chpt5_2_9c02dea0.mp3
+audio\voice\chpt5_2_a7fde797.mp3
+audio\voice\chpt5_2_b9768e3b.mp3
+audio\voice\chpt5_2_ba1cfdda.mp3
+audio\voice\chpt5_2_c3e38090.mp3
+audio\voice\chpt5_2_c6dcadeb.mp3
+audio\voice\chpt5_2_c9d2fb4d.mp3
+audio\voice\chpt5_2_d37eb449.mp3
+audio\voice\chpt5_2_db56ff47.mp3
+audio\voice\chpt5_2_e3ce3d6a.mp3
+audio\voice\chpt5_2_e3e03607.mp3
+audio\voice\chpt5_2_e73c0681.mp3
+audio\voice\chpt5_2_fc9c2dfd.mp3
+audio\voice\chpt5_3_01effebe.mp3
+audio\voice\chpt5_3_0328cad0.mp3
+audio\voice\chpt5_3_08188bf9.mp3
+audio\voice\chpt5_3_0a25466a.mp3
+audio\voice\chpt5_3_0a65e824.mp3
+audio\voice\chpt5_3_11c36cdb.mp3
+audio\voice\chpt5_3_136cb1b9.mp3
+audio\voice\chpt5_3_13af5db9.mp3
+audio\voice\chpt5_3_1eb1b0de.mp3
+audio\voice\chpt5_3_23a0a8d6.mp3
+audio\voice\chpt5_3_26bce976.mp3
+audio\voice\chpt5_3_2b7b909e.mp3
+audio\voice\chpt5_3_2be75cc0.mp3
+audio\voice\chpt5_3_2c3afd45.mp3
+audio\voice\chpt5_3_2ebbe063.mp3
+audio\voice\chpt5_3_34cbc528.mp3
+audio\voice\chpt5_3_39bdb19e.mp3
+audio\voice\chpt5_3_44be9f05.mp3
+audio\voice\chpt5_3_47548fc3.mp3
+audio\voice\chpt5_3_47a108bd.mp3
+audio\voice\chpt5_3_48343149.mp3
+audio\voice\chpt5_3_4bdef5db.mp3
+audio\voice\chpt5_3_4eb1769e.mp3
+audio\voice\chpt5_3_4fe74f7d.mp3
+audio\voice\chpt5_3_542129a9.mp3
+audio\voice\chpt5_3_56f2fa54.mp3
+audio\voice\chpt5_3_595c6b9f.mp3
+audio\voice\chpt5_3_5dc0139c.mp3
+audio\voice\chpt5_3_612968a3.mp3
+audio\voice\chpt5_3_646c60a6.mp3
+audio\voice\chpt5_3_78e65381.mp3
+audio\voice\chpt5_3_79962ba3.mp3
+audio\voice\chpt5_3_7a1b227c.mp3
+audio\voice\chpt5_3_80fefd06.mp3
+audio\voice\chpt5_3_88840b84.mp3
+audio\voice\chpt5_3_8ac805db.mp3
+audio\voice\chpt5_3_8f0b7b2e.mp3
+audio\voice\chpt5_3_8f9101f3.mp3
+audio\voice\chpt5_3_906ba795.mp3
+audio\voice\chpt5_3_9314dcc8.mp3
+audio\voice\chpt5_3_94abe8c9.mp3
+audio\voice\chpt5_3_9b8f314e.mp3
+audio\voice\chpt5_3_9dbcc241.mp3
+audio\voice\chpt5_3_a1248e06.mp3
+audio\voice\chpt5_3_a34d70bc.mp3
+audio\voice\chpt5_3_a914c8e2.mp3
+audio\voice\chpt5_3_aa3108f8.mp3
+audio\voice\chpt5_3_aacdf496.mp3
+audio\voice\chpt5_3_adf3ffea.mp3
+audio\voice\chpt5_3_aec605f0.mp3
+audio\voice\chpt5_3_b25c75a4.mp3
+audio\voice\chpt5_3_b4c0d2fb.mp3
+audio\voice\chpt5_3_c41510b2.mp3
+audio\voice\chpt5_3_c4e3eeff.mp3
+audio\voice\chpt5_3_c80e92dc.mp3
+audio\voice\chpt5_3_c9b174c3.mp3
+audio\voice\chpt5_3_cc52a5cd.mp3
+audio\voice\chpt5_3_ce6e0743.mp3
+audio\voice\chpt5_3_d644891a.mp3
+audio\voice\chpt5_3_e235db62.mp3
+audio\voice\chpt5_3_e642a827.mp3
+audio\voice\chpt5_3_e790cd9b.mp3
+audio\voice\chpt5_3_eaa4a7b8.mp3
+audio\voice\chpt5_3_ebed9fc0.mp3
+audio\voice\chpt5_3_eebd7db6.mp3
+audio\voice\chpt5_3_ef06518f.mp3
+audio\voice\chpt5_3_f2807918.mp3
+audio\voice\chpt5_3_f40749ed.mp3
+audio\voice\chpt5_3_f46d72c8.mp3
+audio\voice\chpt5_3_fe54e625.mp3
+audio\voice\chpt5_3_ff4d57c1.mp3
+audio\voice\l1_1_q1A_786831a4.mp3
+audio\voice\l1_1_q1BC_dd5f9539.mp3
+audio\voice\l1_1_q2AB_6ae46316.mp3
+audio\voice\l1_1_q2C_05c7c629.mp3
+audio\voice\l1_1_q3AC_0fa82128.mp3
+audio\voice\l1_1_q3B_4fbef93b.mp3
+audio\voice\l1_2_q1AB_16c23f9a.mp3
+audio\voice\l1_2_q2AC_08b7d54c.mp3
+audio\voice\l1_2_q3AB_758db778.mp3
+audio\voice\l1_2_q4AB_8fe96aba.mp3
+audio\voice\l1_2_q5BC_09e9fd2f.mp3
+audio\voice\l1_3_q1AC_d8754ef4.mp3
+audio\voice\l1_3_q2BC_a252151b.mp3
+audio\voice\l1_3_q3AC_59e58f07.mp3
+audio\voice\lesson1_1_05d40e7f.mp3
+audio\voice\lesson1_1_0946af01.mp3
+audio\voice\lesson1_1_0da0ac7d.mp3
+audio\voice\lesson1_1_0fb65a28.mp3
+audio\voice\lesson1_1_1efa7a7e.mp3
+audio\voice\lesson1_1_1f0b75d6.mp3
+audio\voice\lesson1_1_2c57368a.mp3
+audio\voice\lesson1_1_7300c0b6.mp3
+audio\voice\lesson1_1_84746cbd.mp3
+audio\voice\lesson1_1_89f24aa7.mp3
+audio\voice\lesson1_1_991cd463.mp3
+audio\voice\lesson1_1_a0772b89.mp3
+audio\voice\lesson1_1_ae361f6d.mp3
+audio\voice\lesson1_1_bcdadad8.mp3
+audio\voice\lesson1_1_c1fe7fa9.mp3
+audio\voice\lesson1_1_d6138ad4.mp3
+audio\voice\lesson1_1_da416a84.mp3
+audio\voice\lesson1_1_eb5a331e.mp3
+audio\voice\lesson1_1_f56329e7.mp3
+audio\voice\lesson1_2_2460b062.mp3
+audio\voice\lesson1_2_282ac1c0.mp3
+audio\voice\lesson1_2_667eaadb.mp3
+audio\voice\lesson1_2_6b13af7d.mp3
+audio\voice\lesson1_2_8544b6b2.mp3
+audio\voice\lesson1_2_df0009e0.mp3
+audio\voice\lesson1_2_f21fd677.mp3
+audio\voice\lesson1_3_212e5444.mp3
+audio\voice\lesson1_3_75929689.mp3
+audio\voice\lesson1_3_8a58e0d1.mp3
+audio\voice\lesson1_3_beecb364.mp3
+audio\voice\lesson1_4_78531f0e.mp3
+audio\voice\lesson1_4_7d1697f1.mp3
+audio\voice\lesson1_4_c0fe8363.mp3
+audio\voice\lesson1_5_e9db7406.mp3
+audio\voice\lesson1_5_q2_b8bbc043.mp3
+audio\voice\lesson1_5_q3_31900410.mp3
+audio\voice\lesson1_5_q3_59a58bcc.mp3
+audio\voice\lesson1_5_q3_dd2ad1de.mp3
+audio\voice\lesson1_6_663b4454.mp3
+audio\voice\lesson1_6_a1d637b4.mp3
+audio\voice\lesson2_1_0e37e71e.mp3
+audio\voice\lesson2_1_12f565e2.mp3
+audio\voice\lesson2_1_21eed074.mp3
+audio\voice\lesson2_1_255adcd4.mp3
+audio\voice\lesson2_1_311a97c7.mp3
+audio\voice\lesson2_1_370fbec2..mp3
+audio\voice\lesson2_1_370fbec2.mp3
+audio\voice\lesson2_1_3a7b1e80.mp3
+audio\voice\lesson2_1_5009a49e.mp3
+audio\voice\lesson2_1_520e8c5c.mp3
+audio\voice\lesson2_1_5e561bad.mp3
+audio\voice\lesson2_1_632af437.mp3
+audio\voice\lesson2_1_764adafe.mp3
+audio\voice\lesson2_1_9fdf4704.mp3
+audio\voice\lesson2_1_a34d91ab.mp3
+audio\voice\lesson2_1_c12385df.mp3
+audio\voice\lesson2_1_c6a0ddf9.mp3
+audio\voice\lesson2_1_d73345f2.mp3
+audio\voice\lesson2_1_d84ebee8.mp3
+audio\voice\lesson2_1_e03d9a20.mp3
+audio\voice\lesson2_1_e6de3ab2.mp3
+audio\voice\lesson2_1_f6b76763.mp3
+audio\voice\lesson2_1_f6fefb2a.mp3
+audio\voice\lesson2_1_f9e416eb.mp3
+audio\voice\lesson2_2_2460b062.mp3
+audio\voice\lesson2_2_251bfcea.mp3
+audio\voice\lesson2_2_282ac1c0.mp3
+audio\voice\lesson2_2_6b13af7d.mp3
+audio\voice\lesson2_2_8544b6b2.mp3
+audio\voice\lesson2_2_aac75838.mp3
+audio\voice\lesson2_2_df0009e0.mp3
+audio\voice\lesson2_3_5afdbd01.mp3
+audio\voice\lesson2_3_6b13af7d.mp3
+audio\voice\lesson2_3_71efbb0a.mp3
+audio\voice\lesson2_3_75929689.mp3
+audio\voice\lesson2_3_8a58e0d1.mp3
+audio\voice\lesson2_3_baced000.mp3
+audio\voice\lesson2_3_beecb364.mp3
+audio\voice\lesson2_3_dd9ffe33.mp3
+audio\voice\lesson2_3_f0f7a920.mp3
+audio\voice\lesson2_4_78531f0e.mp3
+audio\voice\lesson2_4_7d1697f1.mp3
+audio\voice\lesson2_4_c0fe8363.mp3
+audio\voice\lesson2_5_12613741.mp3
+audio\voice\lesson2_5_2902fe9a.mp3
+audio\voice\lesson2_5_2a58b9ee.mp3
+audio\voice\lesson2_5_44924441.mp3
+audio\voice\lesson2_5_471a10c2.mp3
+audio\voice\lesson2_5_583640e7.mp3
+audio\voice\lesson2_5_6d7a545c.mp3
+audio\voice\lesson2_5_75aff7e6.mp3
+audio\voice\lesson2_5_7a452828.mp3
+audio\voice\lesson2_5_7b44c347.mp3
+audio\voice\lesson2_5_7f726f9f.mp3
+audio\voice\lesson2_5_ac5d8bc6.mp3
+audio\voice\lesson2_5_b6be087f.mp3
+audio\voice\lesson2_5_cc2b42ca.mp3
+audio\voice\lesson2_5_d2f34d95.mp3
+audio\voice\lesson2_5_d56b2f48.mp3
+audio\voice\lesson2_5_ecac33e0.mp3
+audio\voice\lesson2_5_f1997793.mp3
+audio\voice\lesson2_5_f7b0d1c4.mp3
+audio\voice\lesson3_1_109188f4.mp3
+audio\voice\lesson3_1_37ac8b6d.mp3
+audio\voice\lesson3_1_3a0d8339.mp3
+audio\voice\lesson3_1_4c27f184.mp3
+audio\voice\lesson3_1_4cdd77cb.mp3
+audio\voice\lesson3_1_8757cfe3.mp3
+audio\voice\lesson3_1_8b9e6ef3.mp3
+audio\voice\lesson3_1_97f0822e.mp3
+audio\voice\lesson3_1_981034fe.mp3
+audio\voice\lesson3_1_9a062159.mp3
+audio\voice\lesson3_1_a8199844.mp3
+audio\voice\lesson3_1_b1abb37e.mp3
+audio\voice\lesson3_1_cabf5e2a.mp3
+audio\voice\lesson3_1_d6b47540.mp3
+audio\voice\lesson3_1_ea98f2c6.mp3
+audio\voice\lesson3_1_f044271f.mp3
+audio\voice\lesson3_2_2460b062.mp3
+audio\voice\lesson3_2_282ac1c0.mp3
+audio\voice\lesson3_2_42cbf062.mp3
+audio\voice\lesson3_2_667eaadb.mp3
+audio\voice\lesson3_2_6b13af7d.mp3
+audio\voice\lesson3_2_8544b6b2.mp3
+audio\voice\lesson3_2_df0009e0.mp3
+audio\voice\lesson3_3_212e5444.mp3
+audio\voice\lesson3_3_6b13af7d.mp3
+audio\voice\lesson3_3_75929689.mp3
+audio\voice\lesson3_3_8a58e0d1.mp3
+audio\voice\lesson3_3_9c7891c9.mp3
+audio\voice\lesson3_3_b4bf2203.mp3
+audio\voice\lesson3_3_bbf2ffbf.mp3
+audio\voice\lesson3_3_beecb364.mp3
+audio\voice\lesson3_3_d4d1c483.mp3
+audio\voice\lesson3_4_78531f0e.mp3
+audio\voice\lesson3_4_7d1697f1.mp3
+audio\voice\lesson3_4_c0fe8363.mp3
+audio\voice\lesson3_5_0d2dff57.mp3
+audio\voice\lesson3_5_1546383c.mp3
+audio\voice\lesson3_5_2fbfca6f.mp3
+audio\voice\lesson3_5_449771c1.mp3
+audio\voice\lesson3_5_4f910475.mp3
+audio\voice\lesson3_5_9bc2fb26.mp3
+audio\voice\lesson3_5_ac7f9ccc.mp3
+audio\voice\lesson3_5_c2c6c816.mp3
+audio\voice\lesson3_5_cd52cb34.mp3
+audio\voice\lesson3_5_e98eae83.mp3
+audio\voice\lesson3_5_ef07fc0e.mp3
+audio\voice\lesson4_1_1eb8dc32.mp3
+audio\voice\lesson4_1_20cbb25e.mp3
+audio\voice\lesson4_1_2ee0e3ec.mp3
+audio\voice\lesson4_1_3a0d8339.mp3
+audio\voice\lesson4_1_3f04554c.mp3
+audio\voice\lesson4_1_411a6505.mp3
+audio\voice\lesson4_1_4f8c8b5e.mp3
+audio\voice\lesson4_1_516b0b48.mp3
+audio\voice\lesson4_1_56be794e.mp3
+audio\voice\lesson4_1_58c5f883.mp3
+audio\voice\lesson4_1_69ca4bcc.mp3
+audio\voice\lesson4_1_7c2f7d35.mp3
+audio\voice\lesson4_1_7f5df545.mp3
+audio\voice\lesson4_1_85e96011.mp3
+audio\voice\lesson4_1_8906822e.mp3
+audio\voice\lesson4_1_8c4e2cd5.mp3
+audio\voice\lesson4_1_9edfc58d.mp3
+audio\voice\lesson4_1_a78bcdcb.mp3
+audio\voice\lesson4_2_04002b0a.mp3
+audio\voice\lesson4_2_2460b062.mp3
+audio\voice\lesson4_2_282ac1c0.mp3
+audio\voice\lesson4_2_667eaadb.mp3
+audio\voice\lesson4_2_6b13af7d.mp3
+audio\voice\lesson4_2_6b13af7d_0.mp3
+audio\voice\lesson4_2_8544b6b2.mp3
+audio\voice\lesson4_2_df0009e0.mp3
+audio\voice\lesson4_3_212e5444.mp3
+audio\voice\lesson4_3_2ab3a9d5.mp3
+audio\voice\lesson4_3_3b20ae08.mp3
+audio\voice\lesson4_3_6a788487.mp3
+audio\voice\lesson4_3_6b13af7d.mp3
+audio\voice\lesson4_3_7040ee52.mp3
+audio\voice\lesson4_3_75929689.mp3
+audio\voice\lesson4_3_8a58e0d1.mp3
+audio\voice\lesson4_3_bc7e4f87.mp3
+audio\voice\lesson4_4_1868aef7.mp3
+audio\voice\lesson4_4_289b8aa3.mp3
+audio\voice\lesson4_4_2ecb42fd.mp3
+audio\voice\lesson4_4_3ef23b35.mp3
+audio\voice\lesson4_4_7a185ed8.mp3
+audio\voice\lesson4_4_904d87ff.mp3
+audio\voice\lesson4_4_b5987aed.mp3
+audio\voice\lesson4_4_c0fe8363.mp3
+audio\voice\lesson4_5_16826af9.mp3
+audio\voice\lesson4_5_22a4cbf7.mp3
+audio\voice\lesson4_5_2e6d54c5.mp3
+audio\voice\lesson4_5_3c04125f.mp3
+audio\voice\lesson4_5_51a4e258.mp3
+audio\voice\lesson4_5_8ec0df8b.mp3
+audio\voice\lesson4_5_9d9a86a1.mp3
+audio\voice\lesson4_5_9da74313.mp3
+audio\voice\lesson4_5_b703be26.mp3
+audio\voice\lesson4_5_d35a7aa8.mp3
+audio\voice\lesson4_5_d3ea5337.mp3
+audio\voice\lesson4_5_df512b2d.mp3
+audio\voice\lesson4_5_ef08da71.mp3
+audio\voice\lesson5_1_0f39cde1.mp3
+audio\voice\lesson5_1_17af0f70.mp3
+audio\voice\lesson5_1_1ada07cc.mp3
+audio\voice\lesson5_1_1f37c989.mp3
+audio\voice\lesson5_1_2bc6a9d2.mp3
+audio\voice\lesson5_1_4b654533.mp3
+audio\voice\lesson5_1_61f7ce3b.mp3
+audio\voice\lesson5_1_6b7b195d.mp3
+audio\voice\lesson5_1_9516df4d.mp3
+audio\voice\lesson5_1_a5f20a10.mp3
+audio\voice\lesson5_1_b2d225f7.mp3
+audio\voice\lesson5_1_d890fbc0.mp3
+audio\voice\lesson5_1_d8a99589.mp3
+audio\voice\lesson5_1_da0fe2fe.mp3
+audio\voice\lesson5_1_ddc64f4c.mp3
+audio\voice\lesson5_1_e7c3baca.mp3
+audio\voice\lesson5_1_e945e84c.mp3
+audio\voice\lesson5_2_2460b062.mp3
+audio\voice\lesson5_2_282ac1c0.mp3
+audio\voice\lesson5_2_2e4b8b5b.mp3
+audio\voice\lesson5_2_667eaadb.mp3
+audio\voice\lesson5_2_6b13af7d.mp3
+audio\voice\lesson5_2_8544b6b2.mp3
+audio\voice\lesson5_2_df0009e0.mp3
+audio\voice\lesson5_3_212e5444.mp3
+audio\voice\lesson5_3_2ab3a9d5.mp3
+audio\voice\lesson5_3_5c0be77b.mp3
+audio\voice\lesson5_3_6b13af7d.mp3
+audio\voice\lesson5_3_75929689.mp3
+audio\voice\lesson5_3_8a58e0d1.mp3
+audio\voice\lesson5_3_93790b3d.mp3
+audio\voice\lesson5_3_978e3d6d.mp3
+audio\voice\lesson5_3_f0f4ec20.mp3
+audio\voice\lesson5_4_6a9750ee.mp3
+audio\voice\lesson5_4_c0fe8363.mp3
+audio\voice\lesson5_4_fc7294db.mp3
+audio\voice\prologue_scene_1_4_1539dc8a.mp3
+audio\voice\prologue_scene_1_4_1d6149a9.mp3
+audio\voice\prologue_scene_1_4_6445e3f5.mp3
+audio\voice\prologue_scene_1_4_78651326.mp3
+audio\voice\prologue_scene_1_4_7d87f661.mp3
+audio\voice\prologue_scene_1_4_87506cd0.mp3
+audio\voice\prologue_scene_1_4_a620467f.mp3
+audio\voice\prologue_scene_1_4_ade45c02.mp3
+audio\voice\prologue_scene_1_4_b695e0e3.mp3
+audio\voice\prologue_scene_1_4_c052cfff.mp3
+audio\voice\prologue_scene_1_4_f1ed2e12.mp3
+audio\voice\prologue_scene_1_4_fb6499fd.mp3
+audio\voice\prologue_scene_2_1_23a5ee9f.mp3
+audio\voice\prologue_scene_2_1_9c3afef8.mp3
+audio\voice\prologue_scene_2_1_f75005c1.mp3
+audio\voice\prologue_scene_2_2_0069acad.mp3
+audio\voice\prologue_scene_2_2_016b4a3c.mp3
+audio\voice\prologue_scene_2_2_07378999.mp3
+audio\voice\prologue_scene_2_2_08b1a4bc.mp3
+audio\voice\prologue_scene_2_2_0a8140ce.mp3
+audio\voice\prologue_scene_2_2_101d4afa.mp3
+audio\voice\prologue_scene_2_2_1d42b2dd.mp3
+audio\voice\prologue_scene_2_2_2ae7b469.mp3
+audio\voice\prologue_scene_2_2_3275c34a.mp3
+audio\voice\prologue_scene_2_2_3aa89dfb.mp3
+audio\voice\prologue_scene_2_2_3cc6e850.mp3
+audio\voice\prologue_scene_2_2_3d4f2303.mp3
+audio\voice\prologue_scene_2_2_420943fe.mp3
+audio\voice\prologue_scene_2_2_48c58cba.mp3
+audio\voice\prologue_scene_2_2_4b434645.mp3
+audio\voice\prologue_scene_2_2_4c1c14ed.mp3
+audio\voice\prologue_scene_2_2_4c9b3199.mp3
+audio\voice\prologue_scene_2_2_5750a9f0.mp3
+audio\voice\prologue_scene_2_2_5b57b3a9.mp3
+audio\voice\prologue_scene_2_2_5b5b6ad8.mp3
+audio\voice\prologue_scene_2_2_5e6bc56f.mp3
+audio\voice\prologue_scene_2_2_5f6afe86.mp3
+audio\voice\prologue_scene_2_2_61208e76.mp3
+audio\voice\prologue_scene_2_2_61503f2e.mp3
+audio\voice\prologue_scene_2_2_622f8112.mp3
+audio\voice\prologue_scene_2_2_6683da40.mp3
+audio\voice\prologue_scene_2_2_66c19608.mp3
+audio\voice\prologue_scene_2_2_7a976214.mp3
+audio\voice\prologue_scene_2_2_7bc78735.mp3
+audio\voice\prologue_scene_2_2_7ec6d852.mp3
+audio\voice\prologue_scene_2_2_94930e92.mp3
+audio\voice\prologue_scene_2_2_969af458.mp3
+audio\voice\prologue_scene_2_2_972d8767.mp3
+audio\voice\prologue_scene_2_2_9e24ca4d.mp3
+audio\voice\prologue_scene_2_2_a547e15a.mp3
+audio\voice\prologue_scene_2_2_ab3a828a.mp3
+audio\voice\prologue_scene_2_2_b1b8412d.mp3
+audio\voice\prologue_scene_2_2_b31584e7.mp3
+audio\voice\prologue_scene_2_2_bb2144c0.mp3
+audio\voice\prologue_scene_2_2_bbb8054d.mp3
+audio\voice\prologue_scene_2_2_be0cbbbb.mp3
+audio\voice\prologue_scene_2_2_c606e3e0.mp3
+audio\voice\prologue_scene_2_2_c99f2f70.mp3
+audio\voice\prologue_scene_2_2_ce8bfbe3.mp3
+audio\voice\prologue_scene_2_2_cfebb0b4.mp3
+audio\voice\prologue_scene_2_2_d44f28c1.mp3
+audio\voice\prologue_scene_2_2_d55c85ec.mp3
+audio\voice\prologue_scene_2_2_da98c71d.mp3
+audio\voice\prologue_scene_2_2_db57ca43.mp3
+audio\voice\prologue_scene_2_2_df70860f.mp3
+audio\voice\prologue_scene_2_2_e7fc0d4f.mp3
+audio\voice\prologue_scene_2_2_e84b9ca6.mp3
+audio\voice\prologue_scene_2_2_e88364ea.mp3
+audio\voice\prologue_scene_2_2_ec314a07.mp3
+audio\voice\prologue_scene_2_2_eef85785.mp3
+audio\voice\prologue_scene_2_2_fdaac2e4.mp3
+audio\voice\prologue_scene_2_2_fe0038a4.mp3
+audio\voice\prologue_scene_2_3_Baohe_NotOpened_0944c2e3.mp3
+audio\voice\prologue_scene_2_3_Baohe_Opened_09120f17.mp3
+audio\voice\prologue_scene_2_4_02e80ac0.mp3
+audio\voice\prologue_scene_2_4_13f57c55.mp3
+audio\voice\prologue_scene_2_4_2d1ec3e6.mp3
+audio\voice\prologue_scene_2_4_328583fd.mp3
+audio\voice\prologue_scene_2_4_59ca8690.mp3
+audio\voice\prologue_scene_2_4_604a2142.mp3
+audio\voice\prologue_scene_2_4_60c4eea5.mp3
+audio\voice\prologue_scene_2_4_642ad757.mp3
+audio\voice\prologue_scene_2_4_7998ad73.mp3
+audio\voice\prologue_scene_2_4_8c9a8af6.mp3
+audio\voice\prologue_scene_2_4_a2081843.mp3
+audio\voice\prologue_scene_2_4_a3d15ef3.mp3
+audio\voice\prologue_scene_2_4_afce662f.mp3
+audio\voice\prologue_scene_2_4_b4d73102.mp3
+audio\voice\prologue_scene_2_4_b71a073b.mp3
+audio\voice\prologue_scene_2_4_c62fb28b.mp3
+audio\voice\prologue_scene_2_4_cdd272f0.mp3
+audio\voice\prologue_scene_2_4_cee308ac.mp3
+audio\voice\prologue_scene_2_4_d6986633.mp3
+audio\voice\prologue_scene_2_4_db297b7a.mp3
+audio\voice\prologue_scene_2_4_e6474fdc.mp3
+audio\voice\prologue_scene_2_4_e906f7da.mp3
+audio\voice\prologue_scene_2_4_fa6798aa.mp3
+audio\voice\prologue_scene_2_5_e642a827.mp3
+audio\voice\prologue_scene_2_choice_1A_aa1cd91b.mp3
+audio\voice\prologue_scene_2_choice_1A_bab56866.mp3
+audio\voice\scene_1_prologue_2_0503d822.mp3
+audio\voice\scene_1_prologue_2_1f0d9d3b.mp3
+audio\voice\scene_1_prologue_2_409160f1.mp3
+audio\voice\scene_1_prologue_2_45366d74.mp3
+audio\voice\scene_1_prologue_2_4677281a.mp3
+audio\voice\scene_1_prologue_2_5fcdf9f2.mp3
+audio\voice\scene_1_prologue_2_6d4fc5fb.mp3
+audio\voice\scene_1_prologue_2_7d87f661.mp3
+audio\voice\scene_1_prologue_2_98e46229.mp3
+audio\voice\scene_1_prologue_2_9e3a822a.mp3
+audio\voice\scene_1_prologue_2_a809d852.mp3
+audio\voice\scene_1_prologue_2_f1ed2e12.mp3
+cache\bytecode-27.rpyb
+cache\pyanalysis.rpyb
+cache\screens.rpyb
+cache\shaders.txt
+chpts\chpt1.rpy
+chpts\chpt1.rpyc
+chpts\chpt2.rpy
+chpts\chpt2.rpyc
+chpts\chpt3.rpy
+chpts\chpt3.rpyc
+chpts\chpt4.rpy
+chpts\chpt4.rpyc
+chpts\chpt5.rpy
+chpts\chpt5.rpyc
+chpts\lesson1.rpy
+chpts\lesson1.rpyc
+chpts\lesson2.rpy
+chpts\lesson2.rpyc
+chpts\lesson3.rpy
+chpts\lesson3.rpyc
+chpts\lesson4.rpy
+chpts\lesson4.rpyc
+chpts\lesson5.rpy
+chpts\lesson5.rpyc
+chpts\prologue.rpy
+chpts\prologue.rpyc
+chpts\lesson_screens\Dango_learning_screen.rpy
+chpts\lesson_screens\Dango_learning_screen.rpyc
+chpts\lesson_screens\HiraKataKana_learning_screen.rpy
+chpts\lesson_screens\HiraKataKana_learning_screen.rpyc
+gui\Bnamebox.png
+gui\Btextbox.png
+gui\black.png
+gui\blank.png
+gui\ending_script.png
+gui\frame.png
+gui\game_menu.png
+gui\game_menu_test.png
+gui\main_menu.png
+gui\main_menu_test.png
+gui\namebox.png
+gui\notify.png
+gui\nvl.png
+gui\past.png
+gui\skip.png
+gui\textbox.png
+gui\white.png
+gui\window_icon.png
+gui\bar\bottom.png
+gui\bar\left.png
+gui\bar\right.png
+gui\bar\top.png
+gui\button\Bchoice_hover_background.png
+gui\button\Bchoice_idle_background.png
+gui\button\check_foreground.png
+gui\button\check_selected_foreground.png
+gui\button\choice_hover_background.png
+gui\button\choice_idle_background.png
+gui\button\hover_background.png
+gui\button\idle_background.png
+gui\button\quick_hover_background.png
+gui\button\quick_idle_background.png
+gui\button\radio_foreground.png
+gui\button\radio_selected_foreground.png
+gui\button\slot_hover_background.png
+gui\button\slot_idle_background.png
+gui\dialogue\1-字号.jpg
+gui\dialogue\1-效果图.jpg
+gui\dialogue\blue_title.png
+gui\dialogue\exit.png
+gui\dialogue\exit2.png
+gui\dialogue\load_button.png
+gui\dialogue\load_button2.png
+gui\dialogue\quick_menu.png
+gui\dialogue\r_menu.png
+gui\dialogue\replay.png
+gui\dialogue\replay2.png
+gui\dialogue\return_button.png
+gui\dialogue\return_button2.png
+gui\dialogue\review_button.png
+gui\dialogue\review_button2.png
+gui\dialogue\save_button.png
+gui\dialogue\save_button2.png
+gui\dialogue\setting.png
+gui\dialogue\setting2.png
+gui\dialogue\skipping_selected.png
+gui\dialogue\skipping_unselected.png
+gui\dialogue\底层光.png
+gui\history\history_return_btn_hover.png
+gui\history\history_return_btn_idle.png
+gui\history\history_voiceReplay_btn_hover.png
+gui\history\history_voiceReplay_btn_idle.png
+gui\main\bg.png
+gui\main\info.png
+gui\main\info_bg.png
+gui\main\info_hover.png
+gui\main\load.png
+gui\main\load_hover.png
+gui\main\logo.png
+gui\main\quit.png
+gui\main\quit_hover.png
+gui\main\start.png
+gui\main\start_hover.png
+gui\overlay\confirm.png
+gui\overlay\game_menu.png
+gui\overlay\main_menu.png
+gui\phone\nvl.png
+gui\phone\textbox.png
+gui\phone\bar\bottom.png
+gui\phone\bar\left.png
+gui\phone\bar\right.png
+gui\phone\bar\top.png
+gui\phone\button\check_foreground.png
+gui\phone\button\check_selected_foreground.png
+gui\phone\button\choice_hover_background.png
+gui\phone\button\choice_idle_background.png
+gui\phone\button\hover_background.png
+gui\phone\button\idle_background.png
+gui\phone\button\radio_foreground.png
+gui\phone\button\radio_selected_foreground.png
+gui\phone\button\slot_hover_background.png
+gui\phone\button\slot_idle_background.png
+gui\phone\overlay\game_menu.png
+gui\phone\overlay\main_menu.png
+gui\phone\scrollbar\horizontal_hover_bar.png
+gui\phone\scrollbar\horizontal_hover_thumb.png
+gui\phone\scrollbar\horizontal_idle_bar.png
+gui\phone\scrollbar\horizontal_idle_thumb.png
+gui\phone\scrollbar\vertical_hover_bar.png
+gui\phone\scrollbar\vertical_hover_thumb.png
+gui\phone\scrollbar\vertical_idle_bar.png
+gui\phone\scrollbar\vertical_idle_thumb.png
+gui\phone\slider\horizontal_hover_bar.png
+gui\phone\slider\horizontal_hover_thumb.png
+gui\phone\slider\horizontal_idle_bar.png
+gui\phone\slider\horizontal_idle_thumb.png
+gui\phone\slider\vertical_hover_bar.png
+gui\phone\slider\vertical_hover_thumb.png
+gui\phone\slider\vertical_idle_bar.png
+gui\phone\slider\vertical_idle_thumb.png
+gui\review\question_bg.png
+gui\review\tag_selected.png
+gui\review\tag_unselected.png
+gui\review\图片框.png
+gui\review\图片蒙版.png
+gui\review\复习回顾-字号.png
+gui\review\复习回顾.png
+gui\review\背景框.png
+gui\review\6-文化常识界面\图片蒙版.png
+gui\review\6-文化常识界面\文化常识界面.png
+gui\review\6-文化常识界面\问题框.png
+gui\review\7-对话回顾\图片框.png
+gui\review\7-对话回顾\图片蒙版.png
+gui\review\7-对话回顾\对话回顾.png
+gui\scrollbar\horizontal_hover_bar.png
+gui\scrollbar\horizontal_hover_thumb.png
+gui\scrollbar\horizontal_idle_bar.png
+gui\scrollbar\horizontal_idle_thumb.png
+gui\scrollbar\vertical_hover_bar.png
+gui\scrollbar\vertical_hover_thumb.png
+gui\scrollbar\vertical_idle_bar.png
+gui\scrollbar\vertical_idle_thumb.png
+gui\settings\blue_underline.png
+gui\settings\check_box.png
+gui\settings\check_icon.png
+gui\settings\down.png
+gui\settings\underline.png
+gui\settings\up.png
+gui\settings\volume-1.png
+gui\settings\volume.png
+gui\settings\white_dot.png
+gui\sl\arrow.png
+gui\sl\black_bg_hint.png
+gui\sl\box_selected.png
+gui\sl\cancel.png
+gui\sl\close.png
+gui\sl\confirm.png
+gui\sl\return.png
+gui\sl\sl_bg.png
+gui\sl\tag_selected.png
+gui\sl\tag_unselected.png
+gui\sl\unsave_bg.png
+gui\sl\删除界面.png
+gui\sl\场景蒙版.png
+gui\sl\垃圾桶 .png
+gui\sl\底层光.png
+gui\slider\horizontal_hover_bar.png
+gui\slider\horizontal_hover_thumb.png
+gui\slider\horizontal_idle_bar.png
+gui\slider\horizontal_idle_thumb.png
+gui\slider\vertical_hover_bar.png
+gui\slider\vertical_hover_thumb - Copy.png
+gui\slider\vertical_hover_thumb.png
+gui\slider\vertical_idle_bar.png
+gui\slider\vertical_idle_thumb - Copy.png
+gui\slider\vertical_idle_thumb.png
+images\bg\black.png
+images\bg\blackboard.jpg
+images\bg\memory.png
+images\bg\p01 woshi.png
+images\bg\p02 xiaomen.jpg
+images\bg\p03 xiaoyuan.png
+images\bg\p04 zoulang.jpg
+images\bg\p04 zoulang2.jpg
+images\bg\p04 zoulang2jiu.jpg
+images\bg\p05 jiaoshijiu.jpg
+images\bg\p05 jiaoshijiu2.jpg
+images\bg\p05 jiaoshixin.jpg
+images\bg\p05 jiaoshixin2.jpg
+images\bg\p06 qinshi zao.png
+images\bg\p06 qinshi.png
+images\bg\p07 caochang.jpg
+images\bg\p07 caochangjiu.jpg
+images\bg\p08 shitang.png
+images\bg\p09 shetuan.png
+images\bg\p09 shetuanjiu.png
+images\bg\p10 zhongting.png
+images\bg\p10 zhongtingjiu.png
+images\bg\p11 yinyue.png
+images\bg\p12 gongjiao.png
+images\bg\p13 laojie.png
+images\bg\p13 laojiejiu.png
+images\bg\p14 xiaomen.jpg
+images\bg\p14 xiaomen（待修改）.png
+images\bg\p15 wanshang.png
+images\bg\p16 xinjia.png
+images\bg\Chapters\pz 00.jpg
+images\bg\Chapters\pz 01.jpg
+images\bg\Chapters\pz 02.jpg
+images\bg\Chapters\pz 03.jpg
+images\bg\Chapters\pz 04.jpg
+images\bg\Chapters\pz 05.jpg
+images\bg\Chapters\pz 06.jpg
+images\bg\lesson_1\p jiaoxue01.png
+images\bg\lesson_1\p jiaoxue02.png
+images\bg\lesson_1\p jiaoxue03.png
+images\bg\lesson_1\p jiaoxue04.png
+images\bg\lesson_1\p jiaoxue05.png
+images\bg\lesson_1\p jiaoxue06.png
+images\bg\lesson_2\p jiaoxue07.jpg
+images\bg\lesson_2\p jiaoxue08.jpg
+images\bg\lesson_2\p jiaoxue09.jpg
+images\bg\lesson_2\p jiaoxue10.jpg
+images\bg\lesson_2\p jiaoxue11.jpg
+images\bg\lesson_2\p jiaoxue12.jpg
+images\bg\lesson_3\p jiaoxue13.jpg
+images\bg\lesson_3\p jiaoxue14.jpg
+images\bg\lesson_3\p jiaoxue15.jpg
+images\bg\lesson_3\p jiaoxue16.jpg
+images\bg\lesson_3\p jiaoxue17.jpg
+images\bg\lesson_3\p jiaoxue18.jpg
+images\bg\lesson_4\p jiaoxue19.jpg
+images\bg\lesson_4\p jiaoxue20.jpg
+images\bg\lesson_4\p jiaoxue21.jpg
+images\bg\lesson_4\p jiaoxue22.jpg
+images\bg\lesson_4\p jiaoxue23.jpg
+images\bg\lesson_4\p jiaoxue24.jpg
+images\bg\lesson_4\p jiaoxue25.jpg
+images\bg\lesson_4\p jiaoxue26.jpg
+images\bg\lesson_5\p jiaoxue27.jpg
+images\bg\lesson_5\p jiaoxue28.jpg
+images\bg\lesson_5\p jiaoxue29.jpg
+images\bg\lesson_5\p jiaoxue30.jpg
+images\bg\lesson_5\p jiaoxue31.jpg
+images\bg\lesson_5\p jiaoxue32.jpg
+images\bg\lesson_5\p jiaoxue33.jpg
+images\bg\参考图\教室 把右侧的黑板讲台挖出来.png
+images\bg\参考图\教室 把左上的柜子挖出来（不要上方的尺子）.png
+images\bg\参考图\教室 过去.png
+images\cha\LR1.png
+images\cha\LR2.png
+images\cha\LY 11gx.png
+images\cha\LY 11hz.png
+images\cha\LY 11jy.png
+images\cha\LY 11qx.png
+images\cha\LY 11rz.png
+images\cha\LY 11wx.png
+images\cha\LY 12gx.png
+images\cha\LY 12hz.png
+images\cha\LY 12jy.png
+images\cha\LY 12qx.png
+images\cha\LY 12rz.png
+images\cha\LY 12wx.png
+images\cha\LY 13gx.png
+images\cha\LY 13hz.png
+images\cha\LY 13jy.png
+images\cha\LY 13qx.png
+images\cha\LY 13rz.png
+images\cha\LY 13wx.png
+images\cha\LY 21gx.png
+images\cha\LY 21hz.png
+images\cha\LY 21jy.png
+images\cha\LY 21qx.png
+images\cha\LY 21rz.png
+images\cha\LY 21wx.png
+images\cha\LY 22gx.png
+images\cha\LY 22hz.png
+images\cha\LY 22jy.png
+images\cha\LY 22qx.png
+images\cha\LY 22rz.png
+images\cha\LY 22wx.png
+images\cha\LY 23gx.png
+images\cha\LY 23hz.png
+images\cha\LY 23jy.png
+images\cha\LY 23qx.png
+images\cha\LY 23rz.png
+images\cha\LY 23wx.png
+images\cha\QQ 11dy.png
+images\cha\QQ 11gx.png
+images\cha\QQ 11jy.png
+images\cha\QQ 11sq.png
+images\cha\QQ 11tq.png
+images\cha\QQ 11wx.png
+images\cha\QQ 11xf.png
+images\cha\QQ 12dy.png
+images\cha\QQ 12gx.png
+images\cha\QQ 12jy.png
+images\cha\QQ 12sq.png
+images\cha\QQ 12tq.png
+images\cha\QQ 12wx.png
+images\cha\QQ 12xf.png
+images\cha\QQ 13dy.png
+images\cha\QQ 13gx.png
+images\cha\QQ 13jy.png
+images\cha\QQ 13sq.png
+images\cha\QQ 13tq.png
+images\cha\QQ 13wx.png
+images\cha\QQ 13xf.png
+images\cha\QQ 21dy.png
+images\cha\QQ 21gx.png
+images\cha\QQ 21jy.png
+images\cha\QQ 21sq.png
+images\cha\QQ 21tq.png
+images\cha\QQ 21wx.png
+images\cha\QQ 21xf.png
+images\cha\QQ 22dy.png
+images\cha\QQ 22gx.png
+images\cha\QQ 22jy.png
+images\cha\QQ 22sq.png
+images\cha\QQ 22tq.png
+images\cha\QQ 22wx.png
+images\cha\QQ 22xf.png
+images\cha\QQ 23dy.png
+images\cha\QQ 23gx.png
+images\cha\QQ 23jy.png
+images\cha\QQ 23sq.png
+images\cha\QQ 23tq.png
+images\cha\QQ 23wx.png
+images\cha\QQ 23xf.png
+images\cha\TJ 1gx.png
+images\cha\TJ 1jy.png
+images\cha\TJ 1ng.png
+images\cha\TJ 1wx.png
+images\cha\WH 11by.png
+images\cha\WH 11gx.png
+images\cha\WH 11jy.png
+images\cha\WH 11kx.png
+images\cha\WH 11my.png
+images\cha\WH 11ng.png
+images\cha\WH 11pj.png
+images\cha\WH 11rz.png
+images\cha\WH 11wx.png
+images\cha\WH 11zm.png
+images\cha\WH 12by.png
+images\cha\WH 12gx.png
+images\cha\WH 12jy.png
+images\cha\WH 12kx.png
+images\cha\WH 12my.png
+images\cha\WH 12ng.png
+images\cha\WH 12pj.png
+images\cha\WH 12rz.png
+images\cha\WH 12wx.png
+images\cha\WH 12zm.png
+images\cha\WH 13by.png
+images\cha\WH 13gx.png
+images\cha\WH 13jy.png
+images\cha\WH 13kx.png
+images\cha\WH 13my.png
+images\cha\WH 13ng.png
+images\cha\WH 13pg.png
+images\cha\WH 13rz.png
+images\cha\WH 13wx.png
+images\cha\WH 13zm.png
+images\cha\WH 21gx.png
+images\cha\WH 21jy.png
+images\cha\WH 21kx.png
+images\cha\WH 21my.png
+images\cha\WH 21ng.png
+images\cha\WH 21rz.png
+images\cha\WH 21wx.png
+images\cha\WH 21zm.png
+images\cha\WH 22gx.png
+images\cha\WH 22jy.png
+images\cha\WH 22kx.png
+images\cha\WH 22my.png
+images\cha\WH 22ng.png
+images\cha\WH 22rz.png
+images\cha\WH 22wx.png
+images\cha\WH 22zm.png
+images\cha\WH 23gx.png
+images\cha\WH 23jy.png
+images\cha\WH 23kx.png
+images\cha\WH 23my.png
+images\cha\WH 23ng.png
+images\cha\WH 23rz.png
+images\cha\WH 23wx.png
+images\cha\WH 23zm.png
+images\cha\XY 11bx.png
+images\cha\XY 11cx.png
+images\cha\XY 11dx.png
+images\cha\XY 11dy.png
+images\cha\XY 11jy.png
+images\cha\XY 11wx.png
+images\cha\XY 11zm.png
+images\cha\XY 12bx.png
+images\cha\XY 12cx.png
+images\cha\XY 12dx.png
+images\cha\XY 12dy.png
+images\cha\XY 12jy.png
+images\cha\XY 12wx.png
+images\cha\XY 12x.png
+images\cha\XY 12zm.png
+images\cha\XY 13bx.png
+images\cha\XY 13cx.png
+images\cha\XY 13dx.png
+images\cha\XY 13dy.png
+images\cha\XY 13jy.png
+images\cha\XY 13wx.png
+images\cha\XY 13zm.png
+images\cha\XY 21bx.png
+images\cha\XY 21cx.png
+images\cha\XY 21dx.png
+images\cha\XY 21dy.png
+images\cha\XY 21jy.png
+images\cha\XY 21wx.png
+images\cha\XY 21zm.png
+images\cha\XY 22bx.png
+images\cha\XY 22cx.png
+images\cha\XY 22dx.png
+images\cha\XY 22dy.png
+images\cha\XY 22jy.png
+images\cha\XY 22wx.png
+images\cha\XY 22zm.png
+images\cha\XY 23bx.png
+images\cha\XY 23cx.png
+images\cha\XY 23dx.png
+images\cha\XY 23dy.png
+images\cha\XY 23jy.png
+images\cha\XY 23wx.png
+images\cha\XY 23zm.png
+images\cha\ZH 11gg.png
+images\cha\ZH 11gx.png
+images\cha\ZH 11wn.png
+images\cha\ZH 11wx.png
+images\cha\ZH 11zj.png
+images\cha\ZH 12gg.png
+images\cha\ZH 12gx.png
+images\cha\ZH 12wn.png
+images\cha\ZH 12wx.png
+images\cha\ZH 12zj.png
+images\cha\ZH 21gg.png
+images\cha\ZH 21gx.png
+images\cha\ZH 21wn.png
+images\cha\ZH 21wx.png
+images\cha\ZH 21zj.png
+images\cha\ZH 22gg.png
+images\cha\ZH 22gx.png
+images\cha\ZH 22wn.png
+images\cha\ZH 22wx.png
+images\cha\ZH 22zj.png
+images\cha\ZZ 11gx.png
+images\cha\ZZ 11jy.png
+images\cha\ZZ 11sq.png
+images\cha\ZZ 11wx.png
+images\cha\ZZ 11xf.png
+images\cha\ZZ 11ys.png
+images\cha\ZZ 12gx.png
+images\cha\ZZ 12jy.png
+images\cha\ZZ 12sq.png
+images\cha\ZZ 12wx.png
+images\cha\ZZ 12xf.png
+images\cha\ZZ 12ys.png
+images\cha\ZZ 13gx.png
+images\cha\ZZ 13jy.png
+images\cha\ZZ 13sq.png
+images\cha\ZZ 13wx.png
+images\cha\ZZ 13xf.png
+images\cha\ZZ 13ys.png
+images\cha\ZZ 14gx.png
+images\cha\ZZ 14jy.png
+images\cha\ZZ 14sq.png
+images\cha\ZZ 14wx.png
+images\cha\ZZ 14xf.png
+images\cha\ZZ 14ys.png
+images\cha\ZZ 21xf.png
+images\cha\dianzhu.png
+images\cha\li hui.png
+images\chpt5_memories\huiyi (1).jpg
+images\chpt5_memories\huiyi (10).jpg
+images\chpt5_memories\huiyi (11).jpg
+images\chpt5_memories\huiyi (12).jpg
+images\chpt5_memories\huiyi (13).jpg
+images\chpt5_memories\huiyi (14).jpg
+images\chpt5_memories\huiyi (15).jpg
+images\chpt5_memories\huiyi (16).jpg
+images\chpt5_memories\huiyi (17).jpg
+images\chpt5_memories\huiyi (18).jpg
+images\chpt5_memories\huiyi (19).jpg
+images\chpt5_memories\huiyi (2).jpg
+images\chpt5_memories\huiyi (20).jpg
+images\chpt5_memories\huiyi (21).jpg
+images\chpt5_memories\huiyi (22).jpg
+images\chpt5_memories\huiyi (3).jpg
+images\chpt5_memories\huiyi (4).jpg
+images\chpt5_memories\huiyi (5).jpg
+images\chpt5_memories\huiyi (6).jpg
+images\chpt5_memories\huiyi (7).jpg
+images\chpt5_memories\huiyi (8).jpg
+images\chpt5_memories\huiyi (9).jpg
+images\greetings\l1\Picture1.jpg
+images\greetings\l1\Picture2.jpg
+images\greetings\l1\Picture3-芯玫墨韵的MacBook.jpg
+images\greetings\l1\Picture3.jpg
+images\greetings\l1\Picture4.jpg
+images\HiraKataKANA\a.png
+images\HiraKataKANA\a2.png
+images\HiraKataKANA\chi.png
+images\HiraKataKANA\chi2.png
+images\HiraKataKANA\e.png
+images\HiraKataKANA\e2.png
+images\HiraKataKANA\fu.png
+images\HiraKataKANA\fu2.png
+images\HiraKataKANA\ha.png
+images\HiraKataKANA\ha2.png
+images\HiraKataKANA\he.png
+images\HiraKataKANA\he2.png
+images\HiraKataKANA\hi.png
+images\HiraKataKANA\hi2.png
+images\HiraKataKANA\ho.png
+images\HiraKataKANA\ho2.png
+images\HiraKataKANA\i.png
+images\HiraKataKANA\i2.png
+images\HiraKataKANA\ka.png
+images\HiraKataKANA\ka2.png
+images\HiraKataKANA\ke.png
+images\HiraKataKANA\ke2.png
+images\HiraKataKANA\ki.png
+images\HiraKataKANA\ki2.png
+images\HiraKataKANA\ko.png
+images\HiraKataKANA\ko2.png
+images\HiraKataKANA\ku.png
+images\HiraKataKANA\ku2.png
+images\HiraKataKANA\ma.png
+images\HiraKataKANA\ma2.png
+images\HiraKataKANA\me.png
+images\HiraKataKANA\me2.png
+images\HiraKataKANA\mi.png
+images\HiraKataKANA\mi2.png
+images\HiraKataKANA\mo.png
+images\HiraKataKANA\mo2.png
+images\HiraKataKANA\mu.png
+images\HiraKataKANA\mu2.png
+images\HiraKataKANA\n.png
+images\HiraKataKANA\n2.png
+images\HiraKataKANA\na.png
+images\HiraKataKANA\na2.png
+images\HiraKataKANA\ne.png
+images\HiraKataKANA\ne2.png
+images\HiraKataKANA\ni.png
+images\HiraKataKANA\ni2.png
+images\HiraKataKANA\no.png
+images\HiraKataKANA\no2.png
+images\HiraKataKANA\nu.png
+images\HiraKataKANA\nu2.png
+images\HiraKataKANA\o.png
+images\HiraKataKANA\o2.png
+images\HiraKataKANA\ra.png
+images\HiraKataKANA\ra2.png
+images\HiraKataKANA\re.png
+images\HiraKataKANA\re2.png
+images\HiraKataKANA\ri.png
+images\HiraKataKANA\ri2.png
+images\HiraKataKANA\ro.png
+images\HiraKataKANA\ro2.png
+images\HiraKataKANA\ru.png
+images\HiraKataKANA\ru2.png
+images\HiraKataKANA\sa.png
+images\HiraKataKANA\sa2.png
+images\HiraKataKANA\se.png
+images\HiraKataKANA\se2.png
+images\HiraKataKANA\shi.png
+images\HiraKataKANA\shi2.png
+images\HiraKataKANA\so.png
+images\HiraKataKANA\so2.png
+images\HiraKataKANA\su.png
+images\HiraKataKANA\su2.png
+images\HiraKataKANA\ta.png
+images\HiraKataKANA\ta2.png
+images\HiraKataKANA\te.png
+images\HiraKataKANA\te2.png
+images\HiraKataKANA\to.png
+images\HiraKataKANA\to2.png
+images\HiraKataKANA\tu.png
+images\HiraKataKANA\tu2.png
+images\HiraKataKANA\u.png
+images\HiraKataKANA\u2.png
+images\HiraKataKANA\wa.png
+images\HiraKataKANA\wa2.png
+images\HiraKataKANA\wo.png
+images\HiraKataKANA\wo2.png
+images\HiraKataKANA\ya.png
+images\HiraKataKANA\ya2.png
+images\HiraKataKANA\yo.png
+images\HiraKataKANA\yo2.png
+images\HiraKataKANA\yu.png
+images\HiraKataKANA\yu2.png
+images\wupin\w01.png
+images\wupin\w02.png
+images\wupin\w03.png
+images\wupin\w04.png
+images\wupin\w05.png
+images\wupin\w06.png
+images\wupin\w07.png
+images\wupin\w08.png
+images\wupin\w09.png
+images\wupin\w10.png
+images\wupin\w11.png
+images\wupin\w12.png
+images\wupin\w13.png
+images\wupin\w14.png
+images\wupin\w15.png
+images\wupin\w16.png
+images\wupin\w17.png
+images\wupin\w18.png
+images\wupin\w19.png
+images\wupin\w20.png
+images\wupin\w21.png
+images\wupin\w22.png
+images\wupin\w23.png
+images\wupin\w24.png
+images\wupin\danci\011ai2.jpg
+images\wupin\danci\011ai2s.png
+images\wupin\danci\012au2.jpg
+images\wupin\danci\012au2s.png
+images\wupin\danci\013aki2.jpg
+images\wupin\danci\013aki2s.png
+images\wupin\danci\014koi2.jpg
+images\wupin\danci\014koi2s.png
+images\wupin\danci\021sushi2.jpg
+images\wupin\danci\021sushi2s.png
+images\wupin\danci\022suki2.jpg
+images\wupin\danci\022suki2s.png
+images\wupin\danci\023uta2.jpg
+images\wupin\danci\023uta2s.png
+images\wupin\danci\024tuki2.jpg
+images\wupin\danci\024tuki2s.png
+images\wupin\danci\031inu2.jpg
+images\wupin\danci\031inu2s.png
+images\wupin\danci\032neko2.jpg
+images\wupin\danci\032neko2s.png
+images\wupin\danci\033hana2.jpg
+images\wupin\danci\033hana2s.png
+images\wupin\danci\034hoshi2.jpg
+images\wupin\danci\034hoshi2s.png
+images\wupin\danci\041machi2.jpg
+images\wupin\danci\041machi2s.png
+images\wupin\danci\042ame2.jpg
+images\wupin\danci\042ame2s.png
+images\wupin\danci\043heya2.jpg
+images\wupin\danci\043heya2s.png
+images\wupin\danci\044yume2.jpg
+images\wupin\danci\044yume2s.png
+images\wupin\danci\051sora2.jpg
+images\wupin\danci\051sora2s.png
+images\wupin\danci\052iro2.jpg
+images\wupin\danci\052iro2s.png
+images\wupin\danci\053watashi2.jpg
+images\wupin\danci\053watashi2s.png
+images\wupin\danci\054hon2.jpg
+images\wupin\danci\054hon2s.png
+saves\navigation.json
+saves\persistent
+tl\None\common.rpym
+tl\None\common.rpymc

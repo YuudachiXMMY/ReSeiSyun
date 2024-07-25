@@ -1,11 +1,14 @@
 #第一章
 label chpt1_1:
+    scene black_bg with Dissolve(3)
+    scene white_bg with Dissolve(3)
 
     scene pz 01 with Dissolve(2)
     pause 1
 
     #{画面逐渐变亮  睁眼动画}
-    scene black_bg with Dissolve(2.5)
+    scene black_bg with Dissolve(1.5)
+    scene white_bg with Dissolve(1.5)
     me "……"
     me "……"
     #{显示学校楼道图片 p04 zoulang2}

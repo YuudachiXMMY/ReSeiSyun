@@ -23,7 +23,7 @@ define gui.show_name = False
 
 ## The version of the game.
 
-define config.version = "c1.5.2"
+define config.version = "c1.5.5"
 
 
 ## Text that is placed on the game's about screen. Place the text between the
@@ -35,13 +35,13 @@ version [config.version]
 Built on 2024/06/06
 
 Notes:
-Revise base on 2024.05.16 Feedback.
+Revise base on 2024.07.02 Feedback. Minor changes on default audio volumes and missing voice file. Add Choice data ending.
 
-企画（Producer）
+总策划（Producer）
 郭侃亮
 
-程序（Programmer/Developer）
-芯玫墨韵（吴海荣）
+程序设计（Programmer/Developer）
+芯玫墨韵（吴海荣/Jadyn Wu）
 
 Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only]
 

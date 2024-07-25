@@ -6,9 +6,9 @@ init offset = -1
 
 #################################################################
 ## Default Sound Channels
-define config.default_voice_volume = 0.8
-define config.default_music_volume = 0.9
-define config.default_sfx_volume = 0.4
+define config.default_voice_volume = 0.9
+define config.default_music_volume = 0.8
+define config.default_sfx_volume = 0.65
 define config.auto_voice = "audio/voice/{id}.mp3"
 
 
@@ -18,15 +18,9 @@ define config.auto_voice = "audio/voice/{id}.mp3"
 
 default persistent.agreements_yes = False
 
-default persistent.ug = False
-# default persistent.favorability_chpt1 = 0
-# default persistent.favorability_chpt2 = 0
-# default persistent.favorability_chpt3 = 0
-# default persistent.favorability_chpt4 = 0
-# default persistent.favorability_chpt5 = 0
-# default persistent.favorability_chpt6 = 0
-# default persistent.favorability_chpt7 = 0
-
+label splashscreen:
+    if not persistent.agreements_yes:
+        call screen agreements()
 
 ################################################################################
 ## Styles
@@ -104,7 +98,6 @@ style frame:
 ## In-game screens
 ################################################################################
 
-
 # Hard Pause Screen
 screen disable_Lmouse():
     zorder 110
@@ -119,10 +112,6 @@ screen disable_Lmouse():
     key "skip" action NullAction()
     key "toggle_skip" action NullAction()
     key "fast_skip" action NullAction()
-
-label splashscreen: # before_main_menu:
-    if not persistent.agreements_yes:
-        call screen agreements
 
 # Agreement
 screen agreements_menu(title, yinitial=0.0):
@@ -164,19 +153,10 @@ screen agreements_menu(title, yinitial=0.0):
 
             vbar value YScrollValue("vp") xsize 30 xalign 1.025 yalign 0.5
 
-style side_agreements_menu:
-    xsize 10
-
-    # textbutton _("Return"):
-    #     style "return_button"
-
-    #     action Return()
-
-
 screen agreements():
     # $ renpy.add_layer("memory", above="screens", below=None, menu_clear=False, sticky=None)
 
-    zorder 102
+    zorder 110
     modal True
     predict False
 
@@ -417,13 +397,13 @@ screen agreements():
 
             hbox:
                 text _("""{b}
-（1）我们的基本情况发生变化，例如：兼并、收购、重组引起的所有者变更；
-（2）收集、存储、使用个人信息的范围、目的、规则发生变化；
-（3）对外提供个人信息的对象、范围、目的发生变化；
-（4）您访问和管理个人信息的方式发生变化；
-（5）数据安全能力、信息安全风险发生变化；
-（6）用户询问、投诉的渠道和机制，以及外部纠纷解决机构及联络方式发生变化；
-（7）其他可能对您的个人信息权益产生重大影响的变化。{/b}""") style "about_small"
+                （1）我们的基本情况发生变化，例如：兼并、收购、重组引起的所有者变更；
+                （2）收集、存储、使用个人信息的范围、目的、规则发生变化；
+                （3）对外提供个人信息的对象、范围、目的发生变化；
+                （4）您访问和管理个人信息的方式发生变化；
+                （5）数据安全能力、信息安全风险发生变化；
+                （6）用户询问、投诉的渠道和机制，以及外部纠纷解决机构及联络方式发生变化；
+                （7）其他可能对您的个人信息权益产生重大影响的变化。{/b}""") style "about_small"
 
             null height 20
 
@@ -475,8 +455,6 @@ screen agreements():
                     action Quit(confirm=False)
                 textbutton _("同意"):
                     action SetVariable("persistent.agreements_yes", True), Hide("agreements"),Return()
-
-
 
 style about_label is gui_label
 style about_label_text is gui_label_text
@@ -1084,13 +1062,13 @@ screen info():
     zorder 101
     # tag main_menu
 
-    add "gui/main/info_bg.png" zoom .74
+    add "gui/main/info_bg.png"
 
-    on 'show' action Play('music', "audio/bgm/bokunosekai.mp3")
+    # on 'show' action Play('music', "audio/bgm/piantou.mp3")
 
     textbutton _("返回"):
         style "return_button"
-        action Play('music', "audio/bgm/ztq_ry.mp3"), ShowMenu("main_menu"), Return() ,Hide("info")
+        action ShowMenu("main_menu"), Return(), Hide("info") #Play('music', "audio/bgm/ztq_ry.mp3"),
 
     textbutton _("阅读 用户协议及隐私条款"):
         align(0.5,0.99)
@@ -1109,48 +1087,7 @@ screen info():
 screen navigation():
     # tag main_menu
 
-    on 'show' action Play('music', "audio/bgm/ztq_ry.mp3")
-
-    # if persistent.debug:
-    #     text "debug: "+str(persistent.debug) xalign 0 yalign 0
-
-    #     $tmp=""
-    #     for i in prologue_select:
-    #         $tmp += str(i)+" "
-    #     text "prologue_select: "+tmp xalign 0 yalign 0.03
-
-    #     $tmp=""
-    #     for i in prologue_answer:
-    #         $tmp += str(i)+" "
-    #     text "prologue_answer: "+tmp xalign 0 yalign 0.06
-
-    #     text "宝盒: "+str(Baohe) xalign 0 yalign 0.09
-    #     text "基础好感: "+str(HaoGan) xalign 0 yalign 0.12
-
-    #     $tmp=""
-    #     for i in chpt1_select:
-    #         $tmp += str(i)+" "
-    #     text "chpt1_select: "+tmp xalign 0 yalign 0.15
-
-    #     $tmp=""
-    #     for i in chpt1_answer_bunka:
-    #         $tmp += str(i)+" "
-    #     text "chpt1_answer_bunka: "+tmp xalign 0 yalign 0.18
-
-    #     $tmp=""
-    #     for i in chpt1_answer_kana:
-    #         $tmp += str(i)+" "
-    #     text "chpt1_answer_kana: "+tmp xalign 0 yalign 0.21
-
-    #     $tmp=""
-    #     for i in chpt1_answer_tango:
-    #         $tmp += str(i)+" "
-    #     text "chpt1_answer_tango: "+tmp xalign 0 yalign 0.24
-
-    #     $tmp=""
-    #     for i in chpt2_select:
-    #         $tmp += str(i)+" "
-    #     text "chpt2_select: "+tmp xalign 0 yalign 0.27
+    on 'show' action Play('music', "audio/bgm/piantou.mp3")
 
     if main_menu:
         # add "main_bg"
@@ -1688,10 +1625,10 @@ screen preferences():
         vbox:
             xoffset 40
             spacing 72
-            add 'gui/settings/音量-1.png'
-            add 'gui/settings/音量-1.png':
+            add 'gui/settings/volume-1.png'
+            add 'gui/settings/volume-1.png':
                 yoffset 5
-            add 'gui/settings/音量-1.png':
+            add 'gui/settings/volume-1.png':
                 yoffset 10
 
         vbox:
@@ -1707,10 +1644,10 @@ screen preferences():
         vbox:
             xoffset -40
             spacing 72
-            add 'gui/settings/音量.png'
-            add 'gui/settings/音量.png':
+            add 'gui/settings/volume.png'
+            add 'gui/settings/volume.png':
                 yoffset 5
-            add 'gui/settings/音量.png':
+            add 'gui/settings/volume.png':
                 yoffset 10
 
 
@@ -2251,7 +2188,7 @@ screen confirm(message, yes_action, no_action):
     style_prefix "confirm"
 
     # add "gui/overlay/confirm.png"
-    add "gui/sl/黑色弹窗.png" align(.5 ,.5)
+    add "gui/sl/black_bg_hint.png" align(.5 ,.5)
 
 
     frame:
@@ -2336,9 +2273,9 @@ screen skip_indicator():
 
             text _("Skipping")
 
-            text "▸" at delayed_blink(0.0, 1.0) style "skip_triangle"
-            text "▸" at delayed_blink(0.2, 1.0) style "skip_triangle"
-            text "▸" at delayed_blink(0.4, 1.0) style "skip_triangle"
+            text "." at delayed_blink(0.0, 1.0) style "skip_triangle"
+            text "." at delayed_blink(0.2, 1.0) style "skip_triangle"
+            text "." at delayed_blink(0.4, 1.0) style "skip_triangle"
 
 
 ## This transform is used to blink the arrows one after another.

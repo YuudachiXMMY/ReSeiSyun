@@ -42,7 +42,7 @@ Usage of fonts
 |  Fonts   |  Notes  |
 |  ----  | ----  |
 |  SourceHanSans-VF.ttf  | N/A  |
-|  经典中圆简.ttf  | N/A  |
+|  classic_cir.ttf  | N/A  |
 
 ## Branches
 

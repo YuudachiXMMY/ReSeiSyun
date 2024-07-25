@@ -21,21 +21,24 @@ image past_cover:
 image main_bg:
     "gui/main/bg.png"
 
+image ending_script:
+    "gui/ending_script.png"
+
 ## Reviw ######################################################################
 ##
 image review_button_bg:
-    "gui/review/问题框.png"
+    "gui/review/question_bg.png"
 
 ## 确认 ######################################################################
 ##
 image confirm_yes_idle:
-    "gui/sl/确定.png"
+    "gui/sl/confirm.png"
 
 image confirm_yes_hover:
     "confirm_yes_idle"
 
 image confirm_no_idle:
-    "gui/sl/取消.png"
+    "gui/sl/cancel.png"
 
 image confirm_no_hover:
     "confirm_no_idle"
@@ -43,30 +46,30 @@ image confirm_no_hover:
 ## Save & Load ######################################################################
 ##
 image sl_bg:
-    "gui/sl/界面.png"
+    "gui/sl/sl_bg.png"
 
 image sl_sl_btn_idle:
-    "gui/sl/标签-未选.png"
+    "gui/sl/tag_unselected.png"
 
 image sl_sl_btn_hover:
-    "gui/sl/标签-选中.png"
+    "gui/sl/tag_selected.png"
 
 image sl_page_previous_idle:
-    "gui/sl/箭头.png"
+    "gui/sl/arrow.png"
 
 image sl_page_previous_hover:
     "sl_page_previous_idle"
 
 image sl_page_next_idle:
     xzoom -1.0
-    "gui/sl/箭头.png"
+    "gui/sl/arrow.png"
 
 image sl_page_next_hover:
     xzoom -1.0
-    "gui/sl/箭头.png"
+    "gui/sl/arrow.png"
 
 image sl_close_idle:
-    "gui/sl/关闭.png"
+    "gui/sl/close.png"
 
 image sl_close_hover:
     "sl_close_idle"
@@ -74,14 +77,14 @@ image sl_close_hover:
 image sl_slot_bg:
     Composite(
         (418, 256),
-        (14, 13), "gui/sl/未存档.png"
+        (14, 13), "gui/sl/unsave_bg.png"
     )
 
 image sl_slot_bg_hover:
     Composite(
         (418, 256),
-        (0, 0), "gui/sl/选中框.png",
-        (14, 13), "gui/sl/未存档.png"
+        (0, 0), "gui/sl/box_selected.png",
+        (14, 13), "gui/sl/unsave_bg.png"
     )
 
 ## 历史回放 ######################################################################
@@ -108,20 +111,20 @@ image bg_down:
     'gui/settings/down.png'
 
 image setting_slider_2_idle:
-    "gui/settings/底层线.png"
+    "gui/settings/underline.png"
 
 image setting_slider_2r_idle:
-    "gui/settings/蓝色线.png"
+    "gui/settings/blue_underline.png"
 
 image setting_slider_2_btn_idle:
-    "gui/settings/白色点.png"
+    "gui/settings/white_dot.png"
 
 
 #* 打勾按钮
 image setting_click_idle:
     Composite(
         (26, 26),
-        (0, 0), "gui/settings/方框.png")
+        (0, 0), "gui/settings/check_box.png")
 
 image setting_toggled_btn_idle:
     "setting_click_selected_idle"
@@ -129,8 +132,8 @@ image setting_toggled_btn_idle:
 image setting_click_selected_idle:
     Composite(
         (26, 26),
-        (0, 0), "gui/settings/方框.png",
-        (0, -10), "gui/settings/勾.png")
+        (0, 0), "gui/settings/check_box.png",
+        (0, -10), "gui/settings/check_icon.png")
 
 image setting_click_selected_hover:
     "setting_click_selected_idle"
@@ -138,86 +141,86 @@ image setting_click_selected_hover:
 ## 快速条 ######################################################################
 ##
 image quick_bg:
-    "gui/dialogue/设置长条.png"
+    "gui/dialogue/quick_menu.png"
 
 image quick_system_idle:
-    "gui/dialogue/设置.png"
+    "gui/dialogue/setting.png"
 
 image quick_system_hover:
-    "gui/dialogue/设置2.png"
+    "gui/dialogue/setting2.png"
 
 image quick_skip_idle:
-    "gui/dialogue/快进-未选.png"
+    "gui/dialogue/skipping_unselected.png"
 
 image quick_skip_hover:
-    "gui/dialogue/快进-选中.png"
+    "gui/dialogue/skipping_selected.png"
 
 image quick_quicksave_idle:
-    "gui/dialogue/存档.png"
+    "gui/dialogue/save_button.png"
 
 image quick_quicksave_hover:
-    "gui/dialogue/存档2.png"
+    "gui/dialogue/save_button2.png"
 
 image quick_quickload_idle:
-    "gui/dialogue/读档.png"
+    "gui/dialogue/load_button.png"
 
 image quick_quickload_hover:
-    "gui/dialogue/读档2.png"
+    "gui/dialogue/load_button2.png"
 
 image quick_hist_idle:
-    "gui/dialogue/文本回放.png"
+    "gui/dialogue/replay.png"
 
 image quick_hist_hover:
-    "gui/dialogue/文本回放2.png"
+    "gui/dialogue/replay2.png"
 
 
 ## Right Menu ######################################################################
 ##
 image r_menu_background:
-    "gui/dialogue/目录.png"
+    "gui/dialogue/r_menu.png"
 
 image r_menu_save_idle:
-    "gui/dialogue/存档.png"
+    "gui/dialogue/save_button.png"
 
 image r_menu_save_hover:
-    "gui/dialogue/存档2.png"
+    "gui/dialogue/save_button2.png"
 
 image r_menu_load_idle:
-    "gui/dialogue/读档.png"
+    "gui/dialogue/load_button.png"
 
 image r_menu_load_hover:
-    "gui/dialogue/读档2.png"
+    "gui/dialogue/load_button2.png"
 
 image r_menu_history_idle:
-    "gui/dialogue/文本回放.png"
+    "gui/dialogue/replay.png"
 
 image r_menu_history_hover:
-    "gui/dialogue/文本回放2.png"
+    "gui/dialogue/replay2.png"
 
 image r_menu_review_idle:
-    "gui/dialogue/复习回顾.png"
+    "gui/dialogue/review_button.png"
 
 image r_menu_review_hover:
-    "gui/dialogue/复习回顾2.png"
+    "gui/dialogue/review_button2.png"
 
 image r_menu_setting_idle:
-    "gui/dialogue/设置.png"
+    "gui/dialogue/setting.png"
 
 image r_menu_setting_hover:
-    "gui/dialogue/设置2.png"
+    "gui/dialogue/setting2.png"
 
 image r_menu_mainmenu_idle:
     xoffset -3
-    "gui/dialogue/返回标题.png"
+    "gui/dialogue/return_button.png"
 
 image r_menu_mainmenu_hover:
     xoffset -3
-    "gui/dialogue/返回标题2.png"
+    "gui/dialogue/return_button2.png"
 
 image r_menu_exit_idle:
     xoffset 5
-    "gui/dialogue/退出游戏.png"
+    "gui/dialogue/exit.png"
 
 image r_menu_exit_hover:
     xoffset 5
-    "gui/dialogue/退出游戏2.png"
+    "gui/dialogue/exit2.png"

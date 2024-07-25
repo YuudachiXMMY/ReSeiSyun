@@ -83,7 +83,7 @@ label lesson1_1:
     jump lesson1_1_q1
 
 label lesson1_1_q1:
-    #{显示背景 heiban }
+    #{显示背景 blackboard }
     scene blackboard with dissolve
     #{显示立绘 TJ1wx}
     show TJ 1wx at tjleft with dissolve

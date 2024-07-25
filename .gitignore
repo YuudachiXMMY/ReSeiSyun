@@ -1,6 +1,10 @@
 # Private documents
 files/private/
 
+# Android Keys
+android.keystore
+bundle.keystore
+
 # Ren'Py
 *.keystore
 

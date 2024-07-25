@@ -1,5 +1,20 @@
+screen stop_scr():
+    zorder 200
+
+    key "rollback" action [[]]
+    key "rollforward" action [[]]
+    key "dismiss" action [[]]
+    key "button_ignore" action [[]]
+    key "button_select" action [[]]
+    key "skip" action [[]]
+    key "toggle_skip" action [[]]
+    key "fast_skip" action [[]]
+    key "game_menu" action [[]]
+    key "hide_windows" action [[]]
+    key "right_click_menu" action [[]]
+
 label start:
-    $debug = True
+    $ debug = False
 
     if debug:
         "这是内部测试版本"

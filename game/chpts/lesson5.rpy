@@ -1,7 +1,8 @@
 #第五课
 label lesson5_1:
 
-    scene black_bg with Dissolve(2)
+    scene black_bg with Dissolve(3)
+    scene white_bg with Dissolve(3)
     #显示第五章过渡幕间图片
     #{显示背景  pz 05 }
     scene pz 05 with Dissolve(2)
@@ -74,7 +75,7 @@ label lesson5_1:
         xoffset -150
     with dissolve
     Tomoko "はい、そうです。中国は水餃子ですね。（是的，中国人习惯吃水饺对吗？）"
-    #{显示背景 heiban }
+    #{显示背景 blackboard }
     scene blackboard with dissolve
     #{显示立绘WH 13gx}
     show WH 13gx at middle
@@ -472,7 +473,7 @@ label lesson5_3:
     if chpt5_C_answer_tango_index < 1:
         $ chpt5_C_answer_tango_index = 1
     show 051sora2 at middle with dissolve
-    play sound "audio/se/sushiyin/051sora2.mp3"
+    # play sound "audio/se/sushiyin/051sora2.mp3"
     Tomoko "空（そら）。"
     hide 051sora2 with dissolve
 
@@ -481,7 +482,7 @@ label lesson5_3:
     if chpt5_C_answer_tango_index < 2:
         $ chpt5_C_answer_tango_index = 2
     show 052iro2 at middle with dissolve
-    play sound "audio/se/sushiyin/052iro2.mp3"
+    # play sound "audio/se/sushiyin/052iro2.mp3"
     Tomoko "色（いろ）。"
     hide 052iro2 with dissolve
 
@@ -489,7 +490,7 @@ label lesson5_3:
     if chpt5_C_answer_tango_index < 3:
         $ chpt5_C_answer_tango_index = 3
     show 053watashi2 at middle with dissolve
-    play sound "audio/se/sushiyin/053watashi2.mp3"
+    # play sound "audio/se/sushiyin/053watashi2.mp3"
     Tomoko "私（わたし）。"
     hide 053watashi2 with dissolve
 
@@ -497,7 +498,7 @@ label lesson5_3:
     if chpt5_C_answer_tango_index < 4:
         $ chpt5_C_answer_tango_index = 4
     show 054hon2 at middle with dissolve
-    play sound "audio/se/sushiyin/054hon2.mp3"
+    # play sound "audio/se/sushiyin/054hon2.mp3"
     Tomoko "本（ほん）。"
     hide 054hon2 with dissolve
 
