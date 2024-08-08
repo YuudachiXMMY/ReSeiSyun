@@ -1,0 +1,1 @@
+jarsigner -verbose -keystore android.keystore -signedjar tap_sign.apk tap_unsign.apk android

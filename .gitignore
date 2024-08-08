@@ -1,12 +1,22 @@
 # Private documents
 files/private/
 
-# Android Keys
+# Builds
+builds/
+
+# Keys
+*.keystore
 android.keystore
 bundle.keystore
 
-# Ren'Py
-*.keystore
+# Android
+*.apk
+*.apk.1
+
+# ZIP Files
+*.rar
+*.zip
+*.7z
 
 # Mac
 .DS_Store
@@ -25,13 +35,6 @@ dialogue.csv
 cache/
 saves/
 .vscode/
-
-builds/
-
-# Files
-*.rar
-*.zip
-*.7z
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
